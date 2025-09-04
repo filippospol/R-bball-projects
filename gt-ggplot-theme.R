@@ -18,6 +18,18 @@ head(mydf) %>%
   # Title and subtitle
   tab_header(title=md("**head(10) mtcars table**"),
              subtitle=html("<div style='color:#8e8e8e;'>Example table using my theme</div><br/>")) %>% 
+  # add logo on the top right:
+  tab_header(
+    title = htmltools::HTML(
+      paste0(
+        "<div style='display:flex; justify-content:space-between; align-items:center;'>",
+        "<div style='font-size:25px'><b>head(10) mtcars table</b><br>
+         <span style='font-weight:normal;color:#8e8e8e;font-size:16px'>Example table using my theme</span></div>",
+        "<div><img src='https://i.ibb.co/nNpnYF4L/logo-nobg.png' style='height:60px;'></div>",
+        "</div>"
+      )
+    )
+  ) %>% 
   # Bold column labels
   tab_style(style = cell_text(weight = "bold"),
             locations = cells_column_labels(everything()))  %>%  
@@ -61,6 +73,18 @@ head(mydf) %>%
   tab_header(
     title = md("**head(10) mtcars table**"),
     subtitle = html("<div style='color:#cccccc;'>Example table using my dark theme</div><br/>")
+  ) %>% 
+   # add logo on the top right:
+  tab_header(
+    title = htmltools::HTML(
+      paste0(
+        "<div style='display:flex; justify-content:space-between; align-items:center;'>",
+        "<div style='font-size:25px'><b>head(10) mtcars table</b><br>
+         <span style='font-weight:normal;color:#cccccc;font-size:16px'>Example table using my theme</span></div>",
+        "<div><img src='https://i.ibb.co/nNpnYF4L/logo-nobg.png' style='height:60px;'></div>",
+        "</div>"
+      )
+    )
   ) %>% 
   # Bold column labels
   tab_style(
@@ -167,3 +191,4 @@ baseplot +
     panel.grid.major = element_line(color = "#444444"),
     panel.grid.minor = element_line(color = "#333333")
   )
+
