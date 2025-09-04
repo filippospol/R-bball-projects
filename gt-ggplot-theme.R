@@ -83,7 +83,7 @@ head(mydf) %>%
         "<div style='display:flex; justify-content:space-between; align-items:center;'>",
         "<div style='font-size:25px'><b>head(10) mtcars table</b><br>
          <span style='font-weight:normal;color:#cccccc;font-size:16px'>Example table using my theme</span></div>",
-        "<div><img src='https://i.ibb.co/TxnGsfZm/Hn-R-No-Backround-White.png' style='height:80px;'></div>",
+        "<div><img src='https://i.ibb.co/QFZd6ftN/Hn-R-No-Backround-White.png' style='height:80px;'></div>",
         "</div>"
       )
     )
@@ -193,5 +193,6 @@ baseplot +
     panel.grid.major = element_line(color = "#444444"),
     panel.grid.minor = element_line(color = "#333333")
   )
+
 
 
