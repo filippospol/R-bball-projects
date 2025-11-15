@@ -44,7 +44,7 @@ continuity = continuity %>%
          TWIN=W/GP,
          DELTA=TWIN-PWIN,
          CONTINUITY=LINEUPS/GP,
-         LOGO=glue("https://cdn.nba.com/logos/nba/{TEAM_ID}/primary/L/logo.svg"))
+         LOGO=glue("https://raw.githubusercontent.com/filippospol/R-bball-projects/refs/heads/main/misc/nba-team-logos-png/{TEAM_ID}.png"))
 
 # Create chart:
 continuity %>% 
@@ -59,4 +59,5 @@ continuity %>%
        subtitle=paste('Source: Basketball Reference | As of',format(Sys.Date(), "%m/%d/%y")),
        x='# of Distinct Starting Lineups / Games Played',
        y='Current W% - Projected W%',
+
        caption="Inspired by Owen Phillips")
