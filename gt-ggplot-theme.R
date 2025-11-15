@@ -62,7 +62,7 @@ head(mydf) %>%
               table.border.bottom.color = "transparent") %>% 
   # Row striping
   opt_row_striping() %>% 
-  opt_table_font(font = google_font("Karla"))
+  opt_table_font(font = google_font("Roboto Mono"))
 
 # Dark
 head(mydf) %>%
@@ -140,7 +140,7 @@ head(mydf) %>%
     style = cell_text(color = "#aaaaaa"),
     locations = cells_source_notes()
   ) %>% 
-  opt_table_font(font = google_font("Karla"))
+  opt_table_font(font = google_font("Roboto Mono"))
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -155,7 +155,7 @@ pacman::p_load(sysfonts,showtext,ggtext)
 
 # Download font awesome locally first: https://fontawesome.com/download
 # Setup caption and import font
-font_add_google("Karla","myfont")
+font_add_google("Roboto Mono","myfont")
 sysfonts::font_add("FA","C:/Users/phili/AppData/Local/Microsoft/Windows/Fonts/Font Awesome 6 Brands-Regular-400.otf")
 showtext_auto()
 pc = "<span style='font-family:FA;'>&#xf099;</span> @filippos_pol"
@@ -193,6 +193,7 @@ baseplot +
     panel.grid.major = element_line(color = "#444444"),
     panel.grid.minor = element_line(color = "#333333")
   )
+
 
 
 
