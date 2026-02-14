@@ -8,7 +8,12 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 bbref_advanced = function(season) {
-  pacman::p_load(tidyverse,rvest,janitor,glue)
+  # pacman::p_load(tidyverse,rvest,janitor,glue)
+  library(dplyr)
+  library(rvest)
+  library(rvest)
+  library(janitor)
+  library(purrr)
   
   suppressWarnings(
     "https://www.basketball-reference.com/leagues/NBA_{paste0(20,substr(season,6,7))}_advanced.html" %>% 
@@ -36,4 +41,5 @@ bbref_advanced = function(season) {
            AST_PCT=AST_PERCENT,STL_PCT=STL_PERCENT,BLK_PCT=BLK_PERCENT,TOV_PCT=TOV_PERCENT,USG_PCT=USG_PERCENT,PER,OWS:WS_48,OBPM:VORP) %>% 
     return()
 }
+
 
