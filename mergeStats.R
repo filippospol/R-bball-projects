@@ -1,4 +1,10 @@
-pacman::p_load(tidyverse,hoopR,rvest,glue,janitor)
+# pacman::p_load(tidyverse,hoopR,rvest,glue,janitor)
+library(dplyr)
+library(rvest)
+library(hoopR)
+library(janitor)
+library(purrr)
+library(glue)
 
 mergeStats = function(nbacom,bbref) {
   # Make sure objects are correct.
@@ -36,4 +42,5 @@ mergeStats = function(nbacom,bbref) {
 # bbref = bbref_advanced(season=season)
 # # Merge them together:
 # mydf = mergeStats(nbacom,bbref)
+
 
