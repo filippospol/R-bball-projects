@@ -8,7 +8,12 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 bbref_play_by_play = function(season) {
-  pacman::p_load(tidyverse,rvest,janitor,glue)
+  # pacman::p_load(tidyverse,rvest,janitor,glue)
+  library(dplyr)
+  library(rvest)
+  library(rvest)
+  library(janitor)
+  library(purrr)
   
   suppressWarnings(
     "https://www.basketball-reference.com/leagues/NBA_{paste0(20,substr(season,6,7))}_play-by-play.html" %>% 
@@ -37,4 +42,5 @@ bbref_play_by_play = function(season) {
            SHOOT_PF=SHOOT,OFF_PF=OFF,SHOOT_PFD=SHOOT_2,OFF_PFD=OFF_2,AST_PTS=PGA,AND1,BLKD_FGA=BLKD) %>% 
     return()
 }
+
 
