@@ -181,6 +181,6 @@ for (i in 1:length(url_list)) {
 rm(list=setdiff(ls(),c("PP","TT")))
 
 # write files in .csv format
-write.csv(bind_rows(PP),"FR-players.csv")
+write.csv(bind_rows(PP),"bball-stats/data/FR-players.csv")
+write.csv(bind_rows(TT),"bball-stats/data/FR-teams.csv")
 
-write.csv(bind_rows(TT),"FR-teams.csv")
