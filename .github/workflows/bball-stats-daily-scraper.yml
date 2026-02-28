@@ -26,13 +26,13 @@ jobs:
           Rscript -e 'install.packages(c("dplyr", "purrr", "tidyr", "stringr", "stringi", "httr", "jsonlite", "glue", "janitor", "lubridate"))'
 
       - name: Pro A Stats
+        working-directory: bball-stats/scrapers # Move this OUTSIDE the run block
         run: |
-          working-directory: bball-stats/scrapers
           Rscript FR-scraper.R || echo "FR Scraper failed, moving to next script"
 
       - name: Serie A Stats
+        working-directory: bball-stats/scrapers # Move this OUTSIDE the run block
         run: |
-          working-directory: bball-stats/scrapers
           Rscript IT-scraper.R || echo "IT Scraper failed"
 
       - name: Commit and Push to bball-stats folder
