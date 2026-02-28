@@ -26,16 +26,17 @@ jobs:
           Rscript -e 'install.packages(c("dplyr", "purrr", "tidyr", "stringr", "stringi", "httr", "jsonlite", "glue", "janitor", "lubridate"))'
 
       - name: Run Scrapers
-        # Running from root so we don't get confused about paths
         run: |
           Rscript bball-stats/scrapers/FR-scraper.R || echo "FR Scraper failed"
           Rscript bball-stats/scrapers/IT-scraper.R || echo "IT Scraper failed"
+
+      - name: Debug - List Files
+        run: ls -R bball-stats/data/
 
       - name: Commit and Push
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          # Git add from the root perspective
           git add bball-stats/data/*.csv
           git commit -m "Updated data on: $(date +'%Y-%m-%d')" || echo "No changes to commit"
           git push
