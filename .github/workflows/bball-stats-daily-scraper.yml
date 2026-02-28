@@ -2,7 +2,7 @@ name: Basketball Stats App Daily Data Update
 
 on:
   schedule:
-    - cron: '0 2 * * *' # Runs daily at 9:00 AM UTC
+    - cron: '0 2 * * *' 
   workflow_dispatch: 
 
 jobs:
@@ -19,27 +19,23 @@ jobs:
         uses: r-lib/actions/setup-r@v2
 
       - name: Install System Dependencies
-        run: brew install curl openssl libxml2 # Required for 'httr' and 'rvest'
+        run: brew install curl openssl libxml2 
 
       - name: Install R Libraries
         run: |
           Rscript -e 'install.packages(c("dplyr", "purrr", "tidyr", "stringr", "stringi", "httr", "jsonlite", "glue", "janitor", "lubridate"))'
 
-      - name: Pro A Stats
-        working-directory: bball-stats/scrapers # Move this OUTSIDE the run block
+      - name: Run Scrapers
+        # Running from root so we don't get confused about paths
         run: |
-          Rscript FR-scraper.R || echo "FR Scraper failed, moving to next script"
+          Rscript bball-stats/scrapers/FR-scraper.R || echo "FR Scraper failed"
+          Rscript bball-stats/scrapers/IT-scraper.R || echo "IT Scraper failed"
 
-      - name: Serie A Stats
-        working-directory: bball-stats/scrapers # Move this OUTSIDE the run block
-        run: |
-          Rscript IT-scraper.R || echo "IT Scraper failed"
-
-      - name: Commit and Push to bball-stats folder
+      - name: Commit and Push
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          # This line now targets the specific data subfolder
-          git add bball-stats/data/*.csv 
+          # Git add from the root perspective
+          git add bball-stats/data/*.csv
           git commit -m "Updated data on: $(date +'%Y-%m-%d')" || echo "No changes to commit"
           git push
