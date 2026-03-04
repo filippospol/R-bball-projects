@@ -215,6 +215,7 @@ for (i in 1:dim(fixture_info)[1]) {
            DREB=DEFENSIVE_REBOUNDS,OREB=OFFENSIVE_REBOUNDS,
            REB=TOTAL_REBOUNDS,AST=ASSISTS,STL=STEALS,BLK=BLOCKS,
            TOV=TURNOVERS,PF=FOULS_COMMITTED) %>% 
+    mutate(MIN=round(MIN)) %>% 
     # if minutes is NA, player DNP so remove that row altogether?
     filter(!is.na(MIN)) %>% 
     mutate_at(7:22, as.numeric)
@@ -255,4 +256,5 @@ rm(list=setdiff(ls(),c("PP","TT")))
 # beepr::beep()
 # write files in .csv format
 write.csv(bind_rows(PP),"bball-stats/data/DE-players.csv")
+
 write.csv(bind_rows(TT),"bball-stats/data/DE-teams.csv")
