@@ -94,7 +94,10 @@ for (i in 1:dim(fixture_info)[1]) {
   ) %>% 
     select(54,52,53,33:51) %>% 
     mutate(PLAYER=toupper(as.character(PLAYER)),
-           PLAYER = stri_trans_general(PLAYER, "latin-ascii"))
+           PLAYER = stri_trans_general(PLAYER, "latin-ascii")) %>%
+    mutate(MIN=round(MIN)) %>% 
+    # if minutes is NA, player DNP so remove that row altogether?
+    filter(!is.na(MIN))
   
   # Team Stats:
   TT[[i]] = bind_rows(
@@ -126,3 +129,4 @@ rm(list=setdiff(ls(),c("PP","TT")))
 write.csv(bind_rows(PP),"bball-stats/data/IT-players.csv")
 
 write.csv(bind_rows(TT),"bball-stats/data/IT-teams.csv")
+
