@@ -86,6 +86,7 @@ rm(list=setdiff(ls(),"url_list"))
 #' *LOOP OVER MATCH ID'S AND GET BOXSCORES*
 
 # run time around 5 minutes
+league="Pro A" ; season="2025-26"
 PP = list()
 TT = list()
 for (i in 1:length(url_list)) {
@@ -102,6 +103,7 @@ for (i in 1:length(url_list)) {
   )
   
   # Fixture info:
+  fixture_id = raw_json$data$banner$fixture$id
   fixture_teamcodes = raw_json$data$banner$fixture$competitors$code
   fixture_teamnames = raw_json$data$banner$fixture$competitors$name
   fixture_date = raw_json$data$banner$fixture$startDateTime %>% substr(1,10)
@@ -118,8 +120,9 @@ for (i in 1:length(url_list)) {
         as_tibble() %>% 
         unnest()) %>% 
       clean_names("all_caps") %>% 
-      mutate(TEAM=fixture_teamnames[1],MATCHUP=fixture_matchup) %>% 
-      select(PLAYER=PERSON_NAME,TEAM,MATCHUP,
+      mutate(TEAM=fixture_teamnames[1],MATCHUP=fixture_matchup,
+             GAME_ID=fixture_id,SEASON=season,LEAGUE=league) %>% 
+      select(GAME_ID,SEASON,LEAGUE,PLAYER=PERSON_NAME,TEAM,MATCHUP,
              MIN=MINUTES,PTS=POINTS,`2PM`=POINTS_TWO_MADE,`2PA`=POINTS_TWO_ATTEMPTED,
              `3PM`=POINTS_THREE_MADE,`3PA`=POINTS_THREE_ATTEMPTED,
              FTA=FREE_THROWS_MADE,FTM=FREE_THROWS_ATTEMPTED,DREB=REBOUNDS_DEFENSIVE,
@@ -128,15 +131,16 @@ for (i in 1:length(url_list)) {
       mutate(MIN=gsub("S","",gsub("M",":",gsub("PT","",MIN)))) %>% 
       separate(MIN,c("MINS","SEC"),sep=":") %>% 
       mutate(MIN=as.numeric(MINS)+if_else(is.na(as.numeric(SEC)),0,as.numeric(SEC)/60)) %>% 
-      select(1:3,21,6:20),
+      select(1:6,24,9:23),
     suppressWarnings(
       raw_json$data$statistics$data$base$away$persons$rows %>% 
         data.frame() %>% 
         as_tibble() %>% 
         unnest()) %>% 
       clean_names("all_caps") %>% 
-      mutate(TEAM=fixture_teamnames[2],MATCHUP=fixture_matchup) %>% 
-      select(PLAYER=PERSON_NAME,TEAM,MATCHUP,
+      mutate(TEAM=fixture_teamnames[1],MATCHUP=fixture_matchup,
+             GAME_ID=fixture_id,SEASON=season,LEAGUE=league) %>% 
+      select(GAME_ID,SEASON,LEAGUE,PLAYER=PERSON_NAME,TEAM,MATCHUP,
              MIN=MINUTES,PTS=POINTS,`2PM`=POINTS_TWO_MADE,`2PA`=POINTS_TWO_ATTEMPTED,
              `3PM`=POINTS_THREE_MADE,`3PA`=POINTS_THREE_ATTEMPTED,
              FTA=FREE_THROWS_MADE,FTM=FREE_THROWS_ATTEMPTED,DREB=REBOUNDS_DEFENSIVE,
@@ -145,7 +149,7 @@ for (i in 1:length(url_list)) {
       mutate(MIN=gsub("S","",gsub("M",":",gsub("PT","",MIN)))) %>% 
       separate(MIN,c("MINS","SEC"),sep=":") %>% 
       mutate(MIN=as.numeric(MINS)+if_else(is.na(as.numeric(SEC)),0,as.numeric(SEC)/60)) %>% 
-      select(1:3,21,6:20)
+      select(1:6,24,9:23)
   ) %>% 
     mutate(PLAYER = toupper(as.character(PLAYER)),
            PLAYER = stri_trans_general(PLAYER, "latin-ascii")) %>% 
@@ -181,6 +185,5 @@ for (i in 1:length(url_list)) {
 rm(list=setdiff(ls(),c("PP","TT")))
 
 # write files in .csv format
-write.csv(bind_rows(PP),"bball-stats/data/FR-players.csv")
-write.csv(bind_rows(TT),"bball-stats/data/FR-teams.csv")
-
+write.csv(bind_rows(PP),"FR-players.csv")
+write.csv(bind_rows(TT),"FR-teams.csv")
