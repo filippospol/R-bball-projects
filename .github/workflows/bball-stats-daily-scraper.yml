@@ -27,16 +27,21 @@ jobs:
 
       - name: Run Scrapers
         run: |
-          Rscript bball-stats/scrapers/FR-scraper.R || echo "FR Scraper failed"
-          Rscript bball-stats/scrapers/IT-scraper.R || echo "IT Scraper failed"
+          Rscript bball-stats/scrapers/FR-scraper.R
+          Rscript bball-stats/scrapers/IT-scraper.R
 
       - name: Debug - List Files
-        run: ls -R bball-stats/data/
+        run: |
+          echo "Files in root:"
+          ls -l *.csv || echo "No CSVs in root"
+          echo "Files in data folder:"
+          ls -R bball-stats/data/
 
       - name: Commit and Push
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add bball-stats/data/*.csv
+          # Adding **/*.csv forces Git to find and add the CSVs no matter which folder R dropped them in
+          git add **/*.csv
           git commit -m "Updated data on: $(date +'%Y-%m-%d')" || echo "No changes to commit"
           git push
