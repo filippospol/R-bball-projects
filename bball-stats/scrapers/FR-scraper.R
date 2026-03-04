@@ -139,7 +139,7 @@ for (i in 1:length(url_list)) {
         as_tibble() %>% 
         unnest()) %>% 
       clean_names("all_caps") %>% 
-      mutate(TEAM=fixture_teamnames[1],MATCHUP=fixture_matchup,
+      mutate(TEAM=fixture_teamnames[2],MATCHUP=fixture_matchup,
              GAME_ID=fixture_id,SEASON=season,LEAGUE=league) %>% 
       select(GAME_ID,SEASON,LEAGUE,PLAYER=PERSON_NAME,TEAM,MATCHUP,
              MIN=MINUTES,PTS=POINTS,`2PM`=POINTS_TWO_MADE,`2PA`=POINTS_TWO_ATTEMPTED,
@@ -191,4 +191,5 @@ rm(list=setdiff(ls(),c("PP","TT")))
 write.csv(bind_rows(PP),"bball-stats/data/FR-players.csv")
 
 write.csv(bind_rows(TT),"bball-stats/data/FR-teams.csv")
+
 
