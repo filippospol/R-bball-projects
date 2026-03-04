@@ -24,6 +24,7 @@ library(lubridate)
 #' *EXTRACT MATCH ID'S*
 
 # max number of vector indicates number of game days in season:
+league="Serie A" ; season = "2025-26"
 fixture_info = map_df(1:30, function(MD) {
   res = GET("https://www.legabasket.it/api/championships/get-championships-calendar-by-id?id=596&d={MD}" %>% 
               glue())
@@ -41,8 +42,9 @@ fixture_info = map_df(1:30, function(MD) {
 # Get relevant info (columns for next step)
 fixture_info = fixture_info %>% 
   mutate(GAME_DATE=as_date(ymd_hms(MATCH_DATETIME)),
-         MATCHUP = paste0(GAME_DATE,", ",H_CLUB_CODE," vs ",V_CLUB_CODE)) %>% 
-  select(ID,GAME_DATE,MATCHUP,H_TEAM_NAME:V_CLUB_CODE)
+         MATCHUP = paste0(GAME_DATE,", ",H_CLUB_CODE," vs ",V_CLUB_CODE),
+         LEAGUE=league,SEASON=season) %>% 
+  select(GAME_ID=ID,SEASON,LEAGUE,GAME_DATE,MATCHUP,H_TEAM_NAME:V_CLUB_CODE)
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -74,7 +76,9 @@ for (i in 1:dim(fixture_info)[1]) {
              TEAM=fixture_info$H_TEAM_NAME[i],MATCHUP=fixture_info$MATCHUP[i],
              MIN=MIN2,PTS=PUN,`2PM`=T2_R,`2PA`=T2_T,`3PM`=T3_R,`3PA`=T3_T,
              FTM=TL_R,FTA=TL_T,DREB=RIMBALZI_D,OREB=RIMBALZI_O,REB=RIMBALZI_T,
-             AST=ASS,STL=PALLE_R,BLK=STOPPATE_DAT,TOV=PALLE_P,PF=FALLI_C),
+             AST=ASS,STL=PALLE_R,BLK=STOPPATE_DAT,TOV=PALLE_P,PF=FALLI_C,
+             SEASON=fixture_info$SEASON[i],LEAGUE=fixture_info$LEAGUE[i],
+             GAME_ID=fixture_info$GAME_ID[i]),
     raw_json$pageProps$game$scores$vt$rows %>% 
       as_tibble() %>% 
       clean_names("all_caps") %>% 
@@ -83,9 +87,11 @@ for (i in 1:dim(fixture_info)[1]) {
              TEAM=fixture_info$V_TEAM_NAME[i],MATCHUP=fixture_info$MATCHUP[i],
              MIN=MIN2,PTS=PUN,`2PM`=T2_R,`2PA`=T2_T,`3PM`=T3_R,`3PA`=T3_T,
              FTM=TL_R,FTA=TL_T,DREB=RIMBALZI_D,OREB=RIMBALZI_O,REB=RIMBALZI_T,
-             AST=ASS,STL=PALLE_R,BLK=STOPPATE_DAT,TOV=PALLE_P,PF=FALLI_C)
+             AST=ASS,STL=PALLE_R,BLK=STOPPATE_DAT,TOV=PALLE_P,PF=FALLI_C,
+             SEASON=fixture_info$SEASON[i],LEAGUE=fixture_info$LEAGUE[i],
+             GAME_ID=fixture_info$GAME_ID[i])
   ) %>% 
-    select(33:51) %>% 
+    select(54,52,53,33:51) %>% 
     mutate(PLAYER=toupper(as.character(PLAYER)),
            PLAYER = stri_trans_general(PLAYER, "latin-ascii"))
   
@@ -112,9 +118,10 @@ for (i in 1:dim(fixture_info)[1]) {
   )
   
 }
+beepr::beep()
 rm(list=setdiff(ls(),c("PP","TT")))
 
+# beepr::beep()
 # write files in .csv format
-write.csv(bind_rows(PP),"bball-stats/data/IT-players.csv")
-write.csv(bind_rows(TT),"bball-stats/data/IT-teams.csv")
-
+write.csv(bind_rows(PP),"IT-players.csv")
+write.csv(bind_rows(TT),"IT-teams.csv")
