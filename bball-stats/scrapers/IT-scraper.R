@@ -120,7 +120,7 @@ for (i in 1:dim(fixture_info)[1]) {
 }
 rm(list=setdiff(ls(),c("PP","TT")))
 
+# beepr::beep()
 # write files in .csv format
 write.csv(bind_rows(PP),"IT-players.csv")
 write.csv(bind_rows(TT),"IT-teams.csv")
-
