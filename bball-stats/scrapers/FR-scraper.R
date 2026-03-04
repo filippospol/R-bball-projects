@@ -154,6 +154,7 @@ for (i in 1:length(url_list)) {
   ) %>% 
     mutate(PLAYER = toupper(as.character(PLAYER)),
            PLAYER = stri_trans_general(PLAYER, "latin-ascii")) %>% 
+    mutate(MIN=round(MIN)) %>% 
     # if minutes is NA, player DNP so remove that row altogether?
     filter(!is.na(MIN))
   
@@ -190,3 +191,4 @@ rm(list=setdiff(ls(),c("PP","TT")))
 write.csv(bind_rows(PP),"bball-stats/data/FR-players.csv")
 
 write.csv(bind_rows(TT),"bball-stats/data/FR-teams.csv")
+
