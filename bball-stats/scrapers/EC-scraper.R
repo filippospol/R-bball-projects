@@ -65,7 +65,7 @@ for(i in 1:dim(fixture_info)[1]) {
   res = GET(boxscore_url)
   raw_json = fromJSON(content(res, "text", encoding = "UTF-8"))
   
-  PP[[i]] = suppressWarnings(
+   PP[[i]] = suppressWarnings(
     raw_json %>% 
       pluck("Stats") %>% 
       as_tibble() %>% 
@@ -77,7 +77,7 @@ for(i in 1:dim(fixture_info)[1]) {
              MINUTES = round(period_to_seconds(ms(MINUTES)) / 60)) %>% 
       select(GAME_ID,SEASON,LEAGUE,PLAYER,TEAM,MATCHUP,MIN=MINUTES,PTS=POINTS,`2PM`=FIELD_GOALS_MADE2,
              `2PA`=FIELD_GOALS_ATTEMPTED2,`3PM`=FIELD_GOALS_MADE3,`3PA`=FIELD_GOALS_ATTEMPTED3,FTM=FREE_THROWS_MADE,
-             FTA=FREE_THROWS_ATTEMPTED,OREB=OFFENSIVE_REBOUNDS,DREB=DEFENSIVE_REBOUNDS,REB=TOTAL_REBOUNDS,AST=ASSISTANCES,STL=STEALS,
+             FTA=FREE_THROWS_ATTEMPTED,DREB=DEFENSIVE_REBOUNDS,OREB=OFFENSIVE_REBOUNDS,REB=TOTAL_REBOUNDS,AST=ASSISTANCES,STL=STEALS,
              TOV=TURNOVERS,BLK=BLOCKS_FAVOUR,PF=FOULS_COMMITED) %>% 
       filter(!is.na(MIN))
   )
@@ -91,7 +91,7 @@ for(i in 1:dim(fixture_info)[1]) {
       clean_names("all_caps") %>% 
       select(TEAM,CODE,MATCHUP,PTS=POINTS,`2PM`=FIELD_GOALS_MADE2,
              `2PA`=FIELD_GOALS_ATTEMPTED2,`3PM`=FIELD_GOALS_MADE3,`3PA`=FIELD_GOALS_ATTEMPTED3,FTM=FREE_THROWS_MADE,
-             FTA=FREE_THROWS_ATTEMPTED,OREB=OFFENSIVE_REBOUNDS,DREB=DEFENSIVE_REBOUNDS,REB=TOTAL_REBOUNDS,AST=ASSISTANCES,STL=STEALS,
+             FTA=FREE_THROWS_ATTEMPTED,DREB=DEFENSIVE_REBOUNDS,OREB=OFFENSIVE_REBOUNDS,REB=TOTAL_REBOUNDS,AST=ASSISTANCES,STL=STEALS,
              TOV=TURNOVERS,BLK=BLOCKS_FAVOUR,PF=FOULS_COMMITED)
   )
   
@@ -104,4 +104,5 @@ write.csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/EC-play
 
 
 write.csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/EC-teams.csv")
+
 
