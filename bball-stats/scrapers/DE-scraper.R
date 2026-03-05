@@ -219,7 +219,7 @@ for (i in 1:dim(fixture_info)[1]) {
     # if minutes is NA, player DNP so remove that row altogether?
     filter(!is.na(MIN)) %>% 
     mutate_at(7:22, as.numeric)
-  homeTeam = homeBox$TEAM  ; homeCode = homeBox$CODE %>% unique()
+  homeTeam = homeBox$TEAM %>% unique() ; homeCode = homeBox$CODE %>% unique()
   awayTeam = awayBox$TEAM %>% unique() ; awayCode = awayBox$CODE %>% unique()
   rm(homeBox,awayBox)
   
@@ -258,4 +258,5 @@ rm(list=setdiff(ls(),c("PP","TT")))
 write.csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/DE-players.csv")
 
 write.csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/DE-teams.csv")
+
 
