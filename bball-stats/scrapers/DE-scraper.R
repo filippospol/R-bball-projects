@@ -181,7 +181,7 @@ for (i in 1:dim(fixture_info)[1]) {
   raw_json = fromJSON(content(res, "text", encoding = "UTF-8"))
   
   if (raw_json$pageProps$initialGameStats$homeTeam$gameStat$competition[1] == "BBL_CUP") next
-
+  
   # Get home and away teams boxscores:
   homeBox = raw_json$pageProps$initialGameStats$homeTeam$playerStats %>% 
     as_tibble() %>% 
@@ -250,6 +250,7 @@ for (i in 1:dim(fixture_info)[1]) {
              REB=TOTAL_REBOUNDS,AST=ASSISTS,STL=STEALS,BLK=BLOCKS,
              TOV=TURNOVERS,PF=FOULS_COMMITTED)
   )  
+  print(i)
 }
 rm(list=setdiff(ls(),c("PP","TT")))
 
@@ -258,5 +259,3 @@ rm(list=setdiff(ls(),c("PP","TT")))
 write.csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/DE-players.csv")
 
 write.csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/DE-teams.csv")
-
-
