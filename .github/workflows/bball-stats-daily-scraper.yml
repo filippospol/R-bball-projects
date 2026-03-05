@@ -2,7 +2,7 @@ name: Basketball Stats App Daily Data Update
 
 on:
   schedule:
-    - cron: '0 0 * * *' 
+    - cron: '0 22 * * *' 
   workflow_dispatch: 
 
 jobs:
@@ -44,5 +44,5 @@ jobs:
           git config --global user.email "action@github.com"
           # -A stages EVERYTHING that changed, making it bulletproof
           git add -A
-          git commit -m "Updated data on: $(date +'%Y-%m-%d')" || echo "No changes to commit"
+          git commit -m "Updated data on: $(date +'%Y-%m-%d')" || echo "Files are up to date. No new data was committed."
           git push
