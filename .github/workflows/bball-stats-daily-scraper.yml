@@ -30,6 +30,8 @@ jobs:
           Rscript bball-stats/scrapers/FR-scraper.R
           Rscript bball-stats/scrapers/IT-scraper.R
           Rscript bball-stats/scrapers/DE-scraper.R
+          Rscript bball-stats/scrapers/EL-scraper.R
+          Rscript bball-stats/scrapers/EC-scraper.R
 
       - name: Debug - List Files
         run: |
