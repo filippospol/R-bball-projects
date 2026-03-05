@@ -75,10 +75,10 @@ for(i in 1:dim(fixture_info)[1]) {
              LEAGUE=fixture_info$LEAGUE %>% unique(),MATCHUP=fixture_info$MATCHUP[i],
              PLAYER = str_replace(PLAYER, "^(.*),\\s*(.*)$", "\\2 \\1"),
              MINUTES = round(period_to_seconds(ms(MINUTES)) / 60)) %>% 
-      select(GAME_ID,SEASON,LEAGUE,PLAYER,TEAM,MATCHUP,MIN=MINUTES,PTS=POINTS,FG2M=FIELD_GOALS_MADE2,
-             FG2A=FIELD_GOALS_ATTEMPTED2,FG3M=FIELD_GOALS_MADE3,FG3A=FIELD_GOALS_ATTEMPTED3,FTM=FREE_THROWS_MADE,
+      select(GAME_ID,SEASON,LEAGUE,PLAYER,TEAM,MATCHUP,MIN=MINUTES,PTS=POINTS,`2PM`=FIELD_GOALS_MADE2,
+             `2PA`=FIELD_GOALS_ATTEMPTED2,`3PM`=FIELD_GOALS_MADE3,`3PA`=FIELD_GOALS_ATTEMPTED3,FTM=FREE_THROWS_MADE,
              FTA=FREE_THROWS_ATTEMPTED,OREB=OFFENSIVE_REBOUNDS,DREB=DEFENSIVE_REBOUNDS,REB=TOTAL_REBOUNDS,AST=ASSISTANCES,STL=STEALS,
-             TOV=TURNOVERS,BLK=BLOCKS_FAVOUR,BLKD=BLOCKS_AGAINST,PF=FOULS_COMMITED) %>% 
+             TOV=TURNOVERS,BLK=BLOCKS_FAVOUR,PF=FOULS_COMMITED) %>% 
       filter(!is.na(MIN))
   )
   
@@ -89,8 +89,8 @@ for(i in 1:dim(fixture_info)[1]) {
              CODE=c(fixture_info$HOME_CODE[i],fixture_info$AWAY_CODE[i]),
              MATCHUP=fixture_info$MATCHUP[i]) %>% 
       clean_names("all_caps") %>% 
-      select(TEAM,CODE,MATCHUP,PTS=POINTS,FG2M=FIELD_GOALS_MADE2,
-             FG2A=FIELD_GOALS_ATTEMPTED2,FG3M=FIELD_GOALS_MADE3,FG3A=FIELD_GOALS_ATTEMPTED3,FTM=FREE_THROWS_MADE,
+      select(TEAM,CODE,MATCHUP,PTS=POINTS,`2PM`=FIELD_GOALS_MADE2,
+             `2PA`=FIELD_GOALS_ATTEMPTED2,`3PM`=FIELD_GOALS_MADE3,`3PA`=FIELD_GOALS_ATTEMPTED3,FTM=FREE_THROWS_MADE,
              FTA=FREE_THROWS_ATTEMPTED,OREB=OFFENSIVE_REBOUNDS,DREB=DEFENSIVE_REBOUNDS,REB=TOTAL_REBOUNDS,AST=ASSISTANCES,STL=STEALS,
              TOV=TURNOVERS,BLK=BLOCKS_FAVOUR,BLKD=BLOCKS_AGAINST,PF=FOULS_COMMITED)
   )
@@ -101,5 +101,6 @@ rm(list=setdiff(ls(),c("PP","TT")))
 # beepr::beep()
 # write files in .csv format
 write.csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/EC-players.csv")
+
 
 write.csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/EC-teams.csv")
