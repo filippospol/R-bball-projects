@@ -252,11 +252,12 @@ for (i in 1:dim(fixture_info)[1]) {
              REB=TOTAL_REBOUNDS,AST=ASSISTS,STL=STEALS,BLK=BLOCKS,
              TOV=TURNOVERS,PF=FOULS_COMMITTED)
   )  
-  print(i)
+  # print(i)
 }
 rm(list=setdiff(ls(),c("PP","TT")))
 
 # beepr::beep()
 # write files in .csv format
 write.csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/DE-players.csv")
+
 write.csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/DE-teams.csv")
