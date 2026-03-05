@@ -79,7 +79,7 @@ for(i in 1:dim(fixture_info)[1]) {
       select(GAME_ID,SEASON,LEAGUE,PLAYER,TEAM,MATCHUP,MIN=MINUTES,PTS=POINTS,`2PM`=FIELD_GOALS_MADE2,
              `2PA`=FIELD_GOALS_ATTEMPTED2,`3PM`=FIELD_GOALS_MADE3,`3PA`=FIELD_GOALS_ATTEMPTED3,FTM=FREE_THROWS_MADE,
              FTA=FREE_THROWS_ATTEMPTED,OREB=OFFENSIVE_REBOUNDS,DREB=DEFENSIVE_REBOUNDS,REB=TOTAL_REBOUNDS,AST=ASSISTANCES,STL=STEALS,
-             TOV=TURNOVERS,BLK=BLOCKS_FAVOUR,BLKD=BLOCKS_AGAINST,PF=FOULS_COMMITED) %>% 
+             TOV=TURNOVERS,BLK=BLOCKS_FAVOUR,PF=FOULS_COMMITED) %>% 
       filter(!is.na(MIN))
   )
   
@@ -105,3 +105,4 @@ write.csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/EL-play
 
 
 write.csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/EL-teams.csv")
+
