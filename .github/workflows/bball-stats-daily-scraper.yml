@@ -2,7 +2,7 @@ name: Basketball Stats App Daily Data Update
 
 on:
   schedule:
-    - cron: '0 22 * * *' 
+    - cron: '0 01 * * *' 
   workflow_dispatch: 
 
 jobs:
