@@ -55,7 +55,7 @@ PP = list()
 TT = list()
 for (i in 1:dim(fixture_info)[1]) {
   
-  if (ymd(fixture_info$GAME_DATE[i])>today()) break
+  if (ymd(fixture_info$GAME_DATE[i])>=today()) break
   
   game_id = fixture_info[i,1]
   # URL (JSON):
@@ -129,5 +129,6 @@ rm(list=setdiff(ls(),c("PP","TT")))
 write.csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/IT-players.csv")
 
 write.csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/IT-teams.csv")
+
 
 
