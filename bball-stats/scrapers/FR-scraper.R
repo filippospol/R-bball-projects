@@ -111,7 +111,7 @@ for (i in 1:length(url_list)) {
   fixture_matchup = paste0(fixture_date,", ",
                            fixture_teamcodes[1]," vs ",fixture_teamcodes[2])
   
-  if (ymd(fixture_date)>today()) break
+  if (ymd(fixture_date)>=today()) break
   
   # Player Stats:
   PP[[i]] = bind_rows(
@@ -191,6 +191,7 @@ rm(list=setdiff(ls(),c("PP","TT")))
 write.csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/FR-players.csv")
 
 write.csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/FR-teams.csv")
+
 
 
 
