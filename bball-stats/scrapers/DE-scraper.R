@@ -174,7 +174,7 @@ PP = list()
 TT = list()
 for (i in 1:dim(fixture_info)[1]) {
   
-  if (ymd(fixture_info$GAME_DATE[i])>today()) break
+  if (ymd(fixture_info$GAME_DATE[i])>=today()) break
   
   res = GET(url = glue("https://www.easycredit-bbl.de/_next/data/{daily_key}/de-DE/spiele/{fixture_info$ID[i]}.json?id={fixture_info$ID[i]}"))
   
@@ -261,3 +261,4 @@ rm(list=setdiff(ls(),c("PP","TT")))
 write.csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/DE-players.csv")
 
 write.csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/DE-teams.csv")
+
