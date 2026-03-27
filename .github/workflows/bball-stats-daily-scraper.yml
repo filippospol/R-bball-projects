@@ -25,13 +25,25 @@ jobs:
         run: |
           Rscript -e 'install.packages(c("dplyr", "purrr", "tidyr", "stringr", "stringi", "httr", "jsonlite", "glue", "janitor", "lubridate","rvest"))'
 
-      - name: Run Scrapers
-        run: |
-          Rscript bball-stats/scrapers/FR-scraper.R
-          Rscript bball-stats/scrapers/IT-scraper.R
-          Rscript bball-stats/scrapers/DE-scraper.R
-          Rscript bball-stats/scrapers/EL-scraper.R
-          Rscript bball-stats/scrapers/EC-scraper.R
+      - name: Pro A Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/FR-scraper.R
+
+      - name: Serie A Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/IT-scraper.R
+
+      - name: BBL Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/DE-scraper.R
+
+      - name: Euroleague Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/EL-scraper.R
+
+      - name: Eurocup Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/EC-scraper.R
 
       - name: Debug - List Files
         run: |
