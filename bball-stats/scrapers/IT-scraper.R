@@ -61,8 +61,6 @@ build_id = fromJSON(next_data_json)$buildId
 PP = list()
 TT = list()
 
-print("Starting boxscore extraction loop...")
-
 for (i in 1:nrow(fixture_info)) {
   
   # Be a polite bot
@@ -91,7 +89,8 @@ for (i in 1:nrow(fixture_info)) {
       PP[[i]] = bind_rows(
         raw_json$pageProps$game$scores$ht$rows %>% as_tibble() %>% clean_names("all_caps") %>%
           rename(MIN2=MIN) %>% mutate(PLAYER=paste0(PLAYER_NAME," ",PLAYER_SURNAME),
-                                      TEAM=fixture_info$H_TEAM_NAME[i],MATCHUP=fixture_info$MATCHUP[i],
+                                      TEAM=stri_trans_general(toupper(fixture_info$H_TEAM_NAME[i]),"latin-ascii"),
+                                      MATCHUP=fixture_info$MATCHUP[i],
                                       MIN=MIN2,PTS=PUN,`2PM`=T2_R,`2PA`=T2_T,`3PM`=T3_R,`3PA`=T3_T,
                                       FTM=TL_R,FTA=TL_T,DREB=RIMBALZI_D,OREB=RIMBALZI_O,REB=RIMBALZI_T,
                                       AST=ASS,STL=PALLE_R,BLK=STOPPATE_DAT,TOV=PALLE_P,PF=FALLI_C,
@@ -99,14 +98,16 @@ for (i in 1:nrow(fixture_info)) {
                                       GAME_ID=fixture_info$GAME_ID[i]),
         raw_json$pageProps$game$scores$vt$rows %>% as_tibble() %>% clean_names("all_caps") %>%
           rename(MIN2=MIN) %>% mutate(PLAYER=paste0(PLAYER_NAME," ",PLAYER_SURNAME),
-                                      TEAM=fixture_info$V_TEAM_NAME[i],MATCHUP=fixture_info$MATCHUP[i],
+                                      TEAM=stri_trans_general(toupper(fixture_info$V_TEAM_NAME[i]),"latin-ascii"),,
+                                      MATCHUP=fixture_info$MATCHUP[i],
                                       MIN=MIN2,PTS=PUN,`2PM`=T2_R,`2PA`=T2_T,`3PM`=T3_R,`3PA`=T3_T,
                                       FTM=TL_R,FTA=TL_T,DREB=RIMBALZI_D,OREB=RIMBALZI_O,REB=RIMBALZI_T,
                                       AST=ASS,STL=PALLE_R,BLK=STOPPATE_DAT,TOV=PALLE_P,PF=FALLI_C,
                                       SEASON=fixture_info$SEASON[i],LEAGUE=fixture_info$LEAGUE[i],
                                       GAME_ID=fixture_info$GAME_ID[i])
       ) %>%
-        select(54,52,53,33:51) %>%
+        select(GAME_ID,SEASON,LEAGUE,PLAYER,TEAM,MATCHUP,MIN,PTS,
+               `2PM`,`2PA`,`3PM`,`3PA`,FTM,FTA,DREB,OREB,REB,AST,STL,TOV,BLK,PF) %>%
         mutate(PLAYER=toupper(as.character(PLAYER)),
                PLAYER = stri_trans_general(PLAYER, "latin-ascii")) %>%
         mutate(MIN=round(MIN)) %>%
@@ -115,12 +116,14 @@ for (i in 1:nrow(fixture_info)) {
       # Team Stats:
       TT[[i]] = bind_rows(
         raw_json$pageProps$game$scores$ht$totals %>% as_tibble() %>% clean_names("all_caps") %>%
-          mutate(TEAM=fixture_info$H_TEAM_NAME[i],CODE=fixture_info$H_CLUB_CODE[i], MATCHUP=fixture_info$MATCHUP[i]) %>%
+          mutate(TEAM=stri_trans_general(toupper(fixture_info$H_TEAM_NAME[i]),"latin-ascii"),,
+                 CODE=fixture_info$H_CLUB_CODE[i], MATCHUP=fixture_info$MATCHUP[i]) %>%
           select(TEAM,CODE,MATCHUP, PTS=PUN,`2PM`=T2_R,`2PA`=T2_T,`3PM`=T3_R,`3PA`=T3_T,
                  FTM=TL_R,FTA=TL_T,DREB=RIMBALZI_D,OREB=RIMBALZI_O,REB=RIMBALZI_T,
                  AST=ASS,STL=PALLE_R,BLK=STOPPATE_DAT,TOV=PALLE_P,PF=FALLI_C),
         raw_json$pageProps$game$scores$vt$totals %>% as_tibble() %>% clean_names("all_caps") %>%
-          mutate(TEAM=fixture_info$V_TEAM_NAME[i],CODE=fixture_info$V_CLUB_CODE[i], MATCHUP=fixture_info$MATCHUP[i]) %>%
+          mutate(TEAM=stri_trans_general(toupper(fixture_info$V_TEAM_NAME[i]),"latin-ascii"),,
+                 CODE=fixture_info$V_CLUB_CODE[i], MATCHUP=fixture_info$MATCHUP[i]) %>%
           select(TEAM,CODE,MATCHUP, PTS=PUN,`2PM`=T2_R,`2PA`=T2_T,`3PM`=T3_R,`3PA`=T3_T,
                  FTM=TL_R,FTA=TL_T,DREB=RIMBALZI_D,OREB=RIMBALZI_O,REB=RIMBALZI_T,
                  AST=ASS,STL=PALLE_R,BLK=STOPPATE_DAT,TOV=PALLE_P,PF=FALLI_C)
