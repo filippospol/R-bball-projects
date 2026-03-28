@@ -218,7 +218,9 @@ for (i in 1:dim(fixture_info)[1]) {
     mutate(MIN=round(MIN)) %>% 
     # if minutes is NA, player DNP so remove that row altogether?
     filter(!is.na(MIN)) %>% 
-    mutate_at(7:22, as.numeric)
+    mutate_at(7:22, as.numeric) %>%
+      mutate(across(any_of(c("TEAM", "PLAYER")), 
+                     ~ stri_trans_general(.x, "latin-ascii")))
   # homeTeam = homeBox$TEAM %>% unique() ; homeCode = homeBox$CODE %>% unique()
   # awayTeam = awayBox$TEAM %>% unique() ; awayCode = awayBox$CODE %>% unique()
   homeTeam = homeBox$TEAM[1] ; homeCode = homeBox$CODE[1]
@@ -251,7 +253,9 @@ for (i in 1:dim(fixture_info)[1]) {
              DREB=DEFENSIVE_REBOUNDS,OREB=OFFENSIVE_REBOUNDS,
              REB=TOTAL_REBOUNDS,AST=ASSISTS,STL=STEALS,BLK=BLOCKS,
              TOV=TURNOVERS,PF=FOULS_COMMITTED)
-  )  
+  )  %>%
+      mutate(across(any_of(c("TEAM")), 
+                     ~ stri_trans_general(.x, "latin-ascii")))
   # print(i)
 }
 rm(list=setdiff(ls(),c("PP","TT")))
