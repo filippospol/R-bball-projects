@@ -11,6 +11,7 @@
 library(dplyr)
 library(purrr)
 library(tidyr)
+library(readr)
 library(stringr)
 library(stringi)
 library(httr)
@@ -126,7 +127,7 @@ for (i in 1:length(url_list)) {
       select(GAME_ID,SEASON,LEAGUE,PLAYER=PERSON_NAME,TEAM,MATCHUP,
              MIN=MINUTES,PTS=POINTS,`2PM`=POINTS_TWO_MADE,`2PA`=POINTS_TWO_ATTEMPTED,
              `3PM`=POINTS_THREE_MADE,`3PA`=POINTS_THREE_ATTEMPTED,
-             FTA=FREE_THROWS_MADE,FTM=FREE_THROWS_ATTEMPTED,DREB=REBOUNDS_DEFENSIVE,
+             FTA=FREE_THROWS_ATTEMPTED,FTM=FREE_THROWS_MADE,DREB=REBOUNDS_DEFENSIVE,
              OREB=REBOUNDS_OFFENSIVE,REB=REBOUNDS,AST=ASSISTS,STL=STEALS,BLK=BLOCKS,
              TOV=TURNOVERS,PF=FOULS_TOTAL) %>% 
       mutate(MIN=gsub("S","",gsub("M",":",gsub("PT","",MIN)))) %>% 
@@ -144,7 +145,7 @@ for (i in 1:length(url_list)) {
       select(GAME_ID,SEASON,LEAGUE,PLAYER=PERSON_NAME,TEAM,MATCHUP,
              MIN=MINUTES,PTS=POINTS,`2PM`=POINTS_TWO_MADE,`2PA`=POINTS_TWO_ATTEMPTED,
              `3PM`=POINTS_THREE_MADE,`3PA`=POINTS_THREE_ATTEMPTED,
-             FTA=FREE_THROWS_MADE,FTM=FREE_THROWS_ATTEMPTED,DREB=REBOUNDS_DEFENSIVE,
+             FTA=FREE_THROWS_ATTEMPTED,FTM=FREE_THROWS_MADE,DREB=REBOUNDS_DEFENSIVE,
              OREB=REBOUNDS_OFFENSIVE,REB=REBOUNDS,AST=ASSISTS,STL=STEALS,BLK=BLOCKS,
              TOV=TURNOVERS,PF=FOULS_TOTAL) %>% 
       mutate(MIN=gsub("S","",gsub("M",":",gsub("PT","",MIN)))) %>% 
@@ -156,7 +157,8 @@ for (i in 1:length(url_list)) {
            PLAYER = stri_trans_general(PLAYER, "latin-ascii")) %>% 
     mutate(MIN=round(MIN)) %>% 
     # if minutes is NA, player DNP so remove that row altogether?
-    filter(!is.na(MIN))
+    filter(!is.na(MIN)) %>% 
+    mutate(TEAM = stri_trans_general(toupper(as.character(TEAM)),"latin-ascii"))
   
   # Team Stats:
   TT[[i]] = bind_rows(
@@ -168,7 +170,7 @@ for (i in 1:length(url_list)) {
       select(TEAM,CODE,MATCHUP,
              PTS=POINTS,`2PM`=POINTS_TWO_MADE,`2PA`=POINTS_TWO_ATTEMPTED,
              `3PM`=POINTS_THREE_MADE,`3PA`=POINTS_THREE_ATTEMPTED,
-             FTA=FREE_THROWS_MADE,FTM=FREE_THROWS_ATTEMPTED,DREB=REBOUNDS_DEFENSIVE,
+             FTA=FREE_THROWS_ATTEMPTED,FTM=FREE_THROWS_MADE,DREB=REBOUNDS_DEFENSIVE,
              OREB=REBOUNDS_OFFENSIVE,REB=REBOUNDS,AST=ASSISTS,STL=STEALS,BLK=BLOCKS,
              TOV=TURNOVERS,PF=FOULS_TOTAL),
     raw_json$data$statistics$data$base$away$entity %>% 
@@ -179,19 +181,16 @@ for (i in 1:length(url_list)) {
       select(TEAM,CODE,MATCHUP,
              PTS=POINTS,`2PM`=POINTS_TWO_MADE,`2PA`=POINTS_TWO_ATTEMPTED,
              `3PM`=POINTS_THREE_MADE,`3PA`=POINTS_THREE_ATTEMPTED,
-             FTA=FREE_THROWS_MADE,FTM=FREE_THROWS_ATTEMPTED,DREB=REBOUNDS_DEFENSIVE,
+             FTA=FREE_THROWS_ATTEMPTED,FTM=FREE_THROWS_MADE,DREB=REBOUNDS_DEFENSIVE,
              OREB=REBOUNDS_OFFENSIVE,REB=REBOUNDS,AST=ASSISTS,STL=STEALS,BLK=BLOCKS,
              TOV=TURNOVERS,PF=FOULS_TOTAL)  
-  )
+  ) %>% 
+    mutate(TEAM = stri_trans_general(toupper(as.character(TEAM)),"latin-ascii"))
 }
 rm(list=setdiff(ls(),c("PP","TT")))
 
 # beepr::beep()
 # write files in .csv format
-write.csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/FR-players.csv")
+write_csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/FR-players.csv")
 
-write.csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/FR-teams.csv")
-
-
-
-
+write_csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/FR-teams.csv")
