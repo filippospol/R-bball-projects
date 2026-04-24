@@ -28,7 +28,7 @@ library(rvest)
 # 180 RS games
 # Eight-finals (elimination games to advance to the playoffs)
 # playoffs: best of 3 series
-league="Eurocup" ; season = "2025-26" ; scode = "U2025" ; games_n = (19*10)+6
+league="Eurocup" ; season = "2025-26" ; scode = "U2025" ; games_n = (19*10)+4
 
 GG = list()
 for (i in 1:games_n) {
