@@ -29,7 +29,7 @@ library(rvest)
 # 3 play-in games
 # playoffs: best of 5 series
 # final four: semi finals and first place game
-league="Euroleague" ; season = "2025-26" ; scode = "E2025" ; games_n = (38*10)+7
+league="Euroleague" ; season = "2025-26" ; scode = "E2025" ; games_n = (38*10)+23
 
 GG = list()
 for (i in 1:games_n) {
