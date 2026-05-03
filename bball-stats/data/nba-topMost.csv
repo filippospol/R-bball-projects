@@ -1,9 +1,9 @@
 PLAYER,TEAM,GAMES,PTS,REB,AST,3PM,STL,BLK
 Cade Cunningham,DET,6,195,39,38,17,6,4
+Tyrese Maxey,PHI,7,188,34,46,23,7,4
+Jaylen Brown,BOS,7,180,40,23,17,6,8
 Jalen Brunson,NYK,6,158,15,37,14,6,0
-Tyrese Maxey,PHI,6,158,23,39,21,7,4
 Nikola Jokić,DEN,6,155,79,57,7,6,5
-Jaylen Brown,BOS,6,147,31,19,14,6,5
 Paolo Banchero,ORL,6,146,54,38,10,10,4
 RJ Barrett,TOR,6,146,45,22,16,6,2
 Scottie Barnes,TOR,6,145,34,54,7,8,11
@@ -15,36 +15,37 @@ Shai Gilgeous-Alexander,OKC,4,135,15,32,5,2,3
 OG Anunoby,NYK,6,129,52,7,17,11,7
 James Harden,CLE,6,126,31,40,17,12,4
 Alperen Sengun,HOU,6,122,61,28,1,11,8
+Paul George,PHI,7,122,28,21,22,10,3
 Tobias Harris,DET,6,121,48,7,6,8,5
 Jalen Johnson,ATL,6,117,46,31,9,5,2
 Amen Thompson,HOU,6,115,42,34,2,12,7
 CJ McCollum,ATL,6,115,18,12,10,6,7
 Julius Randle,MIN,6,115,44,25,6,2,1
 Evan Mobley,CLE,6,114,53,20,8,5,6
+Joel Embiid,PHI,4,112,36,28,3,2,3
 Karl-Anthony Towns,NYK,6,112,68,36,8,10,10
 Deni Avdija,POR,5,111,30,23,7,2,3
 Desmond Bane,ORL,6,111,30,10,22,11,1
 Ayo Dosunmu,MIN,5,109,14,20,12,2,1
-Paul George,PHI,6,109,25,20,19,10,3
 Jaden McDaniels,MIN,6,107,41,16,2,3,4
+VJ Edgecombe,PHI,7,106,48,21,15,7,3
 Jabari Smith Jr.,HOU,6,105,51,11,19,6,4
 Dillon Brooks,PHX,4,104,24,7,14,1,1
+Payton Pritchard,BOS,7,102,26,36,17,3,0
 De'Aaron Fox,SAS,5,101,20,34,10,5,2
 Stephon Castle,SAS,5,99,20,30,11,4,2
 Rui Hachimura,LAL,6,95,24,7,17,6,4
 Collin Murray-Boyles,TOR,6,93,41,14,0,7,7
-Payton Pritchard,BOS,6,89,21,29,15,2,0
 Marcus Smart,LAL,6,88,22,33,13,16,10
 Jalen Green,PHX,4,87,21,14,7,8,1
 Cameron Johnson,DEN,6,85,19,14,11,6,2
 Devin Booker,PHX,4,85,17,19,5,1,1
 Victor Wembanyama,SAS,4,84,35,8,7,4,16
 Tari Eason,HOU,6,83,40,10,10,15,4
-VJ Edgecombe,PHI,6,83,42,17,10,7,3
 Jonathan Kuminga,ATL,6,82,20,6,5,3,3
 Jrue Holiday,POR,5,82,27,36,12,7,2
 Nickeil Alexander-Walker,ATL,6,82,14,16,18,3,5
-Joel Embiid,PHI,3,78,24,22,2,2,2
+Derrick White,BOS,7,78,23,22,15,6,10
 Luke Kennard,LAL,6,75,25,18,10,6,1
 Onyeka Okongwu,ATL,6,75,40,14,10,7,5
 Scoot Henderson,POR,5,75,8,6,13,4,1
@@ -55,7 +56,9 @@ Deandre Ayton,LAL,6,71,65,6,0,1,6
 Chet Holmgren,OKC,4,69,34,5,7,5,8
 Franz Wagner,ORL,4,67,22,14,3,11,1
 Ja'Kobe Walter,TOR,6,65,20,8,14,11,1
+Kelly Oubre Jr.,PHI,7,65,42,8,4,3,4
 Naz Reid,MIN,6,65,42,12,7,3,1
+Neemias Queta,BOS,7,65,60,4,0,1,6
 Tim Hardaway Jr.,DEN,6,65,20,5,8,4,2
 Wendell Carter Jr.,ORL,6,64,44,18,4,4,11
 Devin Vassell,SAS,5,63,29,12,8,7,6
@@ -67,18 +70,16 @@ Brandon Ingram,TOR,5,60,16,11,5,3,4
 Max Strus,CLE,6,60,28,11,12,2,0
 Mikal Bridges,NYK,6,60,12,10,6,3,1
 Jalen Duren,DET,6,59,51,12,0,2,9
-Kelly Oubre Jr.,PHI,6,59,37,6,4,3,4
 Jarrett Allen,CLE,6,58,39,4,0,7,13
+Sam Hauser,BOS,7,54,30,6,16,1,1
 Ausar Thompson,DET,6,52,57,18,0,14,14
-Derrick White,BOS,6,52,17,18,10,6,7
 Jerami Grant,POR,5,52,9,2,5,5,1
 Julian Champagnie,SAS,5,51,25,6,13,6,3
 Christian Braun,DEN,6,50,21,10,6,6,5
+Quentin Grimes,PHI,7,50,24,16,8,1,4
 Anthony Black,ORL,6,49,17,9,7,10,5
 Jamal Shead,TOR,6,49,11,28,12,10,1
-Neemias Queta,BOS,6,48,48,3,0,1,6
 Robert Williams III,POR,5,48,37,13,3,3,6
-Quentin Grimes,PHI,6,47,18,12,8,1,4
 Jordan Clarkson,NYK,6,46,9,4,0,1,0
 Rudy Gobert,MIN,6,46,64,18,0,8,7
 Dennis Schröder,CLE,6,44,8,9,4,3,1
@@ -86,7 +87,6 @@ Dyson Daniels,ATL,6,44,37,30,4,11,2
 Isaiah Hartenstein,OKC,4,44,33,8,0,3,4
 Bones Hyland,MIN,6,43,9,11,8,3,0
 Donte DiVincenzo,MIN,4,43,15,16,11,7,0
-Sam Hauser,BOS,6,43,27,5,13,1,1
 Collin Gillespie,PHX,4,42,20,15,10,5,1
 Terrence Shannon Jr.,MIN,3,42,7,1,4,2,0
 Jalen Williams,OKC,2,41,8,10,4,2,1
@@ -106,12 +106,12 @@ Donovan Clingan,POR,5,35,39,11,5,1,3
 Miles McBride,NYK,6,35,7,5,11,4,0
 Toumani Camara,POR,5,35,27,6,7,7,3
 Aaron Gordon,DEN,3,34,16,7,3,0,1
-Andre Drummond,PHI,6,33,30,5,4,2,2
+Andre Drummond,PHI,7,33,31,6,4,2,2
 Daniss Jenkins,DET,6,31,9,13,3,1,2
 Keldon Johnson,SAS,5,31,22,7,5,5,1
-Luka Garza,BOS,6,31,12,6,4,0,0
+Luka Garza,BOS,7,31,12,6,4,0,1
 Royce O'Neale,PHX,4,31,25,9,8,2,1
-Baylor Scheierman,BOS,6,30,14,2,8,5,1
+Baylor Scheierman,BOS,7,30,20,4,8,6,1
 Oso Ighodaro,PHX,4,30,28,16,0,2,3
 Isaiah Stewart,DET,6,29,20,1,2,1,13
 Jaxson Hayes,LAL,6,29,16,3,0,2,7
@@ -137,15 +137,15 @@ Aaron Holiday,HOU,6,16,2,3,4,2,1
 Carter Bryant,SAS,5,16,11,7,4,0,3
 Jaylin Williams,OKC,4,16,11,5,4,5,3
 Jeremy Sochan,NYK,2,14,1,0,1,1,0
-Justin Edwards,PHI,5,14,19,3,2,0,1
+Justin Edwards,PHI,6,14,19,3,2,0,1
 Caris LeVert,DET,6,13,13,6,1,0,3
 Jared McCain,OKC,4,12,4,1,1,0,0
-Jordan Walsh,BOS,6,12,18,7,2,4,2
+Jordan Walsh,BOS,7,12,18,7,2,4,2
 Corey Kispert,ATL,5,11,8,6,1,2,0
 Harrison Barnes,SAS,5,11,4,1,0,0,0
 Jonas Valančiūnas,DEN,4,11,9,1,0,0,1
 Landry Shamet,NYK,6,11,2,2,3,0,0
-Ron Harper Jr.,BOS,5,11,4,1,3,1,0
+Ron Harper Jr.,BOS,6,11,4,1,3,3,0
 Sidy Cissoko,POR,4,11,5,1,2,4,0
 Tony Bradley,ATL,4,11,11,3,1,2,3
 Zaccharie Risacher,ATL,3,11,9,0,1,0,0
@@ -167,7 +167,7 @@ Tyler Kolek,NYK,3,8,2,5,0,0,1
 Matisse Thybulle,POR,4,7,8,4,1,3,3
 Aaron Wiggins,OKC,3,6,3,5,0,0,0
 Clint Capela,HOU,4,6,7,1,0,0,1
-Dominick Barlow,PHI,4,6,8,0,0,0,2
+Dominick Barlow,PHI,5,6,8,0,0,0,2
 Jase Richardson,ORL,1,6,0,0,2,0,0
 Julian Strawther,DEN,2,6,3,0,1,0,0
 Keaton Wallace,ATL,3,6,3,3,0,1,0
@@ -210,7 +210,7 @@ DaRon Holmes II,DEN,2,0,2,0,0,0,0
 Garrett Temple,TOR,1,0,0,1,0,0,0
 Gradey Dick,TOR,2,0,1,0,0,0,0
 Haywood Highsmith,PHX,2,0,3,1,0,0,0
-Hugo González,BOS,3,0,1,2,0,0,1
+Hugo González,BOS,4,0,4,2,0,0,1
 Jeff Green,HOU,2,0,0,0,0,0,0
 Jett Howard,ORL,1,0,0,0,0,0,0
 Joe Ingles,MIN,2,0,0,0,0,0,0
