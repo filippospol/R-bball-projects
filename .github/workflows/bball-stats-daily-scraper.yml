@@ -37,13 +37,13 @@ jobs:
         continue-on-error: true
         run: Rscript bball-stats/scrapers/DE-scraper.R
 
-      - name: Euroleague Scraper
-        continue-on-error: true
-        run: Rscript bball-stats/scrapers/EL-scraper.R
+     # - name: Euroleague Scraper
+     #   continue-on-error: true
+     #   run: Rscript bball-stats/scrapers/EL-scraper.R
 
-      - name: Eurocup Scraper
-        continue-on-error: true
-        run: Rscript bball-stats/scrapers/EC-scraper.R
+     # - name: Eurocup Scraper
+     #   continue-on-error: true
+     #   run: Rscript bball-stats/scrapers/EC-scraper.R
 
       - name: Debug - List Files
         run: |
