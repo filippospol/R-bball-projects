@@ -1,12 +1,3 @@
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-#
-# This script extracts box-score data for the French Pro A basketball league. 
-# Author: Filippos Polyzos
-#
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 #' *LOAD LIBRARIES*
 library(dplyr)
 library(purrr)
@@ -53,37 +44,44 @@ competition_end_dates = c(
   "2026-02-28","2026-03-31","2026-04-30","2026-05-31","2026-06-30"
 )
 
+# 302 = Regular Season, 308 = Playoffs
+competition_ids = c(302, 308)
+
 url_list = c(NA)
-for (i in 1:8) {
-  data = paste0('{"competition_external_id":302,"start_date":"',
-                competition_start_dates[i],
-                '","end_date":"',
-                competition_end_dates[i],
-                '"}')
-  
-  res = httr::POST(url = "https://api-prod.lnb.fr/match/getCalendar", httr::add_headers(.headers=headers)
-                   , body = data
-  )
-  
-  raw_calendar = fromJSON(content(res, "text", encoding = "UTF-8"))
-  
-  url_list = c(url_list,
-               suppressWarnings(
-                 raw_calendar$data %>% 
-                   data.frame() %>% 
-                   as_tibble() %>% 
-                   unnest() %>% 
-                   pull(match_id) %>% 
-                   unique()
-               )
-  )
+
+for (comp_id in competition_ids) {
+  for (i in 1:10) {
+
+    data = paste0('{"competition_external_id":', comp_id, ',"start_date":"',
+                  competition_start_dates[i],
+                  '","end_date":"',
+                  competition_end_dates[i],
+                  '"}')
+    
+    res = httr::POST(url = "https://api-prod.lnb.fr/match/getCalendar", httr::add_headers(.headers=headers)
+                     , body = data
+    )
+    
+    raw_calendar = fromJSON(content(res, "text", encoding = "UTF-8"))
+    
+    if (length(raw_calendar$data) > 0) {
+      url_list = c(url_list,
+                   suppressWarnings(
+                     raw_calendar$data %>% 
+                       data.frame() %>% 
+                       as_tibble() %>% 
+                       unnest() %>% 
+                       pull(match_id) %>% 
+                       unique()
+                   )
+      )
+    }
+  }
 }
 
-# Keep only the match ids:
-url_list=url_list[-1]
-rm(list=setdiff(ls(),"url_list"))
-
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Keep only the match ids and ensure no accidental duplicates:
+url_list = url_list[-1]
+url_list = unique(url_list)
 
 #' *LOOP OVER MATCH ID'S AND GET BOXSCORES*
 
