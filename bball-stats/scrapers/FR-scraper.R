@@ -45,7 +45,7 @@ competition_end_dates = c(
 )
 
 # 302 = Regular Season, 308 = Playoffs
-competition_ids = c(302, 308)
+competition_ids = c(0)
 
 url_list = c(NA)
 
@@ -70,7 +70,8 @@ for (comp_id in competition_ids) {
                      raw_calendar$data %>% 
                        data.frame() %>% 
                        as_tibble() %>% 
-                       unnest() %>% 
+                       unnest() %>%
+                       filter(str_detect(competition_abbrev,"PROA")) %>%
                        pull(match_id) %>% 
                        unique()
                    )
@@ -82,6 +83,7 @@ for (comp_id in competition_ids) {
 # Keep only the match ids and ensure no accidental duplicates:
 url_list = url_list[-1]
 url_list = unique(url_list)
+rm(list=setdiff(ls(),"url_list"))
 
 #' *LOOP OVER MATCH ID'S AND GET BOXSCORES*
 
@@ -101,6 +103,10 @@ for (i in 1:length(url_list)) {
   raw_json = suppressMessages(
     fromJSON(content(fixture_url, "text"))
   )
+  
+  if (
+    raw_json$data$banner$competition$name %>% pluck(1) %>% stri_trans_general("latin-ascii") %>% str_detect("Betclic ELITE") == FALSE
+  ) next 
   
   # Fixture info:
   fixture_id = raw_json$data$banner$fixture$id
