@@ -11,7 +11,6 @@
 library(dplyr)
 library(purrr)
 library(tidyr)
-library(readr)
 library(stringr)
 library(stringi)
 library(httr)
