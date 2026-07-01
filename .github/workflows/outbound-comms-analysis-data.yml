@@ -23,7 +23,7 @@ jobs:
 
       - name: Install R Libraries
         run: |
-          Rscript -e 'install.packages(c("dplyr","readr","googlesheets4","tidyr"))'
+          Rscript -e 'install.packages(c("dplyr","readr","googlesheets4","tidyr","purrr","lubridate"))'
 
       - name: Data Cleaner
         continue-on-error: true
