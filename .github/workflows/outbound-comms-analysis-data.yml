@@ -6,7 +6,7 @@ on:
   workflow_dispatch: 
 
 jobs:
-  run-scrapers:
+  run-data-cleaner:
     runs-on: macos-latest
     permissions:
       contents: write 
@@ -23,7 +23,7 @@ jobs:
 
       - name: Install R Libraries
         run: |
-          Rscript -e 'install.packages(c("dplyr","readr","googlesheets4"))'
+          Rscript -e 'install.packages(c("dplyr","readr","googlesheets4","tidyr"))'
 
       - name: Data Cleaner
         continue-on-error: true
