@@ -15,6 +15,7 @@ library(googlesheets4)
 library(readr)
 library(dplyr)
 library(tidyr)
+library(purrr)
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #' [ =============== ACCESS SHEET =============== ]
