@@ -42,5 +42,5 @@ jobs:
           git config --global user.email "action@github.com"
           # -A stages EVERYTHING that changed, making it bulletproof
           git add -A
-          git commit -m "Updated data on: $(date +'%Y-%m-%d')" || echo "Files are up to date. No new data was committed."
+          git commit -m "Updated Outbound lists on: $(date +'%Y-%m-%d')" || echo "Files are up to date. No new data was committed."
           git push
