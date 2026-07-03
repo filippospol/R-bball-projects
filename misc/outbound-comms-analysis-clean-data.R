@@ -17,6 +17,7 @@ library(lubridate)
 library(readr)
 library(purrr)
 library(tidyr)
+library(stringr)
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #' [ =============== ACCESS SHEET =============== ]
