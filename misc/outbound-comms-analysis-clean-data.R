@@ -59,23 +59,26 @@ load_sheet = function(sheet_num, sheet_name) {
     filter(Username != "Username")
   
   # showNotification(paste("✅ Loaded", sheet_name), type = "message", duration = 3)
-  # print(paste("Successfully loaded", sheet_name))
+  print(paste("Successfully loaded", sheet_name))
   Sys.sleep(1)
   return(df)
 }
 
 # Function that imports data:
-raw_outbound_data = bind_rows(
-  load_sheet(3, "Close Accounts"),
-  load_sheet(4, "KYC"),
-  load_sheet(5, "GR Non Dep"),
-  load_sheet(6, "Self Exclusion"),
-  load_sheet(11, "Reactivation 60"),
-  load_sheet(7, "VIP Close Account"),
-  load_sheet(8, "VIP Day 10 Avg Dep >100"),
-  load_sheet(9, "VIP Day 10 Avg Dep <100"),
-  load_sheet(10, "VIP Day 30"),
-  load_sheet(12, "World Cup 2026")
+
+raw_outbound_data = suppressWarnings(
+  bind_rows(
+    load_sheet(3, "Close Accounts"),
+    load_sheet(4, "KYC"),
+    load_sheet(5, "GR Non Dep"),
+    load_sheet(6, "Self Exclusion"),
+    load_sheet(11, "Reactivation 60"),
+    load_sheet(7, "VIP Close Account"),
+    load_sheet(8, "VIP Day 10 Avg Dep >100"),
+    load_sheet(9, "VIP Day 10 Avg Dep <100"),
+    load_sheet(10, "VIP Day 30"),
+    load_sheet(12, "World Cup 2026")
+  )
 )
 
 clean_outbound_data = raw_outbound_data %>% 
@@ -90,7 +93,9 @@ clean_outbound_data = raw_outbound_data %>%
     `Agent's Gender` = ifelse(is.na(`Agent's Gender`), "-", `Agent's Gender`),
     Agent = ifelse(is.na(Agent), "-", Agent),
     `Date of Call` = format(as.Date(`Date of Call`), "%d-%b-%Y"),
-    `Time of Call` = ifelse(is.na(`Time of Call`), "-", format(`Time of Call`, "%H:%M")),
+    `Time of Call`=str_sub(`Time of Call`,-8),
+    `Time of Call` = ifelse(is.na(`Time of Call`), "-",
+                            format(as.POSIXct(`Time of Call`, format="%H:%M:%S"), "%H:%M")),
     `Month of Call` = format(dmy(`Date of Call`), "%Y-%m"),
     Attitude = ifelse(is.na(Attitude), "-", Attitude),
     Reason = ifelse(is.na(Reason), "-", Reason),
