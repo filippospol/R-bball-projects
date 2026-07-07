@@ -69,6 +69,7 @@ load_sheet = function(sheet_num, sheet_name) {
 
 raw_outbound_data = suppressWarnings(
   bind_rows(
+    load_sheet(2, "GR HGC"),
     load_sheet(3, "Close Accounts"),
     load_sheet(4, "KYC"),
     load_sheet(5, "GR Non Dep"),
