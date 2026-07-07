@@ -54,9 +54,10 @@ load_sheet = function(sheet_num, sheet_name) {
       Comments = map(Comments, as.character),
       `Profile ID` = map(`Profile ID`, as.character),
       `Date of Call` = map(`Date of Call`, as.character),
-      `Time of Call` = map(`Time of Call`, as.character)
+      `Time of Call` = map(`Time of Call`, as.character),
+      `Promo Code Credited` = map(`Promo Code Credited`, as.character) 
     ) %>%
-    unnest(cols = c(Username, Comments, `Profile ID`,`Date of Call`,`Time of Call`), keep_empty = TRUE) %>%
+    unnest(cols = c(Username, Comments, `Profile ID`,`Date of Call`,`Time of Call`,`Promo Code Credited`), keep_empty = TRUE) %>%
     filter(Username != "Username")
   
   # showNotification(paste("✅ Loaded", sheet_name), type = "message", duration = 3)
