@@ -113,7 +113,7 @@ clean_outbound_data = raw_outbound_data %>%
     Response = ifelse(is.na(Response), "-", Response) %>% toupper(),
     `Response 2nd attempt` = ifelse(is.na(`Response 2nd attempt`), "-", `Response 2nd attempt`) %>% toupper()
   ) %>% 
-  filter((`Month of Call` %in% c("2026-05","2026-06", "2026-07"))) %>% 
+  filter((`Month of Call` %in% c("2026-05","2026-06", "2026-07", "2026-08", "2026-09"))) %>% 
   select(c(1:12, 24, 13:23))
 
 write_csv(clean_outbound_data,"misc/outbound-clean-data.csv")
