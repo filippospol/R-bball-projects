@@ -36,13 +36,7 @@ outbound_url = "https://docs.google.com/spreadsheets/d/1hBLcuMiPDyy-z0av1d-gKaRK
 # Function that imports data:
 load_sheet = function(sheet_num, sheet_name) {
   df = suppressMessages(read_sheet(outbound_url, sheet = sheet_num))
-  
-  if (sheet_num == 5) {
-    df = df %>%
-      select(-9) %>%
-      rename(`Agent's Gender` = 8)
-  }
-  
+
   if (sheet_num == 12) {
     df = df %>% 
       mutate(Campaign = paste0("WC 2026 - ", Campaign))
@@ -55,12 +49,14 @@ load_sheet = function(sheet_num, sheet_name) {
       `Profile ID` = map(`Profile ID`, as.character),
       `Date of Call` = map(`Date of Call`, as.character),
       `Time of Call` = map(`Time of Call`, as.character),
-      `Promo Code Credited` = map(`Promo Code Credited`, as.character) 
+      `Promo Code Credited` = map(`Promo Code Credited`, as.character),
+      Feedback = map(Feedback, as.character),
+      Loyalty = map(Loyalty, as.character)
     ) %>%
-    unnest(cols = c(Username, Comments, `Profile ID`,`Date of Call`,`Time of Call`,`Promo Code Credited`), keep_empty = TRUE) %>%
+    unnest(cols = c(Username, Comments, `Profile ID`,`Date of Call`,`Time of Call`,
+                    `Promo Code Credited`,Feedback,Loyalty), keep_empty = TRUE) %>%
     filter(Username != "Username")
   
-  # showNotification(paste("✅ Loaded", sheet_name), type = "message", duration = 3)
   print(paste("Successfully loaded", sheet_name))
   Sys.sleep(1)
   return(df)
@@ -86,10 +82,9 @@ raw_outbound_data = suppressWarnings(
 
 clean_outbound_data = raw_outbound_data %>% 
   mutate(
-    `Email Ban` = ifelse(is.na(`Email Ban`), "No", `Email Ban`),
-    `Account Manager(VIP) / Black List` = ifelse(is.na(`Account Manager(VIP) / Black List`), "NONE", `Account Manager(VIP) / Black List`)
+    `Email Ban` = ifelse(is.na(`Email Ban`), "NO", toupper(`Email Ban`)),
+    `Account Manager(VIP) / Black List` = ifelse(is.na(`Account Manager(VIP) / Black List`), "NO", `Account Manager(VIP) / Black List`)
   ) %>% 
-  rename(`VIP Category` = Type, Type = `VIP Category`) %>% 
   mutate(
     `VIP Category` = ifelse(is.na(`VIP Category`), "NON VIP", `VIP Category`),
     Type = ifelse(is.na(Type), "No Type", Type),
@@ -113,7 +108,7 @@ clean_outbound_data = raw_outbound_data %>%
     Response = ifelse(is.na(Response), "-", Response) %>% toupper(),
     `Response 2nd attempt` = ifelse(is.na(`Response 2nd attempt`), "-", `Response 2nd attempt`) %>% toupper()
   ) %>% 
-  filter((`Month of Call` %in% c("2026-05","2026-06", "2026-07", "2026-08", "2026-09"))) %>% 
-  select(c(1:12, 24, 13:23))
+  select(c(1:12, 24, 13:23)) %>% 
+  arrange(dmy(`Date of Call`),`Time of Call`)
 
 write_csv(clean_outbound_data,"misc/outbound-clean-data.csv")
