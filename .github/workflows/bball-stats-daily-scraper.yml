@@ -45,7 +45,11 @@ jobs:
 
       - name: GBL Scraper
         continue-on-error: true
-        run: Rscript bball-stats/scrapers/GR-scraper.R  
+        run: Rscript bball-stats/scrapers/GR-scraper.R
+
+      - name: ACB Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/ES-scraper.R        
 
      # - name: Euroleague Scraper
      #   continue-on-error: true
