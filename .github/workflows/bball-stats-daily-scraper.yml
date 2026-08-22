@@ -7,35 +7,41 @@ on:
 
 jobs:
   run-scrapers:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: write 
     
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required for git pull --rebase to work reliably
 
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true # Uses fast, pre-compiled binaries instead of compiling from source
 
       - name: Install System Dependencies
-        run: brew install curl openssl libxml2 
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-dev libcurl4-openssl-dev libssl-dev
 
       - name: Install R Libraries
         run: |
           Rscript -e 'install.packages(c("dplyr", "purrr", "tidyr", "stringr", "stringi", "httr", "jsonlite", "glue", "janitor", "lubridate","rvest","readr","xml2"))'
 
       # - name: Pro A Scraper
-      #  continue-on-error: true
-      #  run: Rscript bball-stats/scrapers/FR-scraper.R
+      #   continue-on-error: true
+      #   run: Rscript bball-stats/scrapers/FR-scraper.R
 
       # - name: Serie A Scraper
-      #  continue-on-error: true
-      #  run: Rscript bball-stats/scrapers/IT-scraper.R
+      #   continue-on-error: true
+      #   run: Rscript bball-stats/scrapers/IT-scraper.R
 
       #- name: BBL Scraper
-      #  continue-on-error: true
-      #  run: Rscript bball-stats/scrapers/DE-scraper.R
+      #   continue-on-error: true
+      #   run: Rscript bball-stats/scrapers/DE-scraper.R
 
       - name: GBL Scraper
         continue-on-error: true
@@ -60,7 +66,7 @@ jobs:
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          # -A stages EVERYTHING that changed, making it bulletproof
-          git add -A
-          git commit -m "Updated data on: $(date +'%Y-%m-%d')" || echo "Files are up to date. No new data was committed."
-          git push
+          git add .
+          git commit -m "Updated data on: $(date +'%Y-%m-%d')" || exit 0
+          git pull --rebase origin main
+          git push origin main
