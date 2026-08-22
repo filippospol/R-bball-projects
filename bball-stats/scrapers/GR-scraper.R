@@ -1,7 +1,7 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #
-# This script extracts box-score data for the Greek GBL basketball league. 
+# This script extracts box-score data for the Greek GBL basketball league.
 # Author: Filippos Polyzos
 #
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -28,6 +28,7 @@ league = "GBL"
 season = "2025-26"
 
 # ESAKE identifiers
+idchampionship = "44B80BEB"           # <-- FIX: was missing; results_url() needs it
 idseason = c("00000001", "00000002")
 series   = c("402",      "402")
 
@@ -216,7 +217,8 @@ if (sys.nframe() == 0) {
   players_df = bind_rows(PP) %>% arrange(MATCHUP) %>% select(all_of(PLAYER_COLS))
   teams_df   = bind_rows(TT) %>% arrange(MATCHUP) %>% select(all_of(TEAM_COLS))
   
-# write files in .csv format
-write_excel_csv(bind_rows(PP),"bball-stats/data/GR-players.csv")
-
-write_excel_csv(bind_rows(TT),"bball-stats/data/GR-teams.csv")
+  # write files in .csv format (create the folder first so the write can't fail)
+  dir.create("bball-stats/data", recursive = TRUE, showWarnings = FALSE)
+  write_excel_csv(players_df, "bball-stats/data/GR-players.csv")
+  write_excel_csv(teams_df,   "bball-stats/data/GR-teams.csv")
+}
