@@ -29,8 +29,14 @@ season = "2025-26"
 
 # ESAKE identifiers
 idchampionship = "44B80BEB"           # <-- FIX: was missing; results_url() needs it
-idseason = c("00000001", "00000002")
-series   = c("402",      "402")
+idseason = c("00000001",                                              # regular season
+             "00000002", "00000002", "00000002",                     # QF1, QF2, QF3
+             "00000002", "00000002",                                 # SF1, SF2
+             "00000002", "00000002", "00000002", "00000002", "00000002")  # F1..F5
+series   = c("402",
+             "201", "202", "203",
+             "301", "302",
+             "401", "402", "403", "404", "405")
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #' *LOW-LEVEL FETCH (direct from site, retrying, browser UA)*
