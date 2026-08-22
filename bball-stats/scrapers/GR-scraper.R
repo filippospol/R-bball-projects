@@ -218,7 +218,6 @@ if (sys.nframe() == 0) {
   teams_df   = bind_rows(TT) %>% arrange(MATCHUP) %>% select(all_of(TEAM_COLS))
   
   # write files in .csv format (create the folder first so the write can't fail)
-  dir.create("bball-stats/data", recursive = TRUE, showWarnings = FALSE)
-  write_excel_csv(players_df, "GR-players.csv")
-  write_excel_csv(teams_df,   "GR-teams.csv")
+  write_excel_csv(players_df, "bball-stats/data/GR-players.csv")
+  write_excel_csv(teams_df,   "bball-stats/data/GR-teams.csv")
 }
