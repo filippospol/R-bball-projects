@@ -152,8 +152,8 @@ parse_boxscore_page = function(page, idgame) {
         TEAM   = toupper(team_name),
         PLAYER = str_squish(str_replace(labels[idx], "^#+\\s*\\d*\\s*", "")),
         PTS  = clean_int(M[[2]][idx]),
-        FG2M = split_made(M[[3]][idx]),  FG2A = split_att(M[[3]][idx]),
-        FG3M = split_made(M[[4]][idx]),  FG3A = split_att(M[[4]][idx]),
+        `2PM` = split_made(M[[3]][idx]),  `2PA` = split_att(M[[3]][idx]),
+        `3PM` = split_made(M[[4]][idx]),  `3PA` = split_att(M[[4]][idx]),
         FTM  = split_made(M[[5]][idx]),  FTA  = split_att(M[[5]][idx]),
         REB  = clean_int(M[[6]][idx]), DREB = clean_int(M[[7]][idx]), OREB = clean_int(M[[8]][idx]),
         AST  = clean_int(M[[9]][idx]), BLK  = clean_int(M[[10]][idx]),
@@ -194,9 +194,9 @@ esake_boxscore = function(idgame) {
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #' *FINAL COLUMN SETS*  (Euroleague layout, minus BLKD)
 PLAYER_COLS = c("GAME_ID","SEASON","LEAGUE","PLAYER","TEAM","MATCHUP","MIN","PTS",
-                "FG2M","FG2A","FG3M","FG3A","FTM","FTA","OREB","DREB","REB",
+                "2PM","2PA","3PM","3PA","FTM","FTA","OREB","DREB","REB",
                 "AST","STL","TOV","BLK","PF")
-TEAM_COLS   = c("TEAM","CODE","MATCHUP","PTS","FG2M","FG2A","FG3M","FG3A","FTM","FTA",
+TEAM_COLS   = c("TEAM","CODE","MATCHUP","PTS","2PM","2PA","3PM","3PA","FTM","FTA",
                 "OREB","DREB","REB","AST","STL","TOV","BLK","PF")
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
