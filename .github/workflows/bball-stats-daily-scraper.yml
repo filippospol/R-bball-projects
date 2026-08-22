@@ -43,9 +43,9 @@ jobs:
       #   continue-on-error: true
       #   run: Rscript bball-stats/scrapers/DE-scraper.R
 
-      - name: GBL Scraper
-        continue-on-error: true
-        run: Rscript bball-stats/scrapers/GR-scraper.R
+      # - name: GBL Scraper
+      #  continue-on-error: true
+      #  run: Rscript bball-stats/scrapers/GR-scraper.R
 
       - name: ACB Scraper
         continue-on-error: true
