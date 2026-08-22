@@ -216,6 +216,7 @@ if (sys.nframe() == 0) {
   players_df = bind_rows(PP) %>% arrange(MATCHUP) %>% select(all_of(PLAYER_COLS))
   teams_df   = bind_rows(TT) %>% arrange(MATCHUP) %>% select(all_of(TEAM_COLS))
   
-  write_excel_csv(players_df, "GBL-players.csv")   # UTF-8 (+BOM) so Greek shows in Excel
-  write_excel_csv(teams_df,   "GBL-teams.csv")
-}
+# write files in .csv format
+write_excel_csv(bind_rows(PP)),"bball-stats/data/GR-players.csv")
+
+write_excel_csv(bind_rows(TT)),"bball-stats/data/GR-teams.csv")
