@@ -18,6 +18,8 @@ library(jsonlite)
 library(glue)
 library(janitor)
 library(lubridate)
+library(readr)
+library(vroom)
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
