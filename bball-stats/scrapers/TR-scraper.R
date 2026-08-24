@@ -11,6 +11,7 @@
 
 #' *LOAD LIBRARIES*
 library(dplyr)
+library(readr)
 library(purrr)
 library(tidyr)
 library(stringr)
@@ -20,6 +21,7 @@ library(jsonlite)
 library(glue)
 library(janitor)
 library(lubridate)
+library(vroom)
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -149,6 +151,5 @@ for (i in 1:length(url_list)) {
 rm(list=setdiff(ls(),c("PP","TT")))
 
 # write files in .csv format
-write_csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/TR-players.csv")
-
-write_csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/TR-teams.csv")
+vroom_write(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/TR-players.csv")
+vroom_write(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/TR-teams.csv")
