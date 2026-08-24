@@ -45,11 +45,10 @@ schedule_url = paste0("https://lnb.com.br/nbb/tabela-de-jogos/?season%5B%5D=", s
 # here is the single point of failure: if that one request blips on the CI runner, the whole
 # run dies with "cannot open the connection". Retrying makes transient failures non-fatal.
 fetch_html = function(url, tries = 4, pause = 3) {
+  ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
   for (k in seq_len(tries)) {
     res = tryCatch(
-      read_html(GET(url,
-                    user_agent("Mozilla/5.0 (compatible; bball-stats-scraper/1.0)"),
-                    timeout(45))),
+      read_html(GET(url, user_agent(ua), timeout(45))),
       error = function(e) NULL
     )
     if (!is.null(res)) return(res)
@@ -143,8 +142,13 @@ PP = list()
 TT = list()
 for (i in 1:length(url_list)) {
   
-  # fetch with a timeout so a single slow/dead page can't stall the whole run:
-  report = tryCatch(read_html(GET(url_list[i], timeout(30))), error = function(e) NULL)
+  # fetch with a timeout + browser UA so a single slow/dead/blocked page can't stall the run:
+  report = tryCatch(
+    read_html(GET(url_list[i],
+                  user_agent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"),
+                  timeout(30))),
+    error = function(e) NULL
+  )
   if (is.null(report)) { message("skip (fetch failed): ", url_list[i]); next }
 
   tabs = report %>% html_elements("table")
