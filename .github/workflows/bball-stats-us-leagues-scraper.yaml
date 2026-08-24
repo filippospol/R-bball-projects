@@ -31,9 +31,9 @@ jobs:
         run: |
           Rscript -e 'install.packages(c("dplyr", "readr", "stringr", "stringi", "hoopR","wehoop"))'
 
-      # - name: US Scraper
-      #   continue-on-error: true
-      #   run: Rscript bball-stats/scrapers/US-scraper.R
+       - name: US Scraper
+         continue-on-error: true
+         run: Rscript bball-stats/scrapers/US-scraper.R
 
       - name: Debug - List Files
         run: |
