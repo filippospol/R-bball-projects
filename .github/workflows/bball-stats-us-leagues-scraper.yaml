@@ -1,0 +1,52 @@
+name: Basketball Stats App NBA & WNBA Data Update
+
+on:
+#  schedule:
+#    - cron: '0 0 * * *' 
+  workflow_dispatch: 
+
+jobs:
+  run-scrapers:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write 
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required for git pull --rebase to work reliably
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true # Uses fast, pre-compiled binaries instead of compiling from source
+
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-dev libcurl4-openssl-dev libssl-dev
+
+      - name: Install R Libraries
+        run: |
+          Rscript -e 'install.packages(c("dplyr", "readr", "stringr", "stringi", "hoopR","wehoop"))'
+
+      # - name: US Scraper
+      #   continue-on-error: true
+      #   run: Rscript bball-stats/scrapers/US-scraper.R
+
+      - name: Debug - List Files
+        run: |
+          echo "Files in root:"
+          ls -l *.csv || echo "No CSVs in root"
+          echo "Files in data folder:"
+          ls -R bball-stats/data/
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add .
+          git commit -m "Updated data on: $(date +'%Y-%m-%d')" || exit 0
+          git pull --rebase origin main
+          git push origin main
