@@ -54,22 +54,16 @@ jobs:
       # - name: TBSL Scraper
       #  continue-on-error: true
       #  run: Rscript bball-stats/scrapers/TR-scraper.R    
+      
+      # - name: NBB Scraper # run this locally, 403 error :(
+      
+      # - name: Euroleague Scraper
+      #   continue-on-error: true
+      #   run: Rscript bball-stats/scrapers/EL-scraper.R
 
-      - name: Diagnose LNB reachability
-        run: |
-         curl -sS -o /dev/null -w "HTTP %{http_code} in %{time_total}s\n" \
-         -A "Mozilla/5.0" "https://lnb.com.br/nbb/tabela-de-jogos/?season%5B%5D=97" || echo "curl failed to connect"
-
-      - name: NBB Scraper
-        continue-on-error: true
-        run: Rscript bball-stats/scrapers/BR-scraper.R    
-     # - name: Euroleague Scraper
-     #   continue-on-error: true
-     #   run: Rscript bball-stats/scrapers/EL-scraper.R
-
-     # - name: Eurocup Scraper
-     #   continue-on-error: true
-     #   run: Rscript bball-stats/scrapers/EC-scraper.R
+      # - name: Eurocup Scraper
+      #   continue-on-error: true
+      #   run: Rscript bball-stats/scrapers/EC-scraper.R
 
       - name: Debug - List Files
         run: |
