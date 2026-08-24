@@ -27,13 +27,13 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libxml2-dev libcurl4-openssl-dev libssl-dev
 
-      - name: Install R Libraries
+            - name: Install R Libraries
         run: |
-          Rscript -e 'install.packages(c("dplyr", "readr", "stringr", "stringi", "hoopR","wehoop"))'
+          Rscript -e 'install.packages(c("dplyr", "readr", "stringr", "stringi", "hoopR", "wehoop"))'
 
-       - name: (W)NBA Scraper
-         continue-on-error: true
-         run: Rscript bball-stats/scrapers/USA-scraper.R
+      - name: (W)NBA Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/USA-scraper.R
 
       - name: Debug - List Files
         run: |
@@ -41,12 +41,3 @@ jobs:
           ls -l *.csv || echo "No CSVs in root"
           echo "Files in data folder:"
           ls -R bball-stats/data/
-
-      - name: Commit and Push
-        run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
-          git add .
-          git commit -m "Updated NBA-WNBA data on: $(date +'%Y-%m-%d')" || exit 0
-          git pull --rebase origin main
-          git push origin main
