@@ -2,8 +2,6 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #
 # This script extracts box-score data for the Turkish BSL.
-# Match ids/dates/teams come from tbsl-fixtures.json (saved once per season via the browser
-# console snippet tbsl-fixtures.js). Boxscores come from FIBA LiveStats by geniusId.
 # Author: Filippos Polyzos
 #
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -11,7 +9,6 @@
 
 #' *LOAD LIBRARIES*
 library(dplyr)
-library(readr)
 library(purrr)
 library(tidyr)
 library(stringr)
@@ -21,7 +18,6 @@ library(jsonlite)
 library(glue)
 library(janitor)
 library(lubridate)
-library(vroom)
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -150,6 +146,42 @@ for (i in 1:length(url_list)) {
 }
 rm(list=setdiff(ls(),c("PP","TT")))
 
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+#' *NORMALIZE PLAYER NAME VARIANTS*
+# FLS names come from each game's statistician, so the same player can show up with an extra
+# middle name (e.g. "FILIPPOS KONSTANTINOS POLYZOS" vs "FILIPPOS POLYZOS"). Group names that
+# share the same first word AND same last word, then keep the shortest spelling for the group.
+players = bind_rows(PP) %>%
+  mutate(TEAM = toupper(TEAM),
+         PLAYER = str_squish(PLAYER))   # tidy stray double/trailing spaces before matching
+
+# first-word + last-word key (robust to middle names and hyphenated surnames):
+name_key = function(x) {
+  vapply(str_split(str_squish(x), " "),
+         function(t) paste(t[1], t[length(t)]), character(1))
+}
+
+name_map = players %>%
+  distinct(PLAYER) %>%
+  mutate(KEY = name_key(PLAYER)) %>%
+  group_by(KEY) %>%
+  arrange(nchar(PLAYER), PLAYER, .by_group = TRUE) %>%   # shortest, then alphabetical tie-break
+  mutate(PLAYER_CANON = first(PLAYER)) %>%
+  ungroup() %>%
+  select(PLAYER, PLAYER_CANON)
+
+players = players %>%
+  left_join(name_map, by = "PLAYER") %>%
+  mutate(PLAYER = PLAYER_CANON) %>%
+  select(-PLAYER_CANON)
+
+# Optional sanity check - list any name that got collapsed into a shorter one:
+# name_map %>% filter(PLAYER != PLAYER_CANON) %>% arrange(PLAYER_CANON) %>% print(n = Inf)
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 # write files in .csv format
-vroom_write(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/TR-players.csv")
-vroom_write(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/TR-teams.csv")
+write_csv(players,"bball-stats/data/TR-players.csv")
+
+write_csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/TR-teams.csv")
