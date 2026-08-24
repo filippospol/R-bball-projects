@@ -55,6 +55,11 @@ jobs:
       #  continue-on-error: true
       #  run: Rscript bball-stats/scrapers/TR-scraper.R    
 
+      - name: Diagnose LNB reachability
+        run: |
+         curl -sS -o /dev/null -w "HTTP %{http_code} in %{time_total}s\n" \
+         -A "Mozilla/5.0" "https://lnb.com.br/nbb/tabela-de-jogos/?season%5B%5D=97" || echo "curl failed to connect"
+
       - name: NBB Scraper
         continue-on-error: true
         run: Rscript bball-stats/scrapers/BR-scraper.R    
