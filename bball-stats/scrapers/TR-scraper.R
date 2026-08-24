@@ -184,5 +184,5 @@ teams = bind_rows(TT) %>% mutate(TEAM=toupper(TEAM))
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # write files in .csv format
-write_csv(players,"bball-stats/data/TR-players.csv")
-write_csv(teams,"bball-stats/data/TR-teams.csv")
+vroom_write(players,"bball-stats/data/TR-players.csv")
+vroom_write(teams,"bball-stats/data/TR-teams.csv")
