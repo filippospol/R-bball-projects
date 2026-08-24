@@ -1,0 +1,1574 @@
+[
+ {
+  "geniusId": "2736922",
+  "date": "2025-09-26",
+  "home": "ANADOLU EFES",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2714807",
+  "date": "2025-09-27",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2715206",
+  "date": "2025-09-27",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2714806",
+  "date": "2025-09-27",
+  "home": "TOFAŞ",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2714805",
+  "date": "2025-09-28",
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "KARŞIYAKA"
+ },
+ {
+  "geniusId": "2715208",
+  "date": "2025-09-28",
+  "home": "TRABZONSPOR",
+  "away": "ONVO BÜYÜKÇEKMECE BASKETBOL"
+ },
+ {
+  "geniusId": "2715207",
+  "date": "2025-09-28",
+  "home": "GLİNT MANİSA BASKET",
+  "away": "MERSİN SPOR"
+ },
+ {
+  "geniusId": "2715209",
+  "date": "2025-09-29",
+  "home": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2736923",
+  "date": "2025-10-03",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "TOFAŞ"
+ },
+ {
+  "geniusId": "2715214",
+  "date": "2025-10-04",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2715212",
+  "date": "2025-10-04",
+  "home": "MERSİN SPOR",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2715211",
+  "date": "2025-10-04",
+  "home": "TÜRK TELEKOM",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2715213",
+  "date": "2025-10-05",
+  "home": "ONVO BÜYÜKÇEKMECE BASKETBOL",
+  "away": "GLİNT MANİSA BASKET"
+ },
+ {
+  "geniusId": "2715216",
+  "date": "2025-10-05",
+  "home": "KARŞIYAKA",
+  "away": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET"
+ },
+ {
+  "geniusId": "2715215",
+  "date": "2025-10-05",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2715210",
+  "date": "2025-10-06",
+  "home": "FENERBAHÇE BEKO",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "2715220",
+  "date": "2025-10-10",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "ONVO BÜYÜKÇEKMECE BASKETBOL"
+ },
+ {
+  "geniusId": "2715222",
+  "date": "2025-10-11",
+  "home": "TRABZONSPOR",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2715218",
+  "date": "2025-10-11",
+  "home": "TOFAŞ",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2715219",
+  "date": "2025-10-11",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "MERSİN SPOR"
+ },
+ {
+  "geniusId": "2736924",
+  "date": "2025-10-12",
+  "home": "ANADOLU EFES",
+  "away": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET"
+ },
+ {
+  "geniusId": "2715223",
+  "date": "2025-10-12",
+  "home": "FENERBAHÇE BEKO",
+  "away": "KARŞIYAKA"
+ },
+ {
+  "geniusId": "2715217",
+  "date": "2025-10-12",
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2715221",
+  "date": "2025-10-13",
+  "home": "GLİNT MANİSA BASKET",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2715226",
+  "date": "2025-10-17",
+  "home": "ONVO BÜYÜKÇEKMECE BASKETBOL",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2715227",
+  "date": "2025-10-18",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2715224",
+  "date": "2025-10-18",
+  "home": "TÜRK TELEKOM",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "2715228",
+  "date": "2025-10-18",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "GLİNT MANİSA BASKET"
+ },
+ {
+  "geniusId": "2715229",
+  "date": "2025-10-19",
+  "home": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2736925",
+  "date": "2025-10-19",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2715225",
+  "date": "2025-10-19",
+  "home": "MERSİN SPOR",
+  "away": "TOFAŞ"
+ },
+ {
+  "geniusId": "2715230",
+  "date": "2025-10-20",
+  "home": "KARŞIYAKA",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2715233",
+  "date": "2025-10-25",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2715232",
+  "date": "2025-10-25",
+  "home": "TOFAŞ",
+  "away": "ONVO BÜYÜKÇEKMECE BASKETBOL"
+ },
+ {
+  "geniusId": "2715234",
+  "date": "2025-10-25",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2715235",
+  "date": "2025-10-25",
+  "home": "GLİNT MANİSA BASKET",
+  "away": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET"
+ },
+ {
+  "geniusId": "2715237",
+  "date": "2025-10-26",
+  "home": "FENERBAHÇE BEKO",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2715236",
+  "date": "2025-10-26",
+  "home": "TRABZONSPOR",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2715231",
+  "date": "2025-10-26",
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "MERSİN SPOR"
+ },
+ {
+  "geniusId": "2736926",
+  "date": "2025-10-26",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "KARŞIYAKA"
+ },
+ {
+  "geniusId": "2715614",
+  "date": "2025-10-31",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "TOFAŞ"
+ },
+ {
+  "geniusId": "2715617",
+  "date": "2025-11-01",
+  "home": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2715620",
+  "date": "2025-11-01",
+  "home": "TÜRK TELEKOM",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2715616",
+  "date": "2025-11-01",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2715613",
+  "date": "2025-11-02",
+  "home": "ONVO BÜYÜKÇEKMECE BASKETBOL",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "2715618",
+  "date": "2025-11-02",
+  "home": "KARŞIYAKA",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2715619",
+  "date": "2025-11-02",
+  "home": "MERSİN SPOR",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2736927",
+  "date": "2025-11-03",
+  "home": "ANADOLU EFES",
+  "away": "GLİNT MANİSA BASKET"
+ },
+ {
+  "geniusId": "2715656",
+  "date": "2025-11-08",
+  "home": "FENERBAHÇE BEKO",
+  "away": "ONVO BÜYÜKÇEKMECE BASKETBOL"
+ },
+ {
+  "geniusId": "2715653",
+  "date": "2025-11-08",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET"
+ },
+ {
+  "geniusId": "2715657",
+  "date": "2025-11-08",
+  "home": "TÜRK TELEKOM",
+  "away": "KARŞIYAKA"
+ },
+ {
+  "geniusId": "2715652",
+  "date": "2025-11-08",
+  "home": "TOFAŞ",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2715655",
+  "date": "2025-11-09",
+  "home": "GLİNT MANİSA BASKET",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2715651",
+  "date": "2025-11-09",
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2736928",
+  "date": "2025-11-09",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "MERSİN SPOR"
+ },
+ {
+  "geniusId": "2715654",
+  "date": "2025-11-09",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2715681",
+  "date": "2025-11-14",
+  "home": "ONVO BÜYÜKÇEKMECE BASKETBOL",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2715676",
+  "date": "2025-11-15",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "2715683",
+  "date": "2025-11-15",
+  "home": "MERSİN SPOR",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2715679",
+  "date": "2025-11-15",
+  "home": "KARŞIYAKA",
+  "away": "GLİNT MANİSA BASKET"
+ },
+ {
+  "geniusId": "2736929",
+  "date": "2025-11-16",
+  "home": "ANADOLU EFES",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2715678",
+  "date": "2025-11-16",
+  "home": "TRABZONSPOR",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2715677",
+  "date": "2025-11-16",
+  "home": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET",
+  "away": "TOFAŞ"
+ },
+ {
+  "geniusId": "2715680",
+  "date": "2025-11-16",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2715712",
+  "date": "2025-11-21",
+  "home": "MERSİN SPOR",
+  "away": "KARŞIYAKA"
+ },
+ {
+  "geniusId": "2715709",
+  "date": "2025-11-22",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "GLİNT MANİSA BASKET"
+ },
+ {
+  "geniusId": "2715708",
+  "date": "2025-11-22",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2715711",
+  "date": "2025-11-22",
+  "home": "TÜRK TELEKOM",
+  "away": "ONVO BÜYÜKÇEKMECE BASKETBOL"
+ },
+ {
+  "geniusId": "2715705",
+  "date": "2025-11-23",
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET"
+ },
+ {
+  "geniusId": "2736930",
+  "date": "2025-11-23",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2715707",
+  "date": "2025-11-23",
+  "home": "TOFAŞ",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2715710",
+  "date": "2025-11-23",
+  "home": "FENERBAHÇE BEKO",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2715763",
+  "date": "2025-12-05",
+  "home": "TRABZONSPOR",
+  "away": "TOFAŞ"
+ },
+ {
+  "geniusId": "2715769",
+  "date": "2025-12-06",
+  "home": "ONVO BÜYÜKÇEKMECE BASKETBOL",
+  "away": "MERSİN SPOR"
+ },
+ {
+  "geniusId": "2715764",
+  "date": "2025-12-06",
+  "home": "GLİNT MANİSA BASKET",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2715767",
+  "date": "2025-12-06",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2715766",
+  "date": "2025-12-07",
+  "home": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2715765",
+  "date": "2025-12-07",
+  "home": "KARŞIYAKA",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2736931",
+  "date": "2025-12-07",
+  "home": "ANADOLU EFES",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "2715768",
+  "date": "2025-12-07",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2736934",
+  "date": "2025-12-12",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET"
+ },
+ {
+  "geniusId": "2715795",
+  "date": "2025-12-13",
+  "home": "TÜRK TELEKOM",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2715792",
+  "date": "2025-12-13",
+  "home": "TOFAŞ",
+  "away": "GLİNT MANİSA BASKET"
+ },
+ {
+  "geniusId": "2715793",
+  "date": "2025-12-13",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2715791",
+  "date": "2025-12-14",
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2715796",
+  "date": "2025-12-14",
+  "home": "MERSİN SPOR",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2715794",
+  "date": "2025-12-14",
+  "home": "FENERBAHÇE BEKO",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2715797",
+  "date": "2025-12-15",
+  "home": "ONVO BÜYÜKÇEKMECE BASKETBOL",
+  "away": "KARŞIYAKA"
+ },
+ {
+  "geniusId": "2715833",
+  "date": "2025-12-20",
+  "home": "KARŞIYAKA",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2715832",
+  "date": "2025-12-20",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "TOFAŞ"
+ },
+ {
+  "geniusId": "2715834",
+  "date": "2025-12-20",
+  "home": "TRABZONSPOR",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2736935",
+  "date": "2025-12-21",
+  "home": "ANADOLU EFES",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2715836",
+  "date": "2025-12-21",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "MERSİN SPOR"
+ },
+ {
+  "geniusId": "2715835",
+  "date": "2025-12-21",
+  "home": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2715830",
+  "date": "2025-12-21",
+  "home": "GLİNT MANİSA BASKET",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "2715837",
+  "date": "2025-12-22",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "ONVO BÜYÜKÇEKMECE BASKETBOL"
+ },
+ {
+  "geniusId": "2715871",
+  "date": "2025-12-26",
+  "home": "TOFAŞ",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2715872",
+  "date": "2025-12-27",
+  "home": "FENERBAHÇE BEKO",
+  "away": "GLİNT MANİSA BASKET"
+ },
+ {
+  "geniusId": "2715874",
+  "date": "2025-12-27",
+  "home": "MERSİN SPOR",
+  "away": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET"
+ },
+ {
+  "geniusId": "2715873",
+  "date": "2025-12-27",
+  "home": "TÜRK TELEKOM",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2736936",
+  "date": "2025-12-27",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2715876",
+  "date": "2025-12-28",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "KARŞIYAKA"
+ },
+ {
+  "geniusId": "2715870",
+  "date": "2025-12-28",
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2715875",
+  "date": "2025-12-28",
+  "home": "ONVO BÜYÜKÇEKMECE BASKETBOL",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2717900",
+  "date": "2026-01-02",
+  "home": "KARŞIYAKA",
+  "away": "TOFAŞ"
+ },
+ {
+  "geniusId": "2717899",
+  "date": "2026-01-03",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "2717903",
+  "date": "2026-01-03",
+  "home": "TRABZONSPOR",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2717905",
+  "date": "2026-01-03",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2736937",
+  "date": "2026-01-04",
+  "home": "ANADOLU EFES",
+  "away": "MERSİN SPOR"
+ },
+ {
+  "geniusId": "2717904",
+  "date": "2026-01-04",
+  "home": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET",
+  "away": "ONVO BÜYÜKÇEKMECE BASKETBOL"
+ },
+ {
+  "geniusId": "2717902",
+  "date": "2026-01-04",
+  "home": "GLİNT MANİSA BASKET",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2717901",
+  "date": "2026-01-04",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2736938",
+  "date": "2026-01-10",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2717927",
+  "date": "2026-01-10",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET"
+ },
+ {
+  "geniusId": "2717924",
+  "date": "2026-01-10",
+  "home": "TÜRK TELEKOM",
+  "away": "GLİNT MANİSA BASKET"
+ },
+ {
+  "geniusId": "2717928",
+  "date": "2026-01-10",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "KARŞIYAKA"
+ },
+ {
+  "geniusId": "2717925",
+  "date": "2026-01-11",
+  "home": "MERSİN SPOR",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2717923",
+  "date": "2026-01-11",
+  "home": "FENERBAHÇE BEKO",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2717922",
+  "date": "2026-01-11",
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "TOFAŞ"
+ },
+ {
+  "geniusId": "2717926",
+  "date": "2026-01-12",
+  "home": "ONVO BÜYÜKÇEKMECE BASKETBOL",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2717949",
+  "date": "2026-01-16",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET"
+ },
+ {
+  "geniusId": "2717947",
+  "date": "2026-01-17",
+  "home": "ONVO BÜYÜKÇEKMECE BASKETBOL",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2736939",
+  "date": "2026-01-17",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2717948",
+  "date": "2026-01-17",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2717946",
+  "date": "2026-01-18",
+  "home": "MERSİN SPOR",
+  "away": "GLİNT MANİSA BASKET"
+ },
+ {
+  "geniusId": "2717945",
+  "date": "2026-01-18",
+  "home": "TÜRK TELEKOM",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2717944",
+  "date": "2026-01-18",
+  "home": "FENERBAHÇE BEKO",
+  "away": "TOFAŞ"
+ },
+ {
+  "geniusId": "2717943",
+  "date": "2026-01-18",
+  "home": "KARŞIYAKA",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "2717990",
+  "date": "2026-01-23",
+  "home": "GLİNT MANİSA BASKET",
+  "away": "ONVO BÜYÜKÇEKMECE BASKETBOL"
+ },
+ {
+  "geniusId": "2717988",
+  "date": "2026-01-24",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2717989",
+  "date": "2026-01-24",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "MERSİN SPOR"
+ },
+ {
+  "geniusId": "2717987",
+  "date": "2026-01-24",
+  "home": "TOFAŞ",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2736940",
+  "date": "2026-01-25",
+  "home": "ANADOLU EFES",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2717991",
+  "date": "2026-01-25",
+  "home": "TRABZONSPOR",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2717986",
+  "date": "2026-01-25",
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2717992",
+  "date": "2026-01-26",
+  "home": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET",
+  "away": "KARŞIYAKA"
+ },
+ {
+  "geniusId": "2718021",
+  "date": "2026-01-30",
+  "home": "ONVO BÜYÜKÇEKMECE BASKETBOL",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2718025",
+  "date": "2026-01-31",
+  "home": "KARŞIYAKA",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2718020",
+  "date": "2026-01-31",
+  "home": "MERSİN SPOR",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2718019",
+  "date": "2026-01-31",
+  "home": "TÜRK TELEKOM",
+  "away": "TOFAŞ"
+ },
+ {
+  "geniusId": "2718024",
+  "date": "2026-02-01",
+  "home": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2736941",
+  "date": "2026-02-01",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "2718022",
+  "date": "2026-02-01",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "GLİNT MANİSA BASKET"
+ },
+ {
+  "geniusId": "2718023",
+  "date": "2026-02-02",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2718046",
+  "date": "2026-02-07",
+  "home": "TOFAŞ",
+  "away": "MERSİN SPOR"
+ },
+ {
+  "geniusId": "2718050",
+  "date": "2026-02-07",
+  "home": "TRABZONSPOR",
+  "away": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET"
+ },
+ {
+  "geniusId": "2718048",
+  "date": "2026-02-07",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2718047",
+  "date": "2026-02-07",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "ONVO BÜYÜKÇEKMECE BASKETBOL"
+ },
+ {
+  "geniusId": "2736942",
+  "date": "2026-02-08",
+  "home": "ANADOLU EFES",
+  "away": "KARŞIYAKA"
+ },
+ {
+  "geniusId": "2718051",
+  "date": "2026-02-08",
+  "home": "FENERBAHÇE BEKO",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2718045",
+  "date": "2026-02-08",
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2718049",
+  "date": "2026-02-08",
+  "home": "GLİNT MANİSA BASKET",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2718089",
+  "date": "2026-02-13",
+  "home": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET",
+  "away": "GLİNT MANİSA BASKET"
+ },
+ {
+  "geniusId": "2718087",
+  "date": "2026-02-14",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2718086",
+  "date": "2026-02-14",
+  "home": "ONVO BÜYÜKÇEKMECE BASKETBOL",
+  "away": "TOFAŞ"
+ },
+ {
+  "geniusId": "2718088",
+  "date": "2026-02-14",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2736943",
+  "date": "2026-02-15",
+  "home": "ANADOLU EFES",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2718085",
+  "date": "2026-02-15",
+  "home": "MERSİN SPOR",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "2718090",
+  "date": "2026-02-15",
+  "home": "TÜRK TELEKOM",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2718091",
+  "date": "2026-02-15",
+  "home": "KARŞIYAKA",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2718153",
+  "date": "2026-03-06",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET"
+ },
+ {
+  "geniusId": "2736944",
+  "date": "2026-03-07",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2718150",
+  "date": "2026-03-07",
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "ONVO BÜYÜKÇEKMECE BASKETBOL"
+ },
+ {
+  "geniusId": "2718152",
+  "date": "2026-03-07",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2718155",
+  "date": "2026-03-08",
+  "home": "TRABZONSPOR",
+  "away": "KARŞIYAKA"
+ },
+ {
+  "geniusId": "2718151",
+  "date": "2026-03-08",
+  "home": "TOFAŞ",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2718156",
+  "date": "2026-03-08",
+  "home": "FENERBAHÇE BEKO",
+  "away": "MERSİN SPOR"
+ },
+ {
+  "geniusId": "2718154",
+  "date": "2026-03-09",
+  "home": "GLİNT MANİSA BASKET",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2718175",
+  "date": "2026-03-13",
+  "home": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2718173",
+  "date": "2026-03-14",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "2718176",
+  "date": "2026-03-14",
+  "home": "TRABZONSPOR",
+  "away": "GLİNT MANİSA BASKET"
+ },
+ {
+  "geniusId": "2718179",
+  "date": "2026-03-14",
+  "home": "KARŞIYAKA",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2718177",
+  "date": "2026-03-15",
+  "home": "ONVO BÜYÜKÇEKMECE BASKETBOL",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2718178",
+  "date": "2026-03-15",
+  "home": "MERSİN SPOR",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2736945",
+  "date": "2026-03-15",
+  "home": "ANADOLU EFES",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2718174",
+  "date": "2026-03-15",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "TOFAŞ"
+ },
+ {
+  "geniusId": "2736946",
+  "date": "2026-03-21",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "ONVO BÜYÜKÇEKMECE BASKETBOL"
+ },
+ {
+  "geniusId": "2718197",
+  "date": "2026-03-21",
+  "home": "TOFAŞ",
+  "away": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET"
+ },
+ {
+  "geniusId": "2718198",
+  "date": "2026-03-21",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2718201",
+  "date": "2026-03-22",
+  "home": "FENERBAHÇE BEKO",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2718202",
+  "date": "2026-03-22",
+  "home": "TÜRK TELEKOM",
+  "away": "MERSİN SPOR"
+ },
+ {
+  "geniusId": "2718199",
+  "date": "2026-03-22",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2718200",
+  "date": "2026-03-22",
+  "home": "GLİNT MANİSA BASKET",
+  "away": "KARŞIYAKA"
+ },
+ {
+  "geniusId": "2718196",
+  "date": "2026-03-23",
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2718220",
+  "date": "2026-03-27",
+  "home": "TRABZONSPOR",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2718223",
+  "date": "2026-03-27",
+  "home": "GLİNT MANİSA BASKET",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2718226",
+  "date": "2026-03-27",
+  "home": "ONVO BÜYÜKÇEKMECE BASKETBOL",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2718225",
+  "date": "2026-03-28",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2718219",
+  "date": "2026-03-28",
+  "home": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "2736947",
+  "date": "2026-03-29",
+  "home": "ANADOLU EFES",
+  "away": "TOFAŞ"
+ },
+ {
+  "geniusId": "2718227",
+  "date": "2026-03-29",
+  "home": "KARŞIYAKA",
+  "away": "MERSİN SPOR"
+ },
+ {
+  "geniusId": "2718224",
+  "date": "2026-03-29",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2718251",
+  "date": "2026-04-04",
+  "home": "MERSİN SPOR",
+  "away": "ONVO BÜYÜKÇEKMECE BASKETBOL"
+ },
+ {
+  "geniusId": "2718249",
+  "date": "2026-04-04",
+  "home": "FENERBAHÇE BEKO",
+  "away": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET"
+ },
+ {
+  "geniusId": "2718246",
+  "date": "2026-04-04",
+  "home": "TOFAŞ",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2718245",
+  "date": "2026-04-05",
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2736948",
+  "date": "2026-04-05",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2718247",
+  "date": "2026-04-06",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "GLİNT MANİSA BASKET"
+ },
+ {
+  "geniusId": "2718248",
+  "date": "2026-04-06",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "KARŞIYAKA"
+ },
+ {
+  "geniusId": "2718285",
+  "date": "2026-04-11",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "MERSİN SPOR"
+ },
+ {
+  "geniusId": "2718280",
+  "date": "2026-04-11",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2718286",
+  "date": "2026-04-11",
+  "home": "KARŞIYAKA",
+  "away": "ONVO BÜYÜKÇEKMECE BASKETBOL"
+ },
+ {
+  "geniusId": "2718279",
+  "date": "2026-04-12",
+  "home": "GLİNT MANİSA BASKET",
+  "away": "TOFAŞ"
+ },
+ {
+  "geniusId": "2718278",
+  "date": "2026-04-12",
+  "home": "TRABZONSPOR",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "2718284",
+  "date": "2026-04-12",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2736951",
+  "date": "2026-04-13",
+  "home": "ANADOLU EFES",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2718250",
+  "date": "2026-04-15",
+  "home": "TÜRK TELEKOM",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2718307",
+  "date": "2026-04-17",
+  "home": "TOFAŞ",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2718308",
+  "date": "2026-04-18",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "KARŞIYAKA"
+ },
+ {
+  "geniusId": "2718313",
+  "date": "2026-04-18",
+  "home": "MERSİN SPOR",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2718312",
+  "date": "2026-04-18",
+  "home": "TÜRK TELEKOM",
+  "away": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET"
+ },
+ {
+  "geniusId": "2718314",
+  "date": "2026-04-19",
+  "home": "ONVO BÜYÜKÇEKMECE BASKETBOL",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2718311",
+  "date": "2026-04-19",
+  "home": "FENERBAHÇE BEKO",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2718306",
+  "date": "2026-04-19",
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "GLİNT MANİSA BASKET"
+ },
+ {
+  "geniusId": "2736952",
+  "date": "2026-04-20",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2718283",
+  "date": "2026-04-23",
+  "home": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2718365",
+  "date": "2026-04-24",
+  "home": "GLİNT MANİSA BASKET",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2736953",
+  "date": "2026-04-25",
+  "home": "ANADOLU EFES",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2718364",
+  "date": "2026-04-25",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "TOFAŞ"
+ },
+ {
+  "geniusId": "2718369",
+  "date": "2026-04-26",
+  "home": "KARŞIYAKA",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2718366",
+  "date": "2026-04-26",
+  "home": "TRABZONSPOR",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2718368",
+  "date": "2026-04-26",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "ONVO BÜYÜKÇEKMECE BASKETBOL"
+ },
+ {
+  "geniusId": "2718367",
+  "date": "2026-04-27",
+  "home": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET",
+  "away": "MERSİN SPOR"
+ },
+ {
+  "geniusId": "2718370",
+  "date": "2026-05-01",
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2736954",
+  "date": "2026-05-02",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "GLİNT MANİSA BASKET"
+ },
+ {
+  "geniusId": "2718374",
+  "date": "2026-05-02",
+  "home": "MERSİN SPOR",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2718376",
+  "date": "2026-05-02",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2718375",
+  "date": "2026-05-03",
+  "home": "ONVO BÜYÜKÇEKMECE BASKETBOL",
+  "away": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET"
+ },
+ {
+  "geniusId": "2718373",
+  "date": "2026-05-03",
+  "home": "TÜRK TELEKOM",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2718371",
+  "date": "2026-05-03",
+  "home": "TOFAŞ",
+  "away": "KARŞIYAKA"
+ },
+ {
+  "geniusId": "2844602",
+  "date": "2026-05-05",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "2736955",
+  "date": "2026-05-08",
+  "home": "ANADOLU EFES",
+  "away": "ONVO BÜYÜKÇEKMECE BASKETBOL"
+ },
+ {
+  "geniusId": "2718383",
+  "date": "2026-05-10",
+  "home": "YUKATEL MERKEZEFENDİ BELEDİYESİ BASKET",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2718384",
+  "date": "2026-05-10",
+  "home": "KARŞIYAKA",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2718377",
+  "date": "2026-05-10",
+  "home": "TOFAŞ",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "2718380",
+  "date": "2026-05-10",
+  "home": "GLİNT MANİSA BASKET",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2718382",
+  "date": "2026-05-10",
+  "home": "TRABZONSPOR",
+  "away": "MERSİN SPOR"
+ },
+ {
+  "geniusId": "2718379",
+  "date": "2026-05-10",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2718372",
+  "date": "2026-05-13",
+  "home": "FENERBAHÇE BEKO",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2718378",
+  "date": "2026-05-16",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2852284",
+  "date": "2026-05-26",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "TRABZONSPOR"
+ },
+ {
+  "geniusId": "2852286",
+  "date": "2026-05-26",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2852287",
+  "date": "2026-05-27",
+  "home": "ANADOLU EFES",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "2852288",
+  "date": "2026-05-27",
+  "home": "FENERBAHÇE BEKO",
+  "away": "SAFİPORT EROKSPOR"
+ },
+ {
+  "geniusId": "2852289",
+  "date": "2026-05-28",
+  "home": "TRABZONSPOR",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2852290",
+  "date": "2026-05-28",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2852291",
+  "date": "2026-05-29",
+  "home": "TÜRK TELEKOM",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2852292",
+  "date": "2026-05-29",
+  "home": "SAFİPORT EROKSPOR",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2853347",
+  "date": "2026-05-30",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "GALATASARAY MCT TECHNIC"
+ },
+ {
+  "geniusId": "2853672",
+  "date": "2026-06-01",
+  "home": "FENERBAHÇE BEKO",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2853956",
+  "date": "2026-06-02",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2853673",
+  "date": "2026-06-03",
+  "home": "FENERBAHÇE BEKO",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "2853957",
+  "date": "2026-06-04",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2853674",
+  "date": "2026-06-05",
+  "home": "ANADOLU EFES",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2853958",
+  "date": "2026-06-06",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2855501",
+  "date": "2026-06-07",
+  "home": "ANADOLU EFES",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2855213",
+  "date": "2026-06-08",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2856068",
+  "date": "2026-06-10",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "2856781",
+  "date": "2026-06-13",
+  "home": "FENERBAHÇE BEKO",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2856782",
+  "date": "2026-06-15",
+  "home": "FENERBAHÇE BEKO",
+  "away": "BEŞİKTAŞ GAİN"
+ },
+ {
+  "geniusId": "2859020",
+  "date": "2026-06-17",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "FENERBAHÇE BEKO"
+ },
+ {
+  "geniusId": "2860199",
+  "date": "2026-06-19",
+  "home": "BEŞİKTAŞ GAİN",
+  "away": "FENERBAHÇE BEKO"
+ }
+]
