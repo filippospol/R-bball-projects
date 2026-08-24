@@ -51,10 +51,13 @@ jobs:
       #  continue-on-error: true
       #  run: Rscript bball-stats/scrapers/ES-scraper.R
       
-      - name: TBSL Scraper
-        continue-on-error: true
-        run: Rscript bball-stats/scrapers/TR-scraper.R    
+      # - name: TBSL Scraper
+      #  continue-on-error: true
+      #  run: Rscript bball-stats/scrapers/TR-scraper.R    
 
+      - name: NBB Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/BR-scraper.R    
      # - name: Euroleague Scraper
      #   continue-on-error: true
      #   run: Rscript bball-stats/scrapers/EL-scraper.R
