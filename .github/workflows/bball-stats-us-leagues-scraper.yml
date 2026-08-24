@@ -31,9 +31,9 @@ jobs:
         run: |
           Rscript -e 'install.packages(c("dplyr", "readr", "stringr", "stringi", "hoopR","wehoop"))'
 
-       - name: US Scraper
+       - name: (W)NBA Scraper
          continue-on-error: true
-         run: Rscript bball-stats/scrapers/US-scraper.R
+         run: Rscript bball-stats/scrapers/USA-scraper.R
 
       - name: Debug - List Files
         run: |
@@ -47,6 +47,6 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add .
-          git commit -m "Updated data on: $(date +'%Y-%m-%d')" || exit 0
+          git commit -m "Updated NBA-WNBA data on: $(date +'%Y-%m-%d')" || exit 0
           git pull --rebase origin main
           git push origin main
