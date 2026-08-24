@@ -29,7 +29,7 @@ jobs:
 
       - name: Install R Libraries
         run: |
-          Rscript -e 'install.packages(c("dplyr", "purrr", "tidyr", "stringr", "stringi", "httr", "jsonlite", "glue", "janitor", "lubridate","rvest","readr","xml2","vroom"))'
+          Rscript -e 'install.packages(c("dplyr", "purrr", "tidyr", "stringr", "stringi", "httr", "jsonlite", "glue", "janitor", "lubridate","rvest","readr","xml2","vroom","hoopR","wehoop"))'
 
       # - name: Pro A Scraper
       #   continue-on-error: true
