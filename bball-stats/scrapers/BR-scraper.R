@@ -41,7 +41,25 @@ schedule_url = paste0("https://lnb.com.br/nbb/tabela-de-jogos/?season%5B%5D=", s
 # We only fetch report pages for games flagged played, and later also skip any page that
 # doesn't actually contain the two box-score tables (a further safety check).
 
-sched_page = read_html(schedule_url)
+# Fetch the schedule with a timeout + a few retries and a real User-Agent. A bare read_html()
+# here is the single point of failure: if that one request blips on the CI runner, the whole
+# run dies with "cannot open the connection". Retrying makes transient failures non-fatal.
+fetch_html = function(url, tries = 4, pause = 3) {
+  for (k in seq_len(tries)) {
+    res = tryCatch(
+      read_html(GET(url,
+                    user_agent("Mozilla/5.0 (compatible; bball-stats-scraper/1.0)"),
+                    timeout(45))),
+      error = function(e) NULL
+    )
+    if (!is.null(res)) return(res)
+    message("schedule fetch attempt ", k, "/", tries, " failed; retrying in ", pause, "s...")
+    Sys.sleep(pause)
+  }
+  stop("could not fetch schedule after ", tries, " attempts: ", url)
+}
+
+sched_page = fetch_html(schedule_url)
 
 fixtures = sched_page %>%
   html_elements("tr") %>%
@@ -127,8 +145,8 @@ for (i in 1:length(url_list)) {
   
   # fetch with a timeout so a single slow/dead page can't stall the whole run:
   report = tryCatch(read_html(GET(url_list[i], timeout(30))), error = function(e) NULL)
-  # if (is.null(report)) { message("skip (fetch failed): ", url_list[i]); next }
-  
+  if (is.null(report)) { message("skip (fetch failed): ", url_list[i]); next }
+
   tabs = report %>% html_elements("table")
   if (length(tabs) < 6) next   # no box score on this report page yet -> skip
   
