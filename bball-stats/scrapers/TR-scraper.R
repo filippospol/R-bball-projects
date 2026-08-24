@@ -179,9 +179,10 @@ players = players %>%
 # Optional sanity check - list any name that got collapsed into a shorter one:
 # name_map %>% filter(PLAYER != PLAYER_CANON) %>% arrange(PLAYER_CANON) %>% print(n = Inf)
 
+teams = bind_rows(TT) %>% mutate(TEAM=toupper(TEAM))
+
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # write files in .csv format
 write_csv(players,"bball-stats/data/TR-players.csv")
-
-write_csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/TR-teams.csv")
+write_csv(teams,"bball-stats/data/TR-teams.csv")
