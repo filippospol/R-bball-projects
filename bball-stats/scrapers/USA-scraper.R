@@ -162,7 +162,7 @@ write_csv(teams,   "bball-stats/data/NBA-teams.csv")
 
 #' *CONFIG*
 league      = "WNBA"
-season_year = most_recent_wnba_season()                # WNBA seasons are single-year, e.g. 2026
+season_year = 2026               # WNBA seasons are single-year, e.g. 2026
 season_lbl  = as.character(season_year)
 
 stat_cols = c("PTS","2PM","2PA","3PM","3PA","FTM","FTA",
