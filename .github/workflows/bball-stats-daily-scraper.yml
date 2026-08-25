@@ -2,14 +2,14 @@ name: Basketball Stats App Daily Data Update
 
 on:
 #  schedule:
-#    - cron: '0 0 * * *' 
-  workflow_dispatch: 
+#    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   run-scrapers:
     runs-on: ubuntu-latest
     permissions:
-      contents: write 
+      contents: write
 
     steps:
       - name: Checkout code
@@ -29,51 +29,41 @@ jobs:
 
       - name: Install R Libraries
         run: |
-          Rscript -e 'install.packages(c("dplyr", "purrr", "tidyr", "stringr", "stringi", "httr", "jsonlite", "glue", "janitor", "lubridate","rvest","readr","xml2","vroom"))'
+          Rscript -e 'install.packages(c("dplyr", "purrr", "tidyr", "stringr", "stringi", "httr", "jsonlite", "glue", "janitor", "lubridate", "rvest", "readr", "xml2", "vroom"))'
 
-      # - name: Pro A Scraper
-      #   continue-on-error: true
-      #   run: Rscript bball-stats/scrapers/FR-scraper.R
-
-      # - name: Serie A Scraper
-      #   continue-on-error: true
-      #   run: Rscript bball-stats/scrapers/IT-scraper.R
-
-      # - name: BBL Scraper
-      #   continue-on-error: true
-      #   run: Rscript bball-stats/scrapers/DE-scraper.R
-
-      # - name: GBL Scraper
-      #  continue-on-error: true
-      #  run: Rscript bball-stats/scrapers/GR-scraper.R
-
-      # - name: ACB Scraper
-      #  continue-on-error: true
-      #  run: Rscript bball-stats/scrapers/ES-scraper.R
-
-      # - name: TBSL Scraper
-      #  continue-on-error: true
-      #  run: Rscript bball-stats/scrapers/TR-scraper.R    
-      
-      # - name: NBB Scraper # run this locally, 403 error :(
-      
-      # - name: Euroleague Scraper
-      #   continue-on-error: true
-      #   run: Rscript bball-stats/scrapers/EL-scraper.R
-
-      - name: NBB Scraper
+      - name: Pro A Scraper
         continue-on-error: true
-        run: Rscript bball-stats/scrapers/BR-scraper.R    
-     # - name: Euroleague Scraper
-     #   continue-on-error: true
-     #   run: Rscript bball-stats/scrapers/EL-scraper.R
+        run: Rscript bball-stats/scrapers/FR-scraper.R
 
-     # - name: Eurocup Scraper
-     #   continue-on-error: true
-     #   run: Rscript bball-stats/scrapers/EC-scraper.R
-      # - name: Eurocup Scraper
-      #   continue-on-error: true
-      #   run: Rscript bball-stats/scrapers/EC-scraper.R
+      - name: Serie A Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/IT-scraper.R
+
+      - name: BBL Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/DE-scraper.R
+
+      - name: GBL Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/GR-scraper.R
+
+      - name: ACB Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/ES-scraper.R
+
+      - name: TBSL Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/TR-scraper.R
+
+      # - name: NBB Scraper # run this locally, 403 error :(
+
+      - name: Euroleague Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/EL-scraper.R
+
+      - name: Eurocup Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/EC-scraper.R
 
       - name: Debug - List Files
         run: |
