@@ -2,15 +2,15 @@ name: Basketball Stats App NBA & WNBA Data Update
 
 on:
 #  schedule:
-#    - cron: '0 0 * * *' 
-  workflow_dispatch: 
+#    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   run-scrapers:
     runs-on: ubuntu-latest
     permissions:
-      contents: write 
-    
+      contents: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -27,7 +27,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libxml2-dev libcurl4-openssl-dev libssl-dev
 
-            - name: Install R Libraries
+      - name: Install R Libraries
         run: |
           Rscript -e 'install.packages(c("dplyr", "readr", "stringr", "stringi", "hoopR", "wehoop"))'
 
@@ -41,3 +41,12 @@ jobs:
           ls -l *.csv || echo "No CSVs in root"
           echo "Files in data folder:"
           ls -R bball-stats/data/
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add .
+          git commit -m "Updated NBA-WNBA data on: $(date +'%Y-%m-%d')" || exit 0
+          git pull --rebase origin main
+          git push origin main
