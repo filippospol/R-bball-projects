@@ -1,8 +1,8 @@
 name: Basketball Stats App NBA & WNBA Data Update
 
 on:
-#  schedule:
-#    - cron: '0 0 * * *'
+  schedule:
+    - cron: '0 10 * * *'
   workflow_dispatch:
 
 jobs:
