@@ -63,7 +63,7 @@ for(i in 1:dim(fixture_info)[1]) {
   Sys.sleep(1)
   boxscore_url = glue("https://live.euroleague.net/api/Boxscore?gamecode={fixture_info$GAME_ID[i]}&seasoncode={scode}")
   res = GET(boxscore_url)
-  message(paste0("Game id ",fixture_info$GAME_ID[i]),": status code ",res$status_code)
+  #message(paste0("Game id ",fixture_info$GAME_ID[i]),": status code ",res$status_code)
   raw_json = fromJSON(content(res, "text", encoding = "UTF-8"))
   
   PP[[i]] = suppressWarnings(
