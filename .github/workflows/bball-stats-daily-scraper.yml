@@ -1,9 +1,15 @@
 name: Basketball Stats App Daily Data Update
 
 on:
-#  schedule:
-#    - cron: '0 0 * * *'
+  schedule:
+    - cron: '0 0 * * *'    # daily, incremental
+    - cron: '0 3 1 * *'    # 1st of the month, full rebuild to reconcile
   workflow_dispatch:
+    inputs:
+      full_refresh:
+        description: 'Ignore existing CSVs and rebuild every league from scratch'
+        type: boolean
+        default: false
 
 jobs:
   run-scrapers:
@@ -11,16 +17,23 @@ jobs:
     permissions:
       contents: write
 
+    # Read by the scrapers via Sys.getenv("FULL_REFRESH").
+    # - manual run with the box ticked  -> 'true'
+    # - the monthly cron               -> 'true'
+    # - the daily cron                 -> 'false'
+    env:
+      FULL_REFRESH: ${{ github.event.inputs.full_refresh == 'true' || github.event.schedule == '0 3 1 * *' }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Required for git pull --rebase to work reliably
+          fetch-depth: 0   # Required for git pull --rebase to work reliably
 
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
         with:
-          use-public-rspm: true # Uses fast, pre-compiled binaries instead of compiling from source
+          use-public-rspm: true
 
       - name: Install System Dependencies
         run: |
@@ -30,6 +43,18 @@ jobs:
       - name: Install R Libraries
         run: |
           Rscript -e 'install.packages(c("dplyr", "purrr", "tidyr", "stringr", "stringi", "httr", "jsonlite", "glue", "janitor", "lubridate", "rvest", "readr", "xml2", "vroom"))'
+
+      - name: Show run mode
+        run: echo "FULL_REFRESH=$FULL_REFRESH (event=${{ github.event_name }}, cron=${{ github.event.schedule }})"
+
+      - name: Row counts before
+        run: |
+          mkdir -p bball-stats/data
+          for f in bball-stats/data/*.csv; do
+            [ -e "$f" ] || continue
+            echo "$(basename $f) $(($(wc -l < $f) - 1))" >> /tmp/before.txt
+          done
+          cat /tmp/before.txt || echo "no existing CSVs"
 
       - name: Pro A Scraper
         continue-on-error: true
@@ -55,7 +80,7 @@ jobs:
         continue-on-error: true
         run: Rscript bball-stats/scrapers/TR-scraper.R
 
-      # - name: NBB Scraper # run this locally, 403 error :(
+      # - name: NBB Scraper   # run this locally, 403 error :(
 
       - name: Euroleague Scraper
         continue-on-error: true
@@ -65,12 +90,24 @@ jobs:
         continue-on-error: true
         run: Rscript bball-stats/scrapers/EC-scraper.R
 
-      - name: Debug - List Files
+      # Rows added per file, written to the run summary page.
+      # With incremental scraping a broken scraper is silent, so this is
+      # the main way you notice a league has stopped moving.
+      - name: Run summary
+        if: always()
         run: |
-          echo "Files in root:"
-          ls -l *.csv || echo "No CSVs in root"
-          echo "Files in data folder:"
-          ls -R bball-stats/data/
+          echo "### Rows added (FULL_REFRESH=$FULL_REFRESH)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| file | before | after | added |" >> $GITHUB_STEP_SUMMARY
+          echo "|---|---:|---:|---:|" >> $GITHUB_STEP_SUMMARY
+          for f in bball-stats/data/*.csv; do
+            [ -e "$f" ] || continue
+            name=$(basename $f)
+            after=$(($(wc -l < $f) - 1))
+            before=$(grep -m1 "^$name " /tmp/before.txt | awk '{print $2}')
+            before=${before:-0}
+            echo "| $name | $before | $after | $((after - before)) |" >> $GITHUB_STEP_SUMMARY
+          done
 
       - name: Commit and Push
         run: |
