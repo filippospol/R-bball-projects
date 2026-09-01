@@ -57,8 +57,8 @@ load_sheet = function(sheet_num, sheet_name) {
                     `Promo Code Credited`,Feedback,Loyalty), keep_empty = TRUE) %>%
     filter(Username != "Username")
   
-  print(paste("Successfully loaded", sheet_name))
-  Sys.sleep(1)
+  message(paste0("Successfully loaded ", sheet_name,"!"))
+  Sys.sleep(0.75)
   return(df)
 }
 
@@ -76,8 +76,8 @@ raw_outbound_data = suppressWarnings(
     load_sheet(8, "VIP Day 10 Avg Dep >100"),
     load_sheet(9, "VIP Day 10 Avg Dep <100"),
     load_sheet(10, "VIP Day 30"),
+    #load_sheet(12, "World Cup 2026"),
     load_sheet(13, "Season Plan 2026")
-    # ,load_sheet(12, "World Cup 2026")
   )
 )
 
