@@ -75,7 +75,8 @@ raw_outbound_data = suppressWarnings(
     load_sheet(7, "VIP Close Account"),
     load_sheet(8, "VIP Day 10 Avg Dep >100"),
     load_sheet(9, "VIP Day 10 Avg Dep <100"),
-    load_sheet(10, "VIP Day 30")
+    load_sheet(10, "VIP Day 30"),
+    load_sheet(13, "Season Plan 2026")
     # ,load_sheet(12, "World Cup 2026")
   )
 )
