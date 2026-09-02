@@ -28,9 +28,24 @@ jobs:
           sudo apt-get install -y libxml2-dev libcurl4-openssl-dev libssl-dev
 
       - name: Install R Libraries
-        run: |
-          Rscript -e 'install.packages(c("dplyr", "purrr", "tidyr", "stringr", "stringi", "httr", "jsonlite", "glue", "janitor", "lubridate", "rvest", "readr", "xml2", "vroom"))'
-
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::dplyr
+            any::purrr
+            any::tidyr
+            any::stringr
+            any::stringi
+            any::httr
+            any::jsonlite
+            any::glue
+            any::janitor
+            any::lubridate
+            any::rvest
+            any::readr
+            any::xml2
+            any::vroom
+            
       - name: Pro A Scraper
         continue-on-error: true
         run: Rscript bball-stats/scrapers/FR-scraper.R
