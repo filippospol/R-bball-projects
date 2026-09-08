@@ -21,7 +21,7 @@ library(lubridate)
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #' *CONFIG*
 league        = "ACB"
-season        = "2025-26"
+season        = "2026-27"
 competitionId = 1                     # Liga Endesa (regular season + play-offs)
 BASE_API      = "https://api2.acb.com/api/matchdata"
 SEASONDATA    = "https://api2.acb.com/api/seasondata/Competition/matches"
@@ -147,8 +147,8 @@ acb_discover = function(season_str, competitionId) {
 disc        = acb_discover(season, competitionId)
 editionId   = disc$editionId
 first_round = disc$first_round
-message("ACB ", season, " -> editionId ", editionId, ", first roundId ", first_round)
 
+# Full schedule: played AND scheduled games (like the DE scraper).
 fixture_info = local({
   rows = list(); misses = 0L; rid = first_round
   repeat {
@@ -162,7 +162,7 @@ fixture_info = local({
       Sys.sleep(0.15)
       rows[[length(rows) + 1L]] = map_df(raw$matches, function(m) tibble(
         GAME_ID   = m$id,
-        GAME_DATE = as_date(ymd_hms(m$startDateTime)),
+        GAME_DATE = as_date(ymd_hms(m$startDateTime %||% NA_character_, quiet = TRUE)),
         STATUS    = m$matchStatus %||% NA_character_
       ))
     } else {
@@ -174,8 +174,7 @@ fixture_info = local({
   bind_rows(rows)
 }) %>%
   distinct(GAME_ID, .keep_all = TRUE) %>%
-  filter(STATUS == "FINALIZED") %>%          # played games only (drops scheduled/future)
-  arrange(GAME_DATE)
+  arrange(is.na(GAME_DATE), GAME_DATE)      # TBD-date games last
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #' *PARSE ONE TEAM'S FULL-GAME BOX SCORE*  (verified against real data)
@@ -214,6 +213,10 @@ parse_team = function(tb, game_id, matchup) {
 PP = list(); TT = list()
 
 for (i in seq_len(nrow(fixture_info))) {
+  # stop at the first game dated today or later (same rule as the DE scraper)
+  if (is.na(fixture_info$GAME_DATE[i]) || fixture_info$GAME_DATE[i] >= today()) break
+  if (!isTRUE(fixture_info$STATUS[i] == "FINALIZED")) next   # postponed / cancelled
+  
   Sys.sleep(0.4)                                          # be a polite bot
   gid = fixture_info$GAME_ID[i]
   
