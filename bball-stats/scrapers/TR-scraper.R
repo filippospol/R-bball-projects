@@ -6,7 +6,7 @@
 #
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+ 
 #' *LOAD LIBRARIES*
 library(dplyr)
 library(purrr)
@@ -20,9 +20,9 @@ library(janitor)
 library(lubridate)
 library(readr)
 library(vroom)
-
+ 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+ 
 #' *BEFORE STARTING*
 # To get the fixture list, at the start of every season (and before the playoffs),
 # use the tbsl-fixtures-generator.js file as follows:
@@ -30,41 +30,45 @@ library(vroom)
 # > allow pasting > paste the contents of the file > press Enter
 # The browser will generate a file named `tbsl-fixtures.json`
 # Replace the new file with the one already found on Github.
-
+ 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+ 
 #' *EXTRACT MATCH ID'S*
 # From tbsl-fixtures.json (geniusId = FIBA LiveStats id, date, team names), sorted by date:
 fixtures = fromJSON("https://raw.githubusercontent.com/filippospol/R-bball-projects/refs/heads/main/bball-stats/scrapers/tbsl-fixtures.json") %>%
   as_tibble() %>%
   filter(!is.na(geniusId) & geniusId != "") %>%
+  mutate(date = as_date(date)) %>%
   arrange(date)
-
+ 
 url_list = fixtures$geniusId
-
+ 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+ 
 #' *LOOP OVER MATCH ID'S AND GET BOXSCORES*
-
-league="TBSL" ; season="2025-26"
+ 
+league="TBSL" ; season="2026-27"
 PP = list()
 TT = list()
-for (i in 1:length(url_list)) {
+for (i in seq_along(url_list)) {
+  # stop at the first game dated today or later:
+  if (fixtures$date[i] >= today()) break
+ 
   # URL (JSON):
   fixture_url = GET(
     url=glue(
       "https://fibalivestats.dcd.shared.geniussports.com/data/{url_list[i]}/data.json"
     )
   )
-  
+ 
   # API data:
   raw_json = suppressMessages(
     tryCatch(fromJSON(content(fixture_url, "text", encoding="UTF-8")), error=function(e) NULL)
   )
-  
-  # if the game hasn't been played yet there are no player stats -> stop:
-  if (is.null(raw_json) || length(raw_json$tm$`1`$pl)==0) break
-  
+ 
+  # no player stats (postponed / not yet published) -> skip this game:
+  if (is.null(raw_json) || length(raw_json$tm$`1`$pl)==0) next
+ 
   # Fixture info (dates + team names from the fixtures file):
   fixture_id = url_list[i]
   fixture_teamnames = c(fixtures$home[i],fixtures$away[i])
@@ -72,7 +76,7 @@ for (i in 1:length(url_list)) {
   fixture_teamcodes = c(raw_json$tm$`1`$code, raw_json$tm$`2`$code)
   fixture_matchup = paste0(fixture_date,", ",
                            fixture_teamcodes[1]," vs ",fixture_teamcodes[2])
-  
+ 
   # Player Stats (FLS fields: sMinutes as MM:SS, twoPointers = made, etc.):
   PP[[i]] = bind_rows(
     raw_json$tm$`1`$pl %>%
@@ -110,7 +114,7 @@ for (i in 1:length(url_list)) {
     # if minutes is 0, player DNP so remove that row altogether:
     filter(MIN>0) %>%
     mutate(TEAM = stri_trans_general(toupper(as.character(TEAM)),"latin-ascii"))
-  
+ 
   # Team Stats (tot_-prefixed totals on each side):
   TT[[i]] = bind_rows(
     raw_json$tm$`1` %>%
@@ -143,13 +147,16 @@ for (i in 1:length(url_list)) {
              BLK=tot_sBlocks,TOV=tot_sTurnovers,PF=tot_sFoulsPersonal)
   ) %>%
     mutate(TEAM = stri_trans_general(toupper(as.character(TEAM)),"latin-ascii"))
-  
+ 
   Sys.sleep(0.5)
 }
 rm(list=setdiff(ls(),c("PP","TT")))
-
+ 
+# Nothing played yet -> nothing to normalise or write:
+if (length(PP) > 0) {
+ 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+ 
 #' *NORMALIZE PLAYER NAME VARIANTS*
 # FLS names come from each game's statistician, so the same player can show up with an extra
 # middle name (e.g. "FILIPPOS KONSTANTINOS POLYZOS" vs "FILIPPOS POLYZOS"). Group names that
@@ -157,13 +164,13 @@ rm(list=setdiff(ls(),c("PP","TT")))
 players = bind_rows(PP) %>%
   mutate(TEAM = toupper(TEAM),
          PLAYER = str_squish(PLAYER))   # tidy stray double/trailing spaces before matching
-
+ 
 # first-word + last-word key (robust to middle names and hyphenated surnames):
 name_key = function(x) {
   vapply(str_split(str_squish(x), " "),
          function(t) paste(t[1], t[length(t)]), character(1))
 }
-
+ 
 name_map = players %>%
   distinct(PLAYER) %>%
   mutate(KEY = name_key(PLAYER)) %>%
@@ -172,16 +179,18 @@ name_map = players %>%
   mutate(PLAYER_CANON = first(PLAYER)) %>%
   ungroup() %>%
   select(PLAYER, PLAYER_CANON)
-
+ 
 players = players %>%
   left_join(name_map, by = "PLAYER") %>%
   mutate(PLAYER = PLAYER_CANON) %>%
   select(-PLAYER_CANON)
-
+ 
 # Optional sanity check - list any name that got collapsed into a shorter one:
 # name_map %>% filter(PLAYER != PLAYER_CANON) %>% arrange(PLAYER_CANON) %>% print(n = Inf)
-
+ 
 teams = bind_rows(TT) %>% mutate(TEAM=toupper(TEAM))
+ 
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
