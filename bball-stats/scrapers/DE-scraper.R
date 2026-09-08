@@ -169,7 +169,7 @@ rm(base_url,fixture_page,next_data_json)
 
 #' *LOOP OVER MATCH ID'S AND GET BOXSCORES*
 
-season="2025-26" ; league="BBL"
+season="2026-27" ; league="BBL"
 PP = list()
 TT = list()
 for (i in 1:dim(fixture_info)[1]) {
