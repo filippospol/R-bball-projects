@@ -9,7 +9,7 @@
 // to TR-scraper.R. For a new season, change ACTIVITY_ID (grab it from the Network tab).
 // ================================================================================================
 (async () => {
-  const ACTIVITY_ID = 20728; // BSL 2025-2026
+  const ACTIVITY_ID = 22214; // BSL 2025-2026
 
   const fixtures = [];
   for (let wk = 1; wk <= 40; wk++) {
