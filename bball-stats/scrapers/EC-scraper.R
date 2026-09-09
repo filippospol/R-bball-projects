@@ -109,5 +109,5 @@ teams   = bind_rows(TT)
 
 # beepr::beep()
 # write files in .csv format
-write.csv(players,"bball-stats/data/EL-players.csv")
-write.csv(teams,"bball-stats/data/EL-teams.csv")
+write_csv(players,"bball-stats/data/EL-players.csv")
+write_csv(teams,"bball-stats/data/EL-teams.csv")
