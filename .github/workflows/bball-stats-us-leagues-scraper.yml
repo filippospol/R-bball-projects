@@ -29,11 +29,14 @@ jobs:
 
       - name: Install R Libraries
         run: |
-          Rscript -e 'install.packages(c("dplyr", "readr", "stringr", "stringi", "hoopR", "wehoop"))'
+          Rscript -e 'install.packages(c("dplyr", "readr", "stringr", "stringi", "hoopR", "wehoop", "purrr", "tidyr", "lubridate", "vroom"))'
 
       - name: (W)NBA Scraper
         continue-on-error: true
         run: Rscript bball-stats/scrapers/USA-scraper.R
+
+      - name: Build app-data.rds
+        run: Rscript bball-stats/bball-stats-app-build-data.R
 
       - name: Debug - List Files
         run: |
