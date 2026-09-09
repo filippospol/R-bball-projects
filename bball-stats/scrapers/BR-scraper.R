@@ -223,5 +223,5 @@ teams = teams %>%
   select(-CODE, -TEAM_CANON)
 
 # write files in .csv format
-vroom_write(players, "bball-stats/data/BR-players.csv")
-vroom_write(teams,   "bball-stats/data/BR-teams.csv")
+write_csv(players, "bball-stats/data/BR-players.csv")
+write_csv(teams,   "bball-stats/data/BR-teams.csv")
