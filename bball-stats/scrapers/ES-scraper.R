@@ -244,5 +244,5 @@ rm(list=setdiff(ls(),c("PP","TT")))
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #' *WRITE FILES*
-write.csv(bind_rows(PP) %>% mutate(TEAM = toupper(TEAM)), "bball-stats/data/ES-players.csv")
-write.csv(bind_rows(TT) %>% mutate(TEAM = toupper(TEAM)), "bball-stats/data/ES-teams.csv")
+write_csv(bind_rows(PP) %>% mutate(TEAM = toupper(TEAM)), "bball-stats/data/ES-players.csv")
+write_csv(bind_rows(TT) %>% mutate(TEAM = toupper(TEAM)), "bball-stats/data/ES-teams.csv")
