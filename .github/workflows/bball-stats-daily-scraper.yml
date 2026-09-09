@@ -45,7 +45,7 @@ jobs:
             any::readr
             any::xml2
             any::vroom
-            
+
       - name: Pro A Scraper
         continue-on-error: true
         run: Rscript bball-stats/scrapers/FR-scraper.R
@@ -79,6 +79,9 @@ jobs:
       - name: Eurocup Scraper
         continue-on-error: true
         run: Rscript bball-stats/scrapers/EC-scraper.R
+
+      - name: Build app-data.rds
+        run: Rscript bball-stats/bball-stats-app-build-data.R
 
       - name: Debug - List Files
         run: |
