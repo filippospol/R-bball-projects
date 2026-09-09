@@ -141,6 +141,6 @@ rm(list = setdiff(ls(), c("PP", "TT")))
 
 # beepr::beep()
 # write files in .csv format
-write.csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/IT-players.csv")
+write_csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/IT-players.csv")
 
-write.csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/IT-teams.csv")
+write_csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/IT-teams.csv")
