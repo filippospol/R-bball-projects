@@ -24,10 +24,10 @@ BASE_URL = "https://www.esake.gr"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 POLITE_DELAY = 1.0
 league = "GBL"
-season = "2025-26"
+season = "2026-27"
 
 # ESAKE identifiers
-idchampionship = "44B80BEB"
+idchampionship = "184645B9"
 # Phases: regular season = 00000001, post season (QF/SF/Finals) = 00000002.
 # We enumerate game ids from the mode=2 crosstab of each phase AND from every
 # team's PROGRAM page (mode=3). The crosstab is complete for the round-robin
