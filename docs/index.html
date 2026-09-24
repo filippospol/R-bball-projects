@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Filippos Polyzos — Data Analytics | R Shiny Developer</title>
+<link id="fav" rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzMiAzMic+PGcgZmlsbD0nbm9uZScgc3Ryb2tlPScjOWE5YTlhJyBzdHJva2Utd2lkdGg9JzIuNCcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJz48Y2lyY2xlIGN4PScxNicgY3k9JzE2JyByPScxMycvPjxwYXRoIGQ9J00zIDE2aDI2Jy8+PHBhdGggZD0nTTE2IDN2MjYnLz48cGF0aCBkPSdNNyA2YzYgNiA2IDE0IDAgMjAnLz48cGF0aCBkPSdNMjUgNmMtNiA2LTYgMTQgMCAyMCcvPjwvZz48L3N2Zz4=">
+<script>
+  // resolve the theme before first paint, and recolour the tab favicon to match
+  (function () {
+    function favicon(stroke) {
+      var svg = "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'>"
+        + "<g fill='none' stroke='" + stroke + "' stroke-width='2.4' stroke-linecap='round'>"
+        + "<circle cx='16' cy='16' r='13'/><path d='M3 16h26'/><path d='M16 3v26'/>"
+        + "<path d='M7 6c6 6 6 14 0 20'/><path d='M25 6c-6 6-6 14 0 20'/></g></svg>";
+      return 'data:image/svg+xml;base64,' + btoa(svg);
+    }
+    window.applyTheme = function (theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      var link = document.getElementById('fav') || (function () {
+        var l = document.createElement('link');
+        l.id = 'fav'; l.rel = 'icon'; l.type = 'image/svg+xml';
+        (document.head || document.getElementsByTagName('head')[0]).appendChild(l);
+        return l;
+      })();
+      link.href = favicon(theme === 'light' ? '#4c4c4c' : '#d4d4d4');
+    };
+    var saved;
+    try { saved = localStorage.getItem('theme'); } catch (e) {}
+    var theme = saved || (window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    window.applyTheme(theme);
+  })();
+</script>
+<meta name="description" content="Filippos Polyzos — Data Analytics and R Shiny developer. Interactive NBA analytics apps and R basketball projects.">
+
+<meta property="og:title" content="Filippos Polyzos — Data Analytics | R Shiny Developer">
+<meta property="og:description" content="Interactive NBA analytics apps and R basketball projects.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap">
+
+<style>
+:root {
+  /* pulled from gt-ggplot-theme.R (dark theme) — the default */
+  --bg:      #1a1a1a;
+  --panel:   #1e1e1e;
+  --stripe:  #2a2a2a;
+  --text:    #ffffff;
+  --sec:     #cccccc;
+  --muted:   #8e8e8e;
+  --faint:   #777777;
+  --line:    #555555;
+  --line-2:  #333333;
+  --accent:  #b8bcc4;   /* light grey, matched to the recoloured logo */
+  --accent-2:#d4d7dd;   /* brighter grey for links/hover */
+  --highlight:#c9b458;  /* a readable take on the theme's yellow4 */
+  --logo-filter: grayscale(1) brightness(1.55) contrast(0.85);  /* blue mark -> light grey */
+}
+:root[data-theme="light"] {
+  /* gt-ggplot-theme.R (regular/light theme) */
+  --bg:      #f4f4f2;
+  --panel:   #ffffff;
+  --stripe:  #ececea;
+  --text:    #1e1e1e;
+  --sec:     #333333;
+  --muted:   #6f6f6f;
+  --faint:   #8e8e8e;
+  --line:    #4c4c4c;
+  --line-2:  #dcdcda;
+  --accent:  #4c4c4c;
+  --accent-2:#1e1e1e;
+  --highlight:#8a7415;  /* darker yellow4 for contrast on white */
+  --logo-filter: grayscale(1) brightness(0.5) contrast(1.1);   /* blue mark -> dark grey */
+}
+
+* { box-sizing: border-box; }
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+
+body {
+  margin: 0;
+  padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Roboto Mono', ui-monospace, 'Cascadia Mono', Menlo, Consolas, monospace;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  transition: background .2s ease, color .2s ease;
+}
+
+.page { max-width: 720px; margin: 0 auto; padding: 64px 20px 56px; }
+
+/* ---- header ---- */
+.intro {
+  display: flex; align-items: center; gap: 20px;
+  padding-bottom: 26px;
+  border-bottom: 3px solid var(--line);
+}
+.intro img {
+  height: 58px; width: 58px; flex: none;
+  /* recolour the cornflower-blue mark to the theme grey */
+  filter: var(--logo-filter);
+}
+.intro h1 {
+  margin: 0;
+  font-size: clamp(24px, 5vw, 34px);
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+.intro .role {
+  display: block;
+  margin-top: 6px;
+  font-size: clamp(12px, 2.6vw, 14px);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+  text-transform: none;
+}
+.intro .sub {
+  display: block;
+  margin-top: 3px;
+  font-size: 12.5px;
+  color: var(--faint);
+}
+.intro .sub a { color: var(--sec); text-decoration: none; border-bottom: 1px solid var(--line-2); }
+.intro .sub a:hover { color: var(--text); border-bottom-color: var(--muted); }
+
+.theme-toggle {
+  margin-left: auto; align-self: flex-start; flex: none;
+  width: 38px; height: 38px; padding: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: transparent; color: var(--sec);
+  border: 1px solid var(--line-2); border-radius: 8px;
+  cursor: pointer; font-size: 18px; line-height: 1;
+  transition: border-color .15s, color .15s, background .15s;
+}
+.theme-toggle:hover { color: var(--text); border-color: var(--line); background: var(--stripe); }
+.theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* show the icon for the theme you'd switch TO: moon in light mode, sun in dark mode */
+.theme-toggle .ic-sun { display: inline; }
+.theme-toggle .ic-moon { display: none; }
+:root[data-theme="light"] .theme-toggle .ic-sun { display: none; }
+:root[data-theme="light"] .theme-toggle .ic-moon { display: inline; }
+
+.lede {
+  margin: 22px 0 34px;
+  color: var(--sec);
+  font-size: 15px;
+  max-width: 64ch;
+}
+.lede a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--line); }
+.lede a:hover { border-bottom-color: var(--text); }
+
+/* ---- app list ---- */
+.projects { display: flex; flex-direction: column; gap: 14px; }
+
+.app {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px 16px;
+  padding: 20px 22px;
+  background: var(--panel);
+  border: 1px solid var(--line-2);
+  border-left: 3px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+  transition: border-left-color .15s, background .15s;
+}
+.app:hover, .app:focus-visible { background: var(--stripe); border-left-color: var(--accent-2); outline: none; }
+.app:focus-visible { box-shadow: inset 0 0 0 1px var(--accent-2); }
+
+.app .head { min-width: 0; }
+.app h2 {
+  margin: 0 0 5px;
+  font-size: clamp(17px, 3.4vw, 21px);
+  font-weight: 600;
+  line-height: 1.15;
+}
+.app .collab { font-size: 12px; color: var(--highlight); font-weight: 500; }
+.app p { margin: 7px 0 0; color: var(--muted); font-size: 13.5px; max-width: 60ch; }
+
+.go {
+  grid-column: 2; grid-row: 1 / span 2;
+  align-self: center;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.5px;
+  color: var(--accent-2);
+  white-space: nowrap;
+}
+.go::after { content: " \2192"; }          /* arrow drawn in code, not in the text */
+
+/* the repo is supporting material, not an app: keep it quieter */
+.app.repo { border-left-color: var(--line-2); }
+.app.repo:hover, .app.repo:focus-visible { border-left-color: var(--muted); }
+.app.repo .go { color: var(--muted); }
+
+/* ---- footer ---- */
+.foot {
+  margin-top: 40px; padding-top: 22px;
+  border-top: 1px solid var(--line-2);
+  color: var(--muted); font-size: 13px;
+}
+.foot .note { margin: 0 0 12px; color: var(--faint); }
+.foot .credit { margin: 0 0 14px; color: var(--muted); }
+.foot .credit a { color: var(--sec); text-decoration: none; border-bottom: 1px solid var(--line-2); }
+.foot .credit a:hover { color: var(--text); border-bottom-color: var(--muted); }
+.foot a {
+  color: var(--sec); text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+.foot a:hover { color: var(--text); border-bottom-color: var(--text); }
+.foot .sep { margin: 0 9px; color: var(--line); }
+
+@media (max-width: 560px) {
+  .page { padding: 44px 14px 44px; }
+  .intro { gap: 14px; }
+  .intro img { height: 46px; width: 46px; }
+  .app { grid-template-columns: 1fr; padding: 18px; }
+  .go { grid-column: 1; grid-row: auto; align-self: start; margin-top: 4px; }
+}
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+
+<body>
+<main class="page">
+
+  <header class="intro">
+    <img src="https://i.ibb.co/5XhxQYSq/Chat-GPT-Image-Oct-19-2025-12-38-25-PM.png" alt="Filippos Polyzos logo">
+    <div>
+      <h1>Filippos Polyzos</h1>
+      <span class="role">Data Analytics&nbsp;|&nbsp;R Shiny Developer</span>
+      <span class="sub">Co-host of
+        <a href="https://open.spotify.com/show/2WUFUd8ZxQOeBirk7K1RdV">Hack n&rsquo; Roll</a></span>
+    </div>
+    <button class="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+      <span class="ic ic-moon" aria-hidden="true">&#9789;</span>
+      <span class="ic ic-sun" aria-hidden="true">&#9788;</span>
+    </button>
+  </header>
+
+  <p class="lede">Interactive basketball analytics, R projects and long-form writing &mdash;
+     built around data and film.</p>
+
+  <div class="projects">
+
+    <a class="app" href="https://filippos-pol.shinyapps.io/adjusted-era-stats/">
+      <div class="head">
+        <h2>Adjusted Era Stats</h2>
+        <!-- EDIT: confirm this describes the app -->
+        <p>Puts scoring and efficiency in the context of the league a player actually played in,
+           so numbers from different eras can be compared on level ground.</p>
+      </div>
+      <span class="go">Open</span>
+    </a>
+
+    <a class="app" href="https://filippos-pol.shinyapps.io/nba-draft-recap/">
+      <div class="head">
+        <h2>Draft Recap</h2>
+        <div class="collab">In collaboration with BBall Index</div>
+        <p>Every pick since 2016, with what each player's career has been worth in Talent WAR —
+           compare whole draft classes, find the second-round steals, and see which schools and
+           clubs keep producing.</p>
+      </div>
+      <span class="go">Open</span>
+    </a>
+
+    <a class="app" href="https://filippos-pol.shinyapps.io/modern-playoff-scoring-runs/">
+      <div class="head">
+        <h2>Playoff Scoring Runs</h2>
+        <!-- EDIT: confirm this describes the app -->
+        <p>How scoring runs shape modern playoff games — when they happen, how long they last,
+           and how often a run swings the result.</p>
+      </div>
+      <span class="go">Open</span>
+    </a>
+
+    <a class="app repo" href="https://github.com/filippospol/R-bball-projects">
+      <div class="head">
+        <h2>Basketball Projects</h2>
+        <p>The code behind the work: R scripts for scraping domestic leagues, the Euroleague and
+           the NBA, lineup and matchup analysis, and the shared gt / ggplot2 theme.</p>
+      </div>
+      <span class="go">View code</span>
+    </a>
+
+    <a class="app repo" href="https://filippospol.wordpress.com/">
+      <div class="head">
+        <h2>Blog</h2>
+        <p>Longer-form writing that mixes numbers and film: NBA and Euroleague breakdowns, player
+           studies (with a Timberwolves lean), the odd R data project, and the workings behind the
+           apps &mdash; occasionally in Greek.</p>
+      </div>
+      <span class="go">Read</span>
+    </a>
+
+  </div>
+
+  <footer class="foot">
+    <p class="note">The apps sleep when idle, so the first load can take a few seconds to wake up.</p>
+    <p class="credit">Also built the <a href="https://x.com/The_BBall_Index/status/1702086011688272338">Player
+       Cards</a> for BBall Index &mdash; live for subscribers inside the
+       <a href="https://www.bball-index.com/leaderboards-tool/">Leaderboards tool</a>.</p>
+    <a href="https://x.com/filippos_pol">X</a>
+    <span class="sep">/</span>
+    <a href="https://www.youtube.com/@filippospolyzos/videos">YouTube</a>
+    <span class="sep">/</span>
+    <a href="mailto:polyzos.filippos@gmail.com">Email</a>
+  </footer>
+
+</main>
+<script>
+  document.querySelector('.theme-toggle').addEventListener('click', function () {
+    var next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    window.applyTheme(next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+</script>
+</body>
+</html>
