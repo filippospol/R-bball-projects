@@ -1,8 +1,8 @@
 name: Basketball Stats App Daily Data Update
 
 on:
-#  schedule:
-#    - cron: '0 0 * * *'
+  schedule:
+    - cron: '1 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -46,29 +46,29 @@ jobs:
             any::xml2
             any::vroom
 
-      - name: Pro A Scraper
-        continue-on-error: true
-        run: Rscript bball-stats/scrapers/FR-scraper.R
+      #- name: Pro A Scraper
+      #  continue-on-error: true
+      #  run: Rscript bball-stats/scrapers/FR-scraper.R
 
-      - name: Serie A Scraper
-        continue-on-error: true
-        run: Rscript bball-stats/scrapers/IT-scraper.R
+      #- name: Serie A Scraper
+      #  continue-on-error: true
+      #  run: Rscript bball-stats/scrapers/IT-scraper.R
 
       - name: BBL Scraper
         continue-on-error: true
         run: Rscript bball-stats/scrapers/DE-scraper.R
 
-      - name: GBL Scraper
-        continue-on-error: true
-        run: Rscript bball-stats/scrapers/GR-scraper.R
+      #- name: GBL Scraper
+      #  continue-on-error: true
+      #  run: Rscript bball-stats/scrapers/GR-scraper.R
 
-      - name: ACB Scraper
-        continue-on-error: true
-        run: Rscript bball-stats/scrapers/ES-scraper.R
+      #- name: ACB Scraper
+      #  continue-on-error: true
+      #  run: Rscript bball-stats/scrapers/ES-scraper.R
 
-      - name: TBSL Scraper
-        continue-on-error: true
-        run: Rscript bball-stats/scrapers/TR-scraper.R
+      #- name: TBSL Scraper
+      #  continue-on-error: true
+      #  run: Rscript bball-stats/scrapers/TR-scraper.R
 
       # - name: NBB Scraper # run this locally, 403 error :(
 
