@@ -76,9 +76,9 @@ jobs:
         continue-on-error: true
         run: Rscript bball-stats/scrapers/EL-scraper.R
 
-      - name: Eurocup Scraper
-        continue-on-error: true
-        run: Rscript bball-stats/scrapers/EC-scraper.R
+      #- name: Eurocup Scraper
+      #  continue-on-error: true
+      #  run: Rscript bball-stats/scrapers/EC-scraper.R
 
       - name: Build app-data.rds
         run: Rscript bball-stats/bball-stats-app-build-data.R
