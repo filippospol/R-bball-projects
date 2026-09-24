@@ -25,8 +25,9 @@ library(vroom)
 
 #' *CONFIG*
 league    = "NBB"
-season    = "2025-26"
-season_id = 97   # NBB 2025-26 on lnb.com.br (bump each season: check the site's season filter)
+season    = "2026-27" # "2025-26
+season_id = 106   # 97
+# NBB 2025-26 on lnb.com.br (bump each season: check the site's season filter)
 # The bare season URL (no phase, no wherePlaying) returns EVERY game - regular season AND the
 # full playoffs (Oitavas -> Quartas -> Semi -> Final, games 381-439). Adding phase[]= or
 # wherePlaying= makes the site truncate to the regular season only, so keep this URL as-is.
