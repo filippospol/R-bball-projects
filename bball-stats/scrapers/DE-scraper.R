@@ -38,7 +38,7 @@ headers = c(
   `sec-fetch-site` = "cross-site",
   `user-agent` = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
   `x-api-key` = "publicWebUser",
-  `x-api-secret` = "b735b3b6266025671fe81a4605e992e2898fb1ab4afb9dd8db74619ddba7613c"
+  `x-api-secret` = "6185034730a0ee34ebe52896e6a543e3bb4d01bda6e80f792646ab90bd5e45d0"
 )
 
 # Helper: pull every page of one gameType ("finished" / "scheduled") into a tibble.
