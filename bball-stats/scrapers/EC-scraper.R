@@ -29,7 +29,7 @@ library(rvest)
 # 3 play-in games
 # playoffs: best of 5 series
 # final four: semi finals and first place game
-league="Eurocup" ; season = "2025-26" ; scode = "U2025" ; games_n = (19*10)+5
+league="Eurocup" ; season = "2026-27" ; scode = "U2026" ; games_n = (19*10)+5
 
 games_url = "https://feeds.incrowdsports.com/provider/euroleague-feeds/v2/competitions/{substr(scode,1,1)}/seasons/{scode}/games" %>% 
   glue()
