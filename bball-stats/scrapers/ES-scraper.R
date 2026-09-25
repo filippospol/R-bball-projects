@@ -17,6 +17,7 @@ library(httr)
 library(jsonlite)
 library(glue)
 library(lubridate)
+library(readr)
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #' *CONFIG*
