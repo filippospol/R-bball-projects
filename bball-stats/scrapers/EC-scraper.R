@@ -19,6 +19,7 @@ library(glue)
 library(janitor)
 library(lubridate)
 library(rvest)
+library(readr)
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
