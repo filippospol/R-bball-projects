@@ -1,81 +1,57 @@
 [
  {
-  "geniusId": "",
-  "date": "2026-09-26",
-  "home": "BAHÇEŞEHİR KOLEJİ",
-  "away": "FENERBAHÇE TARFİN"
+  "geniusId": "2913588",
+  "date": "2026-09-25",
+  "home": "TOFAŞ",
+  "away": "PİZZABULLS BORDO BANDIRMA"
  },
  {
-  "geniusId": "",
-  "date": "2026-09-26",
-  "home": "GALATASARAY MCT TECHNIC",
-  "away": "ÇAYIROVA BELEDİYESİ"
- },
- {
-  "geniusId": "",
+  "geniusId": "2913589",
   "date": "2026-09-26",
   "home": "TÜRK TELEKOM",
   "away": "KARŞIYAKA"
  },
  {
-  "geniusId": "",
-  "date": "2026-09-26",
-  "home": "TRABZONSPOR",
-  "away": "BURSASPOR BASKETBOL"
- },
- {
-  "geniusId": "",
-  "date": "2026-09-26",
-  "home": "ANADOLU EFES",
-  "away": "BEŞİKTAŞ"
- },
- {
-  "geniusId": "",
-  "date": "2026-09-26",
-  "home": "TOFAŞ",
-  "away": "PİZZABULLS BORDO BANDIRMA"
- },
- {
-  "geniusId": "",
+  "geniusId": "2913590",
   "date": "2026-09-26",
   "home": "ALİAĞA PETKİM SPOR",
   "away": "YUKATEL DENİZLİ BASKET"
  },
  {
-  "geniusId": "",
+  "geniusId": "2913591",
   "date": "2026-09-26",
-  "home": "GLİNT KÖRFEZ BASKET",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "ÇAYIROVA BELEDİYESİ"
+ },
+ {
+  "geniusId": "2913592",
+  "date": "2026-09-27",
+  "home": "TRABZONSPOR",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "2913593",
+  "date": "2026-09-27",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "FENERBAHÇE TARFİN"
+ },
+ {
+  "geniusId": "2913594",
+  "date": "2026-09-27",
+  "home": "ANADOLU EFES",
+  "away": "BEŞİKTAŞ"
+ },
+ {
+  "geniusId": "2913595",
+  "date": "2026-09-28",
+  "home": "BİOTEKNO KÖRFEZ BASKET",
   "away": "ESENLER EROKSPOR"
  },
  {
   "geniusId": "",
-  "date": "2026-10-03",
-  "home": "ÇAYIROVA BELEDİYESİ",
-  "away": "BAHÇEŞEHİR KOLEJİ"
- },
- {
-  "geniusId": "",
-  "date": "2026-10-03",
+  "date": "2026-10-02",
   "home": "KARŞIYAKA",
   "away": "GALATASARAY MCT TECHNIC"
- },
- {
-  "geniusId": "",
-  "date": "2026-10-03",
-  "home": "BURSASPOR BASKETBOL",
-  "away": "TÜRK TELEKOM"
- },
- {
-  "geniusId": "",
-  "date": "2026-10-03",
-  "home": "BEŞİKTAŞ",
-  "away": "TRABZONSPOR"
- },
- {
-  "geniusId": "",
-  "date": "2026-10-03",
-  "home": "PİZZABULLS BORDO BANDIRMA",
-  "away": "ANADOLU EFES"
  },
  {
   "geniusId": "",
@@ -86,14 +62,38 @@
  {
   "geniusId": "",
   "date": "2026-10-03",
+  "home": "BURSASPOR BASKETBOL",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-10-03",
   "home": "ESENLER EROKSPOR",
   "away": "ALİAĞA PETKİM SPOR"
  },
  {
   "geniusId": "",
-  "date": "2026-10-03",
+  "date": "2026-10-04",
+  "home": "PİZZABULLS BORDO BANDIRMA",
+  "away": "ANADOLU EFES"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-10-04",
   "home": "FENERBAHÇE TARFİN",
-  "away": "GLİNT KÖRFEZ BASKET"
+  "away": "BİOTEKNO KÖRFEZ BASKET"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-10-04",
+  "home": "ÇAYIROVA BELEDİYESİ",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-10-05",
+  "home": "BEŞİKTAŞ",
+  "away": "TRABZONSPOR"
  },
  {
   "geniusId": "",
@@ -104,26 +104,8 @@
  {
   "geniusId": "",
   "date": "2026-10-10",
-  "home": "GALATASARAY MCT TECHNIC",
-  "away": "BURSASPOR BASKETBOL"
- },
- {
-  "geniusId": "",
-  "date": "2026-10-10",
-  "home": "TÜRK TELEKOM",
-  "away": "BEŞİKTAŞ"
- },
- {
-  "geniusId": "",
-  "date": "2026-10-10",
-  "home": "TRABZONSPOR",
-  "away": "PİZZABULLS BORDO BANDIRMA"
- },
- {
-  "geniusId": "",
-  "date": "2026-10-10",
-  "home": "ANADOLU EFES",
-  "away": "YUKATEL DENİZLİ BASKET"
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "BİOTEKNO KÖRFEZ BASKET"
  },
  {
   "geniusId": "",
@@ -134,14 +116,44 @@
  {
   "geniusId": "",
   "date": "2026-10-10",
-  "home": "ALİAĞA PETKİM SPOR",
-  "away": "GLİNT KÖRFEZ BASKET"
+  "home": "ÇAYIROVA BELEDİYESİ",
+  "away": "FENERBAHÇE TARFİN"
  },
  {
   "geniusId": "",
-  "date": "2026-10-10",
-  "home": "ÇAYIROVA BELEDİYESİ",
-  "away": "FENERBAHÇE TARFİN"
+  "date": "2026-10-11",
+  "home": "TRABZONSPOR",
+  "away": "PİZZABULLS BORDO BANDIRMA"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-10-11",
+  "home": "ANADOLU EFES",
+  "away": "YUKATEL DENİZLİ BASKET"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-10-11",
+  "home": "TÜRK TELEKOM",
+  "away": "BEŞİKTAŞ"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-10-12",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "BURSASPOR BASKETBOL"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-10-16",
+  "home": "KARŞIYAKA",
+  "away": "ÇAYIROVA BELEDİYESİ"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-10-17",
+  "home": "PİZZABULLS BORDO BANDIRMA",
+  "away": "TÜRK TELEKOM"
  },
  {
   "geniusId": "",
@@ -152,80 +164,32 @@
  {
   "geniusId": "",
   "date": "2026-10-17",
-  "home": "BEŞİKTAŞ",
-  "away": "GALATASARAY MCT TECHNIC"
+  "home": "BİOTEKNO KÖRFEZ BASKET",
+  "away": "TOFAŞ"
  },
  {
   "geniusId": "",
-  "date": "2026-10-17",
-  "home": "PİZZABULLS BORDO BANDIRMA",
-  "away": "TÜRK TELEKOM"
- },
- {
-  "geniusId": "",
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "home": "YUKATEL DENİZLİ BASKET",
   "away": "TRABZONSPOR"
  },
  {
   "geniusId": "",
-  "date": "2026-10-17",
-  "home": "ESENLER EROKSPOR",
-  "away": "ANADOLU EFES"
- },
- {
-  "geniusId": "",
-  "date": "2026-10-17",
-  "home": "GLİNT KÖRFEZ BASKET",
-  "away": "TOFAŞ"
- },
- {
-  "geniusId": "",
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "home": "FENERBAHÇE TARFİN",
   "away": "ALİAĞA PETKİM SPOR"
  },
  {
   "geniusId": "",
-  "date": "2026-10-17",
-  "home": "KARŞIYAKA",
-  "away": "ÇAYIROVA BELEDİYESİ"
+  "date": "2026-10-18",
+  "home": "BEŞİKTAŞ",
+  "away": "GALATASARAY MCT TECHNIC"
  },
  {
   "geniusId": "",
-  "date": "2026-10-23",
-  "home": "BAHÇEŞEHİR KOLEJİ",
-  "away": "BEŞİKTAŞ"
- },
- {
-  "geniusId": "",
-  "date": "2026-10-23",
-  "home": "GALATASARAY MCT TECHNIC",
-  "away": "PİZZABULLS BORDO BANDIRMA"
- },
- {
-  "geniusId": "",
-  "date": "2026-10-23",
-  "home": "TÜRK TELEKOM",
-  "away": "YUKATEL DENİZLİ BASKET"
- },
- {
-  "geniusId": "",
-  "date": "2026-10-23",
-  "home": "TRABZONSPOR",
-  "away": "ESENLER EROKSPOR"
- },
- {
-  "geniusId": "",
-  "date": "2026-10-23",
-  "home": "ANADOLU EFES",
-  "away": "GLİNT KÖRFEZ BASKET"
- },
- {
-  "geniusId": "",
-  "date": "2026-10-23",
-  "home": "TOFAŞ",
-  "away": "ALİAĞA PETKİM SPOR"
+  "date": "2026-10-19",
+  "home": "ESENLER EROKSPOR",
+  "away": "ANADOLU EFES"
  },
  {
   "geniusId": "",
@@ -235,9 +199,45 @@
  },
  {
   "geniusId": "",
-  "date": "2026-10-23",
+  "date": "2026-10-24",
+  "home": "TRABZONSPOR",
+  "away": "ESENLER EROKSPOR"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-10-24",
+  "home": "TÜRK TELEKOM",
+  "away": "YUKATEL DENİZLİ BASKET"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-10-24",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "BEŞİKTAŞ"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-10-25",
+  "home": "ANADOLU EFES",
+  "away": "BİOTEKNO KÖRFEZ BASKET"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-10-25",
   "home": "KARŞIYAKA",
   "away": "FENERBAHÇE TARFİN"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-10-25",
+  "home": "TOFAŞ",
+  "away": "ALİAĞA PETKİM SPOR"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-10-25",
+  "home": "GALATASARAY MCT TECHNIC",
+  "away": "PİZZABULLS BORDO BANDIRMA"
  },
  {
   "geniusId": "",
@@ -260,7 +260,7 @@
  {
   "geniusId": "",
   "date": "2026-10-31",
-  "home": "GLİNT KÖRFEZ BASKET",
+  "home": "BİOTEKNO KÖRFEZ BASKET",
   "away": "TRABZONSPOR"
  },
  {
@@ -303,7 +303,7 @@
   "geniusId": "",
   "date": "2026-11-07",
   "home": "TÜRK TELEKOM",
-  "away": "GLİNT KÖRFEZ BASKET"
+  "away": "BİOTEKNO KÖRFEZ BASKET"
  },
  {
   "geniusId": "",
@@ -344,7 +344,7 @@
  {
   "geniusId": "",
   "date": "2026-11-14",
-  "home": "GLİNT KÖRFEZ BASKET",
+  "home": "BİOTEKNO KÖRFEZ BASKET",
   "away": "GALATASARAY MCT TECHNIC"
  },
  {
@@ -387,7 +387,7 @@
   "geniusId": "",
   "date": "2026-11-21",
   "home": "BAHÇEŞEHİR KOLEJİ",
-  "away": "GLİNT KÖRFEZ BASKET"
+  "away": "BİOTEKNO KÖRFEZ BASKET"
  },
  {
   "geniusId": "",
@@ -458,7 +458,7 @@
  {
   "geniusId": "",
   "date": "2026-12-05",
-  "home": "GLİNT KÖRFEZ BASKET",
+  "home": "BİOTEKNO KÖRFEZ BASKET",
   "away": "ÇAYIROVA BELEDİYESİ"
  },
  {
@@ -507,7 +507,7 @@
   "geniusId": "",
   "date": "2026-12-12",
   "home": "KARŞIYAKA",
-  "away": "GLİNT KÖRFEZ BASKET"
+  "away": "BİOTEKNO KÖRFEZ BASKET"
  },
  {
   "geniusId": "",
@@ -560,7 +560,7 @@
  {
   "geniusId": "",
   "date": "2026-12-19",
-  "home": "GLİNT KÖRFEZ BASKET",
+  "home": "BİOTEKNO KÖRFEZ BASKET",
   "away": "BURSASPOR BASKETBOL"
  },
  {
@@ -609,7 +609,7 @@
   "geniusId": "",
   "date": "2026-12-26",
   "home": "BEŞİKTAŞ",
-  "away": "GLİNT KÖRFEZ BASKET"
+  "away": "BİOTEKNO KÖRFEZ BASKET"
  },
  {
   "geniusId": "",
@@ -662,7 +662,7 @@
  {
   "geniusId": "",
   "date": "2027-01-02",
-  "home": "GLİNT KÖRFEZ BASKET",
+  "home": "BİOTEKNO KÖRFEZ BASKET",
   "away": "PİZZABULLS BORDO BANDIRMA"
  },
  {
@@ -711,7 +711,7 @@
   "geniusId": "",
   "date": "2027-01-09",
   "home": "YUKATEL DENİZLİ BASKET",
-  "away": "GLİNT KÖRFEZ BASKET"
+  "away": "BİOTEKNO KÖRFEZ BASKET"
  },
  {
   "geniusId": "",
@@ -765,7 +765,7 @@
   "geniusId": "",
   "date": "2027-01-16",
   "home": "ESENLER EROKSPOR",
-  "away": "GLİNT KÖRFEZ BASKET"
+  "away": "BİOTEKNO KÖRFEZ BASKET"
  },
  {
   "geniusId": "",
@@ -812,7 +812,7 @@
  {
   "geniusId": "",
   "date": "2027-01-23",
-  "home": "GLİNT KÖRFEZ BASKET",
+  "home": "BİOTEKNO KÖRFEZ BASKET",
   "away": "FENERBAHÇE TARFİN"
  },
  {
@@ -854,7 +854,7 @@
  {
   "geniusId": "",
   "date": "2027-01-30",
-  "home": "GLİNT KÖRFEZ BASKET",
+  "home": "BİOTEKNO KÖRFEZ BASKET",
   "away": "ALİAĞA PETKİM SPOR"
  },
  {
@@ -897,7 +897,7 @@
   "geniusId": "",
   "date": "2027-02-06",
   "home": "TOFAŞ",
-  "away": "GLİNT KÖRFEZ BASKET"
+  "away": "BİOTEKNO KÖRFEZ BASKET"
  },
  {
   "geniusId": "",
@@ -938,7 +938,7 @@
  {
   "geniusId": "",
   "date": "2027-02-13",
-  "home": "GLİNT KÖRFEZ BASKET",
+  "home": "BİOTEKNO KÖRFEZ BASKET",
   "away": "ANADOLU EFES"
  },
  {
@@ -981,7 +981,7 @@
   "geniusId": "",
   "date": "2027-03-06",
   "home": "TRABZONSPOR",
-  "away": "GLİNT KÖRFEZ BASKET"
+  "away": "BİOTEKNO KÖRFEZ BASKET"
  },
  {
   "geniusId": "",
@@ -1022,7 +1022,7 @@
  {
   "geniusId": "",
   "date": "2027-03-13",
-  "home": "GLİNT KÖRFEZ BASKET",
+  "home": "BİOTEKNO KÖRFEZ BASKET",
   "away": "TÜRK TELEKOM"
  },
  {
@@ -1065,7 +1065,7 @@
   "geniusId": "",
   "date": "2027-03-20",
   "home": "GALATASARAY MCT TECHNIC",
-  "away": "GLİNT KÖRFEZ BASKET"
+  "away": "BİOTEKNO KÖRFEZ BASKET"
  },
  {
   "geniusId": "",
@@ -1106,7 +1106,7 @@
  {
   "geniusId": "",
   "date": "2027-03-27",
-  "home": "GLİNT KÖRFEZ BASKET",
+  "home": "BİOTEKNO KÖRFEZ BASKET",
   "away": "BAHÇEŞEHİR KOLEJİ"
  },
  {
@@ -1179,7 +1179,7 @@
   "geniusId": "",
   "date": "2027-04-03",
   "home": "ÇAYIROVA BELEDİYESİ",
-  "away": "GLİNT KÖRFEZ BASKET"
+  "away": "BİOTEKNO KÖRFEZ BASKET"
  },
  {
   "geniusId": "",
@@ -1226,7 +1226,7 @@
  {
   "geniusId": "",
   "date": "2027-04-10",
-  "home": "GLİNT KÖRFEZ BASKET",
+  "home": "BİOTEKNO KÖRFEZ BASKET",
   "away": "KARŞIYAKA"
  },
  {
@@ -1281,7 +1281,7 @@
   "geniusId": "",
   "date": "2027-04-17",
   "home": "BURSASPOR BASKETBOL",
-  "away": "GLİNT KÖRFEZ BASKET"
+  "away": "BİOTEKNO KÖRFEZ BASKET"
  },
  {
   "geniusId": "",
@@ -1328,7 +1328,7 @@
  {
   "geniusId": "",
   "date": "2027-04-24",
-  "home": "GLİNT KÖRFEZ BASKET",
+  "home": "BİOTEKNO KÖRFEZ BASKET",
   "away": "BEŞİKTAŞ"
  },
  {
@@ -1383,7 +1383,7 @@
   "geniusId": "",
   "date": "2027-05-01",
   "home": "PİZZABULLS BORDO BANDIRMA",
-  "away": "GLİNT KÖRFEZ BASKET"
+  "away": "BİOTEKNO KÖRFEZ BASKET"
  },
  {
   "geniusId": "",
@@ -1430,7 +1430,7 @@
  {
   "geniusId": "",
   "date": "2027-05-08",
-  "home": "GLİNT KÖRFEZ BASKET",
+  "home": "BİOTEKNO KÖRFEZ BASKET",
   "away": "YUKATEL DENİZLİ BASKET"
  },
  {
