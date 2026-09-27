@@ -46,9 +46,9 @@ jobs:
             any::xml2
             any::vroom
 
-      #- name: Pro A Scraper
-      #  continue-on-error: true
-      #  run: Rscript bball-stats/scrapers/FR-scraper.R
+      - name: Pro A Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/FR-scraper.R
 
       - name: Serie A Scraper
         continue-on-error: true
