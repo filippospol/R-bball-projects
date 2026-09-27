@@ -50,9 +50,9 @@ jobs:
       #  continue-on-error: true
       #  run: Rscript bball-stats/scrapers/FR-scraper.R
 
-      #- name: Serie A Scraper
-      #  continue-on-error: true
-      #  run: Rscript bball-stats/scrapers/IT-scraper.R
+      - name: Serie A Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/IT-scraper.R
 
       - name: BBL Scraper
         continue-on-error: true
