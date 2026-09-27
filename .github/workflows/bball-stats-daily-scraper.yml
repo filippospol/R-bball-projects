@@ -66,9 +66,9 @@ jobs:
       #  continue-on-error: true
       #  run: Rscript bball-stats/scrapers/ES-scraper.R
 
-      #- name: TBSL Scraper
-      #  continue-on-error: true
-      #  run: Rscript bball-stats/scrapers/TR-scraper.R
+      - name: TBSL Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/TR-scraper.R
 
       # - name: NBB Scraper # run this locally, 403 error :(
 
