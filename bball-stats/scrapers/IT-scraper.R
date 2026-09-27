@@ -120,7 +120,7 @@ TT = list()
 
 for (i in seq_len(nrow(fixture_info))) {
   fx = fixture_info[i, ]
-  if (is.na(fx$GAME_DATE) || fx$GAME_DATE >= today()) break
+  if (is.na(fx$GAME_DATE) || fx$GAME_DATE > today()) break
   
   Sys.sleep(0.5)                                          # be a polite bot
   
