@@ -215,7 +215,7 @@ PP = list(); TT = list()
 
 for (i in seq_len(nrow(fixture_info))) {
   # stop at the first game dated today or later (same rule as the DE scraper)
-  if (is.na(fixture_info$GAME_DATE[i]) || fixture_info$GAME_DATE[i] >= today()) break
+  if (is.na(fixture_info$GAME_DATE[i]) || fixture_info$GAME_DATE[i] > today()) break
   if (!isTRUE(fixture_info$STATUS[i] == "FINALIZED")) next   # postponed / cancelled
   
   Sys.sleep(0.4)                                          # be a polite bot
