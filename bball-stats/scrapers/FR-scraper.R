@@ -123,7 +123,7 @@ for (i in seq_along(fixture_info$match_id)) {
   fixture_matchup = paste0(fixture_date,", ",
                            fixture_teamcodes[1]," vs ",fixture_teamcodes[2])
   
-  if (ymd(fixture_date)>=today()) break
+  if (ymd(fixture_date)>today()) break
   
   # Player Stats:
   PP[[i]] = bind_rows(
