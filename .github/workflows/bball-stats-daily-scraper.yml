@@ -17,6 +17,9 @@ jobs:
         with:
           fetch-depth: 0 # Required for git pull --rebase to work reliably
 
+      - name: Check runner IP / geo
+        run: curl -s https://ipinfo.io
+
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
         with:
