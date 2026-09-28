@@ -85,8 +85,6 @@ for (comp_id in competition_ids) {
     raw_calendar = safe_json(res, label = paste("calendar", competition_start_dates[i]))
     
     if (!is.null(raw_calendar) && length(raw_calendar$data) > 0) {
-    
-    if (length(raw_calendar$data) > 0) {
       FF[[length(FF) + 1]] = suppressWarnings(
         raw_calendar$data %>%
           data.frame() %>%
