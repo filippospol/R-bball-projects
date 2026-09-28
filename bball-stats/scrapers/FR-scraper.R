@@ -107,7 +107,7 @@ if (nrow(fixture_info) == 0) {
 
 # table(fixture_info$competition_abbrev) add new values to str_detect
 
-rm(list=setdiff(ls(),c("fixture_info","league","season")))
+rm(list=setdiff(ls(),c("fixture_info","league","season","safe_json")))
 
 #' *LOOP OVER MATCH ID'S AND GET BOXSCORES*
 
