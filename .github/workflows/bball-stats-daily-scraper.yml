@@ -58,6 +58,8 @@ jobs:
 
       - name: BBL Scraper
         continue-on-error: true
+        env:
+          BBL_API_SECRET: ${{ secrets.BBL_API_SECRET }}
         run: Rscript bball-stats/scrapers/DE-scraper.R
 
       - name: ACB Scraper
