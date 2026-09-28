@@ -21,6 +21,17 @@ library(lubridate)
 library(rvest)
 library(readr)
 
+safe_json = function(resp, label = "") {
+  body <- httr::content(resp, "text", encoding = "UTF-8")
+  if (httr::http_error(resp) || !grepl("json", httr::http_type(resp))) {
+    warning(sprintf("[%s] HTTP %s, type %s from %s\n%s",
+                    label, httr::status_code(resp), httr::http_type(resp),
+                    resp$url, substr(body, 1, 300)))
+    return(NULL)
+  }
+  jsonlite::fromJSON(body)
+}
+
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 #' *EXTRACT MATCH ID'S*
@@ -67,11 +78,13 @@ for (comp_id in competition_ids) {
                   competition_end_dates[i],
                   '"}')
     
-    res = httr::POST(url = "https://api-prod.lnb.fr/match/getCalendar", httr::add_headers(.headers=headers)
-                     , body = data
-    )
+    res = httr::RETRY("POST", url = "https://api-prod.lnb.fr/match/getCalendar",
+                      httr::add_headers(.headers = headers), body = data,
+                      times = 5, pause_base = 2, pause_cap = 30)
     
-    raw_calendar = fromJSON(content(res, "text", encoding = "UTF-8"))
+    raw_calendar = safe_json(res, label = paste("calendar", competition_start_dates[i]))
+    
+    if (!is.null(raw_calendar) && length(raw_calendar$data) > 0) {
     
     if (length(raw_calendar$data) > 0) {
       FF[[length(FF) + 1]] = suppressWarnings(
@@ -89,6 +102,11 @@ fixture_info = bind_rows(FF) %>%
   filter(str_detect(competition_abbrev, "PROA")) %>%
   distinct(match_id, .keep_all = TRUE)
 
+if (nrow(fixture_info) == 0) {
+  stop("No fixtures returned - every getCalendar call failed or was blocked. ",
+       "Check the warnings above (likely a 403 / IP or geo block on the runner).")
+}
+
 # table(fixture_info$competition_abbrev) add new values to str_detect
 
 rm(list=setdiff(ls(),c("fixture_info","league","season")))
@@ -100,16 +118,19 @@ PP = list()
 TT = list()
 for (i in seq_along(fixture_info$match_id)) {
   # URL (JSON):
-  fixture_url = GET(
-    url=glue(
-      "https://embed-api.eui.connect.sportradar.com/v1/embed/12/fixture_detail?fixtureId={fixture_info$match_id[i]}"
-    )
-  )
+  fixture_url = httr::RETRY("GET",
+                            url = glue("https://embed-api.eui.connect.sportradar.com/v1/embed/12/fixture_detail?fixtureId={fixture_info$match_id[i]}"),
+                            httr::add_headers(
+                              `user-agent` = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+                              accept = "application/json, text/plain, */*",
+                              referer = "https://lnb.fr/",
+                              origin = "https://lnb.fr"
+                            ),
+                            times = 5, pause_base = 2, pause_cap = 30)
   
   # API data:
-  raw_json = suppressMessages(
-    fromJSON(content(fixture_url, "text"))
-  )
+  raw_json = suppressMessages(safe_json(fixture_url, label = paste("fixture", fixture_info$match_id[i])))
+  if (is.null(raw_json)) next
   
   if (
     raw_json$data$banner$competition$name %>% pluck(1) %>% stri_trans_general("latin-ascii") %>% str_detect("Betclic ELITE") == FALSE
