@@ -24,6 +24,11 @@ library(readr)
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #' *EXTRACT MATCH ID'S*
 
+# easycredit-bbl.de > F12 > Network > reload > click the request to
+# api.basketball-bundesliga.de > Request Headers > copy x-api-secret.
+# https://curlconverter.com/r/ > paste headers here > extract secret key
+# Github > R-bball-projects > Settings > Secrets and variables > Actions > Repository secrets
+
 # Set API headers:
 headers = c(
   accept = "application/json, text/plain, */*",
@@ -39,7 +44,7 @@ headers = c(
   `sec-fetch-site` = "cross-site",
   `user-agent` = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
   `x-api-key` = "publicWebUser",
-  `x-api-secret` = "6185034730a0ee34ebe52896e6a543e3bb4d01bda6e80f792646ab90bd5e45d0"
+  `x-api-secret` = Sys.getenv("BBL_API_SECRET")
 )
 
 # Helper: pull every page of one gameType ("finished" / "scheduled") into a tibble.
