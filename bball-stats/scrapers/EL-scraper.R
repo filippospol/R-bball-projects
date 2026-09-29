@@ -71,11 +71,12 @@ for(i in 1:dim(fixture_info)[1]) {
     raw_json %>% 
       pluck("Stats") %>% 
       as_tibble() %>% 
+      select(-any_of("Team")) %>%
       # team code, so the cleanup at the end has a stable key to group on.
       # same home-then-away assumption the TT block below already makes
       mutate(CODE = c(fixture_info$HOME_CODE[i],fixture_info$AWAY_CODE[i]),
              TEAM2 = c(fixture_info$HOME_TEAM[i],fixture_info$AWAY_TEAM[i])) %>% 
-      unnest() %>% 
+      unnest() %>%
       clean_names("all_caps") %>% 
       mutate(GAME_ID=fixture_info$GAME_ID[i],SEASON=fixture_info$SEASON %>% unique(),
              LEAGUE=fixture_info$LEAGUE %>% unique(),MATCHUP=fixture_info$MATCHUP[i],
