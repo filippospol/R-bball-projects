@@ -64,18 +64,19 @@ for(i in 1:dim(fixture_info)[1]) {
   Sys.sleep(1)
   boxscore_url = glue("https://live.euroleague.net/api/Boxscore?gamecode={fixture_info$GAME_ID[i]}&seasoncode={scode}")
   res = GET(boxscore_url)
-  # message(paste0("Game id ",fixture_info$GAME_ID[i]),": status code ",res$status_code)
+  #message(paste0("Game id ",fixture_info$GAME_ID[i]),": status code ",res$status_code)
   raw_json = fromJSON(content(res, "text", encoding = "UTF-8"))
   
   PP[[i]] = suppressWarnings(
     raw_json %>% 
       pluck("Stats") %>% 
       as_tibble() %>% 
+      select(-any_of("Team")) %>%
       # team code, so the cleanup at the end has a stable key to group on.
       # same home-then-away assumption the TT block below already makes
       mutate(CODE = c(fixture_info$HOME_CODE[i],fixture_info$AWAY_CODE[i]),
              TEAM2 = c(fixture_info$HOME_TEAM[i],fixture_info$AWAY_TEAM[i])) %>% 
-      unnest() %>% 
+      unnest() %>%
       clean_names("all_caps") %>% 
       mutate(GAME_ID=fixture_info$GAME_ID[i],SEASON=fixture_info$SEASON %>% unique(),
              LEAGUE=fixture_info$LEAGUE %>% unique(),MATCHUP=fixture_info$MATCHUP[i],
