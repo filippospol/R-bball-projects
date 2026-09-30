@@ -25,17 +25,17 @@ library(vroom)
 
 #' *BEFORE STARTING*
 # To get the fixture list, at the start of every season (and before the playoffs),
-# use the tbsl-fixtures-generator.js file as follows:
+# use the TR-fixtures-generator.js file as follows:
 # https://www.tbf.org.tr/ligler/bsl-2026-2027 > DevTools, Console Tab >
 # > allow pasting > paste the contents of the file > press Enter
-# The browser will generate a file named `tbsl-fixtures.json`
+# The browser will generate a file named `TR-fixtures.json`
 # Replace the new file with the one already found on Github.
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 #' *EXTRACT MATCH ID'S*
-# From tbsl-fixtures.json (geniusId = FIBA LiveStats id, date, team names), sorted by date:
-fixtures = fromJSON("https://raw.githubusercontent.com/filippospol/R-bball-projects/refs/heads/main/bball-stats/scrapers/tbsl-fixtures.json") %>%
+# From TR-fixtures.json (geniusId = FIBA LiveStats id, date, team names), sorted by date:
+fixtures = fromJSON("https://raw.githubusercontent.com/filippospol/R-bball-projects/refs/heads/main/bball-stats/scrapers/TR-fixtures.json") %>%
   as_tibble() %>%
   filter(!is.na(geniusId) & geniusId != "") %>%
   mutate(date = as_date(date)) %>%
