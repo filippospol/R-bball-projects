@@ -75,8 +75,8 @@ jobs:
           ACTIVITY_ID: "22214"                                        # update once per season
           SEASON_URL: "https://www.tbf.org.tr/ligler/bsl-2026-2027"   # update once per season
         run: |
-          cp bball-stats/scrapers/fetch-fixtures.mjs "$RUNNER_TEMP/pw/"
-          node "$RUNNER_TEMP/pw/fetch-fixtures.mjs"
+          cp bball-stats/scrapers/TR-fetch-fixtures.mjs "$RUNNER_TEMP/pw/"
+          node "$RUNNER_TEMP/pw/TR-fetch-fixtures.mjs"
 
       # ---------------------------------------------------------------------------------------
       # BBL: the x-api-secret is a PUBLIC key shipped in the easycredit-bbl.de frontend. Read it
