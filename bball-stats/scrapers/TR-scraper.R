@@ -25,7 +25,7 @@ library(vroom)
 
 #' *BEFORE STARTING*
 # To get the fixture list, at the start of every season (and before the playoffs),
-# use the TR-fixtures-generator.js file as follows:
+# use the tbsl-fixtures-generator.js file as follows:
 # https://www.tbf.org.tr/ligler/bsl-2026-2027 > DevTools, Console Tab >
 # > allow pasting > paste the contents of the file > press Enter
 # The browser will generate a file named `TR-fixtures.json`
