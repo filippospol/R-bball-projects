@@ -74,8 +74,8 @@ jobs:
         run: |
           # script lives next to its node_modules, but is executed from the repo root so
           # the relative output path resolves to bball-stats/scrapers/tbsl-fixtures.json
-          cp bball-stats/scrapers/fetch-fixtures.mjs "$RUNNER_TEMP/pw/"
-          node "$RUNNER_TEMP/pw/fetch-fixtures.mjs"
+          cp bball-stats/scrapers/tbsl-fetch-fixtures.mjs "$RUNNER_TEMP/pw/"
+          node "$RUNNER_TEMP/pw/tbsl-fetch-fixtures.mjs"
 
       - name: TBSL Scraper
         continue-on-error: true
