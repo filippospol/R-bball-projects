@@ -49,6 +49,38 @@ jobs:
             any::xml2
             any::vroom
 
+      # ---------------------------------------------------------------------------------------
+      # TBSL fixtures: TBF only fills in the FIBA LiveStats id shortly before each round, so the
+      # fixtures file has to be refreshed regularly. Playwright is installed OUTSIDE the repo
+      # ($RUNNER_TEMP) so `git add .` below never picks up node_modules / package.json.
+      # ---------------------------------------------------------------------------------------
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Playwright + Chromium
+        run: |
+          mkdir -p "$RUNNER_TEMP/pw" && cd "$RUNNER_TEMP/pw"
+          npm init -y >/dev/null
+          npm i playwright@1
+          npx playwright install --with-deps chromium
+
+      - name: Refresh TBSL fixtures
+        continue-on-error: true   # a Cloudflare hiccup must not block the other scrapers
+        env:
+          ACTIVITY_ID: "22214"                                        # update once per season
+          SEASON_URL: "https://www.tbf.org.tr/ligler/bsl-2026-2027"   # update once per season
+        run: |
+          # script lives next to its node_modules, but is executed from the repo root so
+          # the relative output path resolves to bball-stats/scrapers/tbsl-fixtures.json
+          cp bball-stats/scrapers/fetch-fixtures.mjs "$RUNNER_TEMP/pw/"
+          node "$RUNNER_TEMP/pw/fetch-fixtures.mjs"
+
+      - name: TBSL Scraper
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/TR-scraper.R
+
       #- name: NBB Scraper # run this locally, 403 error :(
       #- name: Pro A Scraper # run this locally, 403 error :(
 
@@ -65,10 +97,6 @@ jobs:
       - name: ACB Scraper
         continue-on-error: true
         run: Rscript bball-stats/scrapers/ES-scraper.R
-
-      - name: TBSL Scraper
-        continue-on-error: true
-        run: Rscript bball-stats/scrapers/TR-scraper.R
 
       - name: Euroleague Scraper
         continue-on-error: true
@@ -91,6 +119,8 @@ jobs:
           ls -l *.csv || echo "No CSVs in root"
           echo "Files in data folder:"
           ls -R bball-stats/data/
+          echo "TBSL fixtures with ids:"
+          grep -c '"geniusId": "[0-9]' bball-stats/scrapers/tbsl-fixtures.json || true
 
       - name: Commit and Push
         run: |
