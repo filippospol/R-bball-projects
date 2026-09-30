@@ -1,13 +1,13 @@
-// Headless version of tbsl-fixtures-generator.js.
+// Headless version of TR-fixtures-generator.js.
 // Opens the TBF season page in Chromium (so the API call carries a real browser session /
-// Cloudflare clearance), pulls every week's matches, and writes tbsl-fixtures.json.
+// Cloudflare clearance), pulls every week's matches, and writes TR-fixtures.json.
 // Run from the repo root:  node bball-stats/scrapers/fetch-fixtures.mjs
 import { chromium } from "playwright";
 import { readFileSync, writeFileSync, existsSync } from "fs";
 
 const ACTIVITY_ID = process.env.ACTIVITY_ID ?? "22214";
 const SEASON_URL  = process.env.SEASON_URL  ?? "https://www.tbf.org.tr/ligler/bsl-2026-2027";
-const OUT         = "bball-stats/scrapers/tbsl-fixtures.json";
+const OUT         = "bball-stats/scrapers/TR-fixtures.json";
 
 const browser = await chromium.launch();
 const page = await browser.newPage({ locale: "tr-TR" });
