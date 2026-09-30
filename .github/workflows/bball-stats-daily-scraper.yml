@@ -49,60 +49,18 @@ jobs:
             any::xml2
             any::vroom
 
-      # ---------------------------------------------------------------------------------------
-      # Headless Chromium, shared by the TBSL fixtures refresh and the BBL key extraction.
-      # Installed OUTSIDE the repo ($RUNNER_TEMP) so `git add .` never picks up node_modules.
-      # ---------------------------------------------------------------------------------------
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install Playwright + Chromium
-        run: |
-          mkdir -p "$RUNNER_TEMP/pw" && cd "$RUNNER_TEMP/pw"
-          npm init -y >/dev/null
-          npm i playwright@1
-          npx playwright install --with-deps chromium
-
-      # ---------------------------------------------------------------------------------------
-      # TBSL fixtures: TBF only fills in the FIBA LiveStats id shortly before each round, so the
-      # fixtures file is refreshed every run (the script refuses to overwrite a better file).
-      # ---------------------------------------------------------------------------------------
-      - name: Refresh TBSL fixtures
-        continue-on-error: true
-        env:
-          ACTIVITY_ID: "22214"                                        # update once per season
-          SEASON_URL: "https://www.tbf.org.tr/ligler/bsl-2026-2027"   # update once per season
-        run: |
-          cp bball-stats/scrapers/TR-fetch-fixtures.mjs "$RUNNER_TEMP/pw/"
-          node "$RUNNER_TEMP/pw/TR-fetch-fixtures.mjs"
-
-      # ---------------------------------------------------------------------------------------
-      # BBL: the x-api-secret is a PUBLIC key shipped in the easycredit-bbl.de frontend. Read it
-      # off the site at run time instead of hand-copying it into a repo secret; fall back to the
-      # repo secret if extraction fails.
-      # ---------------------------------------------------------------------------------------
-      - name: BBL - extract public API secret
-        id: bbl_secret
-        continue-on-error: true
-        run: |
-          cp bball-stats/scrapers/DE-fetch-secret-key.mjs "$RUNNER_TEMP/pw/"
-          secret="$(node "$RUNNER_TEMP/pw/DE-fetch-secret-key.mjs")"
-          [ -n "$secret" ] || { echo "extraction returned empty"; exit 1; }
-          echo "::add-mask::$secret"
-          echo "secret=$secret" >> "$GITHUB_OUTPUT"
-          echo "extracted OK (${#secret} chars)"
-
-      - name: BBL Scraper
-        continue-on-error: true
-        env:
-          BBL_API_SECRET: ${{ steps.bbl_secret.outputs.secret || secrets.BBL_API_SECRET }}
-        run: Rscript bball-stats/scrapers/DE-scraper.R
+      #- name: NBB Scraper # run this locally, 403 error :(
+      #- name: Pro A Scraper # run this locally, 403 error :(
 
       - name: Serie A Scraper
         continue-on-error: true
         run: Rscript bball-stats/scrapers/IT-scraper.R
+
+      - name: BBL Scraper
+        continue-on-error: true
+        env:
+          BBL_API_SECRET: ${{ secrets.BBL_API_SECRET }}
+        run: Rscript bball-stats/scrapers/DE-scraper.R
 
       - name: ACB Scraper
         continue-on-error: true
@@ -124,9 +82,6 @@ jobs:
       #  continue-on-error: true
       #  run: Rscript bball-stats/scrapers/GR-scraper.R
 
-      #- name: NBB Scraper # run this locally, 403 error :(
-      #- name: Pro A Scraper # run this locally, 403 error :(
-
       - name: Build app-data.rds
         run: Rscript bball-stats/bball-stats-app-build-data.R
 
@@ -136,8 +91,6 @@ jobs:
           ls -l *.csv || echo "No CSVs in root"
           echo "Files in data folder:"
           ls -R bball-stats/data/
-          echo "TBSL fixtures with ids:"
-          grep -c '"geniusId": "[0-9]' bball-stats/scrapers/tbsl-fixtures.json || true
 
       - name: Commit and Push
         run: |
