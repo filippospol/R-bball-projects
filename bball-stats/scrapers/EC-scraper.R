@@ -30,7 +30,8 @@ library(readr)
 # 3 play-in games
 # playoffs: best of 5 series
 # final four: semi finals and first place game
-league="Eurocup" ; season = "2026-27" ; scode = "U2026" ; games_n = (19*10)+5
+league="Eurocup" ; season = "2026-27" ; scode = "U2026" ; games_n = (224)+45 # Regular Season: 224 games total (56 games per group × 4 groups)
+                                                                             # Playoffs: 45 games maximum, assuming every series goes to a decisive Game 3
 
 games_url = "https://feeds.incrowdsports.com/provider/euroleague-feeds/v2/competitions/{substr(scode,1,1)}/seasons/{scode}/games" %>% 
   glue()
