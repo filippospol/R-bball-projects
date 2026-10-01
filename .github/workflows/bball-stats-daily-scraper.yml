@@ -5,6 +5,13 @@ on:
     - cron: '1 0 * * *'
   workflow_dispatch:
 
+# Serialize with the NBA/WNBA workflow: both rebuild and push app-data.rds, so
+# they must never run at the same time. Shared group across both workflows;
+# cancel-in-progress stays false so a queued run waits rather than being dropped.
+concurrency:
+  group: bball-data
+  cancel-in-progress: false
+
 jobs:
   run-scrapers:
     runs-on: ubuntu-latest
@@ -53,28 +60,34 @@ jobs:
       #- name: Pro A Scraper # run this locally, 403 error :(
 
       - name: Serie A Scraper
+        id: scrape_it
         continue-on-error: true
         run: Rscript bball-stats/scrapers/IT-scraper.R
 
       - name: BBL Scraper
+        id: scrape_de
         continue-on-error: true
         env:
           BBL_API_SECRET: ${{ secrets.BBL_API_SECRET }}
         run: Rscript bball-stats/scrapers/DE-scraper.R
 
       - name: ACB Scraper
+        id: scrape_es
         continue-on-error: true
         run: Rscript bball-stats/scrapers/ES-scraper.R
 
       - name: TBSL Scraper
+        id: scrape_tr
         continue-on-error: true
         run: Rscript bball-stats/scrapers/TR-scraper.R
 
       - name: Euroleague Scraper
+        id: scrape_el
         continue-on-error: true
         run: Rscript bball-stats/scrapers/EL-scraper.R
 
       - name: Eurocup Scraper
+        id: scrape_ec
         continue-on-error: true
         run: Rscript bball-stats/scrapers/EC-scraper.R
 
@@ -100,3 +113,33 @@ jobs:
           git commit -m "Updated data on: $(date +'%Y-%m-%d')" || exit 0
           git pull --rebase origin main
           git push origin main
+
+      # Tally scraper outcomes and surface them on the run summary page. Each
+      # scraper uses continue-on-error, so its result lives in steps.<id>.outcome
+      # ('success' or 'failure') regardless of whether the job as a whole passed.
+      - name: Scraper summary
+        if: always()
+        run: |
+          echo "## Daily scraper results — $(date +'%Y-%m-%d')" >> "$GITHUB_STEP_SUMMARY"
+          failed=0
+          report () {
+            if [ "$2" = "success" ]; then
+              echo "- ✅ $1" >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "- ❌ $1 (${2:-skipped})" >> "$GITHUB_STEP_SUMMARY"
+              failed=$((failed + 1))
+            fi
+          }
+          report "Serie A"    "${{ steps.scrape_it.outcome }}"
+          report "BBL"        "${{ steps.scrape_de.outcome }}"
+          report "ACB"        "${{ steps.scrape_es.outcome }}"
+          report "TBSL"       "${{ steps.scrape_tr.outcome }}"
+          report "Euroleague" "${{ steps.scrape_el.outcome }}"
+          report "Eurocup"    "${{ steps.scrape_ec.outcome }}"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          if [ "$failed" -eq 0 ]; then
+            echo "**All 6 league scrapers succeeded.**" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "**$failed of 6 league scrapers failed — data for those leagues may be stale.**" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          echo "Failed scrapers: $failed of 6"
