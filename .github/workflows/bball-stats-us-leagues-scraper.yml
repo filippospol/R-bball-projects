@@ -5,6 +5,13 @@ on:
     - cron: '0 10 * * *'
   workflow_dispatch:
 
+# Serialize with the European workflow: both rebuild and push app-data.rds, so
+# they must never run at the same time. Shared group across both workflows;
+# cancel-in-progress stays false so a queued run waits rather than being dropped.
+concurrency:
+  group: bball-data
+  cancel-in-progress: false
+
 jobs:
   run-scrapers:
     runs-on: ubuntu-latest
@@ -32,6 +39,7 @@ jobs:
           Rscript -e 'install.packages(c("dplyr", "readr", "stringr", "stringi", "hoopR", "wehoop", "purrr", "tidyr", "lubridate", "vroom"))'
 
       - name: (W)NBA Scraper
+        id: scrape_usa
         continue-on-error: true
         run: Rscript bball-stats/scrapers/USA-scraper.R
 
@@ -53,3 +61,22 @@ jobs:
           git commit -m "Updated NBA-WNBA data on: $(date +'%Y-%m-%d')" || exit 0
           git pull --rebase origin main
           git push origin main
+
+      # Surface the (W)NBA scraper outcome on the run summary page. The scraper
+      # uses continue-on-error, so its result lives in steps.<id>.outcome
+      # ('success' or 'failure') regardless of the job's overall status.
+      - name: Scraper summary
+        if: always()
+        run: |
+          echo "## NBA & WNBA scraper result — $(date +'%Y-%m-%d')" >> "$GITHUB_STEP_SUMMARY"
+          if [ "${{ steps.scrape_usa.outcome }}" = "success" ]; then
+            echo "- ✅ (W)NBA scraper" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "**Scraper succeeded.**" >> "$GITHUB_STEP_SUMMARY"
+            echo "Failed scrapers: 0 of 1"
+          else
+            echo "- ❌ (W)NBA scraper (${{ steps.scrape_usa.outcome }})" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "**The (W)NBA scraper failed — NBA/WNBA data may be stale.**" >> "$GITHUB_STEP_SUMMARY"
+            echo "Failed scrapers: 1 of 1"
+          fi
