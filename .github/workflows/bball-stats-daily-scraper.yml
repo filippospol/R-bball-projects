@@ -6,8 +6,7 @@ on:
   workflow_dispatch:
 
 # Serialize with the NBA/WNBA workflow: both rebuild and push app-data.rds, so
-# they must never run at the same time. Shared group across both workflows;
-# cancel-in-progress stays false so a queued run waits rather than being dropped.
+# they must never run at the same time. A queued run waits rather than being dropped.
 concurrency:
   group: bball-data
   cancel-in-progress: false
@@ -57,7 +56,7 @@ jobs:
             any::vroom
 
       #- name: NBB Scraper # run this locally, 403 error :(
-      #- name: Pro A Scraper # run this locally, 403 error :(
+      #- name: Pro A Scraper # on hold - scraper being updated for LNB's new v3 API
 
       - name: Serie A Scraper
         id: scrape_it
@@ -92,6 +91,7 @@ jobs:
         run: Rscript bball-stats/scrapers/EC-scraper.R
 
       - name: GBL Scraper
+        id: scrape_gr
         continue-on-error: true
         run: Rscript bball-stats/scrapers/GR-scraper.R
 
@@ -114,9 +114,7 @@ jobs:
           git pull --rebase origin main
           git push origin main
 
-      # Tally scraper outcomes and surface them on the run summary page. Each
-      # scraper uses continue-on-error, so its result lives in steps.<id>.outcome
-      # ('success' or 'failure') regardless of whether the job as a whole passed.
+      # Per-league result on the run's summary page.
       - name: Scraper summary
         if: always()
         run: |
@@ -136,10 +134,11 @@ jobs:
           report "TBSL"       "${{ steps.scrape_tr.outcome }}"
           report "Euroleague" "${{ steps.scrape_el.outcome }}"
           report "Eurocup"    "${{ steps.scrape_ec.outcome }}"
+          report "GBL"        "${{ steps.scrape_gr.outcome }}"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           if [ "$failed" -eq 0 ]; then
-            echo "**All 6 league scrapers succeeded.**" >> "$GITHUB_STEP_SUMMARY"
+            echo "**All 7 league scrapers succeeded.**" >> "$GITHUB_STEP_SUMMARY"
           else
-            echo "**$failed of 6 league scrapers failed — data for those leagues may be stale.**" >> "$GITHUB_STEP_SUMMARY"
+            echo "**$failed of 7 league scrapers failed — data for those leagues may be stale.**" >> "$GITHUB_STEP_SUMMARY"
           fi
-          echo "Failed scrapers: $failed of 6"
+          echo "Failed scrapers: $failed of 7"
