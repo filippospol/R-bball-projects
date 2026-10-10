@@ -10,217 +10,138 @@
 #' *LOAD LIBRARIES*
 library(dplyr)
 library(purrr)
-library(tidyr)
 library(stringr)
 library(stringi)
 library(httr)
 library(jsonlite)
-library(glue)
-library(janitor)
 library(lubridate)
-library(rvest)
 library(readr)
-
-safe_json = function(resp, label = "") {
-  body <- httr::content(resp, "text", encoding = "UTF-8")
-  if (httr::http_error(resp) || !grepl("json", httr::http_type(resp))) {
-    warning(sprintf("[%s] HTTP %s, type %s from %s\n%s",
-                    label, httr::status_code(resp), httr::http_type(resp),
-                    resp$url, substr(body, 1, 300)))
-    return(NULL)
-  }
-  jsonlite::fromJSON(body)
-}
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-#' *EXTRACT MATCH ID'S*
-
+#' *SETTINGS*
 league = "Pro A" ; season = "2026-27"
+season_id = "4e3b2f66-6a4c-11f1-a5ad-25baed35874f"   # Sportradar id of "Betclic ELITE 2026"
+base_url = "https://embed-api.eui.connect.sportradar.com/v1/embed/12"
 
-# API headers:
-headers = c(
-  accept = "application/json, text/plain, */*",
-  `accept-language` = "en-GB,en-US;q=0.9,en;q=0.8",
-  `content-type` = "application/json",
-  language_code = "fr",
-  origin = "https://lnb.fr",
-  priority = "u=1, i",
-  referer = "https://lnb.fr/fr/calendar",
-  `sec-ch-ua` = '"Not(A:Brand";v="8", "Chromium";v="144", "Google Chrome";v="144"',
-  `sec-ch-ua-mobile` = "?0",
-  `sec-ch-ua-platform` = '"Windows"',
-  `sec-fetch-dest` = "empty",
-  `sec-fetch-mode` = "cors",
-  `sec-fetch-site` = "same-site",
-  `user-agent` = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
-)
+# GET one widget endpoint and return the JSON as nested lists (NULL if it fails):
+get_json = function(path, query = list()) {
+  res = RETRY("GET", paste0(base_url, "/", path), query = query,
+              add_headers(`user-agent` = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+                          referer = "https://lnb.fr/", origin = "https://lnb.fr"),
+              times = 4, pause_base = 2, quiet = TRUE)
+  Sys.sleep(0.3)                                   # be a polite bot
+  if (http_error(res)) return(NULL)
+  fromJSON(content(res, "text", encoding = "UTF-8"), simplifyVector = FALSE)
+}
 
-# Date parameters, derived from `season`: September of the start year through June of the next.
-start_year   = as.integer(str_sub(season, 1, 4))
-month_starts = seq(ymd(paste0(start_year, "-09-01")),
-                   ymd(paste0(start_year + 1, "-06-01")),
-                   by = "month")
-competition_start_dates = format(month_starts, "%Y-%m-%d")
-competition_end_dates   = format(ceiling_date(month_starts, "month") - days(1), "%Y-%m-%d")
+# Names: strip accents first, then uppercase ("Chalon/Saône" -> "CHALON/SAONE"):
+clean_name = function(x) toupper(stri_trans_general(x, "latin-ascii"))
 
-# 302 = Regular Season, 308 = Playoffs
-competition_ids = c(0)
+# Minutes come as "PT22M6S" -> 22.1
+iso_minutes = function(x) {
+  if (is.null(x)) return(NA_real_)
+  h = as.numeric(str_match(x, "(\\d+)H")[, 2])
+  m = as.numeric(str_match(x, "(\\d+)M")[, 2])
+  s = as.numeric(str_match(x, "([0-9.]+)S")[, 2])
+  if (all(is.na(c(h, m, s)))) NA_real_ else sum(c(h * 60, m, s / 60), na.rm = TRUE)
+}
+
+# Box-score stats (players and team totals use the same field names):
+get_stats = function(s) tibble(
+  PTS = s$points, `2PM` = s$pointsTwoMade, `2PA` = s$pointsTwoAttempted,
+  `3PM` = s$pointsThreeMade, `3PA` = s$pointsThreeAttempted,
+  FTM = s$freeThrowsMade, FTA = s$freeThrowsAttempted,
+  DREB = s$reboundsDefensive, OREB = s$reboundsOffensive, REB = s$rebounds,
+  AST = s$assists, STL = s$steals, BLK = s$blocks, TOV = s$turnovers, PF = s$foulsTotal)
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+#' *EXTRACT TEAM ID'S*
+
+# Team pages need the widget "state": zlib-compressed, base64url-encoded JSON.
+# z = "fixtures" opens the team's "Matchs" tab (its full season).
+state = toJSON(list(s = season_id, z = "fixtures"), auto_unbox = TRUE) %>%
+  as.character() %>% charToRaw() %>% memCompress("gzip") %>% base64_enc() %>%
+  chartr("+/", "-_", .) %>% str_remove_all("[=\r\n]")
+
+# One team from the upcoming-games list; its schedule includes every other team:
+upcoming = get_json("fixtures", list(seasonId = season_id))
+first_team = upcoming$data$fixtures[[1]]$competitors[[1]]$entityId
+first_schedule = get_json("entity_detail", list(entityId = first_team, state = state))
+
+team_ids = first_schedule$data$team$fixtures %>%
+  map(~ map_chr(.x$competitors, ~ .x$entityId %||% NA_character_)) %>%
+  unlist() %>% na.omit() %>% unique()
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+#' *EXTRACT MATCH ID'S* (every team's full season, finished games only)
 
 FF = list()
-
-for (comp_id in competition_ids) {
-  for (i in seq_along(competition_start_dates)) {
-    
-    data = paste0('{"competition_external_id":', comp_id, ',"start_date":"',
-                  competition_start_dates[i],
-                  '","end_date":"',
-                  competition_end_dates[i],
-                  '"}')
-    
-    res = httr::RETRY("POST", url = "https://api-prod.lnb.fr/match/getCalendar",
-                      httr::add_headers(.headers = headers), body = data,
-                      times = 5, pause_base = 2, pause_cap = 30)
-    
-    raw_calendar = safe_json(res, label = paste("calendar", competition_start_dates[i]))
-    
-    if (!is.null(raw_calendar) && length(raw_calendar$data) > 0) {
-      FF[[length(FF) + 1]] = suppressWarnings(
-        raw_calendar$data %>%
-          data.frame() %>%
-          as_tibble() %>%
-          unnest()
-      )
-    }
-  }
+for (i in seq_along(team_ids)) {
+  team_json = get_json("entity_detail", list(entityId = team_ids[i], state = state))
+  FF[[i]] = map_dfr(team_json$data$team$fixtures, ~ tibble(
+    GAME_ID = .x$fixtureId, DATE = .x$startTimeUTC, STATUS = .x$status$value))
 }
 
-# Full schedule (played + scheduled), Pro A only, one row per match:
 fixture_info = bind_rows(FF) %>%
-  filter(str_detect(competition_abbrev, "PROA")) %>%
-  distinct(match_id, .keep_all = TRUE)
+  distinct(GAME_ID, .keep_all = TRUE) %>%
+  filter(STATUS == "CONFIRMED", ymd_hms(DATE) < now("UTC")) %>%    # finished games
+  arrange(DATE)
 
-if (nrow(fixture_info) == 0) {
-  stop("No fixtures returned - every getCalendar call failed or was blocked. ",
-       "Check the warnings above (likely a 403 / IP or geo block on the runner).")
-}
+rm(list=setdiff(ls(),c("fixture_info","league","season","base_url",
+                       "get_json","clean_name","iso_minutes","get_stats")))
 
-# table(fixture_info$competition_abbrev) add new values to str_detect
-
-rm(list=setdiff(ls(),c("fixture_info","league","season","safe_json")))
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 #' *LOOP OVER MATCH ID'S AND GET BOXSCORES*
 
-# run time around 5 minutes
 PP = list()
 TT = list()
-for (i in seq_along(fixture_info$match_id)) {
-  # URL (JSON):
-  fixture_url = httr::RETRY("GET",
-                            url = glue("https://embed-api.eui.connect.sportradar.com/v1/embed/12/fixture_detail?fixtureId={fixture_info$match_id[i]}"),
-                            httr::add_headers(
-                              `user-agent` = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
-                              accept = "application/json, text/plain, */*",
-                              referer = "https://lnb.fr/",
-                              origin = "https://lnb.fr"
-                            ),
-                            times = 5, pause_base = 2, pause_cap = 30)
+for (i in seq_len(nrow(fixture_info))) {
   
-  # API data:
-  raw_json = suppressMessages(safe_json(fixture_url, label = paste("fixture", fixture_info$match_id[i])))
+  raw_json = get_json("fixture_detail", list(fixtureId = fixture_info$GAME_ID[i]))
   if (is.null(raw_json)) next
   
-  if (
-    raw_json$data$banner$competition$name %>% pluck(1) %>% stri_trans_general("latin-ascii") %>% str_detect("Betclic ELITE") == FALSE
-  ) next
+  # League games only, and only once the box score is published:
+  banner = raw_json$data$banner
+  if (!str_detect(clean_name(banner$competition$name), "BETCLIC ELITE")) next
+  base = raw_json$data$statistics$data$base
+  if (is.null(base$home) || is.null(base$away)) next
   
-  # Fixture info:
-  fixture_id = raw_json$data$banner$fixture$id
-  fixture_teamcodes = raw_json$data$banner$fixture$competitors$code
-  fixture_teamnames = raw_json$data$banner$fixture$competitors$name
-  fixture_date = raw_json$data$banner$fixture$startDateTime %>% substr(1,10)
-  fixture_matchup = paste0(fixture_date,", ",
-                           fixture_teamcodes[1]," vs ",fixture_teamcodes[2])
+  # Teams and matchup string ("YYYY-MM-DD, HOME vs AWAY"):
+  home = keep(banner$fixture$competitors, ~ isTRUE(.x$isHome))[[1]]
+  away = discard(banner$fixture$competitors, ~ isTRUE(.x$isHome))[[1]]
+  MATCHUP = paste0(substr(banner$fixture$startDateTime, 1, 10), ", ", home$code, " vs ", away$code)
   
-  if (ymd(fixture_date)>today()) break
-  
-  # Player Stats:
-  PP[[i]] = bind_rows(
-    suppressWarnings(
-      raw_json$data$statistics$data$base$home$persons$rows %>%
-        data.frame() %>%
-        as_tibble() %>%
-        unnest()) %>%
-      clean_names("all_caps") %>%
-      mutate(TEAM=fixture_teamnames[1],MATCHUP=fixture_matchup,
-             GAME_ID=fixture_id,SEASON=season,LEAGUE=league) %>%
-      select(GAME_ID,SEASON,LEAGUE,PLAYER=PERSON_NAME,TEAM,MATCHUP,
-             MIN=MINUTES,PTS=POINTS,`2PM`=POINTS_TWO_MADE,`2PA`=POINTS_TWO_ATTEMPTED,
-             `3PM`=POINTS_THREE_MADE,`3PA`=POINTS_THREE_ATTEMPTED,
-             FTA=FREE_THROWS_ATTEMPTED,FTM=FREE_THROWS_MADE,DREB=REBOUNDS_DEFENSIVE,
-             OREB=REBOUNDS_OFFENSIVE,REB=REBOUNDS,AST=ASSISTS,STL=STEALS,BLK=BLOCKS,
-             TOV=TURNOVERS,PF=FOULS_TOTAL) %>%
-      mutate(MIN=gsub("S","",gsub("M",":",gsub("PT","",MIN)))) %>%
-      separate(MIN,c("MINS","SEC"),sep=":") %>%
-      mutate(MIN=as.numeric(MINS)+if_else(is.na(as.numeric(SEC)),0,as.numeric(SEC)/60)) %>%
-      select(1:6,24,9:23),
-    suppressWarnings(
-      raw_json$data$statistics$data$base$away$persons$rows %>%
-        data.frame() %>%
-        as_tibble() %>%
-        unnest()) %>%
-      clean_names("all_caps") %>%
-      mutate(TEAM=fixture_teamnames[2],MATCHUP=fixture_matchup,
-             GAME_ID=fixture_id,SEASON=season,LEAGUE=league) %>%
-      select(GAME_ID,SEASON,LEAGUE,PLAYER=PERSON_NAME,TEAM,MATCHUP,
-             MIN=MINUTES,PTS=POINTS,`2PM`=POINTS_TWO_MADE,`2PA`=POINTS_TWO_ATTEMPTED,
-             `3PM`=POINTS_THREE_MADE,`3PA`=POINTS_THREE_ATTEMPTED,
-             FTA=FREE_THROWS_ATTEMPTED,FTM=FREE_THROWS_MADE,DREB=REBOUNDS_DEFENSIVE,
-             OREB=REBOUNDS_OFFENSIVE,REB=REBOUNDS,AST=ASSISTS,STL=STEALS,BLK=BLOCKS,
-             TOV=TURNOVERS,PF=FOULS_TOTAL) %>%
-      mutate(MIN=gsub("S","",gsub("M",":",gsub("PT","",MIN)))) %>%
-      separate(MIN,c("MINS","SEC"),sep=":") %>%
-      mutate(MIN=as.numeric(MINS)+if_else(is.na(as.numeric(SEC)),0,as.numeric(SEC)/60)) %>%
-      select(1:6,24,9:23)
-  ) %>%
-    mutate(PLAYER = toupper(as.character(PLAYER)),
-           PLAYER = stri_trans_general(PLAYER, "latin-ascii")) %>%
-    mutate(MIN=round(MIN)) %>%
-    # if minutes is NA, player DNP so remove that row altogether?
-    filter(!is.na(MIN)) %>%
-    mutate(TEAM = stri_trans_general(toupper(as.character(TEAM)),"latin-ascii"))
-  
-  # Team Stats:
-  TT[[i]] = bind_rows(
-    raw_json$data$statistics$data$base$home$entity %>%
-      modify_if(is.null, ~ NA) %>%
-      as_tibble() %>%
-      clean_names("all_caps") %>%
-      mutate(TEAM=fixture_teamnames[1],CODE=fixture_teamcodes[1],MATCHUP=fixture_matchup) %>%
-      select(TEAM,CODE,MATCHUP,
-             PTS=POINTS,`2PM`=POINTS_TWO_MADE,`2PA`=POINTS_TWO_ATTEMPTED,
-             `3PM`=POINTS_THREE_MADE,`3PA`=POINTS_THREE_ATTEMPTED,
-             FTA=FREE_THROWS_ATTEMPTED,FTM=FREE_THROWS_MADE,DREB=REBOUNDS_DEFENSIVE,
-             OREB=REBOUNDS_OFFENSIVE,REB=REBOUNDS,AST=ASSISTS,STL=STEALS,BLK=BLOCKS,
-             TOV=TURNOVERS,PF=FOULS_TOTAL),
-    raw_json$data$statistics$data$base$away$entity %>%
-      modify_if(is.null, ~ NA) %>%
-      as_tibble() %>%
-      clean_names("all_caps") %>%
-      mutate(TEAM=fixture_teamnames[2],CODE=fixture_teamcodes[2],MATCHUP=fixture_matchup) %>%
-      select(TEAM,CODE,MATCHUP,
-             PTS=POINTS,`2PM`=POINTS_TWO_MADE,`2PA`=POINTS_TWO_ATTEMPTED,
-             `3PM`=POINTS_THREE_MADE,`3PA`=POINTS_THREE_ATTEMPTED,
-             FTA=FREE_THROWS_ATTEMPTED,FTM=FREE_THROWS_MADE,DREB=REBOUNDS_DEFENSIVE,
-             OREB=REBOUNDS_OFFENSIVE,REB=REBOUNDS,AST=ASSISTS,STL=STEALS,BLK=BLOCKS,
-             TOV=TURNOVERS,PF=FOULS_TOTAL)
-  ) %>%
-    mutate(TEAM = stri_trans_general(toupper(as.character(TEAM)),"latin-ascii"))
+  for (side in c("home", "away")) {
+    team = if (side == "home") home else away
+    
+    # Player Stats (players who did not play are dropped):
+    players = base[[side]]$persons[[1]]$rows %>%
+      keep(~ isTRUE(.x$participated) && !is.null(.x$statistics)) %>%
+      map_dfr(~ tibble(PLAYER = .x$personName, MIN = iso_minutes(.x$statistics$minutes)) %>%
+                bind_cols(get_stats(.x$statistics)))
+    
+    if (nrow(players) > 0) {
+      PP[[length(PP) + 1]] = players %>%
+        mutate(GAME_ID = fixture_info$GAME_ID[i], SEASON = season, LEAGUE = league,
+               PLAYER = clean_name(PLAYER), TEAM = clean_name(team$name),
+               MATCHUP = MATCHUP, MIN = round(MIN)) %>%
+        filter(!is.na(MIN)) %>%
+        select(GAME_ID, SEASON, LEAGUE, PLAYER, TEAM, MATCHUP, MIN, everything())
+    }
+    
+    # Team Stats:
+    TT[[length(TT) + 1]] = tibble(TEAM = clean_name(team$name), CODE = team$code, MATCHUP = MATCHUP) %>%
+      bind_cols(get_stats(base[[side]]$entity))
+  }
 }
 rm(list=setdiff(ls(),c("PP","TT")))
 
 # beepr::beep()
 # write files in .csv format
-write_csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/FR-players.csv")
+write_csv(bind_rows(PP),"bball-stats/data/FR-players.csv")
 
-write_csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/FR-teams.csv")
+write_csv(bind_rows(TT),"bball-stats/data/FR-teams.csv")
