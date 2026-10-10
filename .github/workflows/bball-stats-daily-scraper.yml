@@ -56,7 +56,12 @@ jobs:
             any::vroom
 
       #- name: NBB Scraper # run this locally, 403 error :(
-      #- name: Pro A Scraper # on hold - scraper being updated for LNB's new v3 API
+
+      # Pro A now reads the public Sportradar stats widget (no LNB token needed).
+      - name: Pro A Scraper
+        id: scrape_fr
+        continue-on-error: true
+        run: Rscript bball-stats/scrapers/FR-scraper.R
 
       - name: Serie A Scraper
         id: scrape_it
@@ -119,26 +124,35 @@ jobs:
         if: always()
         run: |
           echo "## Daily scraper results — $(date +'%Y-%m-%d')" >> "$GITHUB_STEP_SUMMARY"
-          failed=0
+          failed=0; empty=0
+          # $1 = league, $2 = step outcome, $3 = CSV prefix (bball-stats/data/<prefix>-players.csv)
           report () {
-            if [ "$2" = "success" ]; then
-              echo "- ✅ $1" >> "$GITHUB_STEP_SUMMARY"
+            f="bball-stats/data/$3-players.csv"
+            rows=0
+            if [ -f "$f" ]; then rows=$(( $(wc -l < "$f") - 1 )); fi
+            if [ "$rows" -lt 0 ]; then rows=0; fi
+            if [ "$2" = "success" ] && [ "$rows" -gt 0 ]; then
+              echo "- ✅ $1 — $rows player rows" >> "$GITHUB_STEP_SUMMARY"
+            elif [ "$2" = "success" ]; then
+              echo "- ⚠️ $1 — ran, but $f has no player rows" >> "$GITHUB_STEP_SUMMARY"
+              empty=$((empty + 1))
             else
-              echo "- ❌ $1 (${2:-skipped})" >> "$GITHUB_STEP_SUMMARY"
+              echo "- ❌ $1 (${2:-skipped}) — previous file kept ($rows player rows)" >> "$GITHUB_STEP_SUMMARY"
               failed=$((failed + 1))
             fi
           }
-          report "Serie A"    "${{ steps.scrape_it.outcome }}"
-          report "BBL"        "${{ steps.scrape_de.outcome }}"
-          report "ACB"        "${{ steps.scrape_es.outcome }}"
-          report "TBSL"       "${{ steps.scrape_tr.outcome }}"
-          report "Euroleague" "${{ steps.scrape_el.outcome }}"
-          report "Eurocup"    "${{ steps.scrape_ec.outcome }}"
-          report "GBL"        "${{ steps.scrape_gr.outcome }}"
+          report "Serie A"    "${{ steps.scrape_it.outcome }}" IT
+          report "BBL"        "${{ steps.scrape_de.outcome }}" DE
+          report "ACB"        "${{ steps.scrape_es.outcome }}" ES
+          report "TBSL"       "${{ steps.scrape_tr.outcome }}" TR
+          report "Euroleague" "${{ steps.scrape_el.outcome }}" EL
+          report "Eurocup"    "${{ steps.scrape_ec.outcome }}" EC
+          report "GBL"        "${{ steps.scrape_gr.outcome }}" GR
+          report "Pro A"      "${{ steps.scrape_fr.outcome }}" FR
           echo "" >> "$GITHUB_STEP_SUMMARY"
-          if [ "$failed" -eq 0 ]; then
-            echo "**All 7 league scrapers succeeded.**" >> "$GITHUB_STEP_SUMMARY"
+          if [ "$failed" -eq 0 ] && [ "$empty" -eq 0 ]; then
+            echo "**All 8 league scrapers succeeded with data.**" >> "$GITHUB_STEP_SUMMARY"
           else
-            echo "**$failed of 7 league scrapers failed — data for those leagues may be stale.**" >> "$GITHUB_STEP_SUMMARY"
+            echo "**$failed failed, $empty ran with no data (of 8) — those leagues may be stale.**" >> "$GITHUB_STEP_SUMMARY"
           fi
-          echo "Failed scrapers: $failed of 7"
+          echo "Failed: $failed, empty: $empty (of 8)"
