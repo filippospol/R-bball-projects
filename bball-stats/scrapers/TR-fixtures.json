@@ -21,7 +21,7 @@
   "geniusId": "2913591",
   "date": "2026-09-26",
   "home": "GALATASARAY MCT TECHNIC",
-  "away": "ÇAYIROVA BELEDİYESİ"
+  "away": "GLİNT ÇAYIROVA BELEDİYESİ"
  },
  {
   "geniusId": "2913592",
@@ -74,7 +74,7 @@
  {
   "geniusId": "2923439",
   "date": "2026-10-04",
-  "home": "ÇAYIROVA BELEDİYESİ",
+  "home": "GLİNT ÇAYIROVA BELEDİYESİ",
   "away": "BAHÇEŞEHİR KOLEJİ"
  },
  {
@@ -96,49 +96,49 @@
   "away": "TRABZONSPOR"
  },
  {
-  "geniusId": "",
+  "geniusId": "2934600",
   "date": "2026-10-10",
   "home": "BAHÇEŞEHİR KOLEJİ",
   "away": "KARŞIYAKA"
  },
  {
-  "geniusId": "",
+  "geniusId": "2934616",
   "date": "2026-10-10",
   "home": "ALİAĞA PETKİM SPOR",
   "away": "BİOTEKNO KÖRFEZ BASKET"
  },
  {
-  "geniusId": "",
+  "geniusId": "2934618",
   "date": "2026-10-10",
   "home": "TOFAŞ",
   "away": "ESENLER EROKSPOR"
  },
  {
-  "geniusId": "",
+  "geniusId": "2934619",
   "date": "2026-10-10",
-  "home": "ÇAYIROVA BELEDİYESİ",
+  "home": "GLİNT ÇAYIROVA BELEDİYESİ",
   "away": "FENERBAHÇE TARFİN"
  },
  {
-  "geniusId": "",
+  "geniusId": "2934620",
   "date": "2026-10-11",
   "home": "TRABZONSPOR",
   "away": "PİZZABULLS BORDO BANDIRMA"
  },
  {
-  "geniusId": "",
+  "geniusId": "2934621",
   "date": "2026-10-11",
   "home": "ANADOLU EFES",
   "away": "YUKATEL DENİZLİ BASKET"
  },
  {
-  "geniusId": "",
+  "geniusId": "2934625",
   "date": "2026-10-11",
   "home": "TÜRK TELEKOM",
   "away": "BEŞİKTAŞ"
  },
  {
-  "geniusId": "",
+  "geniusId": "2934636",
   "date": "2026-10-12",
   "home": "GALATASARAY MCT TECHNIC",
   "away": "BURSASPOR BASKETBOL"
@@ -147,7 +147,7 @@
   "geniusId": "",
   "date": "2026-10-16",
   "home": "KARŞIYAKA",
-  "away": "ÇAYIROVA BELEDİYESİ"
+  "away": "GLİNT ÇAYIROVA BELEDİYESİ"
  },
  {
   "geniusId": "",
@@ -194,7 +194,7 @@
  {
   "geniusId": "",
   "date": "2026-10-23",
-  "home": "ÇAYIROVA BELEDİYESİ",
+  "home": "GLİNT ÇAYIROVA BELEDİYESİ",
   "away": "BURSASPOR BASKETBOL"
  },
  {
@@ -285,18 +285,12 @@
   "geniusId": "",
   "date": "2026-11-02",
   "home": "BEŞİKTAŞ",
-  "away": "ÇAYIROVA BELEDİYESİ"
+  "away": "GLİNT ÇAYIROVA BELEDİYESİ"
  },
  {
   "geniusId": "",
   "date": "2026-11-07",
-  "home": "BAHÇEŞEHİR KOLEJİ",
-  "away": "YUKATEL DENİZLİ BASKET"
- },
- {
-  "geniusId": "",
-  "date": "2026-11-07",
-  "home": "ÇAYIROVA BELEDİYESİ",
+  "home": "GLİNT ÇAYIROVA BELEDİYESİ",
   "away": "PİZZABULLS BORDO BANDIRMA"
  },
  {
@@ -316,6 +310,12 @@
   "date": "2026-11-07",
   "home": "BURSASPOR BASKETBOL",
   "away": "FENERBAHÇE TARFİN"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-11-08",
+  "home": "BAHÇEŞEHİR KOLEJİ",
+  "away": "YUKATEL DENİZLİ BASKET"
  },
  {
   "geniusId": "",
@@ -369,7 +369,7 @@
   "geniusId": "",
   "date": "2026-11-15",
   "home": "YUKATEL DENİZLİ BASKET",
-  "away": "ÇAYIROVA BELEDİYESİ"
+  "away": "GLİNT ÇAYIROVA BELEDİYESİ"
  },
  {
   "geniusId": "",
@@ -410,7 +410,7 @@
  {
   "geniusId": "",
   "date": "2026-11-22",
-  "home": "ÇAYIROVA BELEDİYESİ",
+  "home": "GLİNT ÇAYIROVA BELEDİYESİ",
   "away": "ESENLER EROKSPOR"
  },
  {
@@ -471,7 +471,7 @@
   "geniusId": "",
   "date": "2026-12-06",
   "home": "BİOTEKNO KÖRFEZ BASKET",
-  "away": "ÇAYIROVA BELEDİYESİ"
+  "away": "GLİNT ÇAYIROVA BELEDİYESİ"
  },
  {
   "geniusId": "",
@@ -482,14 +482,8 @@
  {
   "geniusId": "",
   "date": "2026-12-11",
-  "home": "ÇAYIROVA BELEDİYESİ",
+  "home": "GLİNT ÇAYIROVA BELEDİYESİ",
   "away": "ALİAĞA PETKİM SPOR"
- },
- {
-  "geniusId": "",
-  "date": "2026-12-12",
-  "home": "BEŞİKTAŞ",
-  "away": "YUKATEL DENİZLİ BASKET"
  },
  {
   "geniusId": "",
@@ -529,33 +523,15 @@
  },
  {
   "geniusId": "",
-  "date": "2026-12-19",
-  "home": "ANADOLU EFES",
-  "away": "BAHÇEŞEHİR KOLEJİ"
+  "date": "2026-12-13",
+  "home": "BEŞİKTAŞ",
+  "away": "YUKATEL DENİZLİ BASKET"
  },
  {
   "geniusId": "",
-  "date": "2026-12-19",
+  "date": "2026-12-18",
   "home": "TRABZONSPOR",
   "away": "GALATASARAY MCT TECHNIC"
- },
- {
-  "geniusId": "",
-  "date": "2026-12-19",
-  "home": "FENERBAHÇE TARFİN",
-  "away": "TÜRK TELEKOM"
- },
- {
-  "geniusId": "",
-  "date": "2026-12-19",
-  "home": "TOFAŞ",
-  "away": "ÇAYIROVA BELEDİYESİ"
- },
- {
-  "geniusId": "",
-  "date": "2026-12-19",
-  "home": "ALİAĞA PETKİM SPOR",
-  "away": "KARŞIYAKA"
  },
  {
   "geniusId": "",
@@ -566,14 +542,38 @@
  {
   "geniusId": "",
   "date": "2026-12-19",
-  "home": "ESENLER EROKSPOR",
-  "away": "BEŞİKTAŞ"
+  "home": "ALİAĞA PETKİM SPOR",
+  "away": "KARŞIYAKA"
  },
  {
   "geniusId": "",
   "date": "2026-12-19",
   "home": "YUKATEL DENİZLİ BASKET",
   "away": "PİZZABULLS BORDO BANDIRMA"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-12-20",
+  "home": "TOFAŞ",
+  "away": "GLİNT ÇAYIROVA BELEDİYESİ"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-12-20",
+  "home": "FENERBAHÇE TARFİN",
+  "away": "TÜRK TELEKOM"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-12-20",
+  "home": "ANADOLU EFES",
+  "away": "BAHÇEŞEHİR KOLEJİ"
+ },
+ {
+  "geniusId": "",
+  "date": "2026-12-20",
+  "home": "ESENLER EROKSPOR",
+  "away": "BEŞİKTAŞ"
  },
  {
   "geniusId": "",
@@ -590,7 +590,7 @@
  {
   "geniusId": "",
   "date": "2026-12-26",
-  "home": "ÇAYIROVA BELEDİYESİ",
+  "home": "GLİNT ÇAYIROVA BELEDİYESİ",
   "away": "ANADOLU EFES"
  },
  {
@@ -639,7 +639,7 @@
   "geniusId": "",
   "date": "2027-01-02",
   "home": "TRABZONSPOR",
-  "away": "ÇAYIROVA BELEDİYESİ"
+  "away": "GLİNT ÇAYIROVA BELEDİYESİ"
  },
  {
   "geniusId": "",
@@ -680,7 +680,7 @@
  {
   "geniusId": "",
   "date": "2027-01-09",
-  "home": "ÇAYIROVA BELEDİYESİ",
+  "home": "GLİNT ÇAYIROVA BELEDİYESİ",
   "away": "TÜRK TELEKOM"
  },
  {
@@ -728,7 +728,7 @@
  {
   "geniusId": "",
   "date": "2027-01-16",
-  "home": "ÇAYIROVA BELEDİYESİ",
+  "home": "GLİNT ÇAYIROVA BELEDİYESİ",
   "away": "GALATASARAY MCT TECHNIC"
  },
  {
@@ -771,7 +771,7 @@
   "geniusId": "",
   "date": "2027-01-23",
   "home": "BAHÇEŞEHİR KOLEJİ",
-  "away": "ÇAYIROVA BELEDİYESİ"
+  "away": "GLİNT ÇAYIROVA BELEDİYESİ"
  },
  {
   "geniusId": "",
@@ -861,7 +861,7 @@
   "geniusId": "",
   "date": "2027-01-30",
   "home": "FENERBAHÇE TARFİN",
-  "away": "ÇAYIROVA BELEDİYESİ"
+  "away": "GLİNT ÇAYIROVA BELEDİYESİ"
  },
  {
   "geniusId": "",
@@ -908,7 +908,7 @@
  {
   "geniusId": "",
   "date": "2027-02-06",
-  "home": "ÇAYIROVA BELEDİYESİ",
+  "home": "GLİNT ÇAYIROVA BELEDİYESİ",
   "away": "KARŞIYAKA"
  },
  {
@@ -951,7 +951,7 @@
   "geniusId": "",
   "date": "2027-02-13",
   "home": "BURSASPOR BASKETBOL",
-  "away": "ÇAYIROVA BELEDİYESİ"
+  "away": "GLİNT ÇAYIROVA BELEDİYESİ"
  },
  {
   "geniusId": "",
@@ -998,7 +998,7 @@
  {
   "geniusId": "",
   "date": "2027-03-06",
-  "home": "ÇAYIROVA BELEDİYESİ",
+  "home": "GLİNT ÇAYIROVA BELEDİYESİ",
   "away": "BEŞİKTAŞ"
  },
  {
@@ -1041,7 +1041,7 @@
   "geniusId": "",
   "date": "2027-03-13",
   "home": "PİZZABULLS BORDO BANDIRMA",
-  "away": "ÇAYIROVA BELEDİYESİ"
+  "away": "GLİNT ÇAYIROVA BELEDİYESİ"
  },
  {
   "geniusId": "",
@@ -1088,7 +1088,7 @@
  {
   "geniusId": "",
   "date": "2027-03-20",
-  "home": "ÇAYIROVA BELEDİYESİ",
+  "home": "GLİNT ÇAYIROVA BELEDİYESİ",
   "away": "YUKATEL DENİZLİ BASKET"
  },
  {
@@ -1131,7 +1131,7 @@
   "geniusId": "",
   "date": "2027-03-27",
   "home": "ESENLER EROKSPOR",
-  "away": "ÇAYIROVA BELEDİYESİ"
+  "away": "GLİNT ÇAYIROVA BELEDİYESİ"
  },
  {
   "geniusId": "",
@@ -1178,7 +1178,7 @@
  {
   "geniusId": "",
   "date": "2027-04-03",
-  "home": "ÇAYIROVA BELEDİYESİ",
+  "home": "GLİNT ÇAYIROVA BELEDİYESİ",
   "away": "BİOTEKNO KÖRFEZ BASKET"
  },
  {
@@ -1221,7 +1221,7 @@
   "geniusId": "",
   "date": "2027-04-10",
   "home": "ALİAĞA PETKİM SPOR",
-  "away": "ÇAYIROVA BELEDİYESİ"
+  "away": "GLİNT ÇAYIROVA BELEDİYESİ"
  },
  {
   "geniusId": "",
@@ -1268,7 +1268,7 @@
  {
   "geniusId": "",
   "date": "2027-04-17",
-  "home": "ÇAYIROVA BELEDİYESİ",
+  "home": "GLİNT ÇAYIROVA BELEDİYESİ",
   "away": "TOFAŞ"
  },
  {
@@ -1311,7 +1311,7 @@
   "geniusId": "",
   "date": "2027-04-24",
   "home": "ANADOLU EFES",
-  "away": "ÇAYIROVA BELEDİYESİ"
+  "away": "GLİNT ÇAYIROVA BELEDİYESİ"
  },
  {
   "geniusId": "",
@@ -1358,7 +1358,7 @@
  {
   "geniusId": "",
   "date": "2027-05-01",
-  "home": "ÇAYIROVA BELEDİYESİ",
+  "home": "GLİNT ÇAYIROVA BELEDİYESİ",
   "away": "TRABZONSPOR"
  },
  {
@@ -1401,7 +1401,7 @@
   "geniusId": "",
   "date": "2027-05-08",
   "home": "TÜRK TELEKOM",
-  "away": "ÇAYIROVA BELEDİYESİ"
+  "away": "GLİNT ÇAYIROVA BELEDİYESİ"
  },
  {
   "geniusId": "",
