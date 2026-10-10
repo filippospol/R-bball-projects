@@ -12,7 +12,7 @@
 "ΚΑΡΔΙΤΣΑ ΙΑΠΩΝΙΚΗ","ΚΑΡΔ","2026-10-03, ΚΑΡΔ vs ΑΡΗΣ",74,19,44,7,21,15,21,11,27,38,20,13,18,5,28
 "ΑΡΗΣ","ΑΡΗΣ","2026-10-03, ΚΑΡΔ vs ΑΡΗΣ",68,16,36,5,22,21,28,12,27,39,19,6,21,5,20
 "ΚΟΛΟΣΣΟΣ H HOTELS COLLECTION","ΚΟΛΟ","2026-10-03, ΚΟΛΟ vs ΔΟΞΑ",91,17,31,13,26,18,21,4,29,33,19,7,12,2,21
-"ΔΟΞΑ ΛΕΥΚΑΔΑΣ","ΔΟΞΑ","2026-10-03, ΚΟΛΟ vs ΔΟΞΑ",75,21,44,8,21,9,16,10,24,34,11,6,12,2,19
+"ΔΟΞΑ ΛΕΥΚΑΔΑΣ ELABET","ΔΟΞΑ","2026-10-03, ΚΟΛΟ vs ΔΟΞΑ",75,21,44,8,21,9,16,10,24,34,11,6,12,2,19
 "ΜΥΚΟΝΟΣ BETSSON BC","ΜΥΚΟ","2026-10-03, ΜΥΚΟ vs ΠΑΟΚ",85,18,33,10,21,19,24,7,25,32,17,7,12,2,23
 "ΠΑΟΚ","ΠΑΟΚ","2026-10-03, ΜΥΚΟ vs ΠΑΟΚ",88,16,29,11,32,23,33,13,20,33,21,5,8,2,23
 "ΠΡΟΜΗΘΕΑΣ ΠΑΤΡΑΣ ΒΙΚΟΣ COLA","ΠΡΟΜ","2026-10-03, ΠΡΟΜ vs ΠΕΡΙ",88,13,26,9,18,35,48,5,24,29,16,6,15,2,22
@@ -20,23 +20,35 @@
 "ΗΡΑΚΛΗΣ","ΗΡΑΚ","2026-10-04, ΗΡΑΚ vs ΟΛΥΜ",68,17,37,9,29,7,13,8,29,37,11,8,10,2,19
 "ΟΛΥΜΠΙΑΚΟΣ","ΟΛΥΜ","2026-10-04, ΗΡΑΚ vs ΟΛΥΜ",78,21,36,9,30,9,13,9,32,41,19,3,14,6,17
 "ΠΑΝΑΘΗΝΑΪΚΟΣ AKTOR","ΠΑΝΑ","2026-10-04, ΠΑΝΑ vs VIKO",103,19,34,12,25,29,34,7,28,35,22,6,9,1,17
-"VIKOS FALCONS","VIKO","2026-10-04, ΠΑΝΑ vs VIKO",74,20,39,7,22,13,18,5,23,28,15,5,13,0,26
-"VIKOS FALCONS","VIKO","NA, VIKO vs ΑΡΗΣ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"VIKOS ΦALCONS","VIKO","2026-10-04, ΠΑΝΑ vs VIKO",74,20,39,7,22,13,18,5,23,28,15,5,13,0,26
+"ΑΡΗΣ","ΑΡΗΣ","2026-10-10, ΑΡΗΣ vs ΑΕΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΑΕΚ","ΑΕΚ","2026-10-10, ΑΡΗΣ vs ΑΕΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΚΑΡΔΙΤΣΑ ΙΑΠΩΝΙΚΗ","ΚΑΡΔ","2026-10-10, ΚΑΡΔ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"VIKOS ΦALCONS","VIKO","2026-10-10, ΚΑΡΔ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΜΑΡΟΥΣΙ","ΜΑΡΟ","2026-10-10, ΜΑΡΟ vs ΜΥΚΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΜΥΚΟΝΟΣ BETSSON BC","ΜΥΚΟ","2026-10-10, ΜΑΡΟ vs ΜΥΚΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΠΑΟΚ","ΠΑΟΚ","2026-10-10, ΠΑΟΚ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΔΟΞΑ ΛΕΥΚΑΔΑΣ ELABET","ΔΟΞΑ","2026-10-10, ΠΑΟΚ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΠΕΡΙΣΤΕΡΙ BETSSON","ΠΕΡΙ","2026-10-10, ΠΕΡΙ vs ΗΡΑΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΗΡΑΚΛΗΣ","ΗΡΑΚ","2026-10-10, ΠΕΡΙ vs ΗΡΑΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΠΡΟΜΗΘΕΑΣ ΠΑΤΡΑΣ ΒΙΚΟΣ COLA","ΠΡΟΜ","2026-10-10, ΠΡΟΜ vs ΠΑΝΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΠΑΝΑΘΗΝΑΪΚΟΣ AKTOR","ΠΑΝΑ","2026-10-10, ΠΡΟΜ vs ΠΑΝΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"VIKOS ΦALCONS","VIKO","NA, VIKO vs ΑΡΗΣ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΡΗΣ","ΑΡΗΣ","NA, VIKO vs ΑΡΗΣ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"VIKOS FALCONS","VIKO","NA, VIKO vs ΗΡΑΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"VIKOS ΦALCONS","VIKO","NA, VIKO vs ΗΡΑΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΗΡΑΚΛΗΣ","ΗΡΑΚ","NA, VIKO vs ΗΡΑΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"VIKOS FALCONS","VIKO","NA, VIKO vs ΚΑΡΔ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"VIKOS ΦALCONS","VIKO","NA, VIKO vs ΚΑΡΔ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΚΑΡΔΙΤΣΑ ΙΑΠΩΝΙΚΗ","ΚΑΡΔ","NA, VIKO vs ΚΑΡΔ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"VIKOS FALCONS","VIKO","NA, VIKO vs ΚΟΛΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"VIKOS ΦALCONS","VIKO","NA, VIKO vs ΚΟΛΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΚΟΛΟΣΣΟΣ H HOTELS COLLECTION","ΚΟΛΟ","NA, VIKO vs ΚΟΛΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"VIKOS FALCONS","VIKO","NA, VIKO vs ΜΥΚΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"VIKOS ΦALCONS","VIKO","NA, VIKO vs ΜΥΚΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΜΥΚΟΝΟΣ BETSSON BC","ΜΥΚΟ","NA, VIKO vs ΜΥΚΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"VIKOS FALCONS","VIKO","NA, VIKO vs ΠΑΝΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"VIKOS ΦALCONS","VIKO","NA, VIKO vs ΠΑΝΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΑΝΑΘΗΝΑΪΚΟΣ AKTOR","ΠΑΝΑ","NA, VIKO vs ΠΑΝΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"VIKOS FALCONS","VIKO","NA, VIKO vs ΠΑΟΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"VIKOS ΦALCONS","VIKO","NA, VIKO vs ΠΑΟΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΑΟΚ","ΠΑΟΚ","NA, VIKO vs ΠΑΟΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΕΚ","ΑΕΚ","NA, ΑΕΚ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"VIKOS FALCONS","VIKO","NA, ΑΕΚ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"VIKOS ΦALCONS","VIKO","NA, ΑΕΚ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΕΚ","ΑΕΚ","NA, ΑΕΚ vs ΑΡΗΣ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΡΗΣ","ΑΡΗΣ","NA, ΑΕΚ vs ΑΡΗΣ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΕΚ","ΑΕΚ","NA, ΑΕΚ vs ΗΡΑΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
@@ -48,7 +60,7 @@
 "ΑΕΚ","ΑΕΚ","NA, ΑΕΚ vs ΠΡΟΜ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΡΟΜΗΘΕΑΣ ΠΑΤΡΑΣ ΒΙΚΟΣ COLA","ΠΡΟΜ","NA, ΑΕΚ vs ΠΡΟΜ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΡΗΣ","ΑΡΗΣ","NA, ΑΡΗΣ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"ΔΟΞΑ ΛΕΥΚΑΔΑΣ","ΔΟΞΑ","NA, ΑΡΗΣ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΔΟΞΑ ΛΕΥΚΑΔΑΣ ELABET","ΔΟΞΑ","NA, ΑΡΗΣ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΡΗΣ","ΑΡΗΣ","NA, ΑΡΗΣ vs ΚΑΡΔ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΚΑΡΔΙΤΣΑ ΙΑΠΩΝΙΚΗ","ΚΑΡΔ","NA, ΑΡΗΣ vs ΚΑΡΔ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΡΗΣ","ΑΡΗΣ","NA, ΑΡΗΣ vs ΚΟΛΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
@@ -59,22 +71,22 @@
 "ΠΑΟΚ","ΠΑΟΚ","NA, ΑΡΗΣ vs ΠΑΟΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΡΗΣ","ΑΡΗΣ","NA, ΑΡΗΣ vs ΠΕΡΙ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΕΡΙΣΤΕΡΙ BETSSON","ΠΕΡΙ","NA, ΑΡΗΣ vs ΠΕΡΙ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"ΔΟΞΑ ΛΕΥΚΑΔΑΣ","ΔΟΞΑ","NA, ΔΟΞΑ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"VIKOS FALCONS","VIKO","NA, ΔΟΞΑ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"ΔΟΞΑ ΛΕΥΚΑΔΑΣ","ΔΟΞΑ","NA, ΔΟΞΑ vs ΑΕΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΔΟΞΑ ΛΕΥΚΑΔΑΣ ELABET","ΔΟΞΑ","NA, ΔΟΞΑ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"VIKOS ΦALCONS","VIKO","NA, ΔΟΞΑ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΔΟΞΑ ΛΕΥΚΑΔΑΣ ELABET","ΔΟΞΑ","NA, ΔΟΞΑ vs ΑΕΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΕΚ","ΑΕΚ","NA, ΔΟΞΑ vs ΑΕΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"ΔΟΞΑ ΛΕΥΚΑΔΑΣ","ΔΟΞΑ","NA, ΔΟΞΑ vs ΚΑΡΔ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΔΟΞΑ ΛΕΥΚΑΔΑΣ ELABET","ΔΟΞΑ","NA, ΔΟΞΑ vs ΚΑΡΔ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΚΑΡΔΙΤΣΑ ΙΑΠΩΝΙΚΗ","ΚΑΡΔ","NA, ΔΟΞΑ vs ΚΑΡΔ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"ΔΟΞΑ ΛΕΥΚΑΔΑΣ","ΔΟΞΑ","NA, ΔΟΞΑ vs ΚΟΛΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΔΟΞΑ ΛΕΥΚΑΔΑΣ ELABET","ΔΟΞΑ","NA, ΔΟΞΑ vs ΚΟΛΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΚΟΛΟΣΣΟΣ H HOTELS COLLECTION","ΚΟΛΟ","NA, ΔΟΞΑ vs ΚΟΛΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"ΔΟΞΑ ΛΕΥΚΑΔΑΣ","ΔΟΞΑ","NA, ΔΟΞΑ vs ΜΥΚΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΔΟΞΑ ΛΕΥΚΑΔΑΣ ELABET","ΔΟΞΑ","NA, ΔΟΞΑ vs ΜΥΚΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΜΥΚΟΝΟΣ BETSSON BC","ΜΥΚΟ","NA, ΔΟΞΑ vs ΜΥΚΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"ΔΟΞΑ ΛΕΥΚΑΔΑΣ","ΔΟΞΑ","NA, ΔΟΞΑ vs ΠΑΟΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΔΟΞΑ ΛΕΥΚΑΔΑΣ ELABET","ΔΟΞΑ","NA, ΔΟΞΑ vs ΠΑΟΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΑΟΚ","ΠΑΟΚ","NA, ΔΟΞΑ vs ΠΑΟΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΗΡΑΚΛΗΣ","ΗΡΑΚ","NA, ΗΡΑΚ vs ΑΡΗΣ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΡΗΣ","ΑΡΗΣ","NA, ΗΡΑΚ vs ΑΡΗΣ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΗΡΑΚΛΗΣ","ΗΡΑΚ","NA, ΗΡΑΚ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"ΔΟΞΑ ΛΕΥΚΑΔΑΣ","ΔΟΞΑ","NA, ΗΡΑΚ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΔΟΞΑ ΛΕΥΚΑΔΑΣ ELABET","ΔΟΞΑ","NA, ΗΡΑΚ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΗΡΑΚΛΗΣ","ΗΡΑΚ","NA, ΗΡΑΚ vs ΜΑΡΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΜΑΡΟΥΣΙ","ΜΑΡΟ","NA, ΗΡΑΚ vs ΜΑΡΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΗΡΑΚΛΗΣ","ΗΡΑΚ","NA, ΗΡΑΚ vs ΠΑΝΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
@@ -110,13 +122,13 @@
 "ΚΟΛΟΣΣΟΣ H HOTELS COLLECTION","ΚΟΛΟ","NA, ΚΟΛΟ vs ΠΑΝΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΑΝΑΘΗΝΑΪΚΟΣ AKTOR","ΠΑΝΑ","NA, ΚΟΛΟ vs ΠΑΝΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΜΑΡΟΥΣΙ","ΜΑΡΟ","NA, ΜΑΡΟ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"VIKOS FALCONS","VIKO","NA, ΜΑΡΟ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"VIKOS ΦALCONS","VIKO","NA, ΜΑΡΟ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΜΑΡΟΥΣΙ","ΜΑΡΟ","NA, ΜΑΡΟ vs ΑΕΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΕΚ","ΑΕΚ","NA, ΜΑΡΟ vs ΑΕΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΜΑΡΟΥΣΙ","ΜΑΡΟ","NA, ΜΑΡΟ vs ΑΡΗΣ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΡΗΣ","ΑΡΗΣ","NA, ΜΑΡΟ vs ΑΡΗΣ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΜΑΡΟΥΣΙ","ΜΑΡΟ","NA, ΜΑΡΟ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"ΔΟΞΑ ΛΕΥΚΑΔΑΣ","ΔΟΞΑ","NA, ΜΑΡΟ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΔΟΞΑ ΛΕΥΚΑΔΑΣ ELABET","ΔΟΞΑ","NA, ΜΑΡΟ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΜΑΡΟΥΣΙ","ΜΑΡΟ","NA, ΜΑΡΟ vs ΚΑΡΔ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΚΑΡΔΙΤΣΑ ΙΑΠΩΝΙΚΗ","ΚΑΡΔ","NA, ΜΑΡΟ vs ΚΑΡΔ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΜΑΡΟΥΣΙ","ΜΑΡΟ","NA, ΜΑΡΟ vs ΠΑΝΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
@@ -136,7 +148,7 @@
 "ΜΥΚΟΝΟΣ BETSSON BC","ΜΥΚΟ","NA, ΜΥΚΟ vs ΠΕΡΙ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΕΡΙΣΤΕΡΙ BETSSON","ΠΕΡΙ","NA, ΜΥΚΟ vs ΠΕΡΙ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΟΛΥΜΠΙΑΚΟΣ","ΟΛΥΜ","NA, ΟΛΥΜ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"VIKOS FALCONS","VIKO","NA, ΟΛΥΜ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"VIKOS ΦALCONS","VIKO","NA, ΟΛΥΜ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΟΛΥΜΠΙΑΚΟΣ","ΟΛΥΜ","NA, ΟΛΥΜ vs ΑΕΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΕΚ","ΑΕΚ","NA, ΟΛΥΜ vs ΑΕΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΟΛΥΜΠΙΑΚΟΣ","ΟΛΥΜ","NA, ΟΛΥΜ vs ΑΕΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
@@ -144,7 +156,7 @@
 "ΟΛΥΜΠΙΑΚΟΣ","ΟΛΥΜ","NA, ΟΛΥΜ vs ΑΡΗΣ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΡΗΣ","ΑΡΗΣ","NA, ΟΛΥΜ vs ΑΡΗΣ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΟΛΥΜΠΙΑΚΟΣ","ΟΛΥΜ","NA, ΟΛΥΜ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"ΔΟΞΑ ΛΕΥΚΑΔΑΣ","ΔΟΞΑ","NA, ΟΛΥΜ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΔΟΞΑ ΛΕΥΚΑΔΑΣ ELABET","ΔΟΞΑ","NA, ΟΛΥΜ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΟΛΥΜΠΙΑΚΟΣ","ΟΛΥΜ","NA, ΟΛΥΜ vs ΗΡΑΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΗΡΑΚΛΗΣ","ΗΡΑΚ","NA, ΟΛΥΜ vs ΗΡΑΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΟΛΥΜΠΙΑΚΟΣ","ΟΛΥΜ","NA, ΟΛΥΜ vs ΜΑΡΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
@@ -158,7 +170,7 @@
 "ΠΑΝΑΘΗΝΑΪΚΟΣ AKTOR","ΠΑΝΑ","NA, ΠΑΝΑ vs ΑΡΗΣ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΡΗΣ","ΑΡΗΣ","NA, ΠΑΝΑ vs ΑΡΗΣ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΑΝΑΘΗΝΑΪΚΟΣ AKTOR","ΠΑΝΑ","NA, ΠΑΝΑ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"ΔΟΞΑ ΛΕΥΚΑΔΑΣ","ΔΟΞΑ","NA, ΠΑΝΑ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΔΟΞΑ ΛΕΥΚΑΔΑΣ ELABET","ΔΟΞΑ","NA, ΠΑΝΑ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΑΝΑΘΗΝΑΪΚΟΣ AKTOR","ΠΑΝΑ","NA, ΠΑΝΑ vs ΜΥΚΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΜΥΚΟΝΟΣ BETSSON BC","ΜΥΚΟ","NA, ΠΑΝΑ vs ΜΥΚΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΑΝΑΘΗΝΑΪΚΟΣ AKTOR","ΠΑΝΑ","NA, ΠΑΝΑ vs ΠΑΟΚ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
@@ -178,9 +190,9 @@
 "ΠΑΟΚ","ΠΑΟΚ","NA, ΠΑΟΚ vs ΟΛΥΜ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΟΛΥΜΠΙΑΚΟΣ","ΟΛΥΜ","NA, ΠΑΟΚ vs ΟΛΥΜ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΕΡΙΣΤΕΡΙ BETSSON","ΠΕΡΙ","NA, ΠΕΡΙ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"VIKOS FALCONS","VIKO","NA, ΠΕΡΙ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"VIKOS ΦALCONS","VIKO","NA, ΠΕΡΙ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΕΡΙΣΤΕΡΙ BETSSON","ΠΕΡΙ","NA, ΠΕΡΙ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"ΔΟΞΑ ΛΕΥΚΑΔΑΣ","ΔΟΞΑ","NA, ΠΕΡΙ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΔΟΞΑ ΛΕΥΚΑΔΑΣ ELABET","ΔΟΞΑ","NA, ΠΕΡΙ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΕΡΙΣΤΕΡΙ BETSSON","ΠΕΡΙ","NA, ΠΕΡΙ vs ΚΟΛΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΚΟΛΟΣΣΟΣ H HOTELS COLLECTION","ΚΟΛΟ","NA, ΠΕΡΙ vs ΚΟΛΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΕΡΙΣΤΕΡΙ BETSSON","ΠΕΡΙ","NA, ΠΕΡΙ vs ΟΛΥΜ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
@@ -192,11 +204,11 @@
 "ΠΕΡΙΣΤΕΡΙ BETSSON","ΠΕΡΙ","NA, ΠΕΡΙ vs ΠΡΟΜ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΡΟΜΗΘΕΑΣ ΠΑΤΡΑΣ ΒΙΚΟΣ COLA","ΠΡΟΜ","NA, ΠΕΡΙ vs ΠΡΟΜ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΡΟΜΗΘΕΑΣ ΠΑΤΡΑΣ ΒΙΚΟΣ COLA","ΠΡΟΜ","NA, ΠΡΟΜ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"VIKOS FALCONS","VIKO","NA, ΠΡΟΜ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"VIKOS ΦALCONS","VIKO","NA, ΠΡΟΜ vs VIKO",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΡΟΜΗΘΕΑΣ ΠΑΤΡΑΣ ΒΙΚΟΣ COLA","ΠΡΟΜ","NA, ΠΡΟΜ vs ΑΡΗΣ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΑΡΗΣ","ΑΡΗΣ","NA, ΠΡΟΜ vs ΑΡΗΣ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΡΟΜΗΘΕΑΣ ΠΑΤΡΑΣ ΒΙΚΟΣ COLA","ΠΡΟΜ","NA, ΠΡΟΜ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
-"ΔΟΞΑ ΛΕΥΚΑΔΑΣ","ΔΟΞΑ","NA, ΠΡΟΜ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
+"ΔΟΞΑ ΛΕΥΚΑΔΑΣ ELABET","ΔΟΞΑ","NA, ΠΡΟΜ vs ΔΟΞΑ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΡΟΜΗΘΕΑΣ ΠΑΤΡΑΣ ΒΙΚΟΣ COLA","ΠΡΟΜ","NA, ΠΡΟΜ vs ΚΟΛΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΚΟΛΟΣΣΟΣ H HOTELS COLLECTION","ΚΟΛΟ","NA, ΠΡΟΜ vs ΚΟΛΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
 "ΠΡΟΜΗΘΕΑΣ ΠΑΤΡΑΣ ΒΙΚΟΣ COLA","ΠΡΟΜ","NA, ΠΡΟΜ vs ΜΑΡΟ",NA,NA,NA,NA,NA,NA,NA,0,0,0,NA,NA,0,NA,0
