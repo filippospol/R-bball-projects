@@ -2,15 +2,15 @@ name: Outbound Comms Analysis - Clean Data
 
 on:
   schedule:
-    - cron: '0 22 * * *' 
-  workflow_dispatch: 
+    - cron: '0 22 * * *'
+  workflow_dispatch:
 
 jobs:
   run-data-cleaner:
     runs-on: macos-latest
     permissions:
-      contents: write 
-    
+      contents: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -19,13 +19,14 @@ jobs:
         uses: r-lib/actions/setup-r@v2
 
       - name: Install System Dependencies
-        run: brew install curl openssl libxml2 
+        run: brew install curl openssl libxml2
 
       - name: Install R Libraries
         run: |
-          Rscript -e 'install.packages(c("dplyr","readr","googlesheets4","tidyr","purrr","lubridate","sringr"))'
+          Rscript -e 'install.packages(c("dplyr","readr","googlesheets4","tidyr","purrr","lubridate","stringr"))'
 
       - name: Data Cleaner
+        id: clean
         continue-on-error: true
         run: Rscript misc/outbound-comms-analysis-clean-data.R
 
@@ -44,3 +45,52 @@ jobs:
           git add -A
           git commit -m "Updated Outbound lists on: $(date +'%Y-%m-%d')" || echo "Files are up to date. No new data was committed."
           git push
+
+      # Headline numbers on the run's summary page (rows, campaigns, months, ...),
+      # the same idea as the Scraper summary step in the bball workflows. Computed
+      # in R straight from the output CSV so campaign names with commas parse
+      # correctly. Reads steps.clean.outcome to say whether this run refreshed the
+      # file or kept the previous one.
+      - name: Data summary
+        if: always()
+        env:
+          CLEAN_OUTCOME: ${{ steps.clean.outcome }}
+        run: |
+          Rscript - <<'RS'
+          suppressMessages({library(readr); library(dplyr); library(lubridate)})
+          f  <- "misc/outbound-clean-data.csv"
+          sm <- Sys.getenv("GITHUB_STEP_SUMMARY")
+          add <- function(x = "") cat(x, "\n", sep = "", file = sm, append = TRUE)
+          add(paste0("## Outbound clean-data — ", format(Sys.Date(), "%Y-%m-%d")))
+          status <- Sys.getenv("CLEAN_OUTCOME")
+          if (!file.exists(f)) {
+            add("- ❌ No output file was produced — the data step failed, previous data kept.")
+            quit(save = "no")
+          }
+          d      <- suppressWarnings(read_csv(f, show_col_types = FALSE))
+          mons   <- sort(unique(d[["Month of Call"]]))
+          latest <- suppressWarnings(max(dmy(d[["Date of Call"]]), na.rm = TRUE))
+          nc     <- n_distinct(d[["Campaign"]])
+          add(if (identical(status, "success")) "- ✅ Data step succeeded"
+              else paste0("- ⚠️ Data step outcome: ", status,
+                          " (figures below may be from a previous run)"))
+          add()
+          add("| Metric | Value |")
+          add("| --- | --- |")
+          add(paste0("| Rows | ",      format(nrow(d), big.mark = ","), " |"))
+          add(paste0("| Campaigns | ", nc, " |"))
+          add(paste0("| Months | ",    length(mons), " (",
+                     if (length(mons)) paste0(mons[1], " → ", mons[length(mons)]) else "-", ") |"))
+          add(paste0("| Agents | ",    n_distinct(d[["Agent"]][d[["Agent"]] != "-"]), " |"))
+          add(paste0("| Latest call | ",
+                     if (is.finite(latest)) format(latest, "%d %b %Y") else "-", " |"))
+          add()
+          add("### Rows per campaign (top 15)")
+          add("| Campaign | Rows |")
+          add("| --- | --- |")
+          top <- head(count(d, Campaign, sort = TRUE), 15)
+          invisible(lapply(seq_len(nrow(top)), function(i)
+            add(paste0("| ", top$Campaign[i], " | ", format(top$n[i], big.mark = ","), " |"))))
+          if (nc > 15) { add(); add(paste0("_…and ", nc - 15, " more campaigns._")) }
+          cat(sprintf("Rows: %d | Campaigns: %d | Months: %d\n", nrow(d), nc, length(mons)))
+          RS
