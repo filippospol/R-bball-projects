@@ -33,83 +33,117 @@ outbound_url = "https://docs.google.com/spreadsheets/d/1hBLcuMiPDyy-z0av1d-gKaRK
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #' [ =============== GET DATA =============== ]
 
-# Function that imports data:
-load_sheet = function(sheet_num, sheet_name) {
-  df = suppressMessages(read_sheet(outbound_url, sheet = sheet_num))
-
-  if (sheet_num == 12) {
-    df = df %>% 
-      mutate(Campaign = paste0("WC 2026 - ", Campaign))
-  }
-  
-  df = df %>%
-    mutate(
-      Username = map(Username, as.character),
-      Comments = map(Comments, as.character),
-      `Profile ID` = map(`Profile ID`, as.character),
-      `Date of Call` = map(`Date of Call`, as.character),
-      `Time of Call` = map(`Time of Call`, as.character),
-      `Promo Code Credited` = map(`Promo Code Credited`, as.character),
-      Feedback = map(Feedback, as.character),
-      Loyalty = map(Loyalty, as.character)
-    ) %>%
-    unnest(cols = c(Username, Comments, `Profile ID`,`Date of Call`,`Time of Call`,
-                    `Promo Code Credited`,Feedback,Loyalty), keep_empty = TRUE) %>%
-    filter(Username != "Username")
-  
-  message(paste0("Successfully loaded ", sheet_name,"!"))
-  Sys.sleep(0.75)
-  return(df)
-}
-
-# Function that imports data:
-
-raw_outbound_data = suppressWarnings(
-  bind_rows(
-    load_sheet(2, "GR HGC"),
-    load_sheet(3, "Close Accounts"),
-    load_sheet(4, "KYC"),
-    load_sheet(5, "GR Non Dep"),
-    load_sheet(6, "Self Exclusion"),
-    load_sheet(11, "Reactivation 60"),
-    load_sheet(7, "VIP Close Account"),
-    load_sheet(8, "VIP Day 10 Avg Dep >100"),
-    load_sheet(9, "VIP Day 10 Avg Dep <100"),
-    load_sheet(10, "VIP Day 30"),
-    #load_sheet(12, "World Cup 2026"),
-    load_sheet(13, "Season Plan 2026")
-  )
+# The master column list, in the order the app expects. Used to (a) backfill any
+# column a tab happens not to have, so the cleaning step never errors, and (b)
+# order the final output by name instead of by position.
+master_cols = c(
+  "Campaign", "Username", "Profile ID", "Email Ban",
+  "Account Manager(VIP) / Black List", "VIP Category", "Type", "Value",
+  "Agent's Gender", "Agent", "Date of Call", "Time of Call", "Response",
+  "Attitude", "Reason", "Promo Code Credited", "Comments", "Feedback", "Loyalty",
+  "Agent 2nd attempt", "Response 2nd attempt", "Attitude 2nd attempt", "Reason 2nd attempt"
 )
 
-clean_outbound_data = raw_outbound_data %>% 
+# Columns forced to text before binding. Cells with mixed types come back from
+# read_sheet() as list-columns; flattening them here keeps bind_rows() happy.
+char_cols = c("Username", "Comments", "Profile ID", "Date of Call", "Time of Call",
+              "Promo Code Credited", "Feedback", "Loyalty")
+
+# The minimum a tab must contain to count as campaign data. Anything missing these
+# (the "1" template tab, Data / Black List helper tabs, pivots, scratch tabs, ...)
+# is skipped automatically, so we can safely read EVERY worksheet.
+required_cols = c("Campaign", "Profile ID", "Response", "Date of Call")
+
+# Flatten one (possibly list-) column to a plain character vector.
+to_text = function(x) {
+  map_chr(x, function(v) if (length(v) == 0 || is.null(v)) NA_character_ else as.character(v[[1]]))
+}
+
+# Function that imports ONE worksheet by name.
+load_sheet = function(sheet_name) {
+  df = tryCatch(
+    suppressMessages(read_sheet(outbound_url, sheet = sheet_name)),
+    error = function(e) { message("  ! could not read '", sheet_name, "': ", conditionMessage(e)); NULL }
+  )
+  if (is.null(df) || nrow(df) == 0) return(NULL)
+  
+  # Normalise header whitespace ("Reason " -> "Reason", "Profile ID " -> "Profile ID")
+  # so the name-based logic below is not tripped up by stray spaces.
+  names(df) = trimws(names(df))
+  
+  # Skip tabs that are not campaign data.
+  if (!all(required_cols %in% names(df))) {
+    message("Skipped  '", sheet_name, "'  [not a campaign data tab]")
+    return(NULL)
+  }
+  
+  # --- OPTIONAL: restore the old World Cup prefix, now matched by tab name ---
+  # if (sheet_name == "World Cup 2026") df = df %>% mutate(Campaign = paste0("WC 2026 - ", Campaign))
+  
+  df = df %>%
+    mutate(across(any_of(char_cols), to_text)) %>%
+    # Drop repeated header rows AND blank spill-over rows (the alignment formula
+    # fills whole columns, so empty trailing rows arrive with no Username).
+    filter(!is.na(Username), Username != "Username")
+  
+  message("Loaded   '", sheet_name, "'  [", nrow(df), " rows, ",
+          n_distinct(df$Campaign), " campaign(s)]")
+  Sys.sleep(0.5)
+  df
+}
+
+# Read EVERY worksheet in the workbook. New campaigns and new tabs are picked up
+# automatically, and a tab that holds several campaigns keeps every one of them,
+# because the campaign name always comes from each row's own Campaign cell -
+# never from a per-tab default.
+all_tabs = sheet_names(outbound_url)
+message("Workbook has ", length(all_tabs), " tab(s). Reading campaign tabs...")
+
+raw_outbound_data = suppressWarnings(
+  map(all_tabs, load_sheet) %>% bind_rows()
+)
+
+# Backfill any master column that no tab provided, so the cleaning step below can
+# reference every column by name without failing.
+for (col in setdiff(master_cols, names(raw_outbound_data))) {
+  raw_outbound_data[[col]] = NA
+}
+
+clean_outbound_data = raw_outbound_data %>%
+  mutate(
+    .call_date = as.Date(`Date of Call`),                               # parse ONCE
+    .call_time = as.POSIXct(str_sub(`Time of Call`, -8), format = "%H:%M:%S")
+  ) %>%
   mutate(
     `Email Ban` = ifelse(is.na(`Email Ban`), "NO", toupper(`Email Ban`)),
-    `Account Manager(VIP) / Black List` = ifelse(is.na(`Account Manager(VIP) / Black List`), "NO", `Account Manager(VIP) / Black List`)
-  ) %>% 
-  mutate(
-    `VIP Category` = ifelse(is.na(`VIP Category`), "NON VIP", `VIP Category`),
-    Type = ifelse(is.na(Type), "No Type", Type),
-    `Agent's Gender` = ifelse(is.na(`Agent's Gender`), "-", `Agent's Gender`),
-    Agent = ifelse(is.na(Agent), "-", Agent),
-    `Date of Call` = format(as.Date(`Date of Call`), "%d-%b-%Y"),
-    `Time of Call`=str_sub(`Time of Call`,-8),
-    `Time of Call` = ifelse(is.na(`Time of Call`), "-",
-                            format(as.POSIXct(`Time of Call`, format="%H:%M:%S"), "%H:%M")),
-    `Month of Call` = format(dmy(`Date of Call`), "%Y-%m"),
-    Attitude = ifelse(is.na(Attitude), "-", Attitude),
-    Reason = ifelse(is.na(Reason), "-", Reason),
-    `Promo Code Credited` = ifelse(is.na(`Promo Code Credited`), "-", `Promo Code Credited`),
-    Comments = ifelse(is.na(Comments), "-", Comments),
-    Loyalty = ifelse(is.na(Loyalty), "-", Loyalty),
-    Feedback = ifelse(is.na(Feedback), "-", Feedback),
-    `Agent 2nd attempt` = ifelse(is.na(`Agent 2nd attempt`), "-", `Agent 2nd attempt`),
-    `Response 2nd attempt` = ifelse(is.na(`Response 2nd attempt`), "-", `Response 2nd attempt`),
-    `Attitude 2nd attempt` = ifelse(is.na(`Attitude 2nd attempt`), "-", `Attitude 2nd attempt`),
-    `Reason 2nd attempt` = ifelse(is.na(`Reason 2nd attempt`), "-", `Reason 2nd attempt`),
-    Response = ifelse(is.na(Response), "-", Response) %>% toupper(),
-    `Response 2nd attempt` = ifelse(is.na(`Response 2nd attempt`), "-", `Response 2nd attempt`) %>% toupper()
-  ) %>% 
-  select(c(1:12, 24, 13:23)) %>% 
-  arrange(dmy(`Date of Call`),`Time of Call`)
+    `Account Manager(VIP) / Black List` = coalesce(`Account Manager(VIP) / Black List`, "NO"),
+    `VIP Category` = coalesce(`VIP Category`, "NON VIP"),
+    Type = coalesce(Type, "No Type"),
+    `Agent's Gender` = coalesce(`Agent's Gender`, "-"),
+    Agent = coalesce(Agent, "-"),
+    `Date of Call`  = format(.call_date, "%d-%b-%Y"),                    # reuse
+    `Month of Call` = format(.call_date, "%Y-%m"),                      # reuse (no dmy)
+    `Time of Call`  = if_else(is.na(.call_time), "-", format(.call_time, "%H:%M")),
+    Attitude = coalesce(Attitude, "-"),
+    Reason = coalesce(Reason, "-"),
+    `Promo Code Credited` = coalesce(`Promo Code Credited`, "-"),
+    Comments = coalesce(Comments, "-"),
+    Loyalty = coalesce(Loyalty, "-"),
+    Feedback = coalesce(Feedback, "-"),
+    `Agent 2nd attempt` = coalesce(`Agent 2nd attempt`, "-"),
+    `Attitude 2nd attempt` = coalesce(`Attitude 2nd attempt`, "-"),
+    `Reason 2nd attempt` = coalesce(`Reason 2nd attempt`, "-"),
+    Response = toupper(coalesce(Response, "-")),
+    `Response 2nd attempt` = toupper(coalesce(`Response 2nd attempt`, "-"))
+  ) %>%
+  arrange(.call_date, `Time of Call`) %>%                               # sort on the parsed date
+  select(
+    `Campaign`, `Username`, `Profile ID`, `Email Ban`,
+    `Account Manager(VIP) / Black List`, `VIP Category`, `Type`, `Value`,
+    `Agent's Gender`, `Agent`, `Date of Call`, `Time of Call`, `Month of Call`,
+    `Response`, `Attitude`, `Reason`, `Promo Code Credited`, `Comments`,
+    `Feedback`, `Loyalty`, `Agent 2nd attempt`, `Response 2nd attempt`,
+    `Attitude 2nd attempt`, `Reason 2nd attempt`
+  )
 
-write_csv(clean_outbound_data,"misc/outbound-clean-data.csv")
+write_csv(clean_outbound_data, "misc/outbound-clean-data.csv")
