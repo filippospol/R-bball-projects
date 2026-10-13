@@ -2,9 +2,9 @@ name: Outbound Comms Analysis - Clean Data
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-    - cron: '0 2 * * *'
-    - cron: '0 4 * * *' 
+    - cron: '30 23 * * *'
+    - cron: '0 02 * * *'
+    - cron: '0 04 * * *'
   workflow_dispatch:
 
 jobs:
@@ -38,6 +38,12 @@ jobs:
           ls -l *.csv || echo "No CSVs in root"
           echo "Files in data folder:"
           ls -R misc/
+          # The app now loads the .rds bundle, so confirm it was produced.
+          if [ -f misc/outbound-clean-data.rds ]; then
+            echo "OK: misc/outbound-clean-data.rds exists ($(du -h misc/outbound-clean-data.rds | cut -f1))"
+          else
+            echo "WARNING: misc/outbound-clean-data.rds is MISSING — the app will keep loading the previous bundle"
+          fi
 
       - name: Commit and Push
         run: |
@@ -86,6 +92,8 @@ jobs:
           add(paste0("| Agents | ",    n_distinct(d[["Agent"]][d[["Agent"]] != "-"]), " |"))
           add(paste0("| Latest call | ",
                      if (is.finite(latest)) format(latest, "%d %b %Y") else "-", " |"))
+          add(paste0("| RDS bundle | ",
+                     if (file.exists("misc/outbound-clean-data.rds")) "✅ written" else "❌ missing", " |"))
           add()
           add("### Rows per campaign (top 15)")
           add("| Campaign | Rows |")
