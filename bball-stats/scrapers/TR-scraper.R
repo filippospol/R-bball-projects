@@ -49,6 +49,28 @@ url_list = fixtures$geniusId
 #' *LOOP OVER MATCH ID'S AND GET BOXSCORES*
 
 league="TBSL" ; season="2026-27"
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+#' *GAMES ALREADY SAVED*
+# Only games that are not in the .csv files yet get downloaded. On Mondays (and on manual runs
+# with "full refresh" ticked) the yml file sets FULL_REFRESH=true and every game is downloaded again.
+full_refresh = Sys.getenv("FULL_REFRESH") == "true"
+old_players = tibble(GAME_ID = character(), SEASON = character(), MATCHUP = character())
+old_teams   = tibble(MATCHUP = character())
+if (!full_refresh && file.exists("bball-stats/data/TR-players.csv") && file.exists("bball-stats/data/TR-teams.csv")) {
+  try({
+    old_players = read_csv("bball-stats/data/TR-players.csv", col_types = cols(GAME_ID = "c"), show_col_types = FALSE) %>%
+      filter(SEASON == season)
+    old_teams = read_csv("bball-stats/data/TR-teams.csv", show_col_types = FALSE) %>%
+      filter(MATCHUP %in% old_players$MATCHUP)
+  }, silent = TRUE)
+}
+fixtures = fixtures %>% filter(!geniusId %in% old_players$GAME_ID)
+url_list = fixtures$geniusId
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 PP = list()
 TT = list()
 for (i in seq_along(url_list)) {
@@ -151,10 +173,10 @@ for (i in seq_along(url_list)) {
   
   Sys.sleep(0.5)
 }
-rm(list=setdiff(ls(),c("PP","TT")))
+rm(list=setdiff(ls(),c("PP","TT","old_players","old_teams")))
 
-# Nothing played yet -> nothing to normalise or write:
-if (length(PP) > 0) {
+# Nothing saved and nothing played yet -> nothing to normalise or write:
+if (length(PP) > 0 || nrow(old_players) > 0) {
   
   # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   
@@ -162,7 +184,10 @@ if (length(PP) > 0) {
   # FLS names come from each game's statistician, so the same player can show up with an extra
   # middle name (e.g. "FILIPPOS KONSTANTINOS POLYZOS" vs "FILIPPOS POLYZOS"). Group names that
   # share the same first word AND same last word, then keep the shortest spelling for the group.
-  players = bind_rows(PP) %>%
+  # (old games + new games, so names are matched across the whole season)
+  # distinct(): some FLS games list each player several times
+  players = bind_rows(old_players, bind_rows(PP) %>% mutate(across(any_of("GAME_ID"), as.character))) %>%
+    distinct() %>%
     mutate(TEAM = toupper(TEAM),
            PLAYER = str_squish(PLAYER))   # tidy stray double/trailing spaces before matching
   
@@ -189,7 +214,7 @@ if (length(PP) > 0) {
   # Optional sanity check - list any name that got collapsed into a shorter one:
   # name_map %>% filter(PLAYER != PLAYER_CANON) %>% arrange(PLAYER_CANON) %>% print(n = Inf)
   
-  teams = bind_rows(TT) %>% mutate(TEAM=toupper(TEAM))
+  teams = bind_rows(old_teams, bind_rows(TT)) %>% mutate(TEAM=toupper(TEAM))
   
   # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   

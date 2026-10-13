@@ -82,6 +82,24 @@ rm(list = setdiff(ls(), c("fixture_info", "league", "season")))
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+#' *GAMES ALREADY SAVED*
+# Only games that are not in the .csv files yet get downloaded. On Mondays (and on manual runs
+# with "full refresh" ticked) the yml file sets FULL_REFRESH=true and every game is downloaded again.
+full_refresh = Sys.getenv("FULL_REFRESH") == "true"
+old_players = tibble(GAME_ID = character(), SEASON = character(), MATCHUP = character())
+old_teams   = tibble(MATCHUP = character())
+if (!full_refresh && file.exists("bball-stats/data/IT-players.csv") && file.exists("bball-stats/data/IT-teams.csv")) {
+  try({
+    old_players = read_csv("bball-stats/data/IT-players.csv", col_types = cols(GAME_ID = "c"), show_col_types = FALSE) %>%
+      filter(SEASON == season)
+    old_teams = read_csv("bball-stats/data/IT-teams.csv", show_col_types = FALSE) %>%
+      filter(MATCHUP %in% old_players$MATCHUP)
+  }, silent = TRUE)
+}
+fixture_info = fixture_info %>% filter(!as.character(GAME_ID) %in% old_players$GAME_ID)
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 #' *DYNAMICALLY FETCH TODAY'S NEXT.JS BUILD ID*
 main_page = read_html("https://www.legabasket.it")
 build_id  = fromJSON(main_page %>% html_node("#__NEXT_DATA__") %>% html_text())$buildId
@@ -138,10 +156,15 @@ for (i in seq_len(nrow(fixture_info))) {
   TT[[i]] = bind_rows(parse_team(sc$ht$totals, fx$H_TEAM_NAME, fx$H_CLUB_CODE, fx),
                       parse_team(sc$vt$totals, fx$V_TEAM_NAME, fx$V_CLUB_CODE, fx))
 }
-rm(list = setdiff(ls(), c("PP", "TT")))
+rm(list = setdiff(ls(), c("PP", "TT", "old_players", "old_teams")))
+
+# old games + new games:
+players = bind_rows(old_players, bind_rows(PP) %>% mutate(across(any_of("GAME_ID"), as.character), across(any_of("TEAM"), toupper)))
+teams   = bind_rows(old_teams, bind_rows(TT) %>% mutate(across(any_of("TEAM"), toupper)))
 
 # beepr::beep()
-# write files in .csv format
-write_csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/IT-players.csv")
-
-write_csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/IT-teams.csv")
+# write files in .csv format (only if there is something to write, so a bad run keeps the old files)
+if (nrow(players) > 0) {
+  write_csv(players,"bball-stats/data/IT-players.csv")
+  write_csv(teams,"bball-stats/data/IT-teams.csv")
+}

@@ -178,6 +178,24 @@ fixture_info = local({
   arrange(is.na(GAME_DATE), GAME_DATE)      # TBD-date games last
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+#' *GAMES ALREADY SAVED*
+# Only games that are not in the .csv files yet get downloaded. On Mondays (and on manual runs
+# with "full refresh" ticked) the yml file sets FULL_REFRESH=true and every game is downloaded again.
+full_refresh = Sys.getenv("FULL_REFRESH") == "true"
+old_players = tibble(GAME_ID = character(), SEASON = character(), MATCHUP = character())
+old_teams   = tibble(MATCHUP = character())
+if (!full_refresh && file.exists("bball-stats/data/ES-players.csv") && file.exists("bball-stats/data/ES-teams.csv")) {
+  try({
+    old_players = read_csv("bball-stats/data/ES-players.csv", col_types = cols(GAME_ID = "c"), show_col_types = FALSE) %>%
+      filter(SEASON == season)
+    old_teams = read_csv("bball-stats/data/ES-teams.csv", show_col_types = FALSE) %>%
+      filter(MATCHUP %in% old_players$MATCHUP)
+  }, silent = TRUE)
+}
+fixture_info = fixture_info %>% filter(!as.character(GAME_ID) %in% old_players$GAME_ID)
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #' *PARSE ONE TEAM'S FULL-GAME BOX SCORE*  (verified against real data)
 # statsByPeriods has quarter 0 (full game) + 1..4; we take quarter 0.
 parse_team = function(tb, game_id, matchup) {
@@ -241,9 +259,15 @@ for (i in seq_len(nrow(fixture_info))) {
            DREB,OREB,REB,AST,STL,TOV,BLK,PF)
 }
 
-rm(list=setdiff(ls(),c("PP","TT")))
+rm(list=setdiff(ls(),c("PP","TT","old_players","old_teams")))
 
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-#' *WRITE FILES*
-write_csv(bind_rows(PP) %>% mutate(TEAM = toupper(TEAM)), "bball-stats/data/ES-players.csv")
-write_csv(bind_rows(TT) %>% mutate(TEAM = toupper(TEAM)), "bball-stats/data/ES-teams.csv")
+# old games + new games:
+players = bind_rows(old_players, bind_rows(PP) %>% mutate(across(any_of("GAME_ID"), as.character), across(any_of("TEAM"), toupper)))
+teams   = bind_rows(old_teams, bind_rows(TT) %>% mutate(across(any_of("TEAM"), toupper)))
+
+# beepr::beep()
+# write files in .csv format (only if there is something to write, so a bad run keeps the old files)
+if (nrow(players) > 0) {
+  write_csv(players,"bball-stats/data/ES-players.csv")
+  write_csv(teams,"bball-stats/data/ES-teams.csv")
+}

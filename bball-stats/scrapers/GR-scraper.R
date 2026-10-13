@@ -216,18 +216,40 @@ TEAM_COLS = c("TEAM","CODE","MATCHUP","PTS","2PM","2PA","3PM","3PA","FTM","FTA",
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #' *MAIN*
 if (sys.nframe() == 0) {
+  # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  #' *GAMES ALREADY SAVED*
+  # Only games that are not in the .csv files yet get downloaded. On Mondays (and on manual runs
+  # with "full refresh" ticked) the yml file sets FULL_REFRESH=true and every game is downloaded again.
+  full_refresh = Sys.getenv("FULL_REFRESH") == "true"
+  old_players = tibble(GAME_ID = character(), SEASON = character(), MATCHUP = character())
+  old_teams   = tibble(MATCHUP = character())
+  if (!full_refresh && file.exists("bball-stats/data/GR-players.csv") && file.exists("bball-stats/data/GR-teams.csv")) {
+    try({
+      old_players = read_csv("bball-stats/data/GR-players.csv", col_types = cols(GAME_ID = "c"), show_col_types = FALSE) %>%
+        filter(SEASON == season)
+      old_teams = read_csv("bball-stats/data/GR-teams.csv", show_col_types = FALSE) %>%
+        filter(MATCHUP %in% old_players$MATCHUP)
+    }, silent = TRUE)
+  }
   game_ids = esake_game_ids()
+  game_ids = game_ids[!game_ids %in% old_players$GAME_ID]
   PP = list(); TT = list()
   for (i in seq_along(game_ids)) {
     res = tryCatch(esake_boxscore(game_ids[i]), error = function(e) NULL)
     if (is.null(res)) next
     if (!is.na(res$game_date) && res$game_date > today()) next   # played games only
+    if (NROW(res$players) == 0) next                               # no box score yet
     PP[[i]] = res$players
     TT[[i]] = res$teams
   }
-  players_df = bind_rows(PP) %>% arrange(MATCHUP) %>% select(all_of(PLAYER_COLS))
-  teams_df   = bind_rows(TT) %>% arrange(MATCHUP) %>% select(all_of(TEAM_COLS))
+  # old games + new games:
+  players_df = bind_rows(old_players, bind_rows(PP)) %>% arrange(MATCHUP) %>% select(any_of(PLAYER_COLS))
+  teams_df   = bind_rows(old_teams, bind_rows(TT)) %>% arrange(MATCHUP) %>% select(any_of(TEAM_COLS))
   
-  write_excel_csv(players_df, "bball-stats/data/GR-players.csv")
-  write_excel_csv(teams_df,   "bball-stats/data/GR-teams.csv")
+  # (only if there is something to write, so a bad run keeps the old files)
+  if (nrow(players_df) > 0) {
+    write_excel_csv(players_df, "bball-stats/data/GR-players.csv")
+    write_excel_csv(teams_df,   "bball-stats/data/GR-teams.csv")
+  }
 }

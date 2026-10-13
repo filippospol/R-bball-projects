@@ -95,6 +95,24 @@ rm(list=setdiff(ls(),c("fixture_info","league","season","base_url",
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+#' *GAMES ALREADY SAVED*
+# Only games that are not in the .csv files yet get downloaded. On Mondays (and on manual runs
+# with "full refresh" ticked) the yml file sets FULL_REFRESH=true and every game is downloaded again.
+full_refresh = Sys.getenv("FULL_REFRESH") == "true"
+old_players = tibble(GAME_ID = character(), SEASON = character(), MATCHUP = character())
+old_teams   = tibble(MATCHUP = character())
+if (!full_refresh && file.exists("bball-stats/data/FR-players.csv") && file.exists("bball-stats/data/FR-teams.csv")) {
+  try({
+    old_players = read_csv("bball-stats/data/FR-players.csv", col_types = cols(GAME_ID = "c"), show_col_types = FALSE) %>%
+      filter(SEASON == season)
+    old_teams = read_csv("bball-stats/data/FR-teams.csv", show_col_types = FALSE) %>%
+      filter(MATCHUP %in% old_players$MATCHUP)
+  }, silent = TRUE)
+}
+fixture_info = fixture_info %>% filter(!as.character(GAME_ID) %in% old_players$GAME_ID)
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 #' *LOOP OVER MATCH ID'S AND GET BOXSCORES*
 
 PP = list()
@@ -138,10 +156,15 @@ for (i in seq_len(nrow(fixture_info))) {
       bind_cols(get_stats(base[[side]]$entity))
   }
 }
-rm(list=setdiff(ls(),c("PP","TT")))
+rm(list=setdiff(ls(),c("PP","TT","old_players","old_teams")))
+
+# old games + new games:
+players = bind_rows(old_players, bind_rows(PP) %>% mutate(across(any_of("GAME_ID"), as.character)))
+teams   = bind_rows(old_teams, bind_rows(TT))
 
 # beepr::beep()
-# write files in .csv format
-write_csv(bind_rows(PP),"bball-stats/data/FR-players.csv")
-
-write_csv(bind_rows(TT),"bball-stats/data/FR-teams.csv")
+# write files in .csv format (only if there is something to write, so a bad run keeps the old files)
+if (nrow(players) > 0) {
+  write_csv(players,"bball-stats/data/FR-players.csv")
+  write_csv(teams,"bball-stats/data/FR-teams.csv")
+}
