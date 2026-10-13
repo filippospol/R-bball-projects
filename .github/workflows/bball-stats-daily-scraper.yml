@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '1 0 * * *'
   workflow_dispatch:
+    inputs:
+      full_refresh:
+        description: "Full refresh: download every game again (not only new ones)"
+        type: boolean
+        default: false
 
 # Serialize with the NBA/WNBA workflow: both rebuild and push app-data.rds, so
 # they must never run at the same time. A queued run waits rather than being dropped.
@@ -55,6 +60,19 @@ jobs:
             any::xml2
             any::vroom
 
+      # Scrapers only download games that are not saved yet. On Mondays (or when "full refresh"
+      # is ticked on a manual run) they download every game again, to pick up stat corrections.
+      - name: Incremental or full refresh
+        env:
+          MANUAL_FULL_REFRESH: ${{ inputs.full_refresh }}
+        run: |
+          if [ "$(date -u +%u)" = "1" ] || [ "$MANUAL_FULL_REFRESH" = "true" ]; then
+            echo "FULL_REFRESH=true" >> "$GITHUB_ENV"
+            echo "Full refresh: every game is downloaded again"
+          else
+            echo "Incremental: only new games are downloaded"
+          fi
+
       #- name: NBB Scraper # run this locally, 403 error :(
 
       # Pro A now reads the public Sportradar stats widget (no LNB token needed).
@@ -68,11 +86,10 @@ jobs:
         continue-on-error: true
         run: Rscript bball-stats/scrapers/IT-scraper.R
 
+      # BBL reads public easycredit-bbl.de pages (no API secret needed).
       - name: BBL Scraper
         id: scrape_de
         continue-on-error: true
-        env:
-          BBL_API_SECRET: ${{ secrets.BBL_API_SECRET }}
         run: Rscript bball-stats/scrapers/DE-scraper.R
 
       - name: ACB Scraper
@@ -124,6 +141,9 @@ jobs:
         if: always()
         run: |
           echo "## Daily scraper results — $(date +'%Y-%m-%d')" >> "$GITHUB_STEP_SUMMARY"
+          if [ "${FULL_REFRESH:-}" = "true" ]; then mode="full refresh (every game downloaded again)"; else mode="incremental (new games only)"; fi
+          echo "Mode: $mode" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
           failed=0; empty=0
           # $1 = league, $2 = step outcome, $3 = CSV prefix (bball-stats/data/<prefix>-players.csv)
           report () {
