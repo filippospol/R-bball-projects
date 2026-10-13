@@ -52,7 +52,8 @@ master_cols = c(
 # Columns forced to text before binding. Cells with mixed types come back from
 # read_sheet() as list-columns; flattening them here keeps bind_rows() happy.
 char_cols = c("Username", "Comments", "Profile ID", "Date of Call", "Time of Call",
-              "Promo Code Credited", "Feedback", "Loyalty")
+              "Promo Code Credited", "Feedback", "Loyalty",
+              "VIP Category", "Type")   # flattened so the swap repair below is safe
 
 # The minimum a tab must contain to count as campaign data. Anything missing these
 # (the "1" template tab, Data / Black List helper tabs, pivots, scratch tabs, ...)
@@ -82,6 +83,20 @@ normalise_gender = function(x) {
   g = toupper(trimws(g))
   ifelse(g %in% c("M", "F"), g, "-")
 }
+
+# The two value families that VIP Category and Type draw from. By convention
+# VIP Category holds the TIER and Type holds the PLAYER TYPE, but some worksheet
+# blocks were pasted with the two adjacent columns reversed (tier in Type, player
+# type in VIP Category). These sets, compared upper-cased, both (a) drive the
+# automatic swap-back below and (b) let the data-quality guard flag anything the
+# swap could not safely fix. Kept here as the single source of truth for both.
+vip_tier_values = c("NON VIP", "BRONZE", "SILVER", "GOLD", "ELITE", "POTENTIAL")
+vip_player_type_values = c(
+  "CASINO PLAYER", "CASINO & SPORTSBOOK", "SPORTSBOOK", "UNDER REVIEW", "HIGH ROLLER",
+  "FUN SPORTSBOOK", "CASINO CLUB", "POKER & CASINO & SB", "TIPPING LINE", "INDUSTRY",
+  "POKER PLAYER", "POKER & CASINO", "POKER & SB", "LATE PUNTER", "MONITORED",
+  "VIRTUAL SPORTS PLAYER", "ARB", "SUSPICIOUS"
+)
 
 # Function that imports ONE worksheet by name.
 load_sheet = function(sheet_name) {
@@ -135,6 +150,29 @@ raw_outbound_data = suppressWarnings(
 # reference every column by name without failing.
 for (col in setdiff(master_cols, names(raw_outbound_data))) {
   raw_outbound_data[[col]] = NA
+}
+
+# --- Repair VIP Category <-> Type column swaps -------------------------------
+# A row is unambiguously reversed only when BOTH are wrong in the complementary
+# way: VIP Category holds a player-type AND Type holds a tier. On exactly those
+# rows we swap the two values back. Rows where only one side looks off are left
+# alone (the swap would not be safe) and the guard reports them instead.
+.vip_u  = toupper(trimws(as.character(raw_outbound_data[["VIP Category"]])))
+.type_u = toupper(trimws(as.character(raw_outbound_data[["Type"]])))
+vip_type_swap_mask = (.vip_u %in% vip_player_type_values) & (.type_u %in% vip_tier_values)
+vip_type_swap_mask[is.na(vip_type_swap_mask)] = FALSE
+n_vip_type_swapped = sum(vip_type_swap_mask)
+vip_type_swap_tabs = if (n_vip_type_swapped > 0)
+  sort(table(raw_outbound_data[["Source Tab"]][vip_type_swap_mask]), decreasing = TRUE) else NULL
+
+if (n_vip_type_swapped > 0) {
+  .tmp = raw_outbound_data[["VIP Category"]][vip_type_swap_mask]
+  raw_outbound_data[["VIP Category"]][vip_type_swap_mask] = raw_outbound_data[["Type"]][vip_type_swap_mask]
+  raw_outbound_data[["Type"]][vip_type_swap_mask]         = .tmp
+  message("VIP Category <-> Type: swapped ", n_vip_type_swapped,
+          " reversed row(s) back into place across ", length(vip_type_swap_tabs), " tab(s).")
+} else {
+  message("VIP Category <-> Type: no reversed rows found.")
 }
 
 clean_outbound_data = raw_outbound_data %>%
@@ -204,30 +242,51 @@ domain_checks = list(
   "Response 2nd attempt" = response_domain
 )
 
+# Collect per-tab findings into one list, shared by the log and the summary.
 quality_rows = list()
-for (col in names(domain_checks)) {
-  v   = enc2utf8(toupper(trimws(as.character(clean_outbound_data[[col]]))))
-  bad = !is.na(v) & !(v %in% enc2utf8(domain_checks[[col]]))
-  if (!any(bad)) next
+record_bad = function(col_label, v, bad) {
+  if (!any(bad)) return(invisible(NULL))
   tabs = clean_outbound_data[["Source Tab"]][bad]
   vals = v[bad]
   for (tt in unique(tabs)) {
     sel = tabs == tt
     ex  = head(names(sort(table(vals[sel]), decreasing = TRUE)), 3)
-    quality_rows[[length(quality_rows) + 1]] = data.frame(
-      Column = col, Tab = tt, Bad = sum(sel),
+    quality_rows[[length(quality_rows) + 1]] <<- data.frame(
+      Column = col_label, Tab = tt, Bad = sum(sel),
       Examples = paste(ex, collapse = ", "), stringsAsFactors = FALSE
     )
   }
 }
 
+# (a) Tight-domain columns - any value outside the set is likely a column shift.
+for (col in names(domain_checks)) {
+  v = enc2utf8(toupper(trimws(as.character(clean_outbound_data[[col]]))))
+  record_bad(col, v, !is.na(v) & !(v %in% enc2utf8(domain_checks[[col]])))
+}
+
+# (b) VIP Category <-> Type. After the auto-swap above, VIP Category should no
+# longer hold a player-type and Type should no longer hold a tier. Anything left
+# is a row the swap could not safely fix (only one side was wrong) - reported, not
+# changed.
+vip_u  = toupper(trimws(as.character(clean_outbound_data[["VIP Category"]])))
+type_u = toupper(trimws(as.character(clean_outbound_data[["Type"]])))
+record_bad("VIP Category (player-type value)", vip_u,  vip_u  %in% vip_player_type_values)
+record_bad("Type (tier value)",                type_u, type_u %in% vip_tier_values)
+
+# One line on the auto-swap, whether or not anything was corrected.
+swap_note = if (n_vip_type_swapped > 0)
+  sprintf("Auto-corrected %d VIP Category <-> Type swap(s) across %d tab(s).",
+          n_vip_type_swapped, length(vip_type_swap_tabs)) else
+  "No VIP Category <-> Type swaps needed."
+
+message("Data-quality guard: ", swap_note)
 if (length(quality_rows) == 0) {
-  message("Data-quality guard: all tight-domain columns clean across every tab.")
+  message("Data-quality guard: all checked columns clean across every tab.")
 } else {
   qr = do.call(rbind, quality_rows); qr = qr[order(-qr$Bad), ]
-  message("Data-quality guard: ", sum(qr$Bad), " out-of-domain value(s) found -")
+  message("Data-quality guard: ", sum(qr$Bad), " out-of-domain value(s) remaining -")
   for (i in seq_len(nrow(qr)))
-    message(sprintf("  %-22s %-30s %6d  (e.g. %s)",
+    message(sprintf("  %-34s %-30s %6d  (e.g. %s)",
                     qr$Column[i], qr$Tab[i], qr$Bad[i], qr$Examples[i]))
 }
 
@@ -237,12 +296,13 @@ gh_summary = Sys.getenv("GITHUB_STEP_SUMMARY")
 if (nzchar(gh_summary)) {
   add = function(x = "") cat(x, "\n", sep = "", file = gh_summary, append = TRUE)
   add(paste0("## Data-quality guard - ", format(Sys.Date(), "%Y-%m-%d")))
+  add(paste0("- ", swap_note))
   if (length(quality_rows) == 0) {
-    add("- OK: Email Ban, Agent's Gender, Response and Response 2nd attempt are clean across every tab.")
+    add("- OK: Email Ban, Agent's Gender, Response, Response 2nd attempt, VIP Category and Type are clean across every tab.")
   } else {
     qr = do.call(rbind, quality_rows); qr = qr[order(-qr$Bad), ]
     add(paste0("- WARNING: ", sum(qr$Bad),
-               " out-of-domain value(s) - likely a column shift in the tab(s) below. Check the source worksheet."))
+               " out-of-domain value(s) remaining - likely a column shift in the tab(s) below. Check the source worksheet."))
     add()
     add("| Column | Tab | Bad rows | Examples |")
     add("| --- | --- | --- | --- |")
