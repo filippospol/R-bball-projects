@@ -21,100 +21,12 @@ library(janitor)
 library(lubridate)
 library(readr)
 
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-#' *EXTRACT MATCH ID'S*
+season = "2026-27" ; league = "BBL"
+season_id = 2026    # the website's seasonId (2026 = 2026-27), update every season
+seed_ids = c()      # optional: any game id of the season, e.g. c(2006925)
 
-# easycredit-bbl.de > F12 > Network > reload > click the request to
-# api.basketball-bundesliga.de > Request Headers > copy x-api-secret.
-# https://curlconverter.com/r/ > paste headers here > extract secret key
-# Github > R-bball-projects > Settings > Secrets and variables > Actions > Repository secrets
-
-# Set API headers:
-headers = c(
-  accept = "application/json, text/plain, */*",
-  `accept-language` = "en-GB,en-US;q=0.9,en;q=0.8",
-  origin = "https://www.easycredit-bbl.de",
-  priority = "u=1, i",
-  referer = "https://www.easycredit-bbl.de/",
-  `sec-ch-ua` = '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"',
-  `sec-ch-ua-mobile` = "?0",
-  `sec-ch-ua-platform` = '"Windows"',
-  `sec-fetch-dest` = "empty",
-  `sec-fetch-mode` = "cors",
-  `sec-fetch-site` = "cross-site",
-  `user-agent` = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
-  `x-api-key` = "publicWebUser",
-  `x-api-secret` = Sys.getenv("BBL_API_SECRET")
-)
-
-# Helper: pull every page of one gameType ("finished" / "scheduled") into a tibble.
-# Safe when the API returns zero games (e.g. before the season starts).
-get_fixtures = function(game_type) {
-  
-  fetch_page = function(page) {
-    GET(url = "https://api.basketball-bundesliga.de/games",
-        add_headers(.headers = headers),
-        query = list(currentPage = page, pageSize = "9", gameType = game_type))
-  }
-  
-  # Empty template so downstream bind_rows() always has the right columns:
-  empty = tibble(ID = character(), GAME_DATE = character(),
-                 HOME_TEAM = character(), AWAY_TEAM = character())
-  
-  res = fetch_page(1)
-  if (res$status_code != 200) return(empty)
-  raw_json = fromJSON(content(res, "text", encoding = "UTF-8"))
-  
-  # totalPages may be 0 or NULL when there are no games yet:
-  n_pages = raw_json$totalPages
-  if (is.null(n_pages) || is.na(n_pages) || n_pages < 1) return(empty)
-  
-  FF = list()
-  options(warn = -1)
-  for (i in seq_len(n_pages)) {        # seq_len(0) is empty -> loop never runs
-    if (i > 1) {
-      res = fetch_page(i)
-      if (res$status_code != 200) break
-      raw_json = fromJSON(content(res, "text", encoding = "UTF-8"))
-    }
-    if (NROW(raw_json$items) == 0) break   # no games on this page -> stop
-    
-    items = raw_json$items %>% as_tibble()
-    
-    # Keep league games only (drops Netto BBL Pokal / cup games).
-    # The list items carry the same `competition` field as initialGameData.
-    if ("competition" %in% names(items)) {
-      items = items %>% filter(competition == "BBL")
-    }
-    if (nrow(items) == 0) next   # page was all cup games
-    
-    FF[[i]] = items %>%
-      select(ID = id, GAME_DATE = scheduledTime, HOME = homeTeam, AWAY = guestTeam) %>%
-      unnest() %>%
-      select(ID, GAME_DATE, HOME_TEAM = name, AWAY_TEAM = name1) %>%
-      mutate(ID = as.character(ID))
-  }
-  options(warn = 1)
-  
-  if (length(FF) == 0) return(empty)
-  bind_rows(FF)
-}
-
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# Finished games IDs:
-fixture_finished = get_fixtures("finished")
-
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# Scheduled games IDs:
-fixture_scheduled = get_fixtures("scheduled")
-
-# bind all game information together:
-fixture_info = bind_rows(fixture_finished, fixture_scheduled) %>%
-  mutate(GAME_DATE = as_date(ymd_hms(GAME_DATE))) %>%
-  arrange(GAME_DATE)
-
-# Clear environment:
-rm(list = setdiff(ls(), c("headers", "fixture_info")))
+# Names: strip accents first, then uppercase ("Würzburg" -> "WURZBURG"):
+clean_name = function(x) toupper(stri_trans_general(x, "latin-ascii"))
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #' *GET DAILY URL KEY*
@@ -132,12 +44,86 @@ next_data_json = fixture_page %>%
 
 # Extract the specific ID
 daily_key = next_data_json$buildId
+
+# Game ID's shown on the page (recent results and next games):
+ticker_ids = fixture_page %>%
+  html_nodes("a") %>%
+  html_attr("href") %>%
+  str_match("/spiele/(\\d{6,})") %>%
+  .[, 2] %>% na.omit() %>% as.numeric()
+
 rm(base_url, fixture_page, next_data_json)
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-#' *LOOP OVER MATCH ID'S AND GET BOXSCORES*
+#' *EXTRACT MATCH ID'S*
 
-season = "2026-27" ; league = "BBL"
+# All game ID's of one season sit in one block of numbers (e.g. 2006865-2006950).
+# Starting from the ID's we know, check every ID around them until 30 ID's in a row
+# are not games of this season.
+
+# Helper: game information for one ID (NULL if it is not a game of this season):
+get_game_info = function(id) {
+  res = GET(url = glue("https://www.easycredit-bbl.de/_next/data/{daily_key}/de-DE/spiele/{id}.json?id={id}"))
+  Sys.sleep(0.2)
+  if (res$status_code != 200) return(NULL)
+  game = fromJSON(content(res, "text", encoding = "UTF-8"))$pageProps$initialGameData
+  if (!isTRUE(game$seasonId == season_id)) return(NULL)
+  
+  tibble(ID = as.character(id), GAME_DATE = game$scheduledTime %||% NA,
+         COMPETITION = game$competition %||% NA,
+         HOME_TEAM = game$homeTeam$name %||% NA, AWAY_TEAM = game$guestTeam$name %||% NA)
+}
+
+# ID's we already know (website + games saved in the last run):
+saved_ids = c()
+if (file.exists("bball-stats/data/DE-players.csv")) {
+  saved_ids = read_csv("bball-stats/data/DE-players.csv", show_col_types = FALSE) %>%
+    filter(SEASON == season) %>% pull(GAME_ID) %>% as.numeric()
+}
+known = sort(unique(c(seed_ids, ticker_ids, saved_ids)))
+
+# Known ID's can sit in separate blocks (e.g. regular season vs playoffs):
+blocks = split(known, cumsum(c(1, diff(known) > 100)))
+
+FF = list()
+checked = c()
+for (b in blocks) {
+  
+  # every ID between the lowest and the highest known ID of the block:
+  for (id in setdiff(min(b):max(b), checked)) {
+    checked = c(checked, id)
+    FF[[length(FF) + 1]] = get_game_info(id)
+  }
+  
+  # then walk outwards (down, then up) until 30 ID's in a row are not games of this season:
+  for (step in c(-1, 1)) {
+    id = if (step < 0) min(b) else max(b) ; misses = 0
+    while (misses < 30 && length(checked) < 1500) {
+      id = id + step
+      if (id %in% checked) next
+      checked = c(checked, id)
+      info = get_game_info(id)
+      misses = if (is.null(info)) misses + 1 else 0
+      FF[[length(FF) + 1]] = info
+    }
+  }
+}
+
+# bind all game information together (league games only, no Pokal):
+# (empty template so the columns exist even when no games were found)
+empty = tibble(ID = character(), GAME_DATE = character(), COMPETITION = character(),
+               HOME_TEAM = character(), AWAY_TEAM = character())
+fixture_info = bind_rows(empty, FF) %>%
+  filter(COMPETITION == "BBL") %>%
+  distinct(ID, .keep_all = TRUE) %>%
+  mutate(GAME_DATE = as_date(ymd_hms(GAME_DATE))) %>%
+  arrange(GAME_DATE)
+
+# Clear environment:
+rm(list = setdiff(ls(), c("fixture_info", "daily_key", "season", "league", "clean_name")))
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#' *LOOP OVER MATCH ID'S AND GET BOXSCORES*
 
 PP = list()
 TT = list()
@@ -145,16 +131,11 @@ TT = list()
 # seq_len(nrow(...)) is empty when there are no fixtures -> loop is skipped
 for (i in seq_len(nrow(fixture_info))) {
   
-  if (ymd(fixture_info$GAME_DATE[i]) >= today()) break
+  if (is.na(fixture_info$GAME_DATE[i]) || fixture_info$GAME_DATE[i] >= today("UTC")) break
   
   res = GET(url = glue("https://www.easycredit-bbl.de/_next/data/{daily_key}/de-DE/spiele/{fixture_info$ID[i]}.json?id={fixture_info$ID[i]}"))
   if (res$status_code != 200) next
   raw_json = fromJSON(content(res, "text", encoding = "UTF-8"))
-  
-  # Safety net: keep league games only. initialGameData$competition is
-  # populated even before tip-off (initialGameStats is NULL until then).
-  comp = raw_json$pageProps$initialGameData$competition
-  if (!isTRUE(comp == "BBL")) next
   
   # Skip games with no box score published yet:
   if (NROW(raw_json$pageProps$initialGameStats$homeTeam$playerStats) == 0 ||
@@ -185,8 +166,8 @@ for (i in seq_len(nrow(fixture_info))) {
     mutate(GAME_ID = fixture_info$ID[i], SEASON = season, LEAGUE = league,
            MATCHUP = MATCHUP,
            MIN = round(as.numeric(SECONDS_PLAYED) / 60, 1),
-           PLAYER = stri_trans_general(
-             toupper(paste0(FIRST_NAME, " ", LAST_NAME)), "latin-ascii")) %>%
+           PLAYER = clean_name(paste0(FIRST_NAME, " ", LAST_NAME)),
+           TEAM = clean_name(TEAM)) %>%
     select(GAME_ID, SEASON, LEAGUE, PLAYER, TEAM, MATCHUP, MIN, PTS = POINTS,
            `2PM` = TWO_POINT_SHOTS_MADE, `2PA` = TWO_POINT_SHOTS_ATTEMPTED,
            `3PM` = THREE_POINT_SHOTS_MADE, `3PA` = THREE_POINT_SHOTS_ATTEMPTED,
@@ -197,12 +178,10 @@ for (i in seq_len(nrow(fixture_info))) {
     mutate(MIN = round(MIN)) %>%
     # if minutes is NA, player DNP so remove that row altogether
     filter(!is.na(MIN)) %>%
-    mutate_at(7:22, as.numeric) %>%
-    mutate(across(any_of(c("TEAM", "PLAYER")),
-                  ~ stri_trans_general(.x, "latin-ascii")))
+    mutate_at(7:22, as.numeric)
   
-  homeTeam = homeBox$TEAM[1] ; homeCode = homeBox$CODE[1]
-  awayTeam = awayBox$TEAM[1] ; awayCode = awayBox$CODE[1]
+  homeTeam = clean_name(homeBox$TEAM[1]) ; homeCode = homeBox$CODE[1]
+  awayTeam = clean_name(awayBox$TEAM[1]) ; awayCode = awayBox$CODE[1]
   rm(homeBox, awayBox)
   
   # Teams Boxscore:
@@ -231,9 +210,7 @@ for (i in seq_len(nrow(fixture_info))) {
              DREB = DEFENSIVE_REBOUNDS, OREB = OFFENSIVE_REBOUNDS,
              REB = TOTAL_REBOUNDS, AST = ASSISTS, STL = STEALS, BLK = BLOCKS,
              TOV = TURNOVERS, PF = FOULS_COMMITTED)
-  ) %>%
-    mutate(across(any_of(c("TEAM")),
-                  ~ stri_trans_general(.x, "latin-ascii")))
+  )
   
   # print(i)
 }
@@ -241,6 +218,9 @@ for (i in seq_len(nrow(fixture_info))) {
 rm(list = setdiff(ls(), c("PP", "TT")))
 # beepr::beep()
 
-# write files in .csv format
-write_csv(bind_rows(PP) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/DE-players.csv")
-write_csv(bind_rows(TT) %>% mutate(TEAM=toupper(TEAM)),"bball-stats/data/DE-teams.csv")
+# write files in .csv format (only if we got games, so a bad run keeps the old files)
+if (length(PP) > 0) {
+  write_csv(bind_rows(PP), "bball-stats/data/DE-players.csv")
+  
+  write_csv(bind_rows(TT), "bball-stats/data/DE-teams.csv")
+}
