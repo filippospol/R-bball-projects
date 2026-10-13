@@ -64,6 +64,25 @@ to_text = function(x) {
   map_chr(x, function(v) if (length(v) == 0 || is.null(v)) NA_character_ else as.character(v[[1]]))
 }
 
+# Normalise Agent's Gender to exactly M / F / -. Agents on a Greek keyboard type a
+# Greek capital Mu ("Μ"), which LOOKS identical to Latin "M" but is a
+# different character, so it slips through as an out-of-domain value; this maps it
+# (and lower-case / stray typos) back. Anything that is not clearly M or F becomes
+# "-" rather than being guessed at. This only fixes keyboard/entry noise - it
+# cannot recover a gender that a column shift stranded in the wrong column; that
+# has to be fixed in the source worksheet.
+normalise_gender = function(x) {
+  g      = enc2utf8(as.character(x))
+  mu_cap = enc2utf8(intToUtf8(0x039C))   # Greek capital Mu  (Μ)
+  mu_low = enc2utf8(intToUtf8(0x03BC))   # Greek small   mu  (μ)
+  # Byte-wise replace, so it works no matter the server's locale (toupper() on its
+  # own does not touch Greek letters under a C locale).
+  g = gsub(mu_cap, "M", g, useBytes = TRUE)
+  g = gsub(mu_low, "M", g, useBytes = TRUE)
+  g = toupper(trimws(g))
+  ifelse(g %in% c("M", "F"), g, "-")
+}
+
 # Function that imports ONE worksheet by name.
 load_sheet = function(sheet_name) {
   df = tryCatch(
@@ -71,30 +90,30 @@ load_sheet = function(sheet_name) {
     error = function(e) { message("  ! could not read '", sheet_name, "': ", conditionMessage(e)); NULL }
   )
   if (is.null(df) || nrow(df) == 0) return(NULL)
-
+  
   # Normalise header whitespace ("Reason " -> "Reason", "Profile ID " -> "Profile ID")
   # so the name-based logic below is not tripped up by stray spaces.
   names(df) = trimws(names(df))
-
+  
   # Skip tabs that are not campaign data.
   if (!all(required_cols %in% names(df))) {
     message("Skipped  '", sheet_name, "'  [not a campaign data tab]")
     return(NULL)
   }
-
+  
   # Row number within this sheet, captured BEFORE any row is dropped, so each row
   # keeps its original position in the tab (`Source Tab` records which tab it is).
   df = df %>% mutate(`Source Tab` = sheet_name, `Sheet Row` = row_number())
-
+  
   # --- OPTIONAL: restore the old World Cup prefix, now matched by tab name ---
   # if (sheet_name == "World Cup 2026") df = df %>% mutate(Campaign = paste0("WC 2026 - ", Campaign))
-
+  
   df = df %>%
     mutate(across(any_of(char_cols), to_text)) %>%
     # Drop repeated header rows AND blank spill-over rows (the alignment formula
     # fills whole columns, so empty trailing rows arrive with no Username).
     filter(!is.na(Username), Username != "Username")
-
+  
   message("Loaded   '", sheet_name, "'  [", nrow(df), " rows, ",
           n_distinct(df$Campaign), " campaign(s)]")
   Sys.sleep(0.5)
@@ -128,7 +147,7 @@ clean_outbound_data = raw_outbound_data %>%
     `Account Manager(VIP) / Black List` = coalesce(`Account Manager(VIP) / Black List`, "NO"),
     `VIP Category` = coalesce(`VIP Category`, "NON VIP"),
     Type = coalesce(Type, "No Type"),
-    `Agent's Gender` = coalesce(`Agent's Gender`, "-"),
+    `Agent's Gender` = normalise_gender(`Agent's Gender`),   # -> M / F / - only
     Agent = coalesce(Agent, "-"),
     `Date of Call`  = format(.call_date, "%d-%b-%Y"),                    # reuse
     `Month of Call` = format(.call_date, "%Y-%m"),                      # reuse (no dmy)
@@ -159,6 +178,79 @@ clean_outbound_data = raw_outbound_data %>%
 # Plain CSV - kept for any other consumer / the Download-the-raw use. The app no
 # longer reads this; it reads the .rds below.
 write_csv(clean_outbound_data, "misc/outbound-clean-data.csv")
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#' [ =============== DATA-QUALITY GUARD =============== ]
+
+# Tight-domain columns: a value outside the listed set is a strong signal that a
+# batch was pasted into that worksheet with its columns misaligned (a "shift") -
+# the way the GR NON DEP 09-Oct block put gender values into Email Ban and ban
+# values into Agent's Gender. We scan each column PER Source Tab and report any
+# out-of-domain values, so a bad import is named in the next run's log and summary
+# the following morning instead of being discovered months later. This only
+# REPORTS - it never changes the data and never fails the build.
+#
+# Note: Agent's Gender has already been normalised to M/F/- above, so it acts as a
+# tripwire (it should always be clean; a hit means the normaliser itself broke). A
+# real column shift also corrupts Email Ban / Response, which are NOT normalised,
+# so the shift is still caught there.
+response_domain = c("ANSWERED", "UNANSWERED", "NOT CALLED", "INVALID NUMBER",
+                    "CANNOT CONNECT TO NUMBER", "ANSWERED BY 3RD",
+                    "ANSWERED BY 3RD PERSON", "ΑNSWERED BY 3RD PERSON", "-")
+domain_checks = list(
+  "Email Ban"            = c("YES", "NO"),
+  "Agent's Gender"       = c("M", "F", "-"),
+  "Response"             = response_domain,
+  "Response 2nd attempt" = response_domain
+)
+
+quality_rows = list()
+for (col in names(domain_checks)) {
+  v   = enc2utf8(toupper(trimws(as.character(clean_outbound_data[[col]]))))
+  bad = !is.na(v) & !(v %in% enc2utf8(domain_checks[[col]]))
+  if (!any(bad)) next
+  tabs = clean_outbound_data[["Source Tab"]][bad]
+  vals = v[bad]
+  for (tt in unique(tabs)) {
+    sel = tabs == tt
+    ex  = head(names(sort(table(vals[sel]), decreasing = TRUE)), 3)
+    quality_rows[[length(quality_rows) + 1]] = data.frame(
+      Column = col, Tab = tt, Bad = sum(sel),
+      Examples = paste(ex, collapse = ", "), stringsAsFactors = FALSE
+    )
+  }
+}
+
+if (length(quality_rows) == 0) {
+  message("Data-quality guard: all tight-domain columns clean across every tab.")
+} else {
+  qr = do.call(rbind, quality_rows); qr = qr[order(-qr$Bad), ]
+  message("Data-quality guard: ", sum(qr$Bad), " out-of-domain value(s) found -")
+  for (i in seq_len(nrow(qr)))
+    message(sprintf("  %-22s %-30s %6d  (e.g. %s)",
+                    qr$Column[i], qr$Tab[i], qr$Bad[i], qr$Examples[i]))
+}
+
+# In GitHub Actions, also write the verdict to the run's summary page, so it is
+# visible without opening the step log.
+gh_summary = Sys.getenv("GITHUB_STEP_SUMMARY")
+if (nzchar(gh_summary)) {
+  add = function(x = "") cat(x, "\n", sep = "", file = gh_summary, append = TRUE)
+  add(paste0("## Data-quality guard - ", format(Sys.Date(), "%Y-%m-%d")))
+  if (length(quality_rows) == 0) {
+    add("- OK: Email Ban, Agent's Gender, Response and Response 2nd attempt are clean across every tab.")
+  } else {
+    qr = do.call(rbind, quality_rows); qr = qr[order(-qr$Bad), ]
+    add(paste0("- WARNING: ", sum(qr$Bad),
+               " out-of-domain value(s) - likely a column shift in the tab(s) below. Check the source worksheet."))
+    add()
+    add("| Column | Tab | Bad rows | Examples |")
+    add("| --- | --- | --- | --- |")
+    for (i in seq_len(nrow(qr)))
+      add(sprintf("| %s | %s | %d | %s |", qr$Column[i], qr$Tab[i], qr$Bad[i], qr$Examples[i]))
+  }
+  add()
+}
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #' [ =============== CQS LIST + RDS BUNDLE =============== ]
