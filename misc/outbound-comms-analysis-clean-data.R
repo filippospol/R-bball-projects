@@ -77,6 +77,10 @@ load_sheet = function(sheet_name) {
     return(NULL)
   }
   
+  # Row number within this sheet, captured BEFORE any row is dropped, so each row
+  # keeps its original position in the tab (`Source Tab` records which tab it is).
+  df = df %>% mutate(`Source Tab` = sheet_name, `Sheet Row` = row_number())
+  
   # --- OPTIONAL: restore the old World Cup prefix, now matched by tab name ---
   # if (sheet_name == "World Cup 2026") df = df %>% mutate(Campaign = paste0("WC 2026 - ", Campaign))
   
@@ -143,7 +147,8 @@ clean_outbound_data = raw_outbound_data %>%
     `Agent's Gender`, `Agent`, `Date of Call`, `Time of Call`, `Month of Call`,
     `Response`, `Attitude`, `Reason`, `Promo Code Credited`, `Comments`,
     `Feedback`, `Loyalty`, `Agent 2nd attempt`, `Response 2nd attempt`,
-    `Attitude 2nd attempt`, `Reason 2nd attempt`
+    `Attitude 2nd attempt`, `Reason 2nd attempt`,
+    `Source Tab`, `Sheet Row`
   )
 
 write_csv(clean_outbound_data, "misc/outbound-clean-data.csv")
