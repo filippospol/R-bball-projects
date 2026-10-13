@@ -45,21 +45,37 @@ next_data_json = fixture_page %>%
 # Extract the specific ID
 daily_key = next_data_json$buildId
 
-# Game ID's shown on the page (recent results and next games):
+# Game ID's shown on the page (next games):
 ticker_ids = fixture_page %>%
   html_nodes("a") %>%
   html_attr("href") %>%
   str_match("/spiele/(\\d{6,})") %>%
   .[, 2] %>% na.omit() %>% as.numeric()
 
+# Any game page also lists the latest results, so read one of those too:
+if (length(ticker_ids) > 0) {
+  game_page = tryCatch(read_html(paste0("https://www.easycredit-bbl.de/spiele/", ticker_ids[1])),
+                       error = function(e) NULL)
+  if (!is.null(game_page)) {
+    ticker_ids = c(ticker_ids, game_page %>%
+                     html_nodes("a") %>%
+                     html_attr("href") %>%
+                     str_match("/spiele/(\\d{6,})") %>%
+                     .[, 2] %>% na.omit() %>% as.numeric()) %>% unique()
+  }
+}
+
 rm(base_url, fixture_page, next_data_json)
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #' *EXTRACT MATCH ID'S*
 
-# All game ID's of one season sit in one block of numbers (e.g. 2006865-2006950).
-# Starting from the ID's we know, check every ID around them until 30 ID's in a row
-# are not games of this season.
+# Daily run: only the games on the site's ticker (latest results + next games) that are not
+# saved yet - about 20 ID's.
+# Full refresh (Mondays) or empty file: the whole season. All game ID's of one season sit in one
+# block of numbers (e.g. 2006865-2006950), so starting from the ID's we know, check every ID
+# around them until 30 ID's in a row are not games of this season. This also catches any game
+# a daily run missed.
 
 # Helper: game information for one ID (NULL if it is not a game of this season):
 get_game_info = function(id) {
@@ -91,6 +107,11 @@ blocks = split(known, cumsum(c(1, diff(known) > 100)))
 
 FF = list()
 checked = c()
+whole_season = Sys.getenv("FULL_REFRESH") == "true" || length(saved_ids) == 0
+if (!whole_season) {
+  for (id in setdiff(ticker_ids, saved_ids)) FF[[length(FF) + 1]] = get_game_info(id)
+  blocks = list()                                   # -> skip the whole-season scan below
+}
 for (b in blocks) {
   
   # every ID between the lowest and the highest known ID of the block:

@@ -115,23 +115,47 @@ team_url = function(idteam, mode = 3)   # mode=3 = PROGRAM (full schedule)
 # Union of: (a) each phase crosstab (mode=2) and (b) each team's PROGRAM page
 # (mode=3). (a) is complete for the regular season; (b) recovers the best-of-N
 # play-off games the crosstab collapses. Dedup at the end.
+# The PROGRAM pages also show each game's date ("Sat 17 Oct - 15:00"), so games
+# that have not been played yet can be skipped without opening them.
+
+# Game ids and dates on one page (date = NA where the page shows none):
+game_dates = function(page) {
+  links = page %>% html_elements("a[href*='idgame=']")
+  out = tibble(GAME_ID = extract_id(html_attr(links, "href"), "idgame"), GAME_DATE = as.Date(NA))
+  for (k in seq_along(links)) {
+    # the biggest part of the page around this link that holds only this one game:
+    block = NULL
+    for (anc in rev(xml_find_all(links[[k]], "ancestor::*"))) {
+      inside = unique(extract_id(anc %>% html_elements("a[href*='idgame=']") %>% html_attr("href"), "idgame"))
+      if (length(inside) > 1) break
+      block = anc
+    }
+    if (is.null(block)) next
+    dt_raw = str_match(html_text2(block),
+      "(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\\s+\\d{1,2}\\s+[A-Za-z]{3,}")[, 1]
+    out$GAME_DATE[k] = parse_game_date(dt_raw, season)
+  }
+  out %>% filter(!is.na(GAME_ID))
+}
+
 esake_game_ids = function() {
-  ids = character(0)
+  games = tibble(GAME_ID = character(), GAME_DATE = as.Date(character()))
   team_ids = character(0)
 
   for (s in phase_seasons) {
     page = tryCatch(fetch_html(results_url(s, "01", 2)), error = function(e) NULL)
     if (is.null(page)) next
-    ids = c(ids, pull_ids(page, "idgame"))
+    games = bind_rows(games, game_dates(page))
     team_ids = c(team_ids, pull_ids(page, "idteam"))   # nav bar -> all teams
   }
   team_ids = unique(team_ids)
 
   for (tid in team_ids) {
     page = tryCatch(fetch_html(team_url(tid, 3)), error = function(e) NULL)
-    if (!is.null(page)) ids = c(ids, pull_ids(page, "idgame"))
+    if (!is.null(page)) games = bind_rows(games, game_dates(page))
   }
-  unique(ids)
+  # one row per game, keeping a date if any page showed one:
+  games %>% group_by(GAME_ID) %>% summarise(GAME_DATE = na.omit(GAME_DATE)[1], .groups = "drop")
 }
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -232,8 +256,10 @@ if (sys.nframe() == 0) {
         filter(MATCHUP %in% old_players$MATCHUP)
     }, silent = TRUE)
   }
-  game_ids = esake_game_ids()
-  game_ids = game_ids[!game_ids %in% old_players$GAME_ID]
+  games = esake_game_ids() %>%
+    filter(!GAME_ID %in% old_players$GAME_ID,          # saved already
+           is.na(GAME_DATE) | GAME_DATE < today())     # not played yet (no date shown -> check it anyway)
+  game_ids = games$GAME_ID
   PP = list(); TT = list()
   for (i in seq_along(game_ids)) {
     res = tryCatch(esake_boxscore(game_ids[i]), error = function(e) NULL)
