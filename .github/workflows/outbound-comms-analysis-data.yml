@@ -2,9 +2,9 @@ name: Outbound Comms Analysis - Clean Data
 
 on:
   schedule:
-    - cron: '15 22 * * *'
-    - cron: '0 01 * * *'
-    - cron: '15 03 * * *'
+    - cron: '0 1 * * *'
+    - cron: '0 3 * * *'
+    - cron: '0 5 * * *'
   workflow_dispatch:
 
 jobs:
