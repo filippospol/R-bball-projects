@@ -82043,7 +82043,7 @@ GR HGC,Kimwnas1999,1281393,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopo
 GR HGC,Billjohn2,1332414,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,15-Oct-2026,12:00,2026-10,ANSWERED,Callback,-,-,6,-,-,T.Antonopoulou,UNANSWERED,-,-,GR HGC,8644
 GR HGC,Katerinio222,1718634,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,15-Oct-2026,12:00,2026-10,INVALID NUMBER,-,-,-,no register number,-,-,-,-,-,-,GR HGC,8645
 GR HGC,Kostaselen,1605985,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,15-Oct-2026,12:00,2026-10,INVALID NUMBER,-,-,-,no register number,-,-,-,-,-,-,GR HGC,8646
-GR HGC,daku1987,1018688,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,15-Oct-2026,12:00,2026-10,ANSWERED,Callback,-,-,16/10,-,-,T.Antonopoulou,-,-,-,GR HGC,8647
+GR HGC,daku1987,1018688,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,15-Oct-2026,12:00,2026-10,ANSWERED,Callback,-,-,16/10,-,-,T.Antonopoulou,ANSWERED,Negative,C is not interested,GR HGC,8647
 GR HGC,Natasa67,1605519,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,15-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,UNANSWERED,-,-,GR HGC,8648
 GR HGC,giouriav,1227245,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,15-Oct-2026,12:00,2026-10,INVALID NUMBER,-,-,-,no register number,-,-,-,-,-,-,GR HGC,8649
 GR HGC,LesDes,1597107,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,15-Oct-2026,12:00,2026-10,ANSWERED,Negative,C is not interested,-,-,-,-,-,-,-,-,GR HGC,8650
@@ -82667,23 +82667,309 @@ GR Non Dep,AROU05,9713597,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,15-Oct-2026,
 GR Non Dep,nikpapapo87,9712657,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,15-Oct-2026,16:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,31997
 VIP Day 10 Avg Dep >100,lostis13,1350522,NO,YES,SILVER,Casino Player,NA,M,I. Tsakopoulos,15-Oct-2026,16:00,2026-10,ΑNSWERED BY 3RD PERSON,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,4983
 VIP Day 10 Avg Dep <100,brbrast,1206908,NO,NO,BRONZE,Casino Player,NA,M,I. Tsakopoulos,15-Oct-2026,16:00,2026-10,UNANSWERED,-,-,-,-,-,-,I. Tsakopoulos,UNANSWERED,-,-,VIP Day 10 Avg < 100,8966
-VIP Day 10 Avg Dep <100,mastor600,1266591,NO,NO,BRONZE,Casino Player,NA,M,I. Tsakopoulos,15-Oct-2026,16:00,2026-10,UNANSWERED,-,-,-,-,-,-,I. Tsakopoulos,-,-,-,VIP Day 10 Avg < 100,8967
-VIP Day 10 Avg Dep <100,200817dkdK,1178007,NO,NO,BRONZE,Casino Player,NA,M,I. Tsakopoulos,15-Oct-2026,16:00,2026-10,UNANSWERED,-,-,-,-,-,-,I. Tsakopoulos,-,-,-,VIP Day 10 Avg < 100,8968
+VIP Day 10 Avg Dep <100,mastor600,1266591,NO,NO,BRONZE,Casino Player,NA,M,I. Tsakopoulos,15-Oct-2026,16:00,2026-10,UNANSWERED,-,-,CS-VIP300,-,-,-,I. Tsakopoulos,ANSWERED,Positive,C will deposit,VIP Day 10 Avg < 100,8967
+VIP Day 10 Avg Dep <100,200817dkdK,1178007,NO,NO,BRONZE,Casino Player,NA,M,I. Tsakopoulos,15-Oct-2026,16:00,2026-10,UNANSWERED,-,-,-,-,-,-,I. Tsakopoulos,UNANSWERED,-,-,VIP Day 10 Avg < 100,8968
 VIP Day 10 Avg Dep <100,errikaki85,2446945,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,15-Oct-2026,16:00,2026-10,UNANSWERED,-,-,-,-,-,-,D. Nompilakis,UNANSWERED,-,-,VIP Day 10 Avg < 100,8970
 VIP Day 10 Avg Dep <100,Sp19101982,1934922,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,15-Oct-2026,16:00,2026-10,ANSWERED,Neutral,C may deposit at some point,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,8971
 VIP Day 10 Avg Dep <100,Sassari,1675939,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,15-Oct-2026,16:00,2026-10,ANSWERED,Neutral,C may deposit at some point,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,8972
 VIP Day 30,Laourdas,3112077,NO,NO,BRONZE,Casino Player,NA,M,I. Tsakopoulos,15-Oct-2026,16:00,2026-10,NOT CALLED,-,Limits,-,-,-,-,-,-,-,-,VIP Day 30,1577
-VIP Day 10 Avg Dep >100,mobkounabi,2645830,NO,NO,SILVER,Casino Player,NA,M,D. Nompilakis,15-Oct-2026,17:00,2026-10,UNANSWERED,-,-,-,Call 16-10 Morning,-,-,D. Nompilakis,ANSWERED,Callback,-,VIP Day 10 Avg > 100,4984
+VIP Day 10 Avg Dep >100,mobkounabi,2645830,NO,NO,SILVER,Casino Player,NA,M,D. Nompilakis,15-Oct-2026,17:00,2026-10,UNANSWERED,-,-,CS-VIP500,Call 16-10 Morning,-,-,D. Nompilakis,ANSWERED,Callback,C will deposit,VIP Day 10 Avg > 100,4984
 VIP Day 10 Avg Dep >100,chaleas365,668297,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,15-Oct-2026,17:00,2026-10,INVALID NUMBER,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,4985
-VIP Day 30,MrCadwell,5450558,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,15-Oct-2026,17:00,2026-10,ANSWERED,Callback,-,-,Call on 16-10,-,-,D. Nompilakis,-,-,-,VIP Day 30,1578
+VIP Day 30,MrCadwell,5450558,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,15-Oct-2026,17:00,2026-10,ANSWERED,Callback,-,-,Call on 16-10 / Call @ 18:30,-,-,D. Nompilakis,ANSWERED,Callback,-,VIP Day 30,1578
+GR HGC,davidpali21,1726363,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8746
+GR HGC,Dpozarlis,1027116,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8747
+GR HGC,Koumpatidis,1098793,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8748
+GR HGC,christine700,1654208,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8749
+GR HGC,Entiolmile,941659,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8750
+GR HGC,xtc4unow,777974,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8751
+GR HGC,VaggelisTkl,1507881,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8752
+GR HGC,Panossdr99,1265580,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8753
+GR HGC,Teras1974,1363057,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8754
+GR HGC,panostsiri,1180184,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8755
+GR HGC,extradark,1600030,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8756
+GR HGC,karimape,1565575,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8757
+GR HGC,Stoikos16,1572726,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8758
+GR HGC,Marios1008,1491280,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8759
+GR HGC,tzo16041982,1771439,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8760
+GR HGC,nikolasef93,1524423,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8761
+GR HGC,billys1989,1593740,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8762
+GR HGC,athinacarras,1813000,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8763
+GR HGC,ratel007,1328598,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8764
+GR HGC,KostArv6,1472349,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8765
+GR HGC,genikaLefta,1576745,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8766
+GR HGC,fragkiskos87,1289124,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8767
+GR HGC,ilia13zwg,1102899,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8768
+GR HGC,johnnykou21,1132643,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8769
+GR HGC,Taraki93,957764,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8770
+GR HGC,Manospn94,1558945,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8771
+GR HGC,zagof1,1334568,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8772
+GR HGC,panakos21,675394,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8773
+GR HGC,charalyssari,947666,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8774
+GR HGC,St6fan0s4,1679330,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8775
+GR HGC,aposgrim,1748763,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8776
+GR HGC,Oto3838,1202402,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8777
+GR HGC,agrimi9,1568851,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8778
+GR HGC,makako212,1106728,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,Already Active,-,-,-,-,-,-,GR HGC,8807
+GR HGC,philippodimo,1563114,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8809
+GR HGC,sotirinio1,768979,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8810
+GR HGC,vagg5299,1559817,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8811
+GR HGC,Titanas6,1730421,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8812
+GR HGC,skyloc,1242070,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8813
+GR HGC,Giwrgostek,1486725,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8814
+GR HGC,Nantin23,1713136,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8815
+GR HGC,Annanzt,1714964,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8816
+GR HGC,xristosdj,1498417,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8817
+GR HGC,xara666,1746695,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8818
+GR HGC,BesnikeB,1589890,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8819
+GR HGC,Villagestory,1353152,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8820
+GR HGC,Xatzanna,1252592,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8821
+GR HGC,kostas11178,1704616,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8822
+GR HGC,Krispy,1354261,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8823
+GR HGC,argykastan,1229096,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8824
+GR HGC,Angelo_lyr,776412,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8825
+GR HGC,Darkwolf90s,1510607,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8826
+GR HGC,leonardos356,1608968,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8827
+GR HGC,vcrash7,1731598,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8828
+GR HGC,KOSTASKAL13,1350820,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8829
+GR HGC,angeskout,1697834,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8830
+GR HGC,fotiostt,1624147,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8831
+GR HGC,Rodini0987,1638296,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8832
+GR HGC,xaraugi77,1167374,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8833
+GR HGC,sotos00,1758797,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8834
+GR HGC,opel2013,1158741,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8835
+GR HGC,vasiliki822,1248138,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8836
+GR HGC,Agostino,1713662,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8837
+GR HGC,Miltosgouvas,1832811,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8838
+GR HGC,sninos13,1302121,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8839
+GR HGC,Odisseaskaz,729004,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8840
+GR HGC,KonPlat,1527268,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8841
+GR HGC,VasileiosT,1778088,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8842
+GR HGC,Thanosmpol,1498950,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8843
+GR HGC,Sissy17,1107994,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8844
+GR HGC,Xrisap1984,1239594,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8845
+GR HGC,101097kk,1224418,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8846
+GR HGC,teodor1312,1679276,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8847
+GR HGC,DimTzouv,1534728,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8848
+GR HGC,Giwrgosmigas,1203453,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8849
+GR HGC,Vlaxobill,1720444,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8850
+GR HGC,Dspfcb,1638691,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8851
+GR HGC,franko184,910984,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8852
+GR HGC,kozareis,1341142,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8853
+GR HGC,thanleon,757715,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8854
+GR HGC,Anna260214,1203328,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8855
+GR HGC,Tinaki111,1523508,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8856
+GR HGC,Betmaster96,783177,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8857
+GR HGC,asimachry,1501966,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8858
+GR HGC,Tkavalar23,1648714,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8859
+GR HGC,Skafe22,739806,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8860
+GR HGC,windcoulio,1647448,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8861
+GR HGC,wert1234,1594610,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8862
+GR HGC,DafnisKouris,1684083,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8863
+GR HGC,GifMeMoney,1112505,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,excluded,-,-,-,-,-,-,GR HGC,8864
+GR HGC,Listas,1781538,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8865
+GR HGC,Thomasfrag,1793871,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8866
+GR HGC,andreasp15,1292593,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8867
+GR HGC,JSCyclope,1787613,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8868
+GR HGC,ManosBa,1634460,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8869
+GR HGC,poni42,1761756,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8870
+GR HGC,HellboyGR,877014,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8871
+GR HGC,alexiszav,1415685,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8872
+GR HGC,xaris33,786081,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8873
+GR HGC,mitsopetros,1541823,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8874
+GR HGC,francimp,1466933,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8875
+GR HGC,Jimmykala,1142666,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8876
+GR HGC,capvag,1770260,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8877
+GR HGC,staikk,1476345,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8878
+GR HGC,b22222222,1442536,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8879
+GR HGC,Marylinda,1352960,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8880
+GR HGC,Panagiota27,1372548,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8881
+GR HGC,Faihner,1125552,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8882
+GR HGC,12345pinokio,1780264,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8883
+GR HGC,karakasisni,1577180,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8884
+GR HGC,valderama13,1001207,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8885
+GR HGC,Maraki1234gr,1715193,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8886
+GR HGC,Geokan93,1692118,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8887
+GR HGC,281218,1209109,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8888
+GR HGC,Virene,1710912,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8889
+GR HGC,DOMINIKIIOA,1766417,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8890
+GR HGC,Asima77,1053304,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8891
+GR HGC,Dexaras,1156645,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8892
+GR HGC,Maragkos27,779312,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8893
+GR HGC,panosgk22,1338019,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8894
+GR HGC,Elenakanak,1627831,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8895
+GR HGC,userpaok4,1514639,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8896
+GR HGC,MarthaNour,1360991,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8897
+GR HGC,Smarkas12345,1071857,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8898
+GR HGC,lazatak77,1653585,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8899
+GR HGC,Demetris44,1503044,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8900
+GR HGC,ftwxeia2,1234989,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8901
+GR HGC,vaiopoulou,1280469,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8902
+GR HGC,gregan98,1021363,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8903
+GR HGC,paulos1213,1720605,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8904
+GR HGC,periklis84,1107418,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8905
+GR HGC,Olgadrakaki,1352518,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8906
+GR HGC,Zephyros2017,1712406,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8907
+GR HGC,digala,1593986,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8908
+GR HGC,balantisofia,738983,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8909
+GR HGC,mimikos69,1144812,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8910
+GR HGC,ngd976,653312,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8911
+GR HGC,KosTasCo9,1708567,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8912
+GR HGC,xrtziatz,1518096,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8913
+GR HGC,KserdiBardhi,1592886,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8914
+GR HGC,PanosNik80,1628718,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8915
+GR HGC,Varupeponi,1205899,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8916
+GR HGC,Salis34,1251818,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8917
+GR HGC,junke123,1313275,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8918
+GR HGC,pdouroukas,1580314,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8919
+GR HGC,mitso1986,1640682,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,excluded,-,-,-,-,-,-,GR HGC,8920
+GR HGC,Golftdi,1638646,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8921
+GR HGC,sotlam,1472911,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8922
+GR HGC,Panos7Dna,1751954,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8923
+GR HGC,novibet80,1610621,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8924
+GR HGC,Stasais7,1537219,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8925
+GR HGC,savvas58,1091454,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8926
+GR HGC,Iliaskolove,1532945,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8927
+GR HGC,dkapsallas,1689748,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8928
+GR HGC,angpass,1563820,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8929
+GR HGC,fotis6976,1322252,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8930
+GR HGC,aroupa,1171560,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8931
+GR HGC,Bernard,1085821,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8932
+GR HGC,Panospaoreal,1545159,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8933
+GR HGC,Roudy0,1533730,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8934
+GR HGC,leduke,744814,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8935
+GR HGC,Thodoris74,1002134,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8936
+GR HGC,3111987Xa,1375988,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,ACTIVE,-,-,-,-,-,-,GR HGC,8952
+GR HGC,Jonnie690,1649037,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8953
+GR HGC,panakr,1657113,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8954
+GR HGC,ventural,1798969,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8955
+GR HGC,Toula40,1583654,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8956
+GR HGC,scar1999,961600,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8957
+GR HGC,Kantilias98,1238728,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8958
+GR HGC,kolokithaki,1750642,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8959
+GR HGC,N6909156675,1687417,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8960
+GR HGC,Stam98gr,998534,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8961
+GR HGC,rizoalex,713724,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8962
+GR HGC,Angie351998,1750754,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8963
+GR HGC,Tigerrr,1426148,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8964
+GR HGC,stathopo7,1247132,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8965
+GR HGC,stefanosax,1502542,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8966
+GR HGC,tetafoto,1263193,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8967
+GR HGC,Theoklis13,1715511,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8968
+GR HGC,Marjana1981,1539500,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8969
+GR HGC,Moikas,675912,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8970
+GR HGC,PANT1989,1659017,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8971
+GR HGC,311058aaDp,1716520,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8972
+GR HGC,doltrin,776327,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8973
+GR HGC,theonoula,1551903,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8974
+GR HGC,MickeyPause,1581070,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8975
+GR HGC,TRIANTAF53,1766540,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8976
+GR HGC,FotisAiva,1219265,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8977
+GR HGC,Wildwood15,1501340,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8978
+GR HGC,Kanthis13,1077968,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8979
+GR HGC,sofpapa17,1552830,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8980
+GR HGC,Archondaki,1210945,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8981
+GR HGC,johnnys125,1667521,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8982
+GR HGC,Sokratis26,1446364,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8983
+GR HGC,gatskas97,1644754,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8984
+GR HGC,1071982,1342314,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8985
+GR HGC,Nikoslio,1285165,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8986
+GR HGC,Aan2022,1383270,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8987
+GR HGC,Asi8ia1991,1654118,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8988
+GR HGC,Foufas6,1458942,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8989
+GR HGC,JOCA95,1789791,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8990
+GR HGC,Papajohn7,1136260,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8991
+GR HGC,Louay1990,1663207,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8992
+GR HGC,panpapageo,1639425,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8993
+GR HGC,Karaflas84,1641374,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8994
+GR HGC,dimitra17,1297074,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8995
+GR HGC,ploskasli,1795077,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8996
+GR HGC,koster69k,986070,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8997
+GR HGC,FAFAF83,1078191,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8998
+GR HGC,dimitrism91,1308466,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8999
+GR HGC,Simos1999,1386649,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9000
+GR HGC,Joanii1979,1660325,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9001
+GR HGC,GiorgosMpisi,1458753,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9002
+GR HGC,deme33,1311235,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9003
+GR HGC,ridissa162,1816775,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9004
+GR HGC,Olsi10,1512056,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9005
+GR HGC,VilsonDoule,1748269,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9006
+GR HGC,Stelaras24g,1564684,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9007
+GR HGC,131908,1236403,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9008
+GR HGC,thod78,1689495,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9009
+GR HGC,msourso,1005791,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9010
+GR HGC,Rihter07,1556094,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9011
+GR HGC,Pountakias,1086790,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9012
+GR HGC,Xtina3003,1565225,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9013
+GR HGC,kostas9913,1536886,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9014
+GR HGC,Basilis10000,1520626,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9015
+GR HGC,Fotismp89,1136419,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9016
+GR HGC,Djpatsis,852570,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9017
+GR HGC,Nicolas69,1713078,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9018
+GR HGC,bsfakman,1123708,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9019
+GR HGC,nikosan21,1738730,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9020
+GR HGC,anonumos018,953872,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9021
+GR HGC,Petrostzo14,1413228,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9022
+GR HGC,Makisarak,1035386,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9023
+GR HGC,Djpaf21,1333351,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9024
+GR HGC,neyden,1121758,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9025
+GR HGC,peri88,1149183,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9026
+GR HGC,vasadam,1791304,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9027
+GR HGC,PANOULIS90,1370546,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9028
+GR HGC,Theofanhs,1697097,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9029
+GR HGC,mtzarakis,1254755,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9030
+GR HGC,a123b456,1372082,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9031
+GR HGC,booker95,1535799,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9032
+GR HGC,MimisPap,1267110,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9033
+GR HGC,CharaXinou,947008,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9034
+GR HGC,nikoloasi,751414,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9035
+GR HGC,Kikipapinou,1716798,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9036
+GR HGC,ririkos2909,1494549,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9037
+GR HGC,Giotis1975,1112970,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9038
+GR HGC,NikiVogGeo,1536863,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9039
+GR HGC,kostasme,1393841,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9040
+GR HGC,ArisM444,1264610,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9041
+GR HGC,okozy1312,1366740,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9042
+GR HGC,Mouzouraki,1333214,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9043
+GR HGC,gloupis77,1250058,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9044
+GR HGC,dstrezos,1132016,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9045
+GR HGC,Akraifnio116,1415023,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9046
+GR HGC,johnnyb1,936228,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9047
+GR HGC,Dionushs5,1024089,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9048
+GR HGC,Trivellas21,1387640,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9049
+GR HGC,mankorn98,1031545,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9050
+GR HGC,niki02105,1195676,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9051
+GR HGC,Xatzikonou,1703796,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9052
+GR HGC,Elewa97,1071673,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9053
+GR HGC,DnG999,1282434,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9054
+GR HGC,giannisdar,1425534,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9055
+GR HGC,ael1973,1519893,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9056
+GR HGC,godfriend11,1720224,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9057
+GR HGC,dimitrisdka,1824103,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9058
+GR HGC,Chatzopan,1797047,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9059
+GR HGC,chriskef13,1803438,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9060
+GR HGC,Geo19831,867052,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9061
+GR HGC,sylvia92,1618569,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9062
+GR HGC,fcostov,1166063,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9063
+GR HGC,Bozos777,1676630,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9064
+GR HGC,johny177,1079331,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9065
+GR HGC,Denabel,1113746,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9066
+GR HGC,outista,1184459,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9067
+GR HGC,Kostadis4641,1632938,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9068
+GR HGC,George260477,1196560,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9069
+GR HGC,Mollaburak,1547082,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9070
+GR HGC,tolinos9,1763381,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9071
+GR HGC,Vmartis,1127076,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9072
+GR HGC,cmpapadak,1614655,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9073
+GR HGC,markoskosto,1419600,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9074
+GR HGC,vazexa1989,1646292,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9075
+GR HGC,pechristina,1715808,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9076
+GR HGC,Tsihlas,780775,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9077
+GR HGC,Padelischri,1283890,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9078
+GR HGC,vbasiakos,1851880,NO,NO,NON VIP,No Type,ND100-200 CS or SB,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9079
 GR KYC,savvidisp,1138703,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4631
 GR KYC,Lazarosss1,1551791,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4632
 GR KYC,lifoman,1795497,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4633
 GR KYC,vasfi07,5070256,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4634
-GR KYC,Antigavros13,2627245,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4635
-GR KYC,Kostakos20,2675319,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4636
-GR KYC,bullying,4947324,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4637
-GR KYC,Vanichka1971,5168605,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4638
 GR KYC,Vasilhsan,6058597,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4639
 GR KYC,petroskor13,6349995,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4640
 GR KYC,Kargi1,6617263,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4641
@@ -82693,7 +82979,7 @@ GR KYC,Maria2597,9252902,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-
 GR KYC,Andreasfraa,9358757,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4645
 GR KYC,2806789,9405569,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4646
 GR KYC,nocilassja22,9537993,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4647
-GR KYC,geero3,9541944,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4648
+GR KYC,geero3,9541944,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,NOT CALLED,-,Inactive - KYC Required to reopen,-,-,-,-,-,-,-,-,KYC,4648
 GR KYC,xBaboulis,9541946,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4649
 GR KYC,panpatelis77,9541947,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4650
 GR KYC,yanfffreer2,9537016,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4651
@@ -82704,439 +82990,406 @@ GR KYC,shemsi,9547874,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026
 GR KYC,ioannaptr2,9623881,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4656
 GR KYC,fterouxas,9706895,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4657
 GR KYC,u1401818416,9728910,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4658
-GR KYC,orestis0555,9713513,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4659
-GR KYC,grgs13,9710523,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4660
-GR KYC,THEODOROSGE,9713558,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4661
-GR KYC,6946290462ah,9710546,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4662
-GR KYC,gre1234go,9713578,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4663
-GR KYC,blerim04,9712709,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4664
 GR KYC,Irinii123,9710682,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,NOT CALLED,-,Closed,-,-,-,-,-,-,-,-,KYC,4665
-GR KYC,minaskik13,9713702,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4666
 GR KYC,td2003,9763171,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4667
 GR KYC,martzodak,9767875,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4668
 GR KYC,Lizard1989,9710749,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4669
 GR KYC,chairetakes,9772876,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4670
-GR KYC,Andreanidou,9777884,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4671
-GR KYC,Anesti22,9767958,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4672
+GR KYC,Andreanidou,9777884,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,-,2026-10,NOT CALLED,-,Inactive - KYC Required to reopen,-,-,-,-,-,-,-,-,KYC,4671
 GR KYC,sotiriagia,9767965,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4673
 GR KYC,zote1x,9767966,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4674
+GR Non Dep,fucker1984,9724301,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32297
+GR Non Dep,Iliaspap89,9763720,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32298
+GR Non Dep,Giorgiamani,9741260,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32299
+GR Non Dep,DEFKALION76,9718379,YES,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32300
+GR Non Dep,tomazour,9718380,YES,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32301
+GR Non Dep,Kyralex,9724311,YES,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32302
+GR Non Dep,6945135900,9763735,YES,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32303
+GR Non Dep,Rodonthea,9718385,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32304
+GR Non Dep,Sloukas79,9763738,YES,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32305
+GR Non Dep,themistopap,9718396,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32306
+GR Non Dep,andrianadrk,9763747,YES,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32307
+GR Non Dep,Mariostzr13,9763750,YES,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32308
+GR Non Dep,dzwantsmoney,9741286,YES,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32309
+GR Non Dep,mosxolioum,9724324,YES,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32310
+GR Non Dep,EleniAlex24,9724328,YES,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32311
+GR Non Dep,crovaderas,9718415,YES,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32312
+GR Non Dep,19122003,9718420,YES,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32313
+GR Non Dep,koutsoks,9724334,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32314
+GR Non Dep,dasakis,9741293,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32315
+GR Non Dep,tzamikofi,9741296,YES,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32316
+GR Non Dep,Nistikos75,9718433,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32317
+GR Non Dep,Iakovidis13,9741304,YES,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32318
+GR Non Dep,Kotroko,9763769,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32319
+GR Non Dep,mariospant13,9724345,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32320
+GR Non Dep,lemoamper,9741309,YES,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32321
+GR Non Dep,Chrisa007,9741311,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32322
+GR Non Dep,Kalia1984,9763777,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32323
+GR Non Dep,raniachron,9741314,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32324
+GR Non Dep,CharisTag,9763779,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32325
+GR Non Dep,polysterg96,9763780,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32326
+GR Non Dep,gwgwtarts,9724352,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32327
+GR Non Dep,Davidlynch1,9763785,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32328
+GR Non Dep,gwgwtsa1981,9718449,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32329
+GR Non Dep,giannniis123,9724359,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32330
+GR Non Dep,anast571,9724362,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32331
+GR Non Dep,Nikostsam72,9718455,NO,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32332
+GR Non Dep,bredoras,9741332,YES,NO,NON VIP,No Type,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32333
+GR Non Dep,Louren,9741335,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32334
+GR Non Dep,dimdim3234,9718465,YES,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32335
+GR Non Dep,stavvasil99,9718468,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32336
+GR Non Dep,Arisxaskas,9741337,YES,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32337
+GR Non Dep,18901890,9804875,YES,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32338
+GR Non Dep,kampoud74,9741340,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32339
+GR Non Dep,Goga111,9724372,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32340
+GR Non Dep,Padelhs00,9763803,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32341
+GR Non Dep,Elenidallh1,9718471,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32342
+GR Non Dep,SISILAS77,9718472,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32343
+GR Non Dep,mponhs,9804881,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32344
+GR Non Dep,Deniza,9724374,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32345
+GR Non Dep,Epiiii11,9804885,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32346
+GR Non Dep,Nikos055,9718478,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32347
+GR Non Dep,raulluta,9741344,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32348
+GR Non Dep,Tostra,9741348,YES,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32349
+GR Non Dep,pamekalamia,9718479,YES,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32350
+GR Non Dep,kaskanisapos,9804891,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32351
+GR Non Dep,aioannou,9718483,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32352
+GR Non Dep,Tomu83,9718486,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32353
+GR Non Dep,Kiriakimpoul,9763816,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32354
+GR Non Dep,Efthymia1982,9724380,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32355
+GR Non Dep,Keaheist,9718491,YES,NO,NON VIP,No Type,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32356
+GR Non Dep,spryrosmas,9724383,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32357
+GR Non Dep,Tiggers13,9741356,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32358
+GR Non Dep,Virginiaps,9718498,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32359
+GR Non Dep,alexanasl,9804903,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32360
+GR Non Dep,Spiridon2004,9718499,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32361
+GR Non Dep,mond1la1427,9718501,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32362
+GR Non Dep,stolipimexi,9718502,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32363
+GR Non Dep,1234567ta,9718503,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32364
+GR Non Dep,sdriva24,9724390,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32365
+GR Non Dep,georgetau,9718510,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32366
+GR Non Dep,karadimitr,9763832,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32367
+GR Non Dep,Panos2016,9718511,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32368
+GR Non Dep,Bas1lism,9741365,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32369
+GR Non Dep,annamar14,9718512,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32370
+GR Non Dep,Zagoritis,9804919,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32371
+GR Non Dep,Evanthia1984,9718513,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32372
+GR Non Dep,makthess,9718515,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32373
+GR Non Dep,Steve77777,9724400,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32374
+GR Non Dep,PeleJr,9804922,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32375
+GR Non Dep,soccer83,9741371,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32376
+GR Non Dep,Loumpouki,9718518,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32377
+GR Non Dep,Sultan34,9804929,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32378
+GR Non Dep,Tasoskara7,9741380,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32379
+GR Non Dep,miskoden44,9724414,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32380
+GR Non Dep,Ninosara1,9724415,YES,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32381
+GR Non Dep,davidfak,9724416,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32382
+GR Non Dep,ksiganos,9741382,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32383
+GR Non Dep,christsou,9806871,YES,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32384
+GR Non Dep,MariaLo,9718536,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32385
+GR Non Dep,dkarkanias,9741388,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32386
+GR Non Dep,bintageor9,9806879,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32387
+GR Non Dep,andreastrfs,9724427,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32388
+GR Non Dep,penkop,9806882,YES,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32389
+GR Non Dep,Billy84,9741392,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32390
+GR Non Dep,kraptis05,9718546,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32391
+GR Non Dep,cynsteph83,9806883,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32392
+GR Non Dep,vagelishd,9724433,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32393
+GR Non Dep,Spapailiakis,9806888,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32394
+GR Non Dep,alalala,9718553,YES,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32395
+GR Non Dep,Velestelios,9724436,YES,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32396
+GR Non Dep,hdiehsjdgh,9804948,YES,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32397
+GR Non Dep,Gardentsa,9724438,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32398
+GR Non Dep,peperon23,9806890,YES,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32399
+GR Non Dep,FilipposK2,9718555,YES,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32400
+GR Non Dep,Vaseline,9806894,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32401
+GR Non Dep,Sonidissimos,9724440,NO,NO,NON VIP,No Type,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32402
+GR Non Dep,Antonisvelou,9806901,YES,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32403
+GR Non Dep,volosminas,9806903,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32404
+GR Non Dep,foxkox,9804956,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32405
+GR Non Dep,bandogklas,9763881,YES,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32406
+GR Non Dep,Niknat7,9724452,YES,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32407
+GR Non Dep,Mane1994,9741413,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32408
+GR Non Dep,665544,9741415,YES,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32409
+GR Non Dep,pziogas11,9763887,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32410
+GR Non Dep,billpaok4,9741417,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32411
+GR Non Dep,Gabon3232,9763890,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32412
+GR Non Dep,Pol5208,9806909,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32413
+GR Non Dep,GkElena,9763895,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32414
+GR Non Dep,thwmos2003,9809869,YES,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32415
+GR Non Dep,frixos212,9718572,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32416
+GR Non Dep,Eryu11,9804974,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32417
+GR Non Dep,Erefelerenb,9724462,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32418
+GR Non Dep,6976333808,9763906,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32419
+GR Non Dep,Chrisafisasa,9806922,YES,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32420
+GR Non Dep,Original77,9811867,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32421
+GR Non Dep,Annampo,9804978,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32422
+GR Non Dep,Mylchar22,9809876,YES,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32423
+GR Non Dep,Anto1ni2s,9811868,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32424
+GR Non Dep,zampetakisa,9804980,NO,NO,NON VIP,No Type,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32425
+GR Non Dep,Foteindimi,9820870,YES,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32449
+GR Non Dep,Chrisant21,9820871,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32450
+GR Non Dep,vaiospas77,9821870,YES,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32451
+GR Non Dep,Remidianakie,9809887,YES,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32452
+GR Non Dep,sofosofos71,9812889,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32453
+GR Non Dep,Aggelis7Zaf,9724481,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32454
+GR Non Dep,Ronnin,9820873,YES,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32455
+GR Non Dep,Geozmam,9805003,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32456
+GR Non Dep,evamar1983,9819872,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32457
+GR Non Dep,remountaki04,9763932,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32458
+GR Non Dep,Panaronefo,9817872,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32459
+GR Non Dep,rafail205,9809891,YES,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32460
+GR Non Dep,DemeJr,9822866,YES,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32461
+GR Non Dep,Afroparask,9810888,YES,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32462
+GR Non Dep,Ndoye12,9823866,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32463
+GR Non Dep,Kyvemakry,9820876,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32464
+GR Non Dep,DIMITRI1998,9824866,YES,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32465
+GR Non Dep,jooklak,9829866,YES,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32466
+GR Non Dep,johandimi,9822868,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32467
+GR Non Dep,pali176,9827866,YES,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32468
+GR Non Dep,thop0989,9809897,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32469
+GR Non Dep,jmeidanis7,9820879,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32470
+GR Non Dep,Mairh125,9819875,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32471
+GR Non Dep,kalyvinosd66,9827868,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32472
+GR Non Dep,ntinosrk,9820882,YES,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32473
+GR Non Dep,Kar010,9810896,YES,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,NOT CALLED,-,C had already deposited,-,-,-,-,-,-,-,-,GR NON DEP,32474
+GR Non Dep,izajol12,9828867,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32475
+GR Non Dep,Gan77A,9806944,YES,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32476
+GR Non Dep,Digalyd,9819880,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32477
+GR Non Dep,Lupnikis,9724496,YES,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32478
+GR Non Dep,theostam69,9813881,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32479
+GR Non Dep,Giannhs1234r,9814883,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32480
+GR Non Dep,Sarantis1955,9809908,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32481
+GR Non Dep,tringloe994,9806951,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32482
+GR Non Dep,qerimu,9812908,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32483
+GR Non Dep,alexhal,9805019,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32484
+GR Non Dep,Maikstathis,9814888,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32485
+GR Non Dep,GiannisSSs1,9821891,YES,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32486
+GR Non Dep,georgefetok,9718612,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32487
+GR Non Dep,Thecomet,9806958,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32488
+GR Non Dep,Mikedrap,9813892,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32489
+GR Non Dep,Panagiotis00,9810918,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32490
+GR Non Dep,Baygin,9805026,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32491
+GR Non Dep,loka639,9812918,NO,NO,NON VIP,No Type,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32492
+GR Non Dep,Bahanchod,9825895,YES,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,-,2026-10,NOT CALLED,-,Incomplete Details,-,-,-,-,A.Kytros,-,-,-,GR NON DEP,32501
+GR Non Dep,ARISTOSPRO,9718659,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,-,2026-10,NOT CALLED,-,C had already deposited,-,-,-,-,-,-,-,-,GR NON DEP,32510
+GR Non Dep,Bodeci1,9724584,YES,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,-,2026-10,NOT CALLED,-,C had already deposited,-,-,-,-,-,-,-,-,GR NON DEP,32515
+GR Non Dep,Asious,9813894,YES,NO,NON VIP,No Type,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Closed,-,-,-,-,-,-,-,-,GR NON DEP,32516
+GR Non Dep,MleatojuL,9805079,YES,NO,NON VIP,No Type,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Closed,-,-,-,-,-,-,-,-,GR NON DEP,32517
 GR Self Exclusion,klest1,3196442,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,SELF EXCLUSION - 16/01/2027,-,-,-,-,-,-,Self Exclusion,232
 GR Self Exclusion,Sapras,905924,NO,NO,NON VIP,No Type,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,C requested  S/E Indefinitely,-,-,-,-,-,-,-,-,Self Exclusion,233
 VIP Close Account,Evangelos18,1241630,NO,NO,NONE,Casino & Sportsbook,NA,-,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Close Account,668
 VIP Close Account,Showman,1075816,NO,NO,NONE,Casino Player,NA,-,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,Ανοίγει 17/10,-,-,-,-,-,-,VIP Close Account,669
-VIP Close Account,Xariskour,1810960,NO,NO,NONE,Casino & Sportsbook,NA,-,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Close Account,670
-VIP Close Account,sssporos,6735373,NO,NO,BRONZE,Casino Player,NA,-,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Close Account,671
+VIP Close Account,Xariskour,1810960,NO,NO,NONE,Casino & Sportsbook,NA,-,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,feedback,-,-,-,-,-,-,VIP Close Account,670
+VIP Close Account,sssporos,6735373,NO,NO,BRONZE,Casino Player,NA,-,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,500,-,-,-,-,-,-,VIP Close Account,671
 VIP Close Account,toxicity91,1038193,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,SELFEXCLUSION,-,-,-,-,-,-,VIP Close Account,672
 VIP Close Account,ChrysiK,1731560,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,active,-,-,-,-,-,-,VIP Close Account,673
-VIP Day 10 Avg Dep >100,Sx1151,1112710,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg > 100,5011
-VIP Day 10 Avg Dep >100,stevenk9,1111163,NO,NO,BRONZE,Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5012
-VIP Day 10 Avg Dep >100,nikosvisv,1421976,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5013
-VIP Day 10 Avg Dep >100,contoc,595861,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5014
-VIP Day 10 Avg Dep >100,IBE6688,1943887,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5015
-VIP Day 10 Avg Dep >100,STSIATIS,8546698,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5016
-VIP Day 10 Avg Dep >100,lika19721,3271457,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5017
-VIP Day 10 Avg Dep >100,chrpapoulias,1502976,NO,NO,BRONZE,Under Review,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5018
-VIP Day 10 Avg Dep >100,Tap1nos,1036638,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5019
-VIP Day 10 Avg Dep >100,vikytseva,6107054,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5020
-VIP Day 10 Avg Dep >100,anna36,1168628,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5021
-VIP Day 10 Avg Dep >100,bati9goal,3608612,NO,NO,BRONZE,Poker & Casino & SB,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5022
-VIP Day 10 Avg Dep >100,spiros13sl,980726,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5023
-VIP Day 10 Avg Dep >100,kostaspx,835654,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5024
-VIP Day 10 Avg Dep >100,tzimas2004,8132081,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5025
-VIP Day 10 Avg Dep >100,Kostastas7,1852819,NO,NO,BRONZE,Under Review,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5026
-VIP Day 10 Avg Dep >100,stamoskou,4636278,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5027
-VIP Day 10 Avg Dep >100,moumos99,1742332,NO,NO,BRONZE,Poker & Casino & SB,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5028
-VIP Day 10 Avg Dep >100,makis23187,887737,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5029
-VIP Day 10 Avg Dep >100,Malafas9,2312577,NO,NO,BRONZE,Poker & Casino & SB,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5030
-VIP Day 10 Avg Dep >100,Emdeoo,1723576,NO,NO,POTENTIAL,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5031
-VIP Day 10 Avg Dep >100,jimmy1961,6562099,NO,NO,BRONZE,Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5032
-VIP Day 10 Avg Dep >100,Fotaras1925,5918672,NO,NO,BRONZE,Under Review,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5033
-VIP Day 10 Avg Dep >100,billbaba1979,1896795,NO,YES,ELITE,Under Review,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,C has account manager,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5034
-VIP Day 10 Avg Dep <100,Niki1998,978019,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9010
-VIP Day 10 Avg Dep <100,boufon13,687622,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9011
-VIP Day 10 Avg Dep <100,stathisp1,3279622,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9012
-VIP Day 10 Avg Dep <100,betass11,893006,NO,NO,BRONZE,Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9013
-VIP Day 10 Avg Dep <100,Maierelena,8239390,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9014
-VIP Day 10 Avg Dep <100,Daniela1972,1901588,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9015
-VIP Day 10 Avg Dep <100,lenaverani,2890580,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9016
-VIP Day 10 Avg Dep <100,mpinmpin4320,3518479,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9017
-VIP Day 10 Avg Dep <100,ntafouva,702197,NO,NO,BRONZE,Casino Club,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9018
-VIP Day 10 Avg Dep <100,apost0710,1773406,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9019
-VIP Day 10 Avg Dep <100,Ioannis24873,1244919,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9020
-VIP Day 10 Avg Dep <100,Papasavvas99,1137330,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9021
-VIP Day 10 Avg Dep <100,giannakisx,1203411,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9022
-VIP Day 10 Avg Dep <100,Poisonivy,1207775,NO,NO,SILVER,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9023
-VIP Day 10 Avg Dep <100,assaf2023,2782556,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9024
-VIP Day 10 Avg Dep <100,Greywolf1,6023713,NO,NO,BRONZE,Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9025
-VIP Day 10 Avg Dep <100,Georgescub9,6793795,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9026
-VIP Day 10 Avg Dep <100,nikosmyftari,2672338,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9027
-VIP Day 10 Avg Dep <100,Asd997,1036260,NO,NO,BRONZE,Under Review,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9028
-VIP Day 10 Avg Dep <100,alextsouras,1418873,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9029
-VIP Day 10 Avg Dep <100,CantMilk,1795495,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9030
-VIP Day 10 Avg Dep <100,hbejko93,836339,NO,NO,BRONZE,Industry,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9031
-VIP Day 10 Avg Dep <100,1974Kara,6001922,NO,NO,SILVER,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9032
-VIP Day 10 Avg Dep <100,GiwrgosBmw,1335028,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9033
-VIP Day 10 Avg Dep <100,Nicolia2600,844351,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9034
-VIP Day 10 Avg Dep <100,mikepon,1101318,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9035
-VIP Day 10 Avg Dep <100,alextria,1579193,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9036
-VIP Day 10 Avg Dep <100,D1egito,1629592,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9037
-VIP Day 10 Avg Dep <100,dakisxanth,996238,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9038
-VIP Day 10 Avg Dep <100,nikhzax21,984360,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9039
-VIP Day 10 Avg Dep <100,aggelosxatz,1537206,NO,NO,BRONZE,Fun Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9040
-VIP Day 10 Avg Dep <100,Makstelios77,8387723,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9041
-VIP Day 10 Avg Dep <100,stvaggelos,1533361,NO,NO,BRONZE,Under Review,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9042
-VIP Day 10 Avg Dep <100,eva7777,948033,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9043
-VIP Day 10 Avg Dep <100,Pesiou12,1468779,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9044
-VIP Day 10 Avg Dep <100,XZaarZ,3487791,NO,YES,GOLD,Poker & Casino,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,C has account manager,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9045
-VIP Day 10 Avg Dep <100,Kapelas1962,1214113,NO,YES,GOLD,Casino & Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,C has account manager,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9046
-VIP Day 10 Avg Dep <100,marypoppins,932955,NO,YES,GOLD,Casino Club,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,C has account manager,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9047
-VIP Day 10 Avg Dep <100,Sandro2alex,2138698,NO,NO,GOLD,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9048
-VIP Day 10 Avg Dep <100,spathoulas,5985517,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg < 100,9049
-VIP Day 30,marlimp1602,7829912,NO,NO,BRONZE,Under Review,NA,M,D. Nompilakis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1586
-VIP Day 30,Kosto73,2687627,NO,NO,BRONZE,Casino Player,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1587
+VIP Day 10 Avg Dep >100,stevenk9,1111163,NO,NO,BRONZE,Sportsbook,NA,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5011
+VIP Day 10 Avg Dep >100,contoc,595861,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,16-Oct-2026,-,2026-10,NOT CALLED,-,Νο register number,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5013
+VIP Day 10 Avg Dep >100,lika19721,3271457,NO,NO,BRONZE,Casino & Sportsbook,NA,M,C.Gedikidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5015
+VIP Day 10 Avg Dep >100,chrpapoulias,1502976,NO,NO,BRONZE,Under Review,NA,M,C.Gedikidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5016
+VIP Day 10 Avg Dep >100,Tap1nos,1036638,NO,NO,BRONZE,Casino & Sportsbook,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5017
+VIP Day 10 Avg Dep >100,anna36,1168628,NO,NO,BRONZE,Casino Player,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5018
+VIP Day 10 Avg Dep >100,bati9goal,3608612,NO,NO,BRONZE,Poker & Casino & SB,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5019
+VIP Day 10 Avg Dep >100,spiros13sl,980726,NO,NO,BRONZE,Casino Player,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5020
+VIP Day 10 Avg Dep >100,tzimas2004,8132081,NO,NO,BRONZE,Casino Player,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5022
+VIP Day 10 Avg Dep >100,Kostastas7,1852819,NO,NO,BRONZE,Under Review,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5023
+VIP Day 10 Avg Dep >100,makis23187,887737,NO,NO,BRONZE,Casino Player,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5026
+VIP Day 10 Avg Dep >100,jimmy1961,6562099,NO,NO,BRONZE,Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5028
+VIP Day 10 Avg Dep >100,Fotaras1925,5918672,NO,NO,BRONZE,Under Review,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5029
+VIP Day 10 Avg Dep >100,billbaba1979,1896795,NO,YES,ELITE,Under Review,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,C has account manager,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5030
+VIP Day 10 Avg Dep >100,Malafas9,2312577,NO,NO,BRONZE,Poker & Casino & SB,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg > 100,5031
+VIP Day 10 Avg Dep >100,STSIATIS,8546698,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg > 100,5032
+VIP Day 10 Avg Dep >100,Sx1151,1112710,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg > 100,5033
+VIP Day 10 Avg Dep >100,vikytseva,6107054,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,INVALID NUMBER,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5034
+VIP Day 10 Avg Dep <100,Maierelena,8239390,NO,NO,BRONZE,Casino Player,NA,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9010
+VIP Day 10 Avg Dep <100,Daniela1972,1901588,NO,NO,BRONZE,Casino Player,NA,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9011
+VIP Day 10 Avg Dep <100,Papasavvas99,1137330,NO,NO,BRONZE,Casino & Sportsbook,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,NOT CALLED,-,Limits,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9016
+VIP Day 10 Avg Dep <100,giannakisx,1203411,NO,NO,BRONZE,Casino Player,NA,M,C.Gedikidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9017
+VIP Day 10 Avg Dep <100,Poisonivy,1207775,NO,NO,SILVER,Casino Player,NA,M,C.Gedikidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9018
+VIP Day 10 Avg Dep <100,assaf2023,2782556,NO,NO,BRONZE,Casino & Sportsbook,NA,M,C.Gedikidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9019
+VIP Day 10 Avg Dep <100,Greywolf1,6023713,NO,NO,BRONZE,Sportsbook,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9020
+VIP Day 10 Avg Dep <100,Georgescub9,6793795,NO,NO,BRONZE,Casino Player,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9021
+VIP Day 10 Avg Dep <100,nikosmyftari,2672338,NO,NO,BRONZE,Casino Player,NA,M,T. Karapanagiotidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9022
+VIP Day 10 Avg Dep <100,Asd997,1036260,NO,NO,BRONZE,Under Review,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9023
+VIP Day 10 Avg Dep <100,alextsouras,1418873,NO,NO,BRONZE,Casino Player,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9024
+VIP Day 10 Avg Dep <100,CantMilk,1795495,NO,NO,BRONZE,Casino Player,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9025
+VIP Day 10 Avg Dep <100,hbejko93,836339,NO,NO,BRONZE,Industry,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9026
+VIP Day 10 Avg Dep <100,1974Kara,6001922,NO,NO,SILVER,Casino Player,NA,M,A.Karatsis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9027
+VIP Day 10 Avg Dep <100,Nicolia2600,844351,NO,NO,BRONZE,Casino Player,NA,M,I.Zois,16-Oct-2026,-,2026-10,NOT CALLED,-,Limits,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9029
+VIP Day 10 Avg Dep <100,mikepon,1101318,NO,NO,BRONZE,Casino Player,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,NOT CALLED,-,Already called in another Campaign,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9030
+VIP Day 10 Avg Dep <100,alextria,1579193,NO,NO,BRONZE,Casino & Sportsbook,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9031
+VIP Day 10 Avg Dep <100,Makstelios77,8387723,NO,NO,BRONZE,Casino Player,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,NOT CALLED,-,Limits,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9036
+VIP Day 10 Avg Dep <100,stvaggelos,1533361,NO,NO,BRONZE,Under Review,NA,F,E.Vagianni,16-Oct-2026,-,2026-10,NOT CALLED,-,Limits,-,& RG COMMENTS,-,-,-,-,-,-,VIP Day 10 Avg < 100,9037
+VIP Day 10 Avg Dep <100,Niki1998,978019,NO,NO,BRONZE,Casino Player,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9038
+VIP Day 10 Avg Dep <100,boufon13,687622,NO,NO,BRONZE,Casino & Sportsbook,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9039
+VIP Day 10 Avg Dep <100,stathisp1,3279622,NO,NO,BRONZE,Casino & Sportsbook,NA,M,K.Kyrimis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9040
+VIP Day 10 Avg Dep <100,XZaarZ,3487791,NO,YES,GOLD,Poker & Casino,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,C has account manager,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9044
+VIP Day 10 Avg Dep <100,Kapelas1962,1214113,NO,YES,GOLD,Casino & Sportsbook,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,C has account manager,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9045
+VIP Day 10 Avg Dep <100,marypoppins,932955,NO,YES,GOLD,Casino Club,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,C has account manager,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9046
+VIP Day 10 Avg Dep <100,Sandro2alex,2138698,NO,NO,GOLD,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9047
+VIP Day 10 Avg Dep <100,spathoulas,5985517,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg < 100,9048
+VIP Day 10 Avg Dep <100,lenaverani,2890580,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,INVALID NUMBER,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9049
 VIP Day 30,Eydokia2000,4629197,NO,NO,BRONZE,Casino Player,NA,M,C.Gedikidis,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1588
 VIP Day 30,tasaras1000,1891027,NO,NO,BRONZE,Casino & Sportsbook,NA,F,M.Ntouni,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1589
-VIP Day 30,alexkkes7,8547067,NO,NO,BRONZE,Casino & Sportsbook,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1590
 VIP Day 30,tsakaloss,7030174,NO,NO,BRONZE,Casino Player,NA,F,A.Nikopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1591
-VIP Day 30,Sirtakis,1240265,NO,NO,BRONZE,Casino Player,NA,F,T.Antonopoulou,16-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1592
+VIP Day 30,Sirtakis,1240265,NO,NO,BRONZE,Casino Player,NA,F,T.Antonopoulou,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,Customer excluded - Successful communication in last 30 days (marketing calls only - does not block GR KYC or the VIP service lists),-,-,-,-,-,-,VIP Day 30,1592
 VIP Day 30,Rigels1995,788868,NO,YES,ELITE,Poker & Casino & SB,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,C has account manager,-,-,-,-,-,-,-,-,VIP Day 30,1593
+GR HGC,giomon45,1205034,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Neutral,C may deposit at some point,-,-,-,-,-,-,-,-,GR HGC,8779
+GR HGC,BadNewsAkis,1741157,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR HGC,8780
+GR HGC,petrosx7,1677707,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Neutral,C may deposit at some point,-,-,-,-,-,-,-,-,GR HGC,8781
+GR HGC,GTVThanos,1523620,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Negative,C is not interested,-,-,-,-,-,-,-,-,GR HGC,8782
+GR HGC,Magdalenee,1771921,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR HGC,8783
+GR HGC,tribalx,1308904,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Neutral,C didn't have time to talk,-,-,-,-,-,-,-,-,GR HGC,8784
+GR HGC,Polixronis1,1019157,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR HGC,8785
+GR HGC,Acofidel,1746636,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Negative,C is not interested,-,-,-,-,-,-,-,-,GR HGC,8786
+GR HGC,Antouaneta,1225505,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Negative,C hung up the phone,-,-,-,-,-,-,-,-,GR HGC,8787
+GR HGC,Masourout61,1790305,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Negative,C hung up the phone,-,-,-,-,-,-,-,-,GR HGC,8788
+GR HGC,Nel0sgms,1625045,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ΑNSWERED BY 3RD PERSON,-,-,-,-,-,-,-,-,-,-,GR HGC,8789
+GR HGC,dp27061964,1800310,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR HGC,8790
+GR HGC,6978631491a,1149855,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR HGC,8791
+GR HGC,vikara5,1763643,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR HGC,8792
+GR HGC,elepat2015,768960,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR HGC,8793
+GR HGC,rikopablo104,1742290,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Negative,C didn't speak,-,-,-,-,-,-,-,-,GR HGC,8794
+GR HGC,Barakat123,1615731,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Negative,C didn't speak,-,-,-,-,-,-,-,-,GR HGC,8795
+GR HGC,evdokia123,1741764,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Negative,C hung up the phone,-,-,-,-,-,-,-,-,GR HGC,8796
+GR HGC,Katerina1952,1444936,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,INVALID NUMBER,-,-,-,-,-,-,-,-,-,-,GR HGC,8797
+GR HGC,thewolf92,1751112,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Negative,C hung up the phone,-,-,-,-,-,-,-,-,GR HGC,8798
+GR HGC,VasDick126,1413257,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Negative,C hung up the phone,-,-,-,-,-,-,-,-,GR HGC,8799
+GR HGC,tolispolizos,1280129,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR HGC,8800
+GR HGC,lagpar21,1028430,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR HGC,8801
+GR HGC,Olumpou,1508284,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR HGC,8802
+GR HGC,makita17,1719339,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Negative,C has stopped gambling,-,-,-,-,-,-,-,-,GR HGC,8803
+GR HGC,Stergios1908,1061345,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR HGC,8804
+GR HGC,Alex003,1643967,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,INVALID NUMBER,-,-,-,-,-,-,-,-,-,-,GR HGC,8805
+GR HGC,Thanos400,1051167,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR HGC,8806
+GR HGC,Andrew22,1474959,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Negative,C didn't speak,-,-,-,-,-,-,-,-,GR HGC,8808
+GR KYC,Antigavros13,2627245,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,KYC,4635
+GR KYC,Kostakos20,2675319,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Neutral,C may sent the documents at some point,-,-,Everything OK,-,-,-,-,-,KYC,4636
+GR KYC,bullying,4947324,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,KYC,4637
+GR KYC,Vanichka1971,5168605,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,INVALID NUMBER,-,-,-,-,-,-,-,-,-,-,KYC,4638
+GR KYC,orestis0555,9713513,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Negative,C hung up the phone,-,-,-,-,-,-,-,-,KYC,4659
+GR KYC,grgs13,9710523,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,NOT CALLED,-,Inactive,-,FRAUDCHECK,-,-,-,-,-,-,KYC,4660
+GR KYC,THEODOROSGE,9713558,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,NOT CALLED,-,Inactive,-,FRAUDCHECK,-,-,-,-,-,-,KYC,4661
+GR KYC,6946290462ah,9710546,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,NOT CALLED,-,Inactive,-,EXTERNALTRANSACTION,-,-,-,-,-,-,KYC,4662
+GR KYC,gre1234go,9713578,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,11:00,2026-10,ANSWERED,Positive,C will send documents asap,-,-,Everything OK,-,-,-,-,-,KYC,4663
+GR KYC,blerim04,9712709,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,11:00,2026-10,ANSWERED,Neutral,C may sent the documents at some point,-,-,No feedback received,-,-,-,-,-,KYC,4664
+GR KYC,minaskik13,9713702,NO,NO,NON VIP,No Type,NA,F,E.Vagianni,16-Oct-2026,11:00,2026-10,CANNOT CONNECT TO NUMBER,-,-,-,-,-,-,-,-,-,-,KYC,4666
+GR Non Dep,Florav29,9811870,YES,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32426
+GR Non Dep,tsib44,9809880,YES,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32427
+GR Non Dep,PetrosMouros,9812871,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32428
+GR Non Dep,Giorge33,9810875,YES,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32429
+GR Non Dep,Dimitantod,9763916,YES,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32430
+GR Non Dep,mbormbi7,9763915,YES,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32431
+GR Non Dep,Arirang,9741435,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Neutral,C didn't have time to talk,-,-,-,-,-,-,-,-,GR NON DEP,32432
+GR Non Dep,Gdheggy775,9809882,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32433
+GR Non Dep,Dimid009,9763922,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32434
+GR Non Dep,Tellis6336,9741439,YES,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Positive,C will deposit,-,-,-,-,-,-,-,-,GR NON DEP,32435
+GR Non Dep,apachlad77,9741441,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,CANNOT CONNECT TO NUMBER,-,-,-,email,-,-,-,-,-,-,GR NON DEP,32436
+GR Non Dep,ktheodorop68,9819866,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32437
+GR Non Dep,eirinaki18,9816866,YES,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32438
+GR Non Dep,GeorgeA1997,9815867,YES,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32439
+GR Non Dep,papouliaboss,9763928,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32440
+GR Non Dep,Andriduka96,9806935,YES,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32441
+GR Non Dep,Tuma12,9818868,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32442
+GR Non Dep,Basiliki1233,9820868,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Neutral,C may deposit at some time,-,-,-,-,-,-,-,-,GR NON DEP,32443
+GR Non Dep,Anastisuren,9763931,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32444
+GR Non Dep,Daskalos3r,9817867,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32445
+GR Non Dep,Strateli1975,9718586,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32446
+GR Non Dep,noko334,9741445,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Negative,C didn't speak,-,-,-,-,-,-,-,-,GR NON DEP,32447
+GR Non Dep,Trifilos13,9819869,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR NON DEP,32448
+GR Non Dep,Safsoe99,9763962,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,11:00,2026-10,ANSWERED,Neutral,C may deposit at some time,-,-,-,-,-,-,-,-,GR NON DEP,32493
+GR Non Dep,johny19000,9821895,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,A.Kytros,-,-,-,GR NON DEP,32494
+GR Non Dep,Xatzimpali,9819901,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,A.Kytros,-,-,-,GR NON DEP,32495
+GR Non Dep,Na92js,9718629,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,A.Kytros,-,-,-,GR NON DEP,32496
+GR Non Dep,Bishal266577,9810928,YES,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,11:00,2026-10,ANSWERED,Neutral,C may deposit at some time,-,-,-,-,-,-,-,-,GR NON DEP,32497
+GR Non Dep,NikosMat19,9839866,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,11:00,2026-10,ANSWERED,Neutral,C may deposit at some time,-,-,-,-,-,-,-,-,GR NON DEP,32498
+GR Non Dep,DHMHTRHSPAL,9724518,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,A.Kytros,-,-,-,GR NON DEP,32499
+GR Non Dep,Thnskris,9833871,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32500
+GR Non Dep,papaxatzakis,9724523,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,11:00,2026-10,ANSWERED,-,Account created by 3rd person,-,-,-,-,-,-,-,-,GR NON DEP,32502
+VIP Day 10 Avg Dep >100,nikosvisv,1421976,NO,NO,BRONZE,Casino & Sportsbook,NA,M,D. Nompilakis,16-Oct-2026,11:00,2026-10,ANSWERED,Positive,C will deposit,SBVIP100-300,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5012
+VIP Day 10 Avg Dep >100,IBE6688,1943887,NO,NO,BRONZE,Casino Player,NA,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Positive,C will deposit,CS-VIP500,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5014
+VIP Day 10 Avg Dep >100,kostaspx,835654,NO,NO,BRONZE,Casino Player,NA,M,I.Zois,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,I.Zois,-,-,-,VIP Day 10 Avg > 100,5021
+VIP Day 10 Avg Dep >100,stamoskou,4636278,NO,NO,BRONZE,Casino Player,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Callback,-,-,6,-,-,T.Antonopoulou,-,-,-,VIP Day 10 Avg > 100,5024
+VIP Day 10 Avg Dep >100,moumos99,1742332,NO,NO,BRONZE,Poker & Casino & SB,NA,F,E.Vagianni,16-Oct-2026,11:00,2026-10,NOT CALLED,-,Limits,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5025
+VIP Day 10 Avg Dep <100,mpinmpin4320,3518479,NO,NO,BRONZE,Casino & Sportsbook,NA,M,D. Nompilakis,16-Oct-2026,11:00,2026-10,ANSWERED,Neutral,C may deposit at some point,SBVIP100-100,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9012
+VIP Day 10 Avg Dep <100,ntafouva,702197,NO,NO,BRONZE,Casino Club,NA,M,D. Nompilakis,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,D. Nompilakis,NOT CALLED,-,Limits,VIP Day 10 Avg < 100,9013
+VIP Day 10 Avg Dep <100,apost0710,1773406,NO,NO,BRONZE,Casino & Sportsbook,NA,M,D. Nompilakis,16-Oct-2026,11:00,2026-10,ANSWERED,Neutral,C may deposit at some point,SBVIP100-100,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9014
+VIP Day 10 Avg Dep <100,Ioannis24873,1244919,NO,NO,BRONZE,Casino Player,NA,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Neutral,C may deposit at some point,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9015
+VIP Day 10 Avg Dep <100,GiwrgosBmw,1335028,NO,NO,BRONZE,Casino Player,NA,M,I.Zois,16-Oct-2026,11:00,2026-10,ANSWERED,Positive,C will deposit,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9028
+VIP Day 10 Avg Dep <100,D1egito,1629592,NO,NO,BRONZE,Casino Player,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,VIP Day 10 Avg < 100,9032
+VIP Day 10 Avg Dep <100,dakisxanth,996238,NO,NO,BRONZE,Casino & Sportsbook,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,ANSWERED,Positive,C will deposit,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9033
+VIP Day 10 Avg Dep <100,nikhzax21,984360,NO,NO,BRONZE,Casino Player,NA,F,T.Antonopoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,VIP Day 10 Avg < 100,9034
+VIP Day 10 Avg Dep <100,aggelosxatz,1537206,NO,NO,BRONZE,Fun Sportsbook,NA,F,E.Vagianni,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,E.Vagianni,-,-,-,VIP Day 10 Avg < 100,9035
+VIP Day 30,Kosto73,2687627,NO,NO,BRONZE,Casino Player,NA,F,N.Papachristodoulou,16-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,VIP Day 30,1587
+VIP Day 30,alexkkes7,8547067,NO,NO,BRONZE,Casino & Sportsbook,NA,M,I.Zois,16-Oct-2026,11:00,2026-10,ANSWERED,Neutral,C may deposit at some point,CS-VIP1000,-,-,-,-,-,-,-,VIP Day 30,1590
+GR HGC,Xristosmirn0,1590123,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,12:00,2026-10,ANSWERED,Negative,C is not interested,-,-,-,-,-,-,-,-,GR HGC,8937
+GR HGC,mina1975,1655741,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR HGC,8938
+GR HGC,MrFou95,1726948,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,12:00,2026-10,CANNOT CONNECT TO NUMBER,-,-,-,-,-,-,-,-,-,-,GR HGC,8939
+GR HGC,spyrospsa,945440,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR HGC,8940
+GR HGC,sssarouko,1031981,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,12:00,2026-10,ANSWERED,Callback,-,-,6,-,-,T.Antonopoulou,-,-,-,GR HGC,8941
+GR HGC,kostasmrt01,1727640,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,12:00,2026-10,CANNOT CONNECT TO NUMBER,-,-,-,-,-,-,-,-,-,-,GR HGC,8942
+GR HGC,Teodorico,1244752,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,12:00,2026-10,CANNOT CONNECT TO NUMBER,-,-,-,barring number,-,-,-,-,-,-,GR HGC,8943
+GR HGC,Redpass88,1615918,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,12:00,2026-10,ANSWERED,Positive,C will deposit,-,-,-,-,-,-,-,-,GR HGC,8944
+GR HGC,Elgreco1992,1020852,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,12:00,2026-10,ANSWERED,Negative,C is not interested,-,-,-,-,-,-,-,-,GR HGC,8945
+GR HGC,Kosta111,1597713,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,12:00,2026-10,ANSWERED,Negative,C is not interested,-,-,-,-,-,-,-,-,GR HGC,8946
+GR HGC,Pete21,1784687,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,12:00,2026-10,ANSWERED,Positive,C will deposit,-,-,-,-,-,-,-,-,GR HGC,8947
+GR HGC,fanis84,1198248,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,12:00,2026-10,ANSWERED,Negative,C has stopped gambling,-,-,-,-,-,-,-,-,GR HGC,8948
+GR HGC,Pistachio404,1692914,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,GR HGC,8949
+GR HGC,kiriakos71,1578210,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,12:00,2026-10,INVALID NUMBER,-,-,-,-,-,-,-,-,-,-,GR HGC,8950
+GR HGC,stratos94,1074422,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,T.Antonopoulou,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8951
+GR KYC,Anesti22,9767958,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,A.Kytros,-,-,-,KYC,4672
+GR Non Dep,etsolakis1,9718013,YES,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,I. Tsakopoulos,-,-,-,GR NON DEP,32265
+GR Non Dep,kostas5454,9763439,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,I. Tsakopoulos,-,-,-,GR NON DEP,32266
+GR Non Dep,Kotsis,9741031,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,I. Tsakopoulos,-,-,-,GR NON DEP,32267
+GR Non Dep,tapa76,9724143,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,ANSWERED,Positive,C will deposit,-,-,-,-,-,-,-,-,GR NON DEP,32268
+GR Non Dep,Dulcina7,9724190,YES,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,I. Tsakopoulos,-,-,-,GR NON DEP,32269
+GR Non Dep,Antonio22,9741161,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,ANSWERED,Negative,C hung up the phone,-,-,-,-,-,-,-,-,GR NON DEP,32270
+GR Non Dep,tzitzis05,9718287,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,I. Tsakopoulos,-,-,-,GR NON DEP,32271
+GR Non Dep,Ninogkika,9763653,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32272
+GR Non Dep,Ksev21,9718304,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32273
+GR Non Dep,mimistzoug,9718307,YES,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32274
+GR Non Dep,kostastzas,9763672,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32275
+GR Non Dep,johnyrose,9718314,YES,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32276
+GR Non Dep,Idris402,9718315,YES,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32277
+GR Non Dep,IORDANTANEV,9763674,YES,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32278
+GR Non Dep,charalpour67,9718332,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32279
+GR Non Dep,Ramnikol,9724256,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32280
+GR Non Dep,Vagosnovi13,9741216,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32281
+GR Non Dep,touroush,9741225,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32282
+GR Non Dep,Pavlos2911,9718343,YES,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32283
+GR Non Dep,ftakass11,9741228,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32284
+GR Non Dep,DL878787,9724274,YES,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32285
+GR Non Dep,POULAKIS,9763697,YES,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32286
+GR Non Dep,geopoultou91,9724278,NO,NO,NON VIP,No Type,NA,M,I. Tsakopoulos,16-Oct-2026,12:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32287
+GR Non Dep,iliaskappaa,9718352,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,12:00,2026-10,ΑNSWERED BY 3RD PERSON,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32288
+GR Non Dep,nxanos,9763700,YES,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR NON DEP,32289
+GR Non Dep,Stanitsios,9763702,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,12:00,2026-10,ΑNSWERED BY 3RD PERSON,-,-,-,<3 <3 <3,-,-,-,-,-,-,GR NON DEP,32290
+GR Non Dep,vasilisvarva,9718364,YES,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,12:00,2026-10,ANSWERED,Negative,C didn't speak,-,-,-,-,-,-,-,-,GR NON DEP,32291
+GR Non Dep,Stavrlsath4,9718367,YES,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR NON DEP,32292
+GR Non Dep,Anikitos14,9741256,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR NON DEP,32293
+GR Non Dep,Antonioslek,9718373,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR NON DEP,32294
+GR Non Dep,Kostasth13,9718374,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,12:00,2026-10,CANNOT CONNECT TO NUMBER,-,-,-,Call Barring,-,-,-,-,-,-,GR NON DEP,32295
+GR Non Dep,emmapedi70,9763719,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,N.Papachristodoulou,-,-,-,GR NON DEP,32296
+GR Non Dep,akisstergiou,9718640,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,A.Kytros,-,-,-,GR NON DEP,32503
+GR Non Dep,Tommyg13,9831899,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,ANSWERED,Negative,C hung up the phone,-,-,-,-,-,-,-,-,GR NON DEP,32504
+GR Non Dep,Aggelikh02,9741491,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,A.Kytros,-,-,-,GR NON DEP,32505
+GR Non Dep,Mari8888,9805052,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,INVALID NUMBER,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32506
+GR Non Dep,irara3,9718650,YES,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,ANSWERED,Negative,C didn't speak,-,-,-,-,-,-,-,-,GR NON DEP,32507
+GR Non Dep,12345678kesi,9724533,YES,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,ANSWERED,Callback,-,-,-,-,-,A.Kytros,-,-,-,GR NON DEP,32508
+GR Non Dep,stivaros,9805060,YES,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,A.Kytros,-,-,-,GR NON DEP,32509
+GR Non Dep,johnnikis,9764000,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,A.Kytros,-,-,-,GR NON DEP,32511
+GR Non Dep,Giorgiis89,9741510,YES,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,A.Kytros,-,-,-,GR NON DEP,32512
+GR Non Dep,nikosagg71,9724556,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,ANSWERED,Positive,C will deposit,-,-,-,-,-,-,-,-,GR NON DEP,32513
+GR Non Dep,Ksecrimi,9724559,NO,NO,NON VIP,No Type,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,ANSWERED,Positive,C will deposit,-,-,-,-,-,-,-,-,GR NON DEP,32514
+VIP Day 10 Avg Dep >100,Emdeoo,1723576,NO,NO,POTENTIAL,Casino Player,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,ANSWERED,Negative,C is not interested,CS-VIP500,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5027
+VIP Day 10 Avg Dep <100,betass11,893006,NO,NO,BRONZE,Sportsbook,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,ANSWERED,Positive,C will deposit,SBVIP100-100,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9041
+VIP Day 10 Avg Dep <100,eva7777,948033,NO,NO,BRONZE,Casino Player,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,ANSWERED,Negative,C is not interested,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9042
+VIP Day 10 Avg Dep <100,Pesiou12,1468779,NO,NO,BRONZE,Casino & Sportsbook,NA,M,A.Kytros,16-Oct-2026,12:00,2026-10,ANSWERED,Positive,C will deposit,SBVIP100-100,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9043
+VIP Day 30,marlimp1602,7829912,NO,NO,BRONZE,Under Review,NA,M,D. Nompilakis,16-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,D. Nompilakis,-,-,-,VIP Day 30,1586
 GR HGC,vasiliki1908,1698054,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,NOT CALLED,-,Other,-,excluded,-,-,-,-,-,-,GR HGC,6515
 GR HGC,kaititakouti,940874,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,NOT CALLED,-,Other,-,excluded,-,-,-,-,-,-,GR HGC,6525
 GR HGC,osfp2014,1544468,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,NOT CALLED,-,Other,-,excluded,-,-,-,-,-,-,GR HGC,6701
-GR HGC,davidpali21,1726363,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8746
-GR HGC,Dpozarlis,1027116,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8747
-GR HGC,Koumpatidis,1098793,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8748
-GR HGC,christine700,1654208,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8749
-GR HGC,Entiolmile,941659,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8750
-GR HGC,xtc4unow,777974,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8751
-GR HGC,VaggelisTkl,1507881,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8752
-GR HGC,Panossdr99,1265580,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8753
-GR HGC,Teras1974,1363057,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8754
-GR HGC,panostsiri,1180184,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8755
-GR HGC,extradark,1600030,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8756
-GR HGC,karimape,1565575,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8757
-GR HGC,Stoikos16,1572726,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8758
-GR HGC,Marios1008,1491280,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8759
-GR HGC,tzo16041982,1771439,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8760
-GR HGC,nikolasef93,1524423,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8761
-GR HGC,billys1989,1593740,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8762
-GR HGC,athinacarras,1813000,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8763
-GR HGC,ratel007,1328598,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8764
-GR HGC,KostArv6,1472349,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8765
-GR HGC,genikaLefta,1576745,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8766
-GR HGC,fragkiskos87,1289124,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8767
-GR HGC,ilia13zwg,1102899,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8768
-GR HGC,johnnykou21,1132643,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8769
-GR HGC,Taraki93,957764,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8770
-GR HGC,Manospn94,1558945,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8771
-GR HGC,zagof1,1334568,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8772
-GR HGC,panakos21,675394,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8773
-GR HGC,charalyssari,947666,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8774
-GR HGC,St6fan0s4,1679330,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8775
-GR HGC,aposgrim,1748763,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8776
-GR HGC,Oto3838,1202402,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8777
-GR HGC,agrimi9,1568851,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8778
-GR HGC,giomon45,1205034,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8779
-GR HGC,BadNewsAkis,1741157,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8780
-GR HGC,petrosx7,1677707,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8781
-GR HGC,GTVThanos,1523620,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8782
-GR HGC,Magdalenee,1771921,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8783
-GR HGC,tribalx,1308904,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8784
-GR HGC,Polixronis1,1019157,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8785
-GR HGC,Acofidel,1746636,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8786
-GR HGC,Antouaneta,1225505,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8787
-GR HGC,Masourout61,1790305,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8788
-GR HGC,Nel0sgms,1625045,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8789
-GR HGC,dp27061964,1800310,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8790
-GR HGC,6978631491a,1149855,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8791
-GR HGC,vikara5,1763643,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8792
-GR HGC,elepat2015,768960,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8793
-GR HGC,rikopablo104,1742290,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8794
-GR HGC,Barakat123,1615731,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8795
-GR HGC,evdokia123,1741764,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8796
-GR HGC,Katerina1952,1444936,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8797
-GR HGC,thewolf92,1751112,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8798
-GR HGC,VasDick126,1413257,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8799
-GR HGC,tolispolizos,1280129,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8800
-GR HGC,lagpar21,1028430,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8801
-GR HGC,Olumpou,1508284,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8802
-GR HGC,makita17,1719339,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8803
-GR HGC,Stergios1908,1061345,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8804
-GR HGC,Alex003,1643967,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8805
-GR HGC,Thanos400,1051167,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8806
-GR HGC,makako212,1106728,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8807
-GR HGC,Andrew22,1474959,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8808
-GR HGC,philippodimo,1563114,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8809
-GR HGC,sotirinio1,768979,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8810
-GR HGC,vagg5299,1559817,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8811
-GR HGC,Titanas6,1730421,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8812
-GR HGC,skyloc,1242070,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8813
-GR HGC,Giwrgostek,1486725,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8814
-GR HGC,Nantin23,1713136,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8815
-GR HGC,Annanzt,1714964,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8816
-GR HGC,xristosdj,1498417,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8817
-GR HGC,xara666,1746695,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8818
-GR HGC,BesnikeB,1589890,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8819
-GR HGC,Villagestory,1353152,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8820
-GR HGC,Xatzanna,1252592,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8821
-GR HGC,kostas11178,1704616,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8822
-GR HGC,Krispy,1354261,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8823
-GR HGC,argykastan,1229096,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8824
-GR HGC,Angelo_lyr,776412,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8825
-GR HGC,Darkwolf90s,1510607,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8826
-GR HGC,leonardos356,1608968,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8827
-GR HGC,vcrash7,1731598,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8828
-GR HGC,KOSTASKAL13,1350820,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8829
-GR HGC,angeskout,1697834,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8830
-GR HGC,fotiostt,1624147,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8831
-GR HGC,Rodini0987,1638296,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8832
-GR HGC,xaraugi77,1167374,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8833
-GR HGC,sotos00,1758797,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8834
-GR HGC,opel2013,1158741,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8835
-GR HGC,vasiliki822,1248138,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8836
-GR HGC,Agostino,1713662,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8837
-GR HGC,Miltosgouvas,1832811,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8838
-GR HGC,sninos13,1302121,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8839
-GR HGC,Odisseaskaz,729004,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8840
-GR HGC,KonPlat,1527268,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8841
-GR HGC,VasileiosT,1778088,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8842
-GR HGC,Thanosmpol,1498950,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8843
-GR HGC,Sissy17,1107994,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8844
-GR HGC,Xrisap1984,1239594,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8845
-GR HGC,101097kk,1224418,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8846
-GR HGC,teodor1312,1679276,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8847
-GR HGC,DimTzouv,1534728,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8848
-GR HGC,Giwrgosmigas,1203453,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8849
-GR HGC,Vlaxobill,1720444,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8850
-GR HGC,Dspfcb,1638691,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8851
-GR HGC,franko184,910984,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8852
-GR HGC,kozareis,1341142,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8853
-GR HGC,thanleon,757715,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8854
-GR HGC,Anna260214,1203328,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8855
-GR HGC,Tinaki111,1523508,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8856
-GR HGC,Betmaster96,783177,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8857
-GR HGC,asimachry,1501966,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8858
-GR HGC,Tkavalar23,1648714,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8859
-GR HGC,Skafe22,739806,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8860
-GR HGC,windcoulio,1647448,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8861
-GR HGC,wert1234,1594610,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8862
-GR HGC,DafnisKouris,1684083,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8863
-GR HGC,GifMeMoney,1112505,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8864
-GR HGC,Listas,1781538,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8865
-GR HGC,Thomasfrag,1793871,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8866
-GR HGC,andreasp15,1292593,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8867
-GR HGC,JSCyclope,1787613,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8868
-GR HGC,ManosBa,1634460,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8869
-GR HGC,poni42,1761756,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8870
-GR HGC,HellboyGR,877014,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8871
-GR HGC,alexiszav,1415685,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8872
-GR HGC,xaris33,786081,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8873
-GR HGC,mitsopetros,1541823,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8874
-GR HGC,francimp,1466933,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8875
-GR HGC,Jimmykala,1142666,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8876
-GR HGC,capvag,1770260,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8877
-GR HGC,staikk,1476345,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8878
-GR HGC,b22222222,1442536,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8879
-GR HGC,Marylinda,1352960,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8880
-GR HGC,Panagiota27,1372548,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8881
-GR HGC,Faihner,1125552,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8882
-GR HGC,12345pinokio,1780264,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8883
-GR HGC,karakasisni,1577180,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8884
-GR HGC,valderama13,1001207,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8885
-GR HGC,Maraki1234gr,1715193,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8886
-GR HGC,Geokan93,1692118,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8887
-GR HGC,281218,1209109,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8888
-GR HGC,Virene,1710912,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8889
-GR HGC,DOMINIKIIOA,1766417,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8890
-GR HGC,Asima77,1053304,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8891
-GR HGC,Dexaras,1156645,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8892
-GR HGC,Maragkos27,779312,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8893
-GR HGC,panosgk22,1338019,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8894
-GR HGC,Elenakanak,1627831,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8895
-GR HGC,userpaok4,1514639,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8896
-GR HGC,MarthaNour,1360991,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8897
-GR HGC,Smarkas12345,1071857,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8898
-GR HGC,lazatak77,1653585,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8899
-GR HGC,Demetris44,1503044,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8900
-GR HGC,ftwxeia2,1234989,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8901
-GR HGC,vaiopoulou,1280469,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8902
-GR HGC,gregan98,1021363,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8903
-GR HGC,paulos1213,1720605,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8904
-GR HGC,periklis84,1107418,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8905
-GR HGC,Olgadrakaki,1352518,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8906
-GR HGC,Zephyros2017,1712406,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8907
-GR HGC,digala,1593986,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8908
-GR HGC,balantisofia,738983,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8909
-GR HGC,mimikos69,1144812,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8910
-GR HGC,ngd976,653312,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8911
-GR HGC,KosTasCo9,1708567,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8912
-GR HGC,xrtziatz,1518096,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8913
-GR HGC,KserdiBardhi,1592886,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8914
-GR HGC,PanosNik80,1628718,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8915
-GR HGC,Varupeponi,1205899,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8916
-GR HGC,Salis34,1251818,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8917
-GR HGC,junke123,1313275,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8918
-GR HGC,pdouroukas,1580314,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8919
-GR HGC,mitso1986,1640682,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8920
-GR HGC,Golftdi,1638646,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8921
-GR HGC,sotlam,1472911,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8922
-GR HGC,Panos7Dna,1751954,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8923
-GR HGC,novibet80,1610621,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8924
-GR HGC,Stasais7,1537219,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8925
-GR HGC,savvas58,1091454,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8926
-GR HGC,Iliaskolove,1532945,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8927
-GR HGC,dkapsallas,1689748,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8928
-GR HGC,angpass,1563820,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8929
-GR HGC,fotis6976,1322252,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8930
-GR HGC,aroupa,1171560,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8931
-GR HGC,Bernard,1085821,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8932
-GR HGC,Panospaoreal,1545159,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8933
-GR HGC,Roudy0,1533730,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8934
-GR HGC,leduke,744814,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8935
-GR HGC,Thodoris74,1002134,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8936
-GR HGC,Xristosmirn0,1590123,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8937
-GR HGC,mina1975,1655741,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8938
-GR HGC,MrFou95,1726948,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8939
-GR HGC,spyrospsa,945440,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8940
-GR HGC,sssarouko,1031981,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8941
-GR HGC,kostasmrt01,1727640,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8942
-GR HGC,Teodorico,1244752,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8943
-GR HGC,Redpass88,1615918,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8944
-GR HGC,Elgreco1992,1020852,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8945
-GR HGC,Kosta111,1597713,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8946
-GR HGC,Pete21,1784687,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8947
-GR HGC,fanis84,1198248,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8948
-GR HGC,Pistachio404,1692914,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8949
-GR HGC,kiriakos71,1578210,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8950
-GR HGC,stratos94,1074422,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8951
-GR HGC,3111987Xa,1375988,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8952
-GR HGC,Jonnie690,1649037,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8953
-GR HGC,panakr,1657113,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8954
-GR HGC,ventural,1798969,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8955
-GR HGC,Toula40,1583654,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8956
-GR HGC,scar1999,961600,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8957
-GR HGC,Kantilias98,1238728,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8958
-GR HGC,kolokithaki,1750642,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8959
-GR HGC,N6909156675,1687417,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8960
-GR HGC,Stam98gr,998534,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8961
-GR HGC,rizoalex,713724,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8962
-GR HGC,Angie351998,1750754,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8963
-GR HGC,Tigerrr,1426148,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8964
-GR HGC,stathopo7,1247132,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8965
-GR HGC,stefanosax,1502542,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8966
-GR HGC,tetafoto,1263193,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8967
-GR HGC,Theoklis13,1715511,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8968
-GR HGC,Marjana1981,1539500,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8969
-GR HGC,Moikas,675912,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8970
-GR HGC,PANT1989,1659017,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8971
-GR HGC,311058aaDp,1716520,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8972
-GR HGC,doltrin,776327,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8973
-GR HGC,theonoula,1551903,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8974
-GR HGC,MickeyPause,1581070,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8975
-GR HGC,TRIANTAF53,1766540,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8976
-GR HGC,FotisAiva,1219265,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8977
-GR HGC,Wildwood15,1501340,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8978
-GR HGC,Kanthis13,1077968,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8979
-GR HGC,sofpapa17,1552830,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8980
-GR HGC,Archondaki,1210945,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8981
-GR HGC,johnnys125,1667521,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8982
-GR HGC,Sokratis26,1446364,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8983
-GR HGC,gatskas97,1644754,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8984
-GR HGC,1071982,1342314,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8985
-GR HGC,Nikoslio,1285165,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8986
-GR HGC,Aan2022,1383270,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8987
-GR HGC,Asi8ia1991,1654118,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8988
-GR HGC,Foufas6,1458942,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8989
-GR HGC,JOCA95,1789791,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8990
-GR HGC,Papajohn7,1136260,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8991
-GR HGC,Louay1990,1663207,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8992
-GR HGC,panpapageo,1639425,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8993
-GR HGC,Karaflas84,1641374,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8994
-GR HGC,dimitra17,1297074,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8995
-GR HGC,ploskasli,1795077,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8996
-GR HGC,koster69k,986070,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8997
-GR HGC,FAFAF83,1078191,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8998
-GR HGC,dimitrism91,1308466,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,8999
-GR HGC,Simos1999,1386649,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9000
-GR HGC,Joanii1979,1660325,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9001
-GR HGC,GiorgosMpisi,1458753,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9002
-GR HGC,deme33,1311235,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9003
-GR HGC,ridissa162,1816775,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9004
-GR HGC,Olsi10,1512056,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9005
-GR HGC,VilsonDoule,1748269,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9006
-GR HGC,Stelaras24g,1564684,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9007
-GR HGC,131908,1236403,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9008
-GR HGC,thod78,1689495,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9009
-GR HGC,msourso,1005791,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9010
-GR HGC,Rihter07,1556094,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9011
-GR HGC,Pountakias,1086790,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9012
-GR HGC,Xtina3003,1565225,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9013
-GR HGC,kostas9913,1536886,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9014
-GR HGC,Basilis10000,1520626,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9015
-GR HGC,Fotismp89,1136419,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9016
-GR HGC,Djpatsis,852570,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9017
-GR HGC,Nicolas69,1713078,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9018
-GR HGC,bsfakman,1123708,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9019
-GR HGC,nikosan21,1738730,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9020
-GR HGC,anonumos018,953872,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9021
-GR HGC,Petrostzo14,1413228,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9022
-GR HGC,Makisarak,1035386,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9023
-GR HGC,Djpaf21,1333351,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9024
-GR HGC,neyden,1121758,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9025
-GR HGC,peri88,1149183,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9026
-GR HGC,vasadam,1791304,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9027
-GR HGC,PANOULIS90,1370546,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9028
-GR HGC,Theofanhs,1697097,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9029
-GR HGC,mtzarakis,1254755,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9030
-GR HGC,a123b456,1372082,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9031
-GR HGC,booker95,1535799,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9032
-GR HGC,MimisPap,1267110,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9033
-GR HGC,CharaXinou,947008,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9034
-GR HGC,nikoloasi,751414,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9035
-GR HGC,Kikipapinou,1716798,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9036
-GR HGC,ririkos2909,1494549,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9037
-GR HGC,Giotis1975,1112970,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9038
-GR HGC,NikiVogGeo,1536863,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9039
-GR HGC,kostasme,1393841,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9040
-GR HGC,ArisM444,1264610,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9041
-GR HGC,okozy1312,1366740,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9042
-GR HGC,Mouzouraki,1333214,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9043
-GR HGC,gloupis77,1250058,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9044
-GR HGC,dstrezos,1132016,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9045
-GR HGC,Akraifnio116,1415023,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9046
-GR HGC,johnnyb1,936228,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9047
-GR HGC,Dionushs5,1024089,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9048
-GR HGC,Trivellas21,1387640,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9049
-GR HGC,mankorn98,1031545,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9050
-GR HGC,niki02105,1195676,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9051
-GR HGC,Xatzikonou,1703796,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9052
-GR HGC,Elewa97,1071673,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9053
-GR HGC,DnG999,1282434,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9054
-GR HGC,giannisdar,1425534,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9055
-GR HGC,ael1973,1519893,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9056
-GR HGC,godfriend11,1720224,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9057
-GR HGC,dimitrisdka,1824103,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9058
-GR HGC,Chatzopan,1797047,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9059
-GR HGC,chriskef13,1803438,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9060
-GR HGC,Geo19831,867052,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9061
-GR HGC,sylvia92,1618569,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9062
-GR HGC,fcostov,1166063,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9063
-GR HGC,Bozos777,1676630,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9064
-GR HGC,johny177,1079331,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9065
-GR HGC,Denabel,1113746,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9066
-GR HGC,outista,1184459,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9067
-GR HGC,Kostadis4641,1632938,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9068
-GR HGC,George260477,1196560,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9069
-GR HGC,Mollaburak,1547082,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9070
-GR HGC,tolinos9,1763381,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9071
-GR HGC,Vmartis,1127076,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9072
-GR HGC,cmpapadak,1614655,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9073
-GR HGC,markoskosto,1419600,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9074
-GR HGC,vazexa1989,1646292,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9075
-GR HGC,pechristina,1715808,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9076
-GR HGC,Tsihlas,780775,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9077
-GR HGC,Padelischri,1283890,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9078
-GR HGC,vbasiakos,1851880,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9079
 GR HGC,Stergiann,1851276,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9080
 GR HGC,vaspet80,793830,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9081
 GR HGC,MAKISKRD,866857,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,-,-,-,-,-,-,-,-,-,-,-,GR HGC,9082
