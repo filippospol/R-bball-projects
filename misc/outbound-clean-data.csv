@@ -82708,7 +82708,7 @@ GR Non Dep,Asious,9813894,YES,NO,NON VIP,No Type,NA,-,-,16-Oct-2026,-,2026-10,NO
 GR Non Dep,MleatojuL,9805079,YES,NO,NON VIP,No Type,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Closed,-,-,-,-,-,-,-,-,GR NON DEP,32517
 GR Self Exclusion,klest1,3196442,NO,NO,NON VIP,No Type,NA,F,N.Papachristodoulou,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,SELF EXCLUSION - 16/01/2027,-,-,-,-,-,-,Self Exclusion,232
 GR Self Exclusion,Sapras,905924,NO,NO,NON VIP,No Type,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,C requested  S/E Indefinitely,-,-,-,-,-,-,-,-,Self Exclusion,233
-VIP Close Account,Evangelos18,1241630,NO,NO,NONE,Casino & Sportsbook,NA,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,-,-,-,-,Opens 19/10,-,-,-,-,-,-,VIP Close Account,668
+VIP Close Account,Evangelos18,1241630,NO,NO,NONE,Casino & Sportsbook,NA,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,NOT CALLED,-,Already called to reactivate,-,Opens 19/10,-,-,-,-,-,-,VIP Close Account,668
 VIP Close Account,Showman,1075816,NO,NO,NONE,Casino Player,NA,M,I.Zois,16-Oct-2026,-,2026-10,-,-,-,-,Ανοίγει 17/10,-,-,-,-,-,-,VIP Close Account,669
 VIP Close Account,toxicity91,1038193,NO,NO,BRONZE,Casino Player,NA,-,-,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,SELFEXCLUSION,-,-,-,-,-,-,VIP Close Account,672
 VIP Close Account,ChrysiK,1731560,NO,NO,BRONZE,Casino Player,NA,M,I. Tsakopoulos,16-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,active,-,-,-,-,-,-,VIP Close Account,673
@@ -83161,7 +83161,7 @@ GR HGC,Olgadrakaki,1352518,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoul
 GR HGC,Zephyros2017,1712406,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,14:00,2026-10,NOT CALLED,-,Other,-,active,-,-,-,-,-,-,GR HGC,8907
 GR HGC,digala,1593986,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,14:00,2026-10,UNANSWERED,-,-,-,-,-,-,A.Nikopoulou,UNANSWERED,-,-,GR HGC,8908
 GR HGC,balantisofia,738983,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,14:00,2026-10,UNANSWERED,-,-,-,-,-,-,A.Nikopoulou,UNANSWERED,-,-,GR HGC,8909
-GR HGC,mimikos69,1144812,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,14:00,2026-10,ANSWERED,Callback,-,-,-,-,-,A.Nikopoulou,ANSWERED,Neutral,C may deposit at some point,GR HGC,8910
+GR HGC,mimikos69,1144812,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,14:00,2026-10,ANSWERED,Callback,-,-,-,-,-,A.Nikopoulou,ANSWERED,Callback,Unanswered Callback,GR HGC,8910
 GR HGC,ngd976,653312,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,14:00,2026-10,INVALID NUMBER,-,-,-,-,-,-,-,-,-,-,GR HGC,8911
 GR HGC,KosTasCo9,1708567,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,14:00,2026-10,UNANSWERED,-,-,-,-,-,-,A.Nikopoulou,UNANSWERED,-,-,GR HGC,8912
 GR HGC,xrtziatz,1518096,NO,NO,NON VIP,No Type,ND100-200 CS or SB,F,A.Nikopoulou,16-Oct-2026,14:00,2026-10,ΑNSWERED BY 3RD PERSON,Negative,C hung up the phone,-,-,-,-,-,-,-,-,GR HGC,8913
@@ -83400,8 +83400,8 @@ GR KYC,Tauland95,6632210,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,19-Oct-2026,-,2026-
 GR KYC,sakisgk2004,7717184,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4685
 GR KYC,Arber06,8759205,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4686
 GR KYC,Alexaa3,9167473,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4687
-GR KYC,olumpiakos12,9224305,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4688
-GR KYC,Karagou08,9308700,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4689
+GR KYC,olumpiakos12,9224305,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,NOT CALLED,-,Inactive - KYC Required to reopen,-,FAKE REGISTER,-,-,-,-,-,-,KYC,4688
+GR KYC,Karagou08,9308700,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,NOT CALLED,-,Inactive - KYC Required to reopen,-,FAKE REGISTER,-,-,-,-,-,-,KYC,4689
 GR KYC,Fatmesaliogl,9393874,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4690
 GR KYC,Desptasos,9537695,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4691
 GR KYC,Napoletanos,9568306,NO,NO,NON VIP,No Type,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,KYC,4692
@@ -83521,7 +83521,7 @@ GR Non Dep,Miczampos59,9909991,YES,NO,NON VIP,No Type,NA,F,M.Ntouni,19-Oct-2026,
 GR Non Dep,koumparelisa,9918866,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32611
 GR Non Dep,tarnanas67,9916884,NO,NO,NON VIP,No Type,NA,F,M.Ntouni,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32612
 GR Non Dep,Ggreg1312,9917870,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32613
-GR Non Dep,marios13ks,9918869,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32614
+GR Non Dep,marios13ks,9918869,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,NOT CALLED,-,C had already deposited,-,-,-,-,-,-,-,-,GR NON DEP,32614
 GR Non Dep,panoskanta,9917873,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32615
 GR Non Dep,ilias19831,9863092,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32616
 GR Non Dep,kosmaslaou7,9916886,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32617
@@ -83548,7 +83548,7 @@ GR Non Dep,augerisd65,9910010,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,
 GR Non Dep,Ragias1959,9910012,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32638
 GR Non Dep,gkoutzikid,9920877,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32639
 GR Non Dep,Ghopl78,9916907,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32640
-GR Non Dep,savvbill,9860211,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32641
+GR Non Dep,savvbill,9860211,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,NOT CALLED,-,Fake registered details,-,-,-,-,-,-,-,-,GR NON DEP,32641
 GR Non Dep,Georgina196,9849366,NO,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32642
 GR Non Dep,kateriina210,9910019,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32643
 GR Non Dep,Koutsilstav1,9917901,YES,NO,NON VIP,No Type,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32644
@@ -83579,7 +83579,7 @@ GR Non Dep,sexshop69,9910037,NO,NO,NON VIP,No Type,NA,M,I.Zois,19-Oct-2026,-,202
 GR Non Dep,ManosRefenes,9919900,NO,NO,NON VIP,No Type,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32669
 GR Non Dep,easymoney118,9849386,NO,NO,NON VIP,No Type,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32670
 GR Non Dep,aposer123,9849389,YES,NO,NON VIP,No Type,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32671
-GR Non Dep,JohnGreco12,9849394,NO,NO,NON VIP,No Type,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32672
+GR Non Dep,JohnGreco12,9849394,NO,NO,NON VIP,No Type,NA,M,I.Zois,19-Oct-2026,-,2026-10,NOT CALLED,-,Fake registered details,-,-,-,-,-,-,-,-,GR NON DEP,32672
 GR Non Dep,Katsosal,9860246,NO,NO,NON VIP,No Type,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32673
 GR Non Dep,12345NIKOS,9849395,NO,NO,NON VIP,No Type,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32674
 GR Non Dep,Giotamrk25,9845673,YES,NO,NON VIP,No Type,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32675
@@ -83623,7 +83623,7 @@ GR Non Dep,kakakiss,9845699,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,19-Oct-202
 GR Non Dep,Elvirazyka,9849435,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32713
 GR Non Dep,Amplianiths,9849436,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32714
 GR Non Dep,Lamelo9,9929872,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32715
-GR Non Dep,Giannarasg13,9919941,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32716
+GR Non Dep,Giannarasg13,9919941,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,NOT CALLED,-,C had already deposited,-,-,-,-,-,-,-,-,GR NON DEP,32716
 GR Non Dep,dio254,9929873,YES,NO,NON VIP,No Type,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32717
 GR Non Dep,Theodore05,9910073,YES,NO,NON VIP,No Type,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32718
 GR Non Dep,papdo88,9860277,NO,NO,NON VIP,No Type,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,GR NON DEP,32719
@@ -83680,7 +83680,7 @@ GR Non Dep,Pvour1,9845826,NO,NO,NON VIP,No Type,NA,M,A.Kytros,19-Oct-2026,-,2026
 GR Non Dep,Giwrgos1203,9863085,YES,NO,NON VIP,No Type,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Inactive,-,-,-,-,-,-,-,-,GR NON DEP,32770
 GR Self Exclusion,answerxxx,898464,NO,NO,NON VIP,No Type,NA,-,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,Self Exclusion,234
 GR Self Exclusion,koutso,840112,NO,NO,NON VIP,No Type,NA,-,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,Self Exclusion,235
-VIP Close Account,kostas451995,828112,NO,NO,SILVER,Casino Player,NA,M,I. Tsakopoulos,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Close Account,674
+VIP Close Account,kostas451995,828112,NO,NO,SILVER,Casino Player,NA,M,I. Tsakopoulos,19-Oct-2026,-,2026-10,-,-,-,-,opens tommorow,-,-,-,-,-,-,VIP Close Account,674
 VIP Close Account,norzufix12,652891,NO,NO,SILVER,Under Review,NA,M,T. Karapanagiotidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Close Account,675
 VIP Close Account,nosma21,1193567,NO,NO,NONE,Under Review,NA,F,M.Ntouni,19-Oct-2026,-,2026-10,-,-,-,-,20/10,-,-,-,-,-,-,VIP Close Account,676
 VIP Close Account,meteora12,6803431,NO,NO,NONE,Casino Player,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Close Account,677
@@ -83691,22 +83691,16 @@ VIP Day 10 Avg Dep >100,Vassano,866843,NO,NO,BRONZE,Casino Player,NA,M,V. Karako
 VIP Day 10 Avg Dep >100,Takas12345,1726728,NO,NO,SILVER,Casino & Sportsbook,NA,M,V. Karakonstantis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5036
 VIP Day 10 Avg Dep >100,underakos,972625,NO,NO,BRONZE,Casino Player,NA,M,I. Tsakopoulos,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5037
 VIP Day 10 Avg Dep >100,KwstasG69,8166184,NO,NO,SILVER,Casino Player,NA,M,I. Tsakopoulos,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5038
-VIP Day 10 Avg Dep >100,AgapiS17,8973962,NO,NO,BRONZE,Casino & Sportsbook,NA,M,D. Nompilakis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5039
-VIP Day 10 Avg Dep >100,ia3300,5956248,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5040
+VIP Day 10 Avg Dep >100,AgapiS17,8973962,NO,NO,BRONZE,Casino & Sportsbook,NA,M,D. Nompilakis,19-Oct-2026,-,2026-10,NOT CALLED,-,Already called in another Campaign,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5039
 VIP Day 10 Avg Dep >100,Voulo10,5237428,NO,NO,BRONZE,Casino Player,NA,M,C.Gedikidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5041
 VIP Day 10 Avg Dep >100,Athanas1,647002,NO,NO,BRONZE,Casino Club,NA,M,C.Gedikidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5042
-VIP Day 10 Avg Dep >100,Stoickn,719115,NO,NO,BRONZE,Casino Player,NA,M,T. Karapanagiotidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5043
-VIP Day 10 Avg Dep >100,Antonis1331,1322100,NO,NO,BRONZE,Casino & Sportsbook,NA,M,T. Karapanagiotidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5044
 VIP Day 10 Avg Dep >100,pelekoudi13,4751087,NO,NO,BRONZE,Casino & Sportsbook,NA,F,M.Ntouni,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5045
-VIP Day 10 Avg Dep >100,zaifanis,719066,NO,NO,BRONZE,Casino Player,NA,F,M.Ntouni,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5046
+VIP Day 10 Avg Dep >100,zaifanis,719066,NO,NO,BRONZE,Casino Player,NA,F,M.Ntouni,19-Oct-2026,-,2026-10,NOT CALLED,-,Εxcluded via R Database,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5046
 VIP Day 10 Avg Dep >100,janker13,724769,NO,NO,BRONZE,Sportsbook,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5047
-VIP Day 10 Avg Dep >100,Buziklodi74,7995841,NO,NO,BRONZE,Casino & Sportsbook,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5048
-VIP Day 10 Avg Dep >100,Ankaramous,6057102,NO,NO,BRONZE,Sportsbook,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5049
-VIP Day 10 Avg Dep >100,dmarg07,1775557,NO,NO,BRONZE,Tipping Line,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5050
+VIP Day 10 Avg Dep >100,Buziklodi74,7995841,NO,NO,BRONZE,Casino & Sportsbook,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,Customer excluded - Successful communication in last 30 days,-,-,-,-,-,-,VIP Day 10 Avg > 100,5048
 VIP Day 10 Avg Dep >100,nikosk1104,2143931,NO,NO,BRONZE,Casino Player,NA,F,A.Nikopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5051
 VIP Day 10 Avg Dep >100,Freevagen,6258443,NO,NO,BRONZE,Casino Player,NA,F,A.Nikopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5052
 VIP Day 10 Avg Dep >100,alexisthod,1067589,NO,NO,BRONZE,Casino Player,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,NOT CALLED,-,Limits,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5053
-VIP Day 10 Avg Dep >100,ORGASMATRON7,8958751,NO,NO,BRONZE,Casino & Sportsbook,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5054
 VIP Day 10 Avg Dep >100,pasadinami,837602,NO,NO,BRONZE,Casino & Sportsbook,NA,M,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5055
 VIP Day 10 Avg Dep >100,manosppd,1253921,NO,NO,BRONZE,Sportsbook,NA,M,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5056
 VIP Day 10 Avg Dep >100,gstais21,1925579,NO,NO,BRONZE,Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5057
@@ -83735,27 +83729,9 @@ VIP Day 10 Avg Dep <100,fraaton,1127513,NO,NO,BRONZE,Casino Player,NA,M,I. Tsako
 VIP Day 10 Avg Dep <100,Ntalitsa,1093795,NO,NO,BRONZE,Casino Player,NA,M,I. Tsakopoulos,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9061
 VIP Day 10 Avg Dep <100,samgeorge26,1675865,NO,NO,BRONZE,Casino Player,NA,M,I. Tsakopoulos,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9062
 VIP Day 10 Avg Dep <100,kokov1997,975630,NO,NO,BRONZE,Casino Player,NA,M,I. Tsakopoulos,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9063
-VIP Day 10 Avg Dep <100,Thotzo,1201143,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9064
-VIP Day 10 Avg Dep <100,roadkomotini,2726792,NO,NO,SILVER,Casino Player,NA,M,D. Nompilakis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9065
-VIP Day 10 Avg Dep <100,KostasN321,3525659,NO,NO,SILVER,Casino & Sportsbook,NA,M,D. Nompilakis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9066
-VIP Day 10 Avg Dep <100,Konxyl,807916,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9067
-VIP Day 10 Avg Dep <100,rousodim,1295499,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9068
-VIP Day 10 Avg Dep <100,shager,793328,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9069
-VIP Day 10 Avg Dep <100,dimitrisbeli,1483200,NO,NO,BRONZE,Sportsbook,NA,M,D. Nompilakis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9070
-VIP Day 10 Avg Dep <100,leftsak2024,5475101,NO,NO,BRONZE,Casino Player,NA,M,C.Gedikidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9071
-VIP Day 10 Avg Dep <100,Ramon1234,1149282,NO,NO,BRONZE,Casino Player,NA,M,C.Gedikidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9072
-VIP Day 10 Avg Dep <100,maim2020,1136066,NO,NO,BRONZE,Casino Player,NA,M,C.Gedikidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9073
-VIP Day 10 Avg Dep <100,Hariboy5012,5151441,NO,NO,BRONZE,Sportsbook,NA,M,C.Gedikidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9074
-VIP Day 10 Avg Dep <100,veteran96,1239797,NO,NO,BRONZE,Casino & Sportsbook,NA,M,C.Gedikidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9075
-VIP Day 10 Avg Dep <100,adwniasym,1228571,NO,NO,BRONZE,Casino Player,NA,M,C.Gedikidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9076
-VIP Day 10 Avg Dep <100,Pasxalisrx8,1687935,NO,NO,BRONZE,Casino Player,NA,M,C.Gedikidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9077
-VIP Day 10 Avg Dep <100,Tzitzi1926,1847469,NO,NO,SILVER,Casino Player,NA,M,T. Karapanagiotidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9078
-VIP Day 10 Avg Dep <100,DOKIMOS,587769,NO,NO,BRONZE,Casino & Sportsbook,NA,M,T. Karapanagiotidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9079
-VIP Day 10 Avg Dep <100,Irinaki,966027,NO,NO,BRONZE,Casino Player,NA,M,T. Karapanagiotidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9080
-VIP Day 10 Avg Dep <100,00010001FFFF,1717563,NO,NO,BRONZE,Casino Player,NA,M,T. Karapanagiotidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9081
-VIP Day 10 Avg Dep <100,Kaititas,2141437,NO,NO,BRONZE,Casino Player,NA,M,T. Karapanagiotidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9082
-VIP Day 10 Avg Dep <100,leon1926,890854,NO,NO,BRONZE,Casino Player,NA,M,T. Karapanagiotidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9083
-VIP Day 10 Avg Dep <100,Manosmt,875434,NO,NO,BRONZE,Casino Player,NA,M,T. Karapanagiotidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9084
+VIP Day 10 Avg Dep <100,Hariboy5012,5151441,NO,NO,BRONZE,Sportsbook,NA,M,C.Gedikidis,19-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,Responsible Gambling Inbox Sent,-,-,-,-,-,-,VIP Day 10 Avg < 100,9074
+VIP Day 10 Avg Dep <100,Pasxalisrx8,1687935,NO,NO,BRONZE,Casino Player,NA,M,C.Gedikidis,19-Oct-2026,-,2026-10,NOT CALLED,-,Limits,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9077
+VIP Day 10 Avg Dep <100,DOKIMOS,587769,NO,NO,BRONZE,Casino & Sportsbook,NA,M,T. Karapanagiotidis,19-Oct-2026,-,2026-10,NOT CALLED,-,Limits,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9079
 VIP Day 10 Avg Dep <100,ABCDFG,1015887,NO,NO,SILVER,Casino Club,NA,F,M.Ntouni,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9085
 VIP Day 10 Avg Dep <100,nikosxalk,1504170,NO,NO,SILVER,Casino & Sportsbook,NA,F,M.Ntouni,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9086
 VIP Day 10 Avg Dep <100,aek2790498,997016,NO,NO,BRONZE,Casino & Sportsbook,NA,F,M.Ntouni,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9087
@@ -83767,63 +83743,87 @@ VIP Day 10 Avg Dep <100,kaltapan3105,797910,NO,NO,BRONZE,Casino Club,NA,M,A.Kara
 VIP Day 10 Avg Dep <100,gduebs,4075305,NO,NO,BRONZE,Casino Player,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9093
 VIP Day 10 Avg Dep <100,tedbek,881828,NO,NO,BRONZE,Casino & Sportsbook,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9094
 VIP Day 10 Avg Dep <100,alexadam,6279119,NO,NO,BRONZE,Casino Player,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9095
-VIP Day 10 Avg Dep <100,arxokaramano,1239785,NO,NO,SILVER,Casino Player,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9096
+VIP Day 10 Avg Dep <100,arxokaramano,1239785,NO,NO,SILVER,Casino Player,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,RG MAIL,-,-,-,-,-,-,VIP Day 10 Avg < 100,9096
 VIP Day 10 Avg Dep <100,Skorbill,4287803,NO,NO,SILVER,Casino Player,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9097
-VIP Day 10 Avg Dep <100,petalo44,2013575,NO,NO,BRONZE,Poker & Casino & SB,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9098
-VIP Day 10 Avg Dep <100,Zerv4545,3755357,NO,NO,BRONZE,Casino & Sportsbook,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9099
-VIP Day 10 Avg Dep <100,Yiannisaudi,1027082,NO,NO,BRONZE,Casino Club,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9100
-VIP Day 10 Avg Dep <100,Spuros12,1082404,NO,NO,BRONZE,Casino Player,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9101
-VIP Day 10 Avg Dep <100,athanasiossd,1285712,NO,NO,BRONZE,Casino Player,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9102
-VIP Day 10 Avg Dep <100,antzy89,995322,NO,NO,BRONZE,Casino Player,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9103
-VIP Day 10 Avg Dep <100,Tolis11,1824861,NO,NO,SILVER,Casino Player,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9104
-VIP Day 10 Avg Dep <100,Steliospata,1082939,NO,NO,BRONZE,Casino Player,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9105
+VIP Day 10 Avg Dep <100,petalo44,2013575,NO,NO,BRONZE,Poker & Casino & SB,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,Customer excluded - Successful communication in last 30 days,-,-,-,-,-,-,VIP Day 10 Avg < 100,9098
 VIP Day 10 Avg Dep <100,teodoris,7779766,NO,NO,BRONZE,Sportsbook,NA,F,A.Nikopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9106
 VIP Day 10 Avg Dep <100,zaxos06,870485,NO,NO,BRONZE,Sportsbook,NA,F,A.Nikopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9107
-VIP Day 10 Avg Dep <100,giotadragona,5738606,NO,NO,BRONZE,Casino & Sportsbook,NA,F,A.Nikopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9108
-VIP Day 10 Avg Dep <100,Artan1983,3709123,NO,NO,BRONZE,Casino Player,NA,F,A.Nikopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9109
-VIP Day 10 Avg Dep <100,Sonia9394,1948218,NO,NO,BRONZE,Casino Player,NA,F,A.Nikopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9110
-VIP Day 10 Avg Dep <100,Moican92,1121009,NO,NO,BRONZE,Casino & Sportsbook,NA,F,A.Nikopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9111
-VIP Day 10 Avg Dep <100,Agriopoulos,1137772,NO,NO,BRONZE,Casino Player,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9112
-VIP Day 10 Avg Dep <100,Ioanismpak,8314238,NO,NO,BRONZE,Casino Player,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9113
-VIP Day 10 Avg Dep <100,Thomasx90,2419643,NO,NO,BRONZE,Casino Player,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9114
-VIP Day 10 Avg Dep <100,Patsounaki,997867,NO,NO,BRONZE,Casino Player,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9115
-VIP Day 10 Avg Dep <100,Vkoutsou,3113905,NO,NO,BRONZE,Under Review,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9116
-VIP Day 10 Avg Dep <100,Tsenes24,2338854,NO,NO,BRONZE,Casino Player,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9117
-VIP Day 10 Avg Dep <100,PAOK1968,1290992,NO,NO,BRONZE,Casino & Sportsbook,NA,M,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9118
-VIP Day 10 Avg Dep <100,nikolaras12,1092440,NO,NO,BRONZE,Casino Player,NA,M,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9119
-VIP Day 10 Avg Dep <100,mariaster93,1948055,NO,NO,BRONZE,Casino Player,NA,M,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9120
-VIP Day 10 Avg Dep <100,anastasiam17,1953622,NO,NO,BRONZE,Casino Player,NA,M,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9121
-VIP Day 10 Avg Dep <100,Vaggelisz47,6203498,NO,NO,BRONZE,Casino Player,NA,M,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9122
-VIP Day 10 Avg Dep <100,HavanaG89,1502709,NO,YES,BRONZE,Casino & Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9123
-VIP Day 10 Avg Dep <100,kavallaris10,4561110,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9124
-VIP Day 10 Avg Dep <100,mitsakos293,755968,NO,NO,BRONZE,Tipping Line,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9125
-VIP Day 10 Avg Dep <100,adamkl,5975376,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9126
-VIP Day 10 Avg Dep <100,EhamGR21,4152347,NO,NO,BRONZE,Casino Player,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9127
-VIP Day 10 Avg Dep <100,KDRAGON69,4991482,NO,YES,BRONZE,Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,C does not want calls,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9128
-VIP Day 10 Avg Dep <100,Kostashelo,1410745,NO,YES,BRONZE,Casino Player,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,C does not want calls,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9129
-VIP Day 10 Avg Dep <100,pstv19,1051154,NO,YES,BRONZE,Casino & Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Phone belongs to third person,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9130
-VIP Day 10 Avg Dep <100,mainoc,1211569,NO,YES,SILVER,Casino Player,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,C has account manager,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9131
-VIP Day 10 Avg Dep <100,Helenkath29,684231,NO,YES,ELITE,Casino Club,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,C has account manager,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9132
-VIP Day 10 Avg Dep <100,Zere334,707304,NO,NO,BRONZE,Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg < 100,9133
-VIP Day 10 Avg Dep <100,Xaroula67,1128095,NO,NO,BRONZE,Casino Player,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg < 100,9134
-VIP Day 10 Avg Dep <100,Basilispaok,1150264,NO,NO,BRONZE,Casino Player,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg < 100,9135
-VIP Day 10 Avg Dep <100,Ekountouri,1456180,NO,NO,SILVER,Casino Player,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg < 100,9136
-VIP Day 10 Avg Dep <100,KVAXEVANIS,766872,NO,NO,BRONZE,Poker & Casino & SB,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg < 100,9137
+VIP Day 10 Avg Dep <100,Artan1983,3709123,NO,NO,BRONZE,Casino Player,NA,F,A.Nikopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9108
+VIP Day 10 Avg Dep <100,Sonia9394,1948218,NO,NO,BRONZE,Casino Player,NA,F,A.Nikopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9109
+VIP Day 10 Avg Dep <100,Moican92,1121009,NO,NO,BRONZE,Casino & Sportsbook,NA,F,A.Nikopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9110
+VIP Day 10 Avg Dep <100,Agriopoulos,1137772,NO,NO,BRONZE,Casino Player,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,NOT CALLED,-,Limits,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9111
+VIP Day 10 Avg Dep <100,Patsounaki,997867,NO,NO,BRONZE,Casino Player,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,NOT CALLED,-,Limits,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9114
+VIP Day 10 Avg Dep <100,Vkoutsou,3113905,NO,NO,BRONZE,Under Review,NA,F,T.Antonopoulou,19-Oct-2026,-,2026-10,NOT CALLED,-,Limits,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9115
+VIP Day 10 Avg Dep <100,PAOK1968,1290992,NO,NO,BRONZE,Casino & Sportsbook,NA,M,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9117
+VIP Day 10 Avg Dep <100,nikolaras12,1092440,NO,NO,BRONZE,Casino Player,NA,M,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9118
+VIP Day 10 Avg Dep <100,mariaster93,1948055,NO,NO,BRONZE,Casino Player,NA,M,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9119
+VIP Day 10 Avg Dep <100,anastasiam17,1953622,NO,NO,BRONZE,Casino Player,NA,M,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9120
+VIP Day 10 Avg Dep <100,Vaggelisz47,6203498,NO,NO,BRONZE,Casino Player,NA,M,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9121
+VIP Day 10 Avg Dep <100,HavanaG89,1502709,NO,YES,BRONZE,Casino & Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9122
+VIP Day 10 Avg Dep <100,kavallaris10,4561110,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9123
+VIP Day 10 Avg Dep <100,mitsakos293,755968,NO,NO,BRONZE,Tipping Line,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9124
+VIP Day 10 Avg Dep <100,adamkl,5975376,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9125
+VIP Day 10 Avg Dep <100,EhamGR21,4152347,NO,NO,BRONZE,Casino Player,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9126
+VIP Day 10 Avg Dep <100,KDRAGON69,4991482,NO,YES,BRONZE,Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,C does not want calls,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9127
+VIP Day 10 Avg Dep <100,Kostashelo,1410745,NO,YES,BRONZE,Casino Player,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,C does not want calls,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9128
+VIP Day 10 Avg Dep <100,pstv19,1051154,NO,YES,BRONZE,Casino & Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Phone belongs to third person,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9129
+VIP Day 10 Avg Dep <100,mainoc,1211569,NO,YES,SILVER,Casino Player,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,C has account manager,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9130
+VIP Day 10 Avg Dep <100,Helenkath29,684231,NO,YES,ELITE,Casino Club,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,C has account manager,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9131
+VIP Day 10 Avg Dep <100,Zere334,707304,NO,NO,BRONZE,Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg < 100,9132
+VIP Day 10 Avg Dep <100,Xaroula67,1128095,NO,NO,BRONZE,Casino Player,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg < 100,9133
+VIP Day 10 Avg Dep <100,Basilispaok,1150264,NO,NO,BRONZE,Casino Player,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg < 100,9134
+VIP Day 10 Avg Dep <100,Ekountouri,1456180,NO,NO,SILVER,Casino Player,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg < 100,9135
+VIP Day 10 Avg Dep <100,KVAXEVANIS,766872,NO,NO,BRONZE,Poker & Casino & SB,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg < 100,9136
+VIP Day 10 Avg Dep <100,giotadragona,5738606,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Other,-,already called,-,-,-,-,-,-,VIP Day 10 Avg < 100,9137
 VIP Day 30,Jpappa,5952481,NO,NO,BRONZE,Casino Player,NA,M,V. Karakonstantis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1594
 VIP Day 30,Georgia14365,1664724,NO,NO,BRONZE,Sportsbook,NA,M,I. Tsakopoulos,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1595
-VIP Day 30,Combo3,1841677,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1596
 VIP Day 30,iellinoudis,7798320,NO,NO,BRONZE,Casino & Sportsbook,NA,M,C.Gedikidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1597
-VIP Day 30,stathis85,2016162,NO,NO,BRONZE,Sportsbook,NA,M,T. Karapanagiotidis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1598
 VIP Day 30,Chamou93,1090497,NO,NO,BRONZE,Fun Sportsbook,NA,F,M.Ntouni,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1599
 VIP Day 30,Georgiaemn,3595472,NO,NO,BRONZE,Casino Player,NA,M,A.Karatsis,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1600
-VIP Day 30,Pastelakhs,2827225,NO,NO,BRONZE,Casino Player,NA,M,I.Zois,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1601
 VIP Day 30,Evekap,6905649,NO,NO,BRONZE,Casino Player,NA,F,A.Nikopoulou,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1602
 VIP Day 30,tzitzi123,1824518,NO,NO,BRONZE,Casino Player,NA,M,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1604
 VIP Day 30,Maria1967,6573006,NO,NO,BRONZE,Under Review,NA,M,A.Kytros,19-Oct-2026,-,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 30,1605
 VIP Day 30,Pflakis,6650180,NO,NO,BRONZE,Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 30,1606
 VIP Day 30,Natalka,1192882,NO,NO,BRONZE,Casino & Sportsbook,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 30,1607
 VIP Day 30,MANIACOC,1811803,NO,NO,BRONZE,Casino Player,NA,-,-,19-Oct-2026,-,2026-10,NOT CALLED,-,Funds,-,-,-,-,-,-,-,-,VIP Day 30,1608
+VIP Day 10 Avg Dep >100,ORGASMATRON7,8958751,NO,NO,BRONZE,Casino & Sportsbook,NA,F,T.Antonopoulou,19-Oct-2026,11:00,2026-10,ANSWERED,Positive,C will deposit,SBVIP100-300,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5054
+VIP Day 10 Avg Dep <100,Zerv4545,3755357,NO,NO,BRONZE,Casino & Sportsbook,NA,M,I.Zois,19-Oct-2026,11:00,2026-10,NOT CALLED,-,Limits,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9099
+VIP Day 10 Avg Dep <100,Yiannisaudi,1027082,NO,NO,BRONZE,Casino Club,NA,M,I.Zois,19-Oct-2026,11:00,2026-10,NOT CALLED,-,Limits,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9100
+VIP Day 10 Avg Dep <100,Spuros12,1082404,NO,NO,BRONZE,Casino Player,NA,M,I.Zois,19-Oct-2026,11:00,2026-10,ANSWERED,Neutral,C may deposit at some point,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9101
+VIP Day 10 Avg Dep <100,athanasiossd,1285712,NO,NO,BRONZE,Casino Player,NA,M,I.Zois,19-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,I.Zois,-,-,-,VIP Day 10 Avg < 100,9102
+VIP Day 10 Avg Dep <100,antzy89,995322,NO,NO,BRONZE,Casino Player,NA,M,I.Zois,19-Oct-2026,11:00,2026-10,NOT CALLED,-,Limits,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9103
+VIP Day 10 Avg Dep <100,Ioanismpak,8314238,NO,NO,BRONZE,Casino Player,NA,F,T.Antonopoulou,19-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,VIP Day 10 Avg < 100,9112
+VIP Day 10 Avg Dep <100,Thomasx90,2419643,NO,YES,BRONZE,Casino Player,NA,F,T.Antonopoulou,19-Oct-2026,11:00,2026-10,ΑNSWERED BY 3RD PERSON,-,-,CS-VIP300,PHONE DOES NOT BELONG TO USER,-,-,-,-,-,-,VIP Day 10 Avg < 100,9113
+VIP Day 10 Avg Dep <100,Tsenes24,2338854,NO,NO,BRONZE,Casino Player,NA,F,T.Antonopoulou,19-Oct-2026,11:00,2026-10,CANNOT CONNECT TO NUMBER,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9116
 VIP Day 30,Karap88,2687569,NO,NO,BRONZE,Casino & Sportsbook,NA,F,T.Antonopoulou,19-Oct-2026,11:00,2026-10,UNANSWERED,-,-,-,-,-,-,T.Antonopoulou,-,-,-,VIP Day 30,1603
+VIP Day 10 Avg Dep >100,Stoickn,719115,NO,NO,BRONZE,Casino Player,NA,M,T. Karapanagiotidis,19-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,T. Karapanagiotidis,-,-,-,VIP Day 10 Avg > 100,5043
+VIP Day 10 Avg Dep >100,Antonis1331,1322100,NO,NO,BRONZE,Casino & Sportsbook,NA,M,T. Karapanagiotidis,19-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,T. Karapanagiotidis,-,-,-,VIP Day 10 Avg > 100,5044
+VIP Day 10 Avg Dep >100,Ankaramous,6057102,NO,NO,BRONZE,Sportsbook,NA,M,I.Zois,19-Oct-2026,12:00,2026-10,ANSWERED,Positive,C will deposit,SBVIP100-300,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5049
+VIP Day 10 Avg Dep >100,dmarg07,1775557,NO,NO,BRONZE,Tipping Line,NA,M,I.Zois,19-Oct-2026,12:00,2026-10,ANSWERED,Positive,C will deposit,SBVIP100-300,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5050
+VIP Day 10 Avg Dep <100,Thotzo,1201143,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,19-Oct-2026,12:00,2026-10,ANSWERED,Negative,C is not interested,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9064
+VIP Day 10 Avg Dep <100,Tzitzi1926,1847469,NO,NO,SILVER,Casino Player,NA,M,T. Karapanagiotidis,19-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,T. Karapanagiotidis,-,-,-,VIP Day 10 Avg < 100,9078
+VIP Day 10 Avg Dep <100,Irinaki,966027,NO,NO,BRONZE,Casino Player,NA,M,T. Karapanagiotidis,19-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,T. Karapanagiotidis,-,-,-,VIP Day 10 Avg < 100,9080
+VIP Day 10 Avg Dep <100,00010001FFFF,1717563,NO,NO,BRONZE,Casino Player,NA,M,T. Karapanagiotidis,19-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,T. Karapanagiotidis,-,-,-,VIP Day 10 Avg < 100,9081
+VIP Day 10 Avg Dep <100,Kaititas,2141437,NO,NO,BRONZE,Casino Player,NA,M,T. Karapanagiotidis,19-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,T. Karapanagiotidis,-,-,-,VIP Day 10 Avg < 100,9082
+VIP Day 10 Avg Dep <100,leon1926,890854,NO,NO,BRONZE,Casino Player,NA,M,T. Karapanagiotidis,19-Oct-2026,12:00,2026-10,ANSWERED,Neutral,C may deposit at some point,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9083
+VIP Day 10 Avg Dep <100,Manosmt,875434,NO,NO,BRONZE,Casino Player,NA,M,T. Karapanagiotidis,19-Oct-2026,12:00,2026-10,INVALID NUMBER,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9084
+VIP Day 30,stathis85,2016162,NO,NO,BRONZE,Sportsbook,NA,M,T. Karapanagiotidis,19-Oct-2026,12:00,2026-10,UNANSWERED,-,-,-,-,-,-,T. Karapanagiotidis,-,-,-,VIP Day 30,1598
+VIP Day 30,Pastelakhs,2827225,NO,NO,BRONZE,Casino Player,NA,M,I.Zois,19-Oct-2026,12:00,2026-10,ANSWERED,Negative,C is not interested,CS-VIP1000,-,-,-,-,-,-,-,VIP Day 30,1601
+VIP Day 10 Avg Dep >100,ia3300,5956248,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,19-Oct-2026,13:00,2026-10,ANSWERED,Neutral,C may deposit at some point,CS-VIP500,-,-,-,-,-,-,-,VIP Day 10 Avg > 100,5040
+VIP Day 10 Avg Dep <100,roadkomotini,2726792,NO,NO,SILVER,Casino Player,NA,M,D. Nompilakis,19-Oct-2026,13:00,2026-10,UNANSWERED,-,-,-,-,-,-,D. Nompilakis,-,-,-,VIP Day 10 Avg < 100,9065
+VIP Day 10 Avg Dep <100,KostasN321,3525659,NO,NO,SILVER,Casino & Sportsbook,NA,M,D. Nompilakis,19-Oct-2026,13:00,2026-10,ANSWERED,Neutral,C may deposit at some point,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9066
+VIP Day 10 Avg Dep <100,Konxyl,807916,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,19-Oct-2026,13:00,2026-10,ANSWERED,Neutral,C may deposit at some point,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9067
+VIP Day 10 Avg Dep <100,rousodim,1295499,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,19-Oct-2026,13:00,2026-10,ANSWERED,Negative,C is not interested,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9068
+VIP Day 10 Avg Dep <100,shager,793328,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,19-Oct-2026,13:00,2026-10,ANSWERED,Negative,C is not interested,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9069
+VIP Day 10 Avg Dep <100,dimitrisbeli,1483200,NO,NO,BRONZE,Sportsbook,NA,M,D. Nompilakis,19-Oct-2026,13:00,2026-10,ANSWERED,Positive,C will deposit,SBVIP100-100,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9070
+VIP Day 10 Avg Dep <100,leftsak2024,5475101,NO,NO,BRONZE,Casino Player,NA,M,C.Gedikidis,19-Oct-2026,13:00,2026-10,ANSWERED,Positive,C will deposit,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9071
+VIP Day 10 Avg Dep <100,Ramon1234,1149282,NO,NO,BRONZE,Casino Player,NA,M,C.Gedikidis,19-Oct-2026,13:00,2026-10,CANNOT CONNECT TO NUMBER,-,-,-,-,-,-,C.Gedikidis,-,-,-,VIP Day 10 Avg < 100,9072
+VIP Day 10 Avg Dep <100,maim2020,1136066,NO,NO,BRONZE,Casino Player,NA,M,C.Gedikidis,19-Oct-2026,13:00,2026-10,ANSWERED,Positive,C will deposit,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9073
+VIP Day 10 Avg Dep <100,veteran96,1239797,NO,NO,BRONZE,Casino & Sportsbook,NA,M,C.Gedikidis,19-Oct-2026,13:00,2026-10,ANSWERED,Positive,C will deposit,SBVIP100-100,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9075
+VIP Day 10 Avg Dep <100,adwniasym,1228571,NO,NO,BRONZE,Casino Player,NA,M,C.Gedikidis,19-Oct-2026,13:00,2026-10,ANSWERED,Negative,C hung up the phone,CS-VIP300,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9076
+VIP Day 10 Avg Dep <100,Tolis11,1824861,NO,NO,SILVER,Casino Player,NA,M,I.Zois,19-Oct-2026,13:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9104
+VIP Day 10 Avg Dep <100,Steliospata,1082939,NO,NO,BRONZE,Casino Player,NA,M,I.Zois,19-Oct-2026,13:00,2026-10,-,-,-,-,-,-,-,-,-,-,-,VIP Day 10 Avg < 100,9105
+VIP Day 30,Combo3,1841677,NO,NO,BRONZE,Casino Player,NA,M,D. Nompilakis,19-Oct-2026,13:00,2026-10,ANSWERED,Neutral,C may deposit at some point,CS-VIP1000,-,-,-,-,-,-,-,VIP Day 30,1596
 GR HGC,vasiliki1908,1698054,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,NOT CALLED,-,Other,-,excluded,-,-,-,-,-,-,GR HGC,6515
 GR HGC,kaititakouti,940874,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,NOT CALLED,-,Other,-,excluded,-,-,-,-,-,-,GR HGC,6525
 GR HGC,osfp2014,1544468,NO,NO,NON VIP,No Type,ND100-200 CS or SB,-,-,NA,-,NA,NOT CALLED,-,Other,-,excluded,-,-,-,-,-,-,GR HGC,6701
