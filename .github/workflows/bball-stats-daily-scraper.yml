@@ -169,6 +169,32 @@ jobs:
           report "Eurocup"    "${{ steps.scrape_ec.outcome }}" EC
           report "GBL"        "${{ steps.scrape_gr.outcome }}" GR
           report "Pro A"      "${{ steps.scrape_fr.outcome }}" FR
+
+          # NBB is updated manually (lnb.com.br does not answer GitHub's servers), so instead
+          # of a step outcome, compare the season schedule (BR-schedule.csv, written by the
+          # local BR-scraper run) with BR-players.csv: count games per date on each side.
+          if [ -f bball-stats/data/BR-schedule.csv ]; then
+            today=$(date -u +%Y-%m-%d)
+            grep -oE '"[0-9]{4}-[0-9]{2}-[0-9]{2}, [A-Z]{2,4} vs [A-Z]{2,4}"' bball-stats/data/BR-players.csv \
+              | sort -u | cut -c2-11 | sort | uniq -c > db_dates.tmp
+            last_db=$(tail -1 db_dates.tmp | awk '{print $2}')
+            tail -n +2 bball-stats/data/BR-schedule.csv | awk -v t="$today" '$1 < t' | sort | uniq -c > sc_dates.tmp
+            read -r n d1 d2 <<< "$(awk 'NR==FNR {db[$2]=$1; next}
+              {m = $1 - db[$2]
+               if (m > 0) {total += m; if (first == "" || $2 < first) first = $2; if ($2 > last) last = $2}}
+              END {print total+0, first, last}' db_dates.tmp sc_dates.tmp)"
+            if [ "$n" -eq 0 ]; then
+              echo "- ✅ NBB — all played games are in the data. Last game in the db: ${last_db:-none}" >> "$GITHUB_STEP_SUMMARY"
+            elif [ "$d1" = "$d2" ]; then
+              echo "- ⚠️ NBB — $n games missing on $d1. Last game in the db: ${last_db:-none} (run the NBB update)" >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "- ⚠️ NBB — $n games missing from $d1 to $d2. Last game in the db: ${last_db:-none} (run the NBB update)" >> "$GITHUB_STEP_SUMMARY"
+            fi
+            rm -f db_dates.tmp sc_dates.tmp
+          else
+            echo "- ℹ️ NBB — no BR-schedule.csv yet: run the updated BR-scraper.R locally once" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
           echo "" >> "$GITHUB_STEP_SUMMARY"
           if [ "$failed" -eq 0 ] && [ "$empty" -eq 0 ]; then
             echo "**All 8 league scrapers succeeded with data.**" >> "$GITHUB_STEP_SUMMARY"
