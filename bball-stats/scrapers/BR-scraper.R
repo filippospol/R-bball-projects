@@ -101,6 +101,28 @@ awaycode_list = fixtures_played$away_code
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+#' *SEASON SCHEDULE FILE* (for the completeness check in the GitHub Actions summary)
+# One date per game, played AND upcoming (upcoming games have a /partidas/ link instead of a
+# /noticias/ report, so they are not in `fixtures` above). The daily workflow counts, per date,
+# the games in this file against the games in BR-players.csv and reports what is missing.
+schedule = sched_page %>%
+  html_elements("tr") %>%
+  map_dfr(function(r) {
+    row_txt  = html_text2(r)
+    date_raw = str_match(row_txt, "(\\d{2}/\\d{2}/\\d{4})")[, 2]
+    if (is.na(date_raw)) return(NULL)
+    hrefs = r %>% html_elements("a") %>% html_attr("href")
+    hrefs = hrefs[!is.na(hrefs) & str_detect(hrefs, "/partidas/|nbb-caixa")]
+    if (length(hrefs) == 0) return(NULL)                 # not a game row
+    tibble(KEY = hrefs[1], DATE = as.Date(date_raw, "%d/%m/%Y"))
+  }) %>%
+  distinct(KEY, .keep_all = TRUE) %>%
+  arrange(DATE) %>%
+  select(DATE)
+write_csv(schedule, "bball-stats/data/BR-schedule.csv")
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 #' *PARSING HELPERS* (Brazilian cell formats verified against a real report page)
 
 # "20/35 (57)" -> 20  (points scored = number before the slash)
