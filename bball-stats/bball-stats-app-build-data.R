@@ -103,9 +103,9 @@ teamGamesFA = imap(teams, ~ .x %>% mutate(LEAGUE = teamlog[[.y]])) %>%
 
 # Stat Leaders tab (kept verbatim; NB the season/date cut-offs are hard-coded):
 topMost = playersAll %>%
-  filter(LEAGUE=="NBA" & SEASON=="2025-26") %>% #2026-27
+  filter(LEAGUE=="NBA" & SEASON=="2026-27") %>% #2026-27
   mutate(DATE=lubridate::as_date(substr(MATCHUP,1,10))) %>%
-  filter(DATE<"2026-04-14") %>%
+  # filter(DATE<"2026-04-14") %>%
   select(PLAYER,TEAM,PTS,REB,AST,`3PM`,STL,BLK,TOV) %>%
   group_by(PLAYER,TEAM) %>%
   reframe(GAMES=n(), across(PTS:TOV, ~ sum(.,na.rm=T))) %>%
