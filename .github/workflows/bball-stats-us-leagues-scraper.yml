@@ -2,7 +2,7 @@ name: Basketball Stats App NBA & WNBA Data Update
 
 on:
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '30 5 * * *'
   workflow_dispatch:
 
 # Serialize with the European workflow: both rebuild and push app-data.rds, so
