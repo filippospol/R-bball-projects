@@ -98,31 +98,89 @@ vip_player_type_values = c(
   "VIRTUAL SPORTS PLAYER", "ARB", "SUSPICIOUS"
 )
 
+# --- CHUNKED READING ---------------------------------------------------------
+# A tab is read in blocks of `chunk_rows` rows instead of in one request. Reading a
+# very large tab in one go (Reactivation 60 is ~82,000 rows x 23 columns, ~1.9M
+# cells) makes the Sheets API call fail or time out. load_sheet() caught that error,
+# so the whole tab was silently dropped and Reactivation 60 never reached the app.
+# Smaller requests stay well inside the API limits for any tab size.
+chunk_rows = 15000
+
+# Grid size of every tab, fetched once, so each tab is read only as far as it goes.
+sheet_grid = gs4_get(outbound_url)$sheets
+
+# Tabs that errored while being read. Reported in the log and on the run summary,
+# so a dropped tab is visible the next morning instead of going unnoticed.
+failed_tabs = character(0)
+
+# Read ONE tab block by block. Every column is converted to plain text inside each
+# block, so blocks (and tabs) always bind cleanly even when read_sheet() guesses a
+# column's type differently from one block to the next. `.sheet_row` keeps the
+# same convention as before: 1 = the first data row under the header.
+read_tab_chunked = function(sheet_name) {
+  n_rows = sheet_grid$grid_rows[match(sheet_name, sheet_grid$name)]
+  if (length(n_rows) == 0 || is.na(n_rows)) n_rows = chunk_rows
+  hdr   = NULL
+  parts = list()
+  for (s in seq(1, n_rows, by = chunk_rows)) {
+    e     = min(s + chunk_rows - 1, n_rows)
+    first = is.null(hdr)
+    part  = suppressMessages(read_sheet(outbound_url, sheet = sheet_name,
+                                        range = cell_rows(c(s, e)), col_names = first))
+    if (first) {
+      hdr = trimws(names(part))
+      names(part) = hdr
+      # Not a campaign tab -> stop after the first block, don't read the rest.
+      if (!all(required_cols %in% hdr)) return(part)
+      row_offset = 0
+    } else {
+      if (nrow(part) == 0 || ncol(part) == 0) next
+      k = ncol(part)
+      names(part) = if (k <= length(hdr)) hdr[seq_len(k)] else
+        c(hdr, paste0("...", (length(hdr) + 1):k))
+      row_offset = s - 2          # sheet row s holds data row s - 1
+    }
+    if (nrow(part) == 0) next
+    part = part %>%
+      mutate(across(everything(), to_text),
+             .sheet_row = row_offset + seq_len(n()))
+    parts[[length(parts) + 1]] = part
+    Sys.sleep(1)                  # stay under the Sheets API per-minute read quota
+  }
+  bind_rows(parts)
+}
+
 # Function that imports ONE worksheet by name.
 load_sheet = function(sheet_name) {
   df = tryCatch(
-    suppressMessages(read_sheet(outbound_url, sheet = sheet_name)),
-    error = function(e) { message("  ! could not read '", sheet_name, "': ", conditionMessage(e)); NULL }
+    read_tab_chunked(sheet_name),
+    error = function(e) {
+      message("  ! could not read '", sheet_name, "': ", conditionMessage(e))
+      failed_tabs <<- c(failed_tabs, sheet_name)
+      NULL
+    }
   )
   if (is.null(df) || nrow(df) == 0) return(NULL)
-  
+
   # Normalise header whitespace ("Reason " -> "Reason", "Profile ID " -> "Profile ID")
   # so the name-based logic below is not tripped up by stray spaces.
   names(df) = trimws(names(df))
-  
+
   # Skip tabs that are not campaign data.
   if (!all(required_cols %in% names(df))) {
     message("Skipped  '", sheet_name, "'  [not a campaign data tab]")
     return(NULL)
   }
-  
+
   # Row number within this sheet, captured BEFORE any row is dropped, so each row
   # keeps its original position in the tab (`Source Tab` records which tab it is).
-  df = df %>% mutate(`Source Tab` = sheet_name, `Sheet Row` = row_number())
-  
+  df = df %>%
+    mutate(`Source Tab` = sheet_name, `Sheet Row` = .sheet_row) %>%
+    select(-.sheet_row)
+
   # --- OPTIONAL: restore the old World Cup prefix, now matched by tab name ---
   # if (sheet_name == "World Cup 2026") df = df %>% mutate(Campaign = paste0("WC 2026 - ", Campaign))
-  
+
   df = df %>%
     mutate(across(any_of(char_cols), to_text)) %>%
     # Drop repeated header rows AND blank spill-over rows (the alignment formula
@@ -145,6 +203,9 @@ message("Workbook has ", length(all_tabs), " tab(s). Reading campaign tabs...")
 raw_outbound_data = suppressWarnings(
   map(all_tabs, load_sheet) %>% bind_rows()
 )
+if (length(failed_tabs) > 0)
+  message("WARNING: could not read ", length(failed_tabs), " tab(s): ",
+          paste(failed_tabs, collapse = ", "), " - their rows are missing from this build.")
 
 # Backfill any master column that no tab provided, so the cleaning step below can
 # reference every column by name without failing.
@@ -297,6 +358,9 @@ if (nzchar(gh_summary)) {
   add = function(x = "") cat(x, "\n", sep = "", file = gh_summary, append = TRUE)
   add(paste0("## Data-quality guard - ", format(Sys.Date(), "%Y-%m-%d")))
   add(paste0("- ", swap_note))
+  add(if (length(failed_tabs) == 0) "- All tabs read successfully."
+      else paste0("- ❌ FAILED to read tab(s): ", paste(failed_tabs, collapse = ", "),
+                  " - their rows are MISSING from this build."))
   if (length(quality_rows) == 0) {
     add("- OK: Email Ban, Agent's Gender, Response, Response 2nd attempt, VIP Category and Type are clean across every tab.")
   } else {
