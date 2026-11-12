@@ -20,12 +20,12 @@ Here's what's in the folder:
 The columns keep pbpstats' own names by default (`AtRimFGM`, `TsPct`, `OnOffRtg` and the rest). If you want them tidied up instead, every function takes `clean_names = "all_caps"` or `"snake"`.
 
 ```r
-source("scraper functions/pbpstats/pbpstats_helpers.R")
-source("scraper functions/pbpstats/pbp_totals.R")
+source("pbpstats/pbpstats_helpers.R")
+source("pbpstats/pbp_totals.R")
 
 tot  <- pbp_totals("2026-27", type = "Player", stat_type = "Per100Possessions")
 logs <- pbp_game_logs("2026-27", "CJ McCollum")
 wowy <- pbp_wowy("2026-27", c("Dorian Finney-Smith", "Nickeil Alexander-Walker"))
 ```
 
-Each function grabs `pbpstats_helpers.R` the first time it runs, so that file needs to be in the repo as well. `pbp_on_off` is the only one I haven't run against a saved response yet, so keep an eye on it the first time. The old `fancy_wowy` table is still sitting in the folder as it was, still on hoopR, and can move over to `pbp_wowy` whenever.
+Each function grabs `pbpstats_helpers.R` the first time it runs, so that file needs to be in the repo as well. `pbp_on_off` is the only one I haven't run against a saved response yet, so keep an eye on it the first time.
