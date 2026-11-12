@@ -24,8 +24,8 @@ Here's what's in the folder:
 A quick example:
 
 ```r
-source("scraper functions/bbref/bbref_helpers.R")
-source("scraper functions/bbref/bbref_player_stats.R")
+source("bbref/bbref_helpers.R")
+source("bbref/bbref_player_stats.R")
 
 adv  <- bbref_player_stats("2026-27", mode = "advanced")
 opp  <- bbref_team_stats("2024-25", mode = "shooting", side = "opponent")
