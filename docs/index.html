@@ -197,6 +197,19 @@
   .app.wip .go { color: var(--highlight); }
   .app.wip .go::after { content: ""; } /* no arrow — there's nowhere to go yet */
 
+  /* ---- secondary apps: smaller cards in a compact grid ---- */
+  .more {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .more .app { grid-template-columns: 1fr; padding: 12px 16px; }
+  .more .app h2 { font-size: clamp(14px, 3vw, 16px); margin-bottom: 2px; }
+  .more .app p { font-size: 12px; margin-top: 3px; }
+  .more .go { grid-column: 1; grid-row: auto; align-self: start; margin-top: 7px; font-size: 11px; }
+  @media (max-width: 560px) { .more { grid-template-columns: 1fr; } }
+
   /* ---- footer ---- */
   .foot {
     margin-top: 26px; padding-top: 16px;
@@ -244,26 +257,6 @@
       built around data and film.</p>
 
     <div class="projects">
-      <a class="app" href="https://filippospol.github.io/nba-watch-tracker/" target="_blank" rel="noopener">
-        <div class="head">
-          <h2>NBA Watch Tracker</h2>
-          <!-- EDIT: confirm this describes the app -->
-          <p>Log the games you watch and keep a running record of your NBA viewing — teams, nights
-            and what you tuned in for, all in one place.</p>
-        </div>
-        <span class="go">Open</span>
-      </a>
-
-      <a class="app" href="https://filippos-pol.shinyapps.io/modern-playoff-scoring-runs/" target="_blank" rel="noopener">
-        <div class="head">
-          <h2>Playoff Scoring Runs</h2>
-          <!-- EDIT: confirm this describes the app -->
-          <p>How scoring runs shape modern playoff games — when they happen, how long they last,
-            and how often a run swings the result.</p>
-        </div>
-        <span class="go">Open</span>
-      </a>
-
       <a class="app" href="https://filippospol.github.io/FPM/" target="_blank" rel="noopener">
         <div class="head">
           <h2>Fair Plus Minus (FPM)</h2>
@@ -274,7 +267,16 @@
         <span class="go">Open</span>
       </a>
 
-      <a class="app repo" href="https://filippospol.wordpress.com/" target="_blank" rel="noopener">
+      <a class="app" href="https://filippospol.github.io/nba-watch-tracker/" target="_blank" rel="noopener">
+        <div class="head">
+          <h2>NBA Watch Tracker</h2>
+          <p>Log the games you watch and keep a running record of your NBA viewing — teams, nights
+            and what you tuned in for, all in one place.</p>
+        </div>
+        <span class="go">Open</span>
+      </a>
+
+      <a class="app" href="https://filippospol.wordpress.com/" target="_blank" rel="noopener">
         <div class="head">
           <h2>Blog</h2>
           <p>Longer-form writing that mixes numbers and film: NBA and Euroleague breakdowns, player
@@ -283,13 +285,21 @@
         </div>
         <span class="go">Read</span>
       </a>
+    </div>
+
+    <div class="more">
+      <a class="app" href="https://filippos-pol.shinyapps.io/modern-playoff-scoring-runs/" target="_blank" rel="noopener">
+        <div class="head">
+          <h2>Playoff Scoring Runs</h2>
+          <p>How scoring runs swing modern playoff games.</p>
+        </div>
+        <span class="go">Open</span>
+      </a>
 
       <a class="app" href="https://filippos-pol.shinyapps.io/adjusted-era-stats/" target="_blank" rel="noopener">
         <div class="head">
           <h2>Adjusted Era Stats</h2>
-          <!-- EDIT: confirm this describes the app -->
-          <p>Puts scoring and efficiency in the context of the league a player actually played in,
-            so numbers from different eras can be compared on level ground.</p>
+          <p>Scoring and efficiency, put in the context of each player's era.</p>
         </div>
         <span class="go">Open</span>
       </a>
@@ -297,10 +307,8 @@
       <a class="app" href="https://filippos-pol.shinyapps.io/nba-draft-recap/" target="_blank" rel="noopener">
         <div class="head">
           <h2>Draft Recap</h2>
-          <div class="collab">In collaboration with BBall Index</div>
-          <p>Every pick since 2016, with what each player's career has been worth in Talent WAR —
-            compare whole draft classes, find the second-round steals, and see which schools and
-            clubs keep producing.</p>
+          <div class="collab">With BBall Index</div>
+          <p>Every pick since 2016, valued in Talent WAR.</p>
         </div>
         <span class="go">Open</span>
       </a>
