@@ -16,7 +16,7 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 if (!exists(".bbref_read_defined"))
-  source("https://raw.githubusercontent.com/filippospol/bball-projects/refs/heads/main/scraper%20functions/bbref/bbref_helpers.R")
+  source("https://raw.githubusercontent.com/filippospol/bball-projects/refs/heads/main/bbref/bbref_helpers.R")
 
 bbref_game_log = function(gameID) {
   doc = bbref_read(glue("https://www.basketball-reference.com/boxscores/{gameID}.html"))
