@@ -19,7 +19,7 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 if (!exists(".pbp_read_defined"))
-  source("https://raw.githubusercontent.com/filippospol/bball-projects/refs/heads/main/scraper%20functions/pbpstats/pbpstats_helpers.R")
+  source("https://raw.githubusercontent.com/filippospol/bball-projects/refs/heads/main/pbpstats/pbpstats_helpers.R")
 
 pbp_on_off = function(season, season_type = "Regular Season", clean_names = "none") {
   teams = pbp_totals(season, type = "Team", season_type = season_type, clean_names = "none") %>%

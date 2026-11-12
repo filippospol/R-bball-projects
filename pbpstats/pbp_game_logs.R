@@ -17,7 +17,7 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 if (!exists(".pbp_read_defined"))
-  source("https://raw.githubusercontent.com/filippospol/bball-projects/refs/heads/main/scraper%20functions/pbpstats/pbpstats_helpers.R")
+  source("https://raw.githubusercontent.com/filippospol/bball-projects/refs/heads/main/pbpstats/pbpstats_helpers.R")
 
 pbp_game_logs = function(season, entity, type = "Player",
                          season_type = "Regular Season", clean_names = "none") {

@@ -17,7 +17,7 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 if (!exists(".pbp_read_defined"))
-  source("https://raw.githubusercontent.com/filippospol/bball-projects/refs/heads/main/scraper%20functions/pbpstats/pbpstats_helpers.R")
+  source("https://raw.githubusercontent.com/filippospol/bball-projects/refs/heads/main/pbpstats/pbpstats_helpers.R")
 
 pbp_wowy = function(season, players, season_type = "Regular Season",
                     only_common_games = FALSE, clean_names = "none") {
